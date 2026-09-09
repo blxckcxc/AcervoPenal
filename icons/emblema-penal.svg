@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <!-- Gradiente do anel dourado -->
+    <linearGradient id="ouroAnel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="30%" stop-color="#D97706"/>
+      <stop offset="70%" stop-color="#B45309"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+
+    <!-- Gradiente de relevo da lâmina (facetas de luz e sombra) -->
+    <linearGradient id="vinhoSombra" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#580A22"/>
+      <stop offset="100%" stop-color="#7A0F2E"/>
+    </linearGradient>
+    <linearGradient id="vinhoLuz" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9F1239"/>
+      <stop offset="100%" stop-color="#BE123C"/>
+    </linearGradient>
+
+    <!-- Brilho sutil de ouro para o fio de corte central -->
+    <linearGradient id="fioOuro" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FCD34D" stop-opacity="0.9"/>
+      <stop offset="70%" stop-color="#F59E0B" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#B45309" stop-opacity="0.4"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Anel Circular da Legalidade Estrita -->
+  <circle cx="50" cy="50" r="44" fill="none" stroke="url(#ouroAnel)" stroke-width="4.6" />
+
+  <!-- CORRENTES E PRATOS DA BALANÇA -->
+  <!-- Prato Esquerdo -->
+  <line x1="24.5" y1="38" x2="14" y2="61.5" stroke="#D97706" stroke-width="1.15" stroke-linecap="round"/>
+  <line x1="24.5" y1="38" x2="36" y2="61.5" stroke="#D97706" stroke-width="1.15" stroke-linecap="round"/>
+  <path d="M 13.5,61.5 L 36.5,61.5 C 36.5,61.5 35,66 25,66 C 15,66 13.5,61.5 13.5,61.5 Z" fill="#881337" stroke="#660D28" stroke-width="0.75"/>
+
+  <!-- Prato Direito -->
+  <line x1="75.5" y1="38" x2="64" y2="61.5" stroke="#D97706" stroke-width="1.15" stroke-linecap="round"/>
+  <line x1="75.5" y1="38" x2="86" y2="61.5" stroke="#D97706" stroke-width="1.15" stroke-linecap="round"/>
+  <path d="M 63.5,61.5 L 86.5,61.5 C 86.5,61.5 85,66 75,66 C 65,66 63.5,61.5 63.5,61.5 Z" fill="#9F1239" stroke="#700C2B" stroke-width="0.75"/>
+
+  <!-- A ESPADA (JUS PUNIENDI) -->
+  <!-- Cruzeta / Guarda curvada elegante -->
+  <!-- Asa Esquerda da Cruzeta -->
+  <path d="M 50,33 
+           C 42,33 32,35.2 24.5,38
+           C 31,37.8 41,36 47,35
+           Z" fill="#7A0F2E"/>
+  <!-- Asa Direita da Cruzeta -->
+  <path d="M 50,33 
+           C 58,33 68,35.2 75.5,38
+           C 69,37.8 59,36 53,35
+           Z" fill="#9F1239"/>
+
+  <!-- Finiais / Pontas em Losango da Cruzeta -->
+  <polygon points="24.5,36.5 26.2,38 24.5,39.5 22.8,38" fill="#D97706"/>
+  <polygon points="75.5,36.5 77.2,38 75.5,39.5 73.8,38" fill="#F59E0B"/>
+
+  <!-- Empunhadura e Pomo -->
+  <!-- Pomo decorado -->
+  <path d="M 50,14.2 L 52.4,17.2 L 50.8,18.8 L 49.2,18.8 L 47.6,17.2 Z" fill="url(#ouroAnel)"/>
+  <!-- Cabo da espada com anéis -->
+  <rect x="48.5" y="18.8" width="3" height="14.2" rx="1" fill="#7A0F2E"/>
+  <line x1="48.5" y1="22" x2="51.5" y2="22" stroke="#D97706" stroke-width="0.6"/>
+  <line x1="48.5" y1="25" x2="51.5" y2="25" stroke="#D97706" stroke-width="0.6"/>
+  <line x1="48.5" y1="28" x2="51.5" y2="28" stroke="#D97706" stroke-width="0.6"/>
+
+  <!-- Centro da guarda -->
+  <polygon points="50,31.5 53,34 50,36.5 47,34" fill="#D97706"/>
+
+  <!-- Lâmina facetada (Facetas 3D) -->
+  <!-- Faceta Esquerda (Sombra) -->
+  <path d="M 47.5,35 L 49.7,35 L 49.7,71.5 L 50,84.5 L 47.5,69.5 Z" fill="url(#vinhoSombra)"/>
+
+  <!-- Faceta Direita (Luz) -->
+  <path d="M 52.5,35 L 50.3,35 L 50.3,71.5 L 50,84.5 L 52.5,69.5 Z" fill="url(#vinhoLuz)"/>
+
+  <!-- Fio de Corte Central / Nervura em Ouro sutil -->
+  <line x1="50" y1="35" x2="50" y2="84.5" stroke="url(#fioOuro)" stroke-width="0.7"/>
+</svg>

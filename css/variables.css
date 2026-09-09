@@ -27,7 +27,7 @@
    âmbar manda no que é interativo e no que é texto de destaque.
    Para quando a família vinho precisar mesmo virar texto, existe
    --vinho-texto, a menor variação da mesma matiz que passa.
-   ═══════════════════════════════════════════════════════════════ */
+   @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
   /* ── Identidade: vinho bordô ────────────────────────────────

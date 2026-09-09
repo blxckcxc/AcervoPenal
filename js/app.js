@@ -179,12 +179,38 @@ const App = (() => {
     }).join("");
   }
 
+  function emblemaSVG(lado = 28, classeExtra = "") {
+    return `<svg class="emblema-svg ${classeExtra}" viewBox="0 0 100 100" width="${lado}" height="${lado}" aria-hidden="true">
+      <circle cx="50" cy="50" r="43.5" fill="none" class="emb-anel" stroke-width="4.8"/>
+      <line x1="24.5" y1="38" x2="14" y2="61.5" class="emb-corda" stroke-width="1.2"/>
+      <line x1="24.5" y1="38" x2="36" y2="61.5" class="emb-corda" stroke-width="1.2"/>
+      <path d="M 13.5,61.5 L 36.5,61.5 C 36.5,61.5 35,66 25,66 C 15,66 13.5,61.5 13.5,61.5 Z" class="emb-prato-esq"/>
+      <line x1="75.5" y1="38" x2="64" y2="61.5" class="emb-corda" stroke-width="1.2"/>
+      <line x1="75.5" y1="38" x2="86" y2="61.5" class="emb-corda" stroke-width="1.2"/>
+      <path d="M 63.5,61.5 L 86.5,61.5 C 86.5,61.5 85,66 75,66 C 65,66 63.5,61.5 63.5,61.5 Z" class="emb-prato-dir"/>
+      <path d="M 50,33 C 42,33 32,35.2 24.5,38 C 31,37.8 41,36 47,35 Z" class="emb-guarda-esq"/>
+      <path d="M 50,33 C 58,33 68,35.2 75.5,38 C 69,37.8 59,36 53,35 Z" class="emb-guarda-dir"/>
+      <polygon points="24.5,36.5 26.2,38 24.5,39.5 22.8,38" class="emb-detalhe-ouro"/>
+      <polygon points="75.5,36.5 77.2,38 75.5,39.5 73.8,38" class="emb-detalhe-ouro"/>
+      <path d="M 50,14.2 L 52.4,17.2 L 50.8,18.8 L 49.2,18.8 L 47.6,17.2 Z" class="emb-detalhe-ouro"/>
+      <rect x="48.5" y="18.8" width="3" height="14.2" rx="1" class="emb-cabo"/>
+      <polygon points="50,31.5 53,34 50,36.5 47,34" class="emb-detalhe-ouro"/>
+      <path d="M 47.5,35 L 49.7,35 L 49.7,71.5 L 50,84.5 L 47.5,69.5 Z" class="emb-lamina-esq"/>
+      <path d="M 52.5,35 L 50.3,35 L 50.3,71.5 L 50,84.5 L 52.5,69.5 Z" class="emb-lamina-dir"/>
+      <line x1="50" y1="35" x2="50" y2="84.5" class="emb-fio" stroke-width="0.7"/>
+    </svg>`;
+  }
+
   /**
    * @param {string} chave  qual destino é a página atual ("inicio", "quiz"…)
    * @param {string} [moduloAtivo]  id do módulo, quando em modulo.html
    */
   function iniciarShell(chave, moduloAtivo) {
     ligarTema();
+    const marca = document.querySelector(".topbar-marca");
+    if (marca && !marca.querySelector(".emblema-svg")) {
+      marca.insertAdjacentHTML("afterbegin", emblemaSVG(28, "topbar-emblema"));
+    }
     montarSidebar(chave, moduloAtivo).then(ligarSidebar);
     montarRodape(chave);
     document.addEventListener("progresso:mudou", () => montarSidebar(chave, moduloAtivo));
@@ -203,7 +229,7 @@ const App = (() => {
     </div>`;
   }
 
-  return { iniciarShell, aplicarTema, parametro, erroNaPagina, DESTINOS };
+  return { iniciarShell, aplicarTema, parametro, erroNaPagina, DESTINOS, emblemaSVG };
 })();
 
 window.App = App;

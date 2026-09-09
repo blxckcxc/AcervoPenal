@@ -27,6 +27,9 @@
   border-bottom: 1px solid var(--vidro-borda);
 }
 .topbar-marca {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--esp-2);
   font-family: var(--fonte-titulo);
   font-size: var(--texto-lg);
   font-weight: 600;
@@ -35,6 +38,15 @@
   letter-spacing: 0.02em;
 }
 .topbar-marca span { color: var(--ambar); }
+.topbar-emblema {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  transition: transform var(--ease);
+}
+.topbar-marca:hover .topbar-emblema {
+  transform: scale(1.08) rotate(-2deg);
+}
 .topbar-espaco { flex: 1; }
 
 /* ── Sidebar ────────────────────────────────────────────────── */

@@ -147,8 +147,14 @@
   border: 1px solid var(--borda);
   border-radius: var(--raio-lg);
   background: var(--mapa-palco);
+  background-image: radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.08) 1.2px, transparent 0);
+  background-size: 24px 24px;
   overflow: hidden;
   touch-action: none;   /* o arrastar e o pinçar sao nossos, nao do navegador */
+  box-shadow: var(--sombra-md);
+}
+[data-tema="claro"] .mp-palco {
+  background-image: radial-gradient(circle at 1px 1px, rgba(28, 25, 23, 0.07) 1.2px, transparent 0);
 }
 .mp-palco svg { display: block; width: 100%; height: 60vh; min-height: 380px; cursor: grab; }
 .mp-palco.arrastando svg { cursor: grabbing; }
@@ -158,15 +164,16 @@
 
 .mp-controles {
   position: absolute;
-  right: var(--esp-3);
-  bottom: var(--esp-3);
+  right: var(--esp-4);
+  bottom: var(--esp-4);
   display: flex;
   gap: var(--esp-2);
   padding: var(--esp-2);
   border: 1px solid var(--vidro-borda);
-  border-radius: var(--raio-md);
+  border-radius: var(--raio-full);
   background: var(--vidro-bg);
   backdrop-filter: var(--vidro-blur);
+  box-shadow: var(--sombra-md);
 }
 .mp-ctrl {
   width: 40px;
@@ -174,15 +181,20 @@
   display: grid;
   place-items: center;
   border: 1px solid var(--borda);
-  border-radius: var(--raio-sm);
+  border-radius: var(--raio-full);
   background: var(--bg-elevado);
   color: var(--texto);
   font-size: var(--texto-base);
   line-height: 1;
   cursor: pointer;
-  transition: background-color var(--ease), color var(--ease);
+  transition: all var(--ease);
 }
-.mp-ctrl:hover { background: var(--bg-hover); color: var(--destaque); }
+.mp-ctrl:hover {
+  background: var(--bg-hover);
+  color: var(--destaque);
+  border-color: var(--ambar);
+  transform: translateY(-1px);
+}
 
 .mp-zoom-rot {
   position: absolute;
@@ -205,29 +217,45 @@
   stroke-width: 1.5;
 }
 
-/* Tracejada e mais grossa: a conexão entre módulos é o que o mapa
-   existe para mostrar, então ela não pode parecer ruído de fundo. */
+/* Tracejada e mais grossa com brilho de filamento dogmático */
 .mp-aresta-cruzada {
   fill: none;
   stroke: var(--destaque);
-  stroke-width: 2;
-  stroke-dasharray: 7 5;
-  opacity: 0.75;
+  stroke-width: 2.2;
+  stroke-dasharray: 6 4;
+  opacity: 0.85;
+  filter: drop-shadow(0 0 4px rgba(245, 158, 11, 0.4));
+  transition: stroke-width var(--ease), opacity var(--ease), filter var(--ease);
 }
-.mp-aresta-cruzada:hover { opacity: 1; stroke-width: 3; }
+.mp-aresta-cruzada:hover {
+  opacity: 1;
+  stroke-width: 3.5;
+  filter: drop-shadow(0 0 10px rgba(245, 158, 11, 0.75));
+}
 
 .mp-no-caixa {
   fill: var(--mapa-no-bg);
   stroke: currentColor;
-  stroke-width: 1.5;
-  transition: fill var(--ease);
+  stroke-width: 1.6;
+  rx: 8px;
+  ry: 8px;
+  filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.35));
+  transition: fill var(--ease), stroke-width var(--ease), filter var(--ease);
 }
-.mp-no[data-raiz="1"] .mp-no-caixa { stroke-width: 2.5; }
+.mp-no[data-raiz="1"] .mp-no-caixa { stroke-width: 2.8; filter: drop-shadow(0 4px 14px rgba(0, 0, 0, 0.5)); }
 .mp-no { cursor: pointer; }
-.mp-no:hover .mp-no-caixa { fill: var(--bg-hover); }
+.mp-no:hover .mp-no-caixa {
+  fill: var(--bg-hover);
+  stroke-width: 2.2;
+  filter: drop-shadow(0 6px 18px rgba(0, 0, 0, 0.6));
+}
 .mp-no:focus { outline: none; }
 .mp-no:focus-visible .mp-no-caixa { stroke: var(--destaque); stroke-width: 3; }
-.mp-no.selecionado .mp-no-caixa { stroke-width: 3; fill: var(--bg-hover); }
+.mp-no.selecionado .mp-no-caixa {
+  stroke-width: 3;
+  fill: var(--bg-hover);
+  filter: drop-shadow(0 0 14px currentColor);
+}
 
 .mp-no-tit {
   fill: var(--texto-titulo);
@@ -280,13 +308,13 @@
   top: 0;
   right: 0;
   z-index: 60;
-  width: min(420px, 100vw);
+  width: min(440px, 100vw);
   height: 100dvh;
   display: flex;
   flex-direction: column;
   border-left: 1px solid var(--borda);
   background: var(--bg-superficie);
-  box-shadow: var(--sombra-lg);
+  box-shadow: -12px 0 40px rgba(0, 0, 0, 0.65);
   transform: translateX(101%);
   transition: transform var(--ease-slow);
 }
@@ -298,6 +326,17 @@
   gap: var(--esp-3);
   padding: var(--esp-5);
   border-bottom: 1px solid var(--borda);
+  background: linear-gradient(180deg, var(--bg-elevado) 0%, var(--bg-superficie) 100%);
+  position: relative;
+}
+.mp-gaveta-topo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--vinho) 0%, var(--ambar) 50%, var(--vinho-claro) 100%);
 }
 .mp-gaveta-tit {
   flex: 1;
@@ -348,14 +387,22 @@
   min-height: 44px;
   padding: var(--esp-2) var(--esp-4);
   border: 1px solid var(--destaque);
-  border-radius: var(--raio-sm);
+  border-radius: var(--raio-full);
+  background: var(--ambar-fundo);
   color: var(--destaque);
   font-family: var(--fonte-ui);
   font-size: var(--texto-sm);
+  font-weight: 600;
   text-decoration: none;
-  transition: background-color var(--ease);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: all var(--ease);
 }
-.mp-artigo-link:hover { background: var(--ambar-fundo); }
+.mp-artigo-link:hover {
+  background: var(--destaque);
+  color: #09090B;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(217, 119, 6, 0.35);
+}
 
 .mp-pos {
   margin-bottom: var(--esp-3);

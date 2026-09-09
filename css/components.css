@@ -286,3 +286,142 @@
   textarea { min-height: 44px; }
   .marco-campo { min-height: 44px; }
 }
+
+/* ── Emblema Oficial da Espada-Balança ──────────────────────── */
+.emblema-svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+.emblema-svg .emb-anel {
+  stroke: var(--ambar);
+}
+.emblema-svg .emb-corda {
+  stroke: var(--ambar);
+}
+.emblema-svg .emb-detalhe-ouro {
+  fill: var(--ambar);
+}
+.emblema-svg .emb-prato-esq,
+.emblema-svg .emb-guarda-esq,
+.emblema-svg .emb-lamina-esq,
+.emblema-svg .emb-cabo {
+  fill: var(--vinho);
+}
+.emblema-svg .emb-prato-dir,
+.emblema-svg .emb-guarda-dir,
+.emblema-svg .emb-lamina-dir {
+  fill: var(--vinho-claro);
+}
+.emblema-svg .emb-fio {
+  stroke: var(--ambar);
+  opacity: 0.85;
+}
+
+/* ── Hero Solene da Página Inicial ──────────────────────────── */
+.hero-penal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: var(--esp-8) var(--esp-5);
+  margin-bottom: var(--esp-6);
+  background: linear-gradient(180deg, rgba(24, 24, 27, 0.85) 0%, rgba(18, 18, 21, 0.98) 100%);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio-xl);
+  overflow: hidden;
+  box-shadow: var(--sombra-md);
+}
+
+[data-tema="claro"] .hero-penal {
+  background: linear-gradient(180deg, #FFFFFF 0%, #F5F1EA 100%);
+  border-color: var(--borda);
+}
+
+.hero-penal::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 320px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(136, 19, 55, 0.35) 0%, rgba(217, 119, 6, 0.15) 50%, transparent 80%);
+  pointer-events: none;
+  filter: blur(28px);
+}
+
+.hero-emblema-wrapper {
+  position: relative;
+  margin-bottom: var(--esp-4);
+  display: inline-grid;
+  place-items: center;
+}
+
+.hero-emblema-wrapper .emblema-svg {
+  width: 80px;
+  height: 80px;
+  filter: drop-shadow(0 0 18px rgba(217, 119, 6, 0.35));
+  transition: transform var(--ease-slow);
+}
+
+.hero-emblema-wrapper:hover .emblema-svg {
+  transform: scale(1.06) rotate(1deg);
+}
+
+.hero-selo {
+  display: inline-block;
+  font-family: var(--fonte-ui);
+  font-size: var(--texto-xs);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ambar);
+  margin-bottom: var(--esp-2);
+}
+
+.hero-titulo {
+  font-family: var(--fonte-titulo);
+  font-size: var(--texto-3xl);
+  font-weight: 700;
+  color: var(--texto-titulo);
+  line-height: var(--entrelinha-justa);
+  margin-bottom: var(--esp-3);
+  letter-spacing: 0.02em;
+}
+
+.hero-sub {
+  max-width: 680px;
+  font-size: var(--texto-base);
+  color: var(--texto-secundario);
+  line-height: var(--entrelinha-normal);
+  margin-bottom: var(--esp-5);
+}
+
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--esp-2);
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--esp-1);
+  padding: var(--esp-1) var(--esp-3);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio-full);
+  background: var(--bg-superficie);
+  font-family: var(--fonte-ui);
+  font-size: var(--texto-xs);
+  font-weight: 500;
+  color: var(--texto-secundario);
+  transition: border-color var(--ease), color var(--ease);
+}
+
+.hero-badge:hover {
+  border-color: var(--ambar);
+  color: var(--texto);
+}
+

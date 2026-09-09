@@ -15,12 +15,13 @@
   border-radius: var(--raio-lg);
   text-decoration: none;
   color: inherit;
+  box-shadow: var(--sombra-sm);
   transition: border-color var(--ease), transform var(--ease), box-shadow var(--ease);
 }
 .card-modulo:hover {
-  border-color: var(--vinho);
-  transform: translateY(-2px);
-  box-shadow: var(--sombra-md);
+  border-color: var(--vinho-claro);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px -4px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(136, 19, 55, 0.35);
 }
 .card-modulo-topo {
   display: flex;
@@ -55,7 +56,11 @@
 }
 .card-modulo .barra { margin-top: var(--esp-1); }
 
-.destaque-modulo { border-color: var(--vinho); background-color: var(--vinho-fundo); }
+.destaque-modulo {
+  border-color: var(--vinho);
+  background: linear-gradient(180deg, var(--vinho-fundo) 0%, var(--bg-superficie) 100%);
+  box-shadow: 0 0 20px rgba(136, 19, 55, 0.2);
+}
 
 /* Radar de domínio, desenhado à mão em SVG. */
 .radar { display: block; margin: 0 auto; max-width: 420px; }

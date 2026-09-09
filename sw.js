@@ -18,7 +18,7 @@
 
    ═══════════════════════════════════════════════════════════════ */
 
-const CACHE = "acervo-penal-a16df8cd16";
+const CACHE = "acervo-penal-9a8f34ff92";
 
 /* INICIO-PRECACHE — gerado por build.js, não edite à mão */
 const ARQUIVOS = [
@@ -51,6 +51,7 @@ const ARQUIVOS = [
   "favicon.ico",
   "galeria.html",
   "icons/apple-touch-icon.png",
+  "icons/emblema-penal.svg",
   "icons/icon-192.png",
   "icons/icon-512.png",
   "icons/icon-maskable-512.png",
