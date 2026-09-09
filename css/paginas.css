@@ -10,7 +10,7 @@
   flex-direction: column;
   gap: var(--esp-3);
   padding: var(--esp-5);
-  background: var(--bg-superficie);
+  background-color: var(--bg-superficie);
   border: 1px solid var(--borda);
   border-radius: var(--raio-lg);
   text-decoration: none;
@@ -55,7 +55,7 @@
 }
 .card-modulo .barra { margin-top: var(--esp-1); }
 
-.destaque-modulo { border-color: var(--vinho); background: var(--vinho-fundo); }
+.destaque-modulo { border-color: var(--vinho); background-color: var(--vinho-fundo); }
 
 /* Radar de domínio, desenhado à mão em SVG. */
 .radar { display: block; margin: 0 auto; max-width: 420px; }
@@ -67,8 +67,8 @@
 .radar-legenda { display: flex; justify-content: center; gap: var(--esp-5); margin-top: var(--esp-4); font-size: var(--texto-xs); }
 .radar-chave { display: inline-flex; align-items: center; gap: var(--esp-2); color: var(--texto-secundario); }
 .radar-amostra { width: 14px; height: 3px; border-radius: 2px; display: inline-block; }
-.radar-amostra.teoria { background: var(--vinho-texto); }
-.radar-amostra.pratica { background: var(--ambar); }
+.radar-amostra.teoria { background-color: var(--vinho-texto); }
+.radar-amostra.pratica { background-color: var(--ambar); }
 
 /* ── Vade Mecum ─────────────────────────────────────────────── */
 
@@ -77,7 +77,7 @@
   top: var(--header-h);
   z-index: 20;
   padding: var(--esp-4) 0;
-  background: var(--bg);
+  background-color: var(--bg);
   border-bottom: 1px solid var(--borda);
 }
 .vm-campo {
@@ -85,7 +85,7 @@
   padding: var(--esp-3) var(--esp-4);
   border: 1px solid var(--borda);
   border-radius: var(--raio-md);
-  background: var(--bg-superficie);
+  background-color: var(--bg-superficie);
   color: var(--texto);
   font-size: var(--texto-base);
 }
@@ -130,7 +130,7 @@
   font-size: var(--texto-xs);
   color: var(--texto-suave);
 }
-.vm-marca { background: var(--ambar-fundo); color: var(--ambar); border-radius: 2px; padding: 0 2px; }
+.vm-marca { background-color: var(--ambar-fundo); color: var(--ambar); border-radius: 2px; padding: 0 2px; }
 
 /* ── Galeria ────────────────────────────────────────────────── */
 
@@ -147,7 +147,7 @@
   border: 1px solid var(--borda);
   border-radius: var(--raio-md);
   overflow: hidden;
-  background: var(--bg-superficie);
+  background-color: var(--bg-superficie);
   cursor: zoom-in;
   transition: border-color var(--ease), transform var(--ease);
 }
@@ -167,7 +167,7 @@
   border-radius: var(--raio-full);
   font-size: 10px;
   font-weight: 700;
-  background: var(--vidro-bg);
+  background-color: var(--vidro-bg);
   backdrop-filter: var(--vidro-blur);
   color: var(--texto);
 }
@@ -182,7 +182,7 @@
   z-index: 200;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  background: rgba(0, 0, 0, 0.92);
+  background-color: rgba(0, 0, 0, 0.92);
   backdrop-filter: blur(4px);
 }
 .lightbox[hidden] { display: none; }
@@ -204,11 +204,11 @@
 
 /* ── Player da aula ─────────────────────────────────────────── */
 
-.player { background: var(--bg-superficie); border: 1px solid var(--borda); border-radius: var(--raio-lg); padding: var(--esp-5); }
+.player { background-color: var(--bg-superficie); border: 1px solid var(--borda); border-radius: var(--raio-lg); padding: var(--esp-5); }
 .player audio { width: 100%; margin-bottom: var(--esp-4); }
 .player-controles { display: flex; flex-wrap: wrap; align-items: center; gap: var(--esp-2); }
 .player-rotulo { font-size: var(--texto-sm); color: var(--texto-secundario); margin-right: var(--esp-2); }
-.vel[aria-pressed="true"] { background: var(--vinho); border-color: var(--vinho); color: var(--pergaminho); font-weight: 600; }
+.vel[aria-pressed="true"] { background-color: var(--vinho); border-color: var(--vinho); color: var(--pergaminho); font-weight: 600; }
 
 .marcos { list-style: none; padding: 0; margin: 0; }
 .marco {
@@ -232,7 +232,7 @@
   padding: var(--esp-1) var(--esp-2);
   border: 1px solid var(--borda);
   border-radius: var(--raio-sm);
-  background: var(--bg);
+  background-color: var(--bg);
   color: var(--texto);
   font-family: var(--fonte-mono);
   font-size: var(--texto-sm);
@@ -283,12 +283,12 @@
   padding: var(--esp-6);
   text-align: center;
   backface-visibility: hidden;
-  background: var(--bg-superficie);
+  background-color: var(--bg-superficie);
   border: 1px solid var(--borda);
   border-radius: var(--raio-lg);
   font-family: var(--fonte-leitura);
 }
-.flashcard-verso { transform: rotateY(180deg); border-color: var(--vinho); background: var(--vinho-fundo); }
+.flashcard-verso { transform: rotateY(180deg); border-color: var(--vinho); background-color: var(--vinho-fundo); }
 .flashcard-dica { font-size: var(--texto-xs); color: var(--texto-suave); text-align: center; margin-bottom: var(--esp-4); }
 
 @media (min-width: 768px) {
@@ -360,8 +360,8 @@
   font-size: var(--texto-sm);
   margin-bottom: var(--esp-3);
 }
-.card-feedback.ok { background: var(--sucesso-fundo); color: var(--sucesso); }
-.card-feedback.nok { background: var(--alerta-fundo); color: var(--alerta-texto); }
+.card-feedback.ok { background-color: var(--sucesso-fundo); color: var(--sucesso); }
+.card-feedback.nok { background-color: var(--alerta-fundo); color: var(--alerta-texto); }
 
 /* ── Doutrina comparada ─────────────────────────────────────── */
 
@@ -395,12 +395,12 @@
 .dout-colunas { display: grid; gap: var(--esp-4); }
 
 .dout-coluna {
-  background: var(--bg-superficie);
+  background-color: var(--bg-superficie);
   border: 1px solid var(--borda);
   border-radius: var(--raio-lg);
   padding: var(--esp-4);
 }
-.dout-vazia { background: transparent; border-style: dashed; }
+.dout-vazia { background-color: transparent; border-style: dashed; }
 .dout-cab { margin-bottom: var(--esp-3); padding-bottom: var(--esp-3); border-bottom: 1px solid var(--borda); }
 .dout-nome {
   display: block;
@@ -428,8 +428,8 @@
   border-radius: var(--raio-md);
   font-size: var(--texto-sm);
 }
-.dout-sintese.convergencia { background: var(--sucesso-fundo); border-left: 3px solid var(--sucesso); }
-.dout-sintese.divergencia { background: var(--ambar-fundo); border-left: 3px solid var(--ambar); }
+.dout-sintese.convergencia { background-color: var(--sucesso-fundo); border-left: 3px solid var(--sucesso); }
+.dout-sintese.divergencia { background-color: var(--ambar-fundo); border-left: 3px solid var(--ambar); }
 .dout-nota-aula {
   font-size: var(--texto-sm);
   color: var(--texto-secundario);

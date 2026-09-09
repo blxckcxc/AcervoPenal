@@ -197,14 +197,32 @@
   --texto:            #1C1917;  /* 16,50 fundo · 15,53 superfície */
   --texto-titulo:     #1C1917;
   --texto-secundario: #57534E;  /*  7,20 ·  6,78 */
-  --texto-suave:      #746D69;  /*  4,79 ·  4,51 — mínimo que passa */
+  --texto-suave:      #69625F;  /* 4,6+ em todos os fundos claros, inclusive as lavagens */
 
   --link:       #881337;  /* 9,02 · 8,50 — o vinho brilha no claro */
   --link-hover: #991B1B;  /* 7,84 · 7,39 */
   --destaque:   #A75B05;  /* âmbar escurecido: 4,78 · 4,50 */
   --marca:      var(--vinho);
 
-  --alerta-texto: #D62323;  /* 4,80 · 4,52 */
+  /* ── Tokens de paleta que viram TEXTO ───────────────────────
+     Estes existem porque 44 declaracoes pelo CSS usam
+     `color: var(--ambar)`, `var(--sucesso)` e afins. No tema escuro
+     eles brilham; sobre o pergaminho reprovam todos — o ambar #F59E0B
+     cai para 2,0:1 e o verde #4ADE80 some no fundo.
+
+     Redefinir aqui o proprio token conserta os 44 pontos de uma vez,
+     em vez de caçar cada regra. Os valores sao a menor variacao de
+     cada matiz que passa 4,5:1 em TODOS os fundos claros do tema
+     (pagina, superficie, elevado e as lavagens de destaque).        */
+  --ambar:        #935F06;  /* 4,52 no pior fundo claro */
+  --ambar-escuro: #A05804;  /* 4,50 */
+  --sucesso:      #167A3B;  /* 4,52 */
+  --atencao:      #896403;  /* 4,51 */
+  /* O vinho da identidade passa com folga sobre o pergaminho (8,50),
+     entao aqui ele proprio faz o papel que --vinho-texto faz no escuro. */
+  --vinho-texto:  #881337;  /* 9,02 · 8,50 */
+
+  --alerta-texto: #C22020;  /* 4,6+ inclusive sobre --alerta-fundo */
   --alerta-fundo: #FDECEC;
   --sucesso-fundo: #E8F6EC;
   --ambar-fundo:  #FBF2E0;

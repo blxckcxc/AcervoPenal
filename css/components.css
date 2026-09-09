@@ -12,35 +12,35 @@
   padding: var(--esp-3) var(--esp-5);
   border: 1px solid var(--borda);
   border-radius: var(--raio-md);
-  background: var(--bg-elevado);
+  background-color: var(--bg-elevado);
   color: var(--texto);
   font-size: var(--texto-sm);
   font-weight: 500;
-  transition: background var(--ease), border-color var(--ease), color var(--ease), transform var(--ease);
+  transition: background-color var(--ease), border-color var(--ease), color var(--ease), transform var(--ease);
 }
-.btn:hover { background: var(--bg-hover); border-color: var(--ambar-escuro); }
+.btn:hover { background-color: var(--bg-hover); border-color: var(--ambar-escuro); }
 .btn:active { transform: translateY(1px); }
 .btn:disabled { opacity: 0.45; cursor: not-allowed; transform: none; }
-.btn:disabled:hover { background: var(--bg-elevado); border-color: var(--borda); }
+.btn:disabled:hover { background-color: var(--bg-elevado); border-color: var(--borda); }
 
 /* O vinho é a identidade e vive aqui: como PREENCHIMENTO, onde o
    contraste que conta é o do rótulo sobre ele (9,02:1). Ver a nota
    no cabeçalho de variables.css. */
 .btn-primario {
-  background: var(--btn-primario-bg);
+  background-color: var(--btn-primario-bg);
   border-color: var(--btn-primario-bg);
   color: var(--btn-primario-fg);
   font-weight: 600;
 }
 .btn-primario:hover {
-  background: var(--btn-primario-bg-hover);
+  background-color: var(--btn-primario-bg-hover);
   border-color: var(--btn-primario-bg-hover);
   color: var(--btn-primario-fg-hover);
 }
-.btn-primario:disabled:hover { background: var(--btn-primario-bg); }
+.btn-primario:disabled:hover { background-color: var(--btn-primario-bg); }
 
-.btn-fantasma { background: transparent; border-color: transparent; }
-.btn-fantasma:hover { background: var(--bg-hover); border-color: var(--borda); }
+.btn-fantasma { background-color: transparent; border-color: transparent; }
+.btn-fantasma:hover { background-color: var(--bg-hover); border-color: var(--borda); }
 
 .btn-sm { padding: var(--esp-2) var(--esp-3); font-size: var(--texto-xs); }
 .btn-bloco { width: 100%; }
@@ -51,11 +51,11 @@
   place-items: center;
   border: 1px solid transparent;
   border-radius: var(--raio-md);
-  background: transparent;
+  background-color: transparent;
   color: var(--texto-secundario);
-  transition: background var(--ease), color var(--ease);
+  transition: background-color var(--ease), color var(--ease);
 }
-.icon-btn:hover { background: var(--bg-hover); color: var(--texto); }
+.icon-btn:hover { background-color: var(--bg-hover); color: var(--texto); }
 
 /* ── Chips (filtros com estado no próprio ARIA) ─────────────── */
 
@@ -66,7 +66,7 @@
   padding: var(--esp-2) var(--esp-4);
   border: 1px solid var(--borda);
   border-radius: var(--raio-full);
-  background: var(--bg-superficie);
+  background-color: var(--bg-superficie);
   color: var(--texto-secundario);
   font-size: var(--texto-sm);
   transition: all var(--ease);
@@ -76,7 +76,7 @@
 /* O CSS lê o próprio atributo de acessibilidade: um estado só, sem
    risco de a classe e o ARIA discordarem. */
 .chip[aria-pressed="true"] {
-  background: var(--vinho-fundo);
+  background-color: var(--vinho-fundo);
   border-color: var(--vinho);
   color: var(--texto-titulo);
   font-weight: 600;
@@ -89,7 +89,7 @@
 /* ── Cartões ────────────────────────────────────────────────── */
 
 .card {
-  background: var(--bg-superficie);
+  background-color: var(--bg-superficie);
   border: 1px solid var(--borda);
   border-radius: var(--raio-lg);
   padding: var(--esp-5);
@@ -116,15 +116,15 @@
   letter-spacing: 0.02em;
   white-space: nowrap;
 }
-.selo-aula   { background: var(--vinho-fundo);  color: var(--vinho-texto);  border: 1px solid var(--vinho); }
-.selo-manual { background: var(--ambar-fundo);  color: var(--ambar);        border: 1px solid var(--ambar-escuro); }
-.selo-lei    { background: var(--sucesso-fundo); color: var(--sucesso);     border: 1px solid var(--sucesso); }
-.selo-misto  { background: var(--bg-elevado);   color: var(--texto-secundario); border: 1px solid var(--borda); }
+.selo-aula   { background-color: var(--vinho-fundo);  color: var(--vinho-texto);  border: 1px solid var(--vinho); }
+.selo-manual { background-color: var(--ambar-fundo);  color: var(--ambar);        border: 1px solid var(--ambar-escuro); }
+.selo-lei    { background-color: var(--sucesso-fundo); color: var(--sucesso);     border: 1px solid var(--sucesso); }
+.selo-misto  { background-color: var(--bg-elevado);   color: var(--texto-secundario); border: 1px solid var(--borda); }
 
 /* ── Blocos de destaque e alerta ────────────────────────────── */
 
 .destaque {
-  background: var(--ambar-fundo);
+  background-color: var(--ambar-fundo);
   border-left: 3px solid var(--ambar);
   border-radius: 0 var(--raio-md) var(--raio-md) 0;
   padding: var(--esp-4) var(--esp-5);
@@ -135,7 +135,7 @@
 /* O #DC2626 fica na BORDA (aprova como componente, 4,12:1) e o texto
    usa --alerta-texto, que passa como texto. Ver variables.css. */
 .alerta-bloco {
-  background: var(--alerta-fundo);
+  background-color: var(--alerta-fundo);
   border-left: 3px solid var(--alerta);
   border-radius: 0 var(--raio-md) var(--raio-md) 0;
   padding: var(--esp-4) var(--esp-5);
@@ -146,7 +146,7 @@
 /* ── Artigo do Código Penal ─────────────────────────────────── */
 
 .artigo-cp {
-  background: var(--bg-elevado);
+  background-color: var(--bg-elevado);
   border: 1px solid var(--borda);
   border-left: 3px solid var(--ambar-escuro);
   border-radius: 0 var(--raio-md) var(--raio-md) 0;
@@ -208,7 +208,7 @@
   text-align: left;
   vertical-align: top;
 }
-.tabela-responsiva th { background: var(--bg-elevado); color: var(--texto-titulo); font-weight: 600; }
+.tabela-responsiva th { background-color: var(--bg-elevado); color: var(--texto-titulo); font-weight: 600; }
 
 @media (max-width: 640px) {
   .tabela-responsiva, .tabela-responsiva tbody, .tabela-responsiva tr, .tabela-responsiva td {
@@ -236,7 +236,7 @@
 
 .barra {
   height: 6px;
-  background: var(--bg-elevado);
+  background-color: var(--bg-elevado);
   border-radius: var(--raio-full);
   overflow: hidden;
 }
@@ -255,3 +255,34 @@
   color: var(--texto-secundario);
 }
 .vazio-icone { font-size: var(--texto-4xl); opacity: 0.5; display: block; margin-bottom: var(--esp-3); }
+
+/* ── Correções de tela estreita ──────────────────────────────
+   Medido a 375x812: o selo de origem tem `white-space: nowrap` e
+   carrega a referência inteira ("material de aula · caderno 150046").
+   Dentro do cabeçalho do accordion isso empurrava a linha para 555 px
+   e a página inteira ganhava 180 px de rolagem horizontal. Abaixo de
+   768 px ele passa a quebrar; o nowrap segue valendo no desktop, onde
+   sobra espaço e a quebra ficaria feia.                              */
+
+.acc-head { flex-wrap: wrap; min-width: 0; }
+.acc-tit { min-width: 0; overflow-wrap: anywhere; }
+
+@media (max-width: 767px) {
+  .selo-fonte { white-space: normal; overflow-wrap: anywhere; }
+}
+
+/* Contêiner de rolagem em contexto flex/grid não encolhe abaixo do
+   conteúdo sem isto: `min-width: auto` é o padrão e faz o pai crescer
+   em vez de o filho rolar. */
+.tabela-scroll { min-width: 0; max-width: 100%; }
+
+/* Alvos de toque: campos de formulário também precisam dos 44 px.
+   A regra de base.css cobria botões e chips, mas não inputs. Links
+   dentro de texto corrido ficam de fora de propósito — forçá-los a
+   44 px quebraria o fluxo do parágrafo. */
+@media (pointer: coarse) {
+  input:not([type="range"]):not([type="checkbox"]):not([type="radio"]),
+  select,
+  textarea { min-height: 44px; }
+  .marco-campo { min-height: 44px; }
+}

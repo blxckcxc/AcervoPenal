@@ -22,7 +22,7 @@
   align-items: center;
   gap: var(--esp-3);
   padding: 0 var(--esp-4);
-  background: var(--vidro-bg);
+  background-color: var(--vidro-bg);
   backdrop-filter: var(--vidro-blur);
   border-bottom: 1px solid var(--vidro-borda);
 }
@@ -45,7 +45,7 @@
   width: var(--sidebar-w);
   z-index: 90;
   padding: var(--esp-5) var(--esp-4);
-  background: var(--bg-superficie);
+  background-color: var(--bg-superficie);
   border-right: 1px solid var(--borda);
   overflow-y: auto;
   transform: translateX(-100%);
@@ -57,7 +57,7 @@
   position: fixed;
   inset: 0;
   z-index: 80;
-  background: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   opacity: 0;
   pointer-events: none;
   transition: opacity var(--ease);
@@ -84,15 +84,15 @@
   color: var(--texto-secundario);
   text-decoration: none;
   font-size: var(--texto-sm);
-  transition: background var(--ease), color var(--ease), border-color var(--ease);
+  transition: background-color var(--ease), color var(--ease), border-color var(--ease);
 }
-.nav-item:hover { background: var(--bg-hover); color: var(--texto); }
+.nav-item:hover { background-color: var(--bg-hover); color: var(--texto); }
 
 /* O item ativo é marcado por classe E por aria-current. O projeto
    irmão só tinha a classe: leitor de tela não sabia onde estava. */
 .nav-item.ativo,
 .nav-item[aria-current="page"] {
-  background: var(--vinho-fundo);
+  background-color: var(--vinho-fundo);
   border-color: var(--vinho);
   color: var(--texto-titulo);
   font-weight: 600;
@@ -133,7 +133,7 @@
 .grade-stats { display: grid; gap: var(--esp-3); grid-template-columns: repeat(2, 1fr); }
 
 .stat {
-  background: var(--bg-superficie);
+  background-color: var(--bg-superficie);
   border: 1px solid var(--borda);
   border-radius: var(--raio-md);
   padding: var(--esp-4);
@@ -159,7 +159,7 @@
   z-index: 60;
   height: var(--bottomnav-h);
   display: flex;
-  background: var(--vidro-bg);
+  background-color: var(--vidro-bg);
   backdrop-filter: var(--vidro-blur);
   border-top: 1px solid var(--vidro-borda);
 }
@@ -206,6 +206,6 @@ body.tem-bottomnav .main { padding-bottom: calc(var(--bottomnav-h) + var(--esp-8
 @media print {
   .topbar, .sidebar, .bottom-nav, .sidebar-backdrop, .btn, .chip { display: none !important; }
   .app { padding-left: 0; }
-  body { background: #fff; color: #000; }
+  body { background-color: #fff; color: #000; }
   .acc-corpo { grid-template-rows: 1fr !important; }
 }

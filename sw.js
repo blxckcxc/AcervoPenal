@@ -24,7 +24,7 @@
    rede e fica com o cache HTTP normal do navegador.
    ═══════════════════════════════════════════════════════════════ */
 
-const CACHE = "acervo-penal-1c4480f9a2";
+const CACHE = "acervo-penal-565a0ecbf3";
 
 /* INICIO-PRECACHE — gerado por build.js, não edite à mão */
 const ARQUIVOS = [
