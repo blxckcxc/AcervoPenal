@@ -1,0 +1,133 @@
+/* ═══════════════════════════════════════════════════════════════
+   base.css — reset, tipografia e acessibilidade de base
+   Só consome tokens de variables.css. Nenhum valor literal aqui.
+   ═══════════════════════════════════════════════════════════════ */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--texto);
+  font-family: var(--fonte-ui);
+  font-size: var(--texto-base);
+  line-height: var(--entrelinha-normal);
+  -webkit-font-smoothing: antialiased;
+  transition: background var(--ease), color var(--ease);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--fonte-titulo);
+  color: var(--texto-titulo);
+  line-height: var(--entrelinha-justa);
+  margin: 0 0 var(--esp-3);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+h1 { font-size: var(--texto-3xl); }
+h2 { font-size: var(--texto-2xl); }
+h3 { font-size: var(--texto-xl); }
+h4 { font-size: var(--texto-lg); }
+
+p { margin: 0 0 var(--esp-4); }
+
+/* Texto de leitura longa vai em serifada: é o registro do documento
+   jurídico, e reduz o cansaço em blocos extensos de doutrina. */
+.leitura, .enunciado, .acc-inner p, blockquote {
+  font-family: var(--fonte-leitura);
+  line-height: var(--entrelinha-relaxada);
+}
+
+a {
+  color: var(--link);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  transition: color var(--ease);
+}
+a:hover { color: var(--link-hover); }
+
+ul, ol { margin: 0 0 var(--esp-4); padding-left: var(--esp-6); }
+li { margin-bottom: var(--esp-2); }
+
+strong { color: var(--texto-titulo); font-weight: 600; }
+
+code, kbd { font-family: var(--fonte-mono); font-size: 0.9em; }
+
+kbd {
+  background: var(--bg-elevado);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio-sm);
+  padding: 0.1em 0.4em;
+}
+
+blockquote {
+  margin: 0 0 var(--esp-4);
+  padding: var(--esp-4) var(--esp-5);
+  border-left: 3px solid var(--vinho);
+  background: var(--vinho-fundo);
+  border-radius: 0 var(--raio-md) var(--raio-md) 0;
+}
+blockquote cite {
+  display: block;
+  margin-top: var(--esp-3);
+  font-family: var(--fonte-ui);
+  font-size: var(--texto-sm);
+  color: var(--texto-secundario);
+  font-style: normal;
+}
+
+button, input, textarea, select {
+  font: inherit;
+  color: inherit;
+}
+button { cursor: pointer; }
+
+img, svg { max-width: 100%; }
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--borda);
+  margin: var(--esp-8) 0;
+}
+
+/* ── Foco ────────────────────────────────────────────────────
+   :focus-visible em vez de :focus para o anel não aparecer em
+   clique de mouse, só em navegação por teclado.                */
+:focus-visible {
+  outline: 2px solid var(--ambar);
+  outline-offset: 2px;
+  border-radius: var(--raio-sm);
+}
+:focus:not(:focus-visible) { outline: none; }
+
+.skip-link {
+  position: absolute;
+  top: -60px;
+  left: var(--esp-4);
+  z-index: 200;
+  padding: var(--esp-3) var(--esp-5);
+  background: var(--vinho);
+  color: var(--pergaminho);
+  border-radius: var(--raio-md);
+  transition: top var(--ease);
+}
+.skip-link:focus { top: var(--esp-4); }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+[hidden], .oculto { display: none !important; }
+
+/* Alvos de toque com no mínimo 44px, exigência de uso no celular. */
+@media (pointer: coarse) {
+  button, .btn, .chip, a.nav-item { min-height: 44px; }
+}

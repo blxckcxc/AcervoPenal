@@ -1,0 +1,127 @@
+{
+  "versao": 1,
+  "curso": "Direito Penal — Parte Geral",
+  "sobre": "Índice dos módulos. O campo `origem` é o que impede este acervo de fingir uniformidade: a catalogação das 44 imagens (ver _fontes.json) mostrou que quatro módulos não têm material de aula nenhum. Eles existem, mas saem dos manuais recomendados pelo professor — e dizem isso na interface, em vez de simular que vieram da sala.",
+  "legendaOrigem": {
+    "aula": "Construído sobre slides, lousas e anotações das aulas fotografadas.",
+    "misto": "Espinha dorsal vinda da aula; o desenvolvimento vem dos manuais.",
+    "manual": "Sem material de aula. Escrito a partir de Sanches, Masson e Greco, com página em cada afirmação."
+  },
+  "bibliografia": {
+    "nota": "Os três autores são a bibliografia recomendada pelo professor, registrada em mensagem de 08/09 (ver _fontes.json, Screenshot_20260908_144945_WhatsApp.jpg). Não é escolha editorial nossa.",
+    "obras": [
+      { "sigla": "Sanches", "autor": "Rogério Sanches Cunha", "obra": "Manual de Direito Penal — Parte Geral (arts. 1º ao 120)", "ano": 2016, "editora": "JusPodivm" },
+      { "sigla": "Masson", "autor": "Cléber Masson", "obra": "Direito Penal — Parte Geral (arts. 1º a 120)", "ano": null },
+      { "sigla": "Greco", "autor": "Rogério Greco", "obra": "Curso de Direito Penal — Parte Geral", "ano": 2017 }
+    ],
+    "avisoDeVigencia": "As edições em mãos são de 2016/2017. Toda citação carrega autor, página e ano; confira a vigência antes de usar em prova ou peça."
+  },
+  "modulos": [
+    {
+      "id": "principios",
+      "ordem": 1,
+      "titulo": "Princípios do Direito Penal",
+      "resumo": "Legalidade, intervenção mínima, fragmentariedade, ofensividade, insignificância e as balizas que limitam o poder de punir.",
+      "arquivo": "principios.json",
+      "origem": "manual",
+      "notaOrigem": "Nenhum slide, lousa ou anotação trata de princípios como tema. A legalidade aparece de passagem como fundamento da irretroatividade (slide 04/09) e a insignificância numa dica lateral sobre erro quanto ao objeto. Este módulo é inteiramente doutrinário.",
+      "artigos": [1],
+      "icone": "⚖",
+      "status": "planejado"
+    },
+    {
+      "id": "lei-penal-no-tempo",
+      "ordem": 2,
+      "titulo": "Lei Penal no Tempo e no Espaço",
+      "resumo": "Tempo do crime, irretroatividade, extra-atividade, ultra-atividade e as três teorias — mais territorialidade e extraterritorialidade.",
+      "arquivo": "lei-penal-no-tempo.json",
+      "origem": "misto",
+      "notaOrigem": "O TEMPO tem cobertura boa: cinco slides de 04/09 e três telas do caderno, incluindo a única fonte que amarra a teoria da atividade ao art. 4º. O ESPAÇO não foi dado em nenhuma aula — territorialidade e extraterritorialidade saem dos manuais.",
+      "artigos": [2, 3, 4, 5, 6, 7, 8],
+      "icone": "⏳",
+      "status": "planejado"
+    },
+    {
+      "id": "teoria-do-crime",
+      "ordem": 3,
+      "titulo": "Teoria Geral do Crime",
+      "resumo": "O conceito analítico tripartido, o fato típico e seus elementos, elementar e circunstância.",
+      "arquivo": "teoria-do-crime.json",
+      "origem": "aula",
+      "notaOrigem": "A lousa de 14/08 dá o conceito analítico com o detalhamento da tipicidade e da culpabilidade, incluindo imputação objetiva. O par elementar/circunstância vem do caderno, com exemplos próprios do aluno.",
+      "artigos": [13, 14, 15, 16, 17, 18, 19],
+      "icone": "⚙",
+      "status": "planejado"
+    },
+    {
+      "id": "dolo-e-culpa",
+      "ordem": 4,
+      "titulo": "Dolo, Culpa e Preterdolo",
+      "resumo": "Dolo direto e eventual, culpa consciente e inconsciente, imprudência, negligência, imperícia e o crime preterdoloso.",
+      "arquivo": "dolo-e-culpa.json",
+      "origem": "manual",
+      "notaOrigem": "Dolo e culpa atravessam todas as aulas, mas sempre como CONSEQUÊNCIA do erro de tipo ou do erro provocado por terceiro — nunca como tema próprio. Não há material sobre dolo eventual, teorias da vontade e do assentimento, culpa consciente ou preterdolo.",
+      "artigos": [18, 19, 20],
+      "icone": "🎯",
+      "status": "planejado"
+    },
+    {
+      "id": "erro-de-tipo",
+      "ordem": 5,
+      "titulo": "Erro de Tipo",
+      "resumo": "Essencial e acidental, evitabilidade, erro sobre objeto e sobre pessoa, aberratio ictus, criminis e causae, erro determinado por terceiro.",
+      "arquivo": "erro-de-tipo.json",
+      "origem": "aula",
+      "notaOrigem": "O eixo do semestre: 27 das 44 imagens servem a este módulo. Inclui conteúdo que só existe nas lousas — aberratio causae e o nome das teorias por ramo não aparecem em slide nenhum.",
+      "artigos": [20, 73, 74],
+      "icone": "🔍",
+      "status": "planejado",
+      "destaque": true
+    },
+    {
+      "id": "iter-criminis",
+      "ordem": 6,
+      "titulo": "Iter Criminis",
+      "resumo": "Cogitação, preparação, execução, consumação e exaurimento — mais tentativa, desistência voluntária e crime impossível.",
+      "arquivo": "iter-criminis.json",
+      "origem": "misto",
+      "notaOrigem": "Uma única lousa de 28/08 dá as cinco etapas, com o exaurimento destacado num retângulo. Nada sobre tentativa, desistência voluntária, arrependimento eficaz, arrependimento posterior ou crime impossível — tudo isso vem dos manuais.",
+      "artigos": [14, 15, 16, 17],
+      "icone": "🪜",
+      "status": "planejado"
+    },
+    {
+      "id": "ilicitude",
+      "ordem": 7,
+      "titulo": "Ilicitude",
+      "resumo": "Estado de necessidade, legítima defesa, estrito cumprimento do dever legal, exercício regular de direito e as excludentes supralegais.",
+      "arquivo": "ilicitude.json",
+      "origem": "manual",
+      "notaOrigem": "Aparece só como um dos três ramos do conceito analítico na lousa de 14/08, sem nenhum desenvolvimento. Todas as excludentes saem dos manuais e do texto dos arts. 23 a 25.",
+      "artigos": [23, 24, 25],
+      "icone": "🛡",
+      "status": "planejado"
+    },
+    {
+      "id": "culpabilidade",
+      "ordem": 8,
+      "titulo": "Culpabilidade",
+      "resumo": "Imputabilidade, potencial consciência da ilicitude e exigibilidade de conduta diversa — com erro de proibição, embriaguez e coação moral.",
+      "arquivo": "culpabilidade.json",
+      "origem": "manual",
+      "notaOrigem": "A lousa de 14/08 lista os três elementos e nada mais. Vale registrar uma ausência que salta aos olhos: o erro de PROIBIÇÃO, par natural do erro de tipo e assunto deste módulo, não foi dado em nenhuma das quatro aulas.",
+      "artigos": [21, 22, 26, 27, 28],
+      "icone": "🧠",
+      "status": "planejado"
+    }
+  ],
+  "anexos": [
+    {
+      "id": "concurso-de-crimes",
+      "titulo": "Concurso de crimes",
+      "vinculadoA": "erro-de-tipo",
+      "artigos": [69, 70, 71],
+      "nota": "Entrou na aula de 28/08 como suporte ao aberratio de resultado duplo, que remete ao concurso formal. A lousa dá os nomes e os artigos, sem desenvolver — por isso é anexo do módulo 5, não módulo próprio."
+    }
+  ]
+}

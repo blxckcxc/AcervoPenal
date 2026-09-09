@@ -1,0 +1,253 @@
+/* ═══════════════════════════════════════════════════════════════
+   Acervo Penal — tokens de design
+   Paleta penalista: vinho bordô + âmbar sobre ônix.
+
+   FONTE ÚNICA DE VERDADE. Nenhum valor cru de cor, espaço, raio,
+   sombra ou duração deve aparecer nos outros arquivos CSS. Trocar a
+   identidade visual inteira tem de ser editar só este arquivo — é o
+   que permite a rodada de refinamento no Astra sem caçar valores.
+
+   ─────────────────────────────────────────────────────────────
+   SOBRE OS NÚMEROS DE CONTRASTE NOS COMENTÁRIOS
+   Todos foram medidos (WCAG 2.1, fórmula de luminância relativa)
+   contra os dois fundos reais do tema escuro: --onix-fundo #09090B
+   e --onix-superficie #18181B. O par mais apertado é sempre o da
+   superfície, então é ele que decide.
+
+   Exigências: texto ≥ 4,5:1 · texto grande e componentes ≥ 3:1.
+
+   O ACHADO QUE MOLDOU ESTA PALETA
+   O vinho bordô #881337 dá 2,08:1 sobre o fundo e 1,85:1 sobre o
+   card. Ele reprova não só como texto, mas até como borda ou ícone.
+   Isso NÃO o desqualifica: ele continua sendo a cor da identidade —
+   só que como PREENCHIMENTO, onde o contraste que importa é o do
+   rótulo sobre ele (#FAF8F5 sobre #881337 = 9,02:1, folgado).
+
+   A consequência de desenho é que o vinho manda nos fundos e o
+   âmbar manda no que é interativo e no que é texto de destaque.
+   Para quando a família vinho precisar mesmo virar texto, existe
+   --vinho-texto, a menor variação da mesma matiz que passa.
+   ═══════════════════════════════════════════════════════════════ */
+
+:root {
+  /* ── Identidade: vinho bordô ────────────────────────────────
+     PREENCHIMENTO APENAS. Ver a nota do cabeçalho.               */
+  --vinho:        #881337;  /* 2,08 fundo · 1,85 card — só fundo  */
+  --vinho-claro:  #991B1B;  /* 2,39 · 2,13 — hover do preenchim.  */
+  --vinho-fundo:  #2A0A14;  /* lavagem para faixas e selos        */
+
+  /* Menor clareamento da matiz vinho que passa AA como texto.
+     Usar em destaque tipográfico da família vinho no tema escuro. */
+  --vinho-texto:  #E54274;  /* 5,08 fundo · 4,52 card — AA texto  */
+
+  /* ── Acento: âmbar ──────────────────────────────────────────
+     Passa como texto com folga nos dois fundos, então é ele que
+     carrega links, ícones e números.                             */
+  --ambar:        #F59E0B;  /* 9,26 fundo · 8,25 card — AA texto  */
+  --ambar-escuro: #D97706;  /* 6,24 · 5,56 — AA texto e bordas    */
+  --ambar-fundo:  #2B1D05;  /* lavagem para realces               */
+
+  /* ── Ônix: fundos do tema escuro ───────────────────────────── */
+  --onix-fundo:      #09090B;
+  --onix-superficie: #18181B;
+  --onix-elevado:    #202024;
+  --onix-hover:      #27272A;
+  --borda-sutil:     #2E2E33;
+
+  /* ── Texto do tema escuro ──────────────────────────────────── */
+  --pergaminho:      #FAF8F5;  /* 18,77 · 16,71 — títulos          */
+  --texto-claro:     #E7E5E4;  /* 15,85 · 14,11 — corpo            */
+  --texto-medio:     #A8A29E;  /*  7,89 ·  7,02 — secundário       */
+  --texto-apagado:   #8A8580;  /*  5,45 ·  4,85 — legendas         */
+
+  /* ── Estados ────────────────────────────────────────────────
+     #DC2626 dá 4,12 / 3,67: aprova como COMPONENTE (≥3) e reprova
+     como TEXTO (<4,5). Fica na borda e no fundo do alerta; o texto
+     do alerta usa --alerta-texto.                                */
+  --alerta:        #DC2626;  /* 4,12 · 3,67 — borda/fundo         */
+  --alerta-texto:  #E24B4B;  /* 5,06 · 4,51 — AA texto            */
+  --alerta-fundo:  #2B0D0D;
+  --sucesso:       #4ADE80;  /* 12,3 · 10,9                       */
+  --sucesso-fundo: #0A2416;
+  --atencao:       #FBBF24;  /* 11,6 · 10,3                       */
+
+  /* ── Botão primário ────────────────────────────────────────
+     O preenchimento é o vinho da identidade; quem precisa passar
+     é o rótulo sobre ele, e passa com folga.                     */
+  --btn-primario-bg:       var(--vinho);
+  --btn-primario-fg:       var(--pergaminho);  /* 9,02 sobre vinho */
+  --btn-primario-bg-hover: var(--vinho-claro);
+  --btn-primario-fg-hover: var(--pergaminho);  /* 7,84 — ainda AA  */
+
+  /* ── Semânticos: é o que o resto do CSS consome ─────────────
+     Nunca use os tokens de paleta acima diretamente nos outros
+     arquivos. Consuma daqui — é o que faz o tema claro funcionar
+     sem reescrever componente nenhum.                            */
+  --bg:            var(--onix-fundo);
+  --bg-superficie: var(--onix-superficie);
+  --bg-elevado:    var(--onix-elevado);
+  --bg-hover:      var(--onix-hover);
+  --borda:         var(--borda-sutil);
+
+  --texto:           var(--texto-claro);
+  --texto-titulo:    var(--pergaminho);
+  --texto-secundario: var(--texto-medio);
+  --texto-suave:     var(--texto-apagado);
+
+  --link:       var(--ambar);
+  --link-hover: #FBBF24;
+  --destaque:   var(--ambar);
+  --marca:      var(--vinho);
+
+  /* ── Níveis do simulador de casos práticos ─────────────────
+     Todos medidos como texto sobre a superfície do card.         */
+  --nivel-1: #4ADE80;  /* básico          — 10,9 */
+  --nivel-2: #F59E0B;  /* intermediário   —  8,25 */
+  --nivel-3: #E54274;  /* avançado        —  4,52 */
+  --nivel-4: #C084FC;  /* alta complexid. —  6,90 */
+
+  /* ── Correção discursiva ───────────────────────────────────── */
+  --quesito-ok:      var(--sucesso);
+  --quesito-parcial: var(--atencao);
+  --quesito-falta:   var(--alerta-texto);
+
+  /* ── Tipografia ────────────────────────────────────────────
+     Serifada para o texto de leitura longa e para os títulos —
+     é o registro do documento jurídico. Sem serifa para interface,
+     rótulos e dados.                                             */
+  --fonte-titulo: 'Cinzel', 'Merriweather', Georgia, serif;
+  --fonte-leitura: 'Merriweather', Georgia, 'Times New Roman', serif;
+  --fonte-ui: 'Source Sans 3', 'Inter', system-ui, -apple-system, sans-serif;
+  --fonte-mono: 'JetBrains Mono', ui-monospace, 'Courier New', monospace;
+
+  --texto-xs:   0.75rem;
+  --texto-sm:   0.875rem;
+  --texto-base: 1rem;
+  --texto-lg:   1.125rem;
+  --texto-xl:   1.25rem;
+  --texto-2xl:  1.5rem;
+  --texto-3xl:  1.875rem;
+  --texto-4xl:  2.25rem;
+
+  --entrelinha-justa:    1.25;
+  --entrelinha-normal:   1.55;
+  --entrelinha-relaxada: 1.75;  /* leitura longa em serifada */
+
+  /* ── Espaçamento ───────────────────────────────────────────── */
+  --esp-1:  0.25rem;
+  --esp-2:  0.5rem;
+  --esp-3:  0.75rem;
+  --esp-4:  1rem;
+  --esp-5:  1.25rem;
+  --esp-6:  1.5rem;
+  --esp-8:  2rem;
+  --esp-10: 2.5rem;
+  --esp-12: 3rem;
+  --esp-16: 4rem;
+
+  /* ── Raios ─────────────────────────────────────────────────── */
+  --raio-sm:   6px;
+  --raio-md:   10px;
+  --raio-lg:   14px;
+  --raio-xl:   20px;
+  --raio-full: 999px;
+
+  /* ── Sombras ───────────────────────────────────────────────── */
+  --sombra-sm:   0 1px 3px rgba(0, 0, 0, 0.5);
+  --sombra-md:   0 4px 24px rgba(0, 0, 0, 0.55);
+  --sombra-lg:   0 12px 40px rgba(0, 0, 0, 0.7);
+  --sombra-halo: 0 0 0 1px rgba(136, 19, 55, 0.5), 0 0 24px rgba(245, 158, 11, 0.15);
+
+  /* ── Vidro ─────────────────────────────────────────────────── */
+  --vidro-bg:     rgba(24, 24, 27, 0.85);
+  --vidro-blur:   blur(16px);
+  --vidro-borda:  rgba(250, 248, 245, 0.07);
+
+  /* ── Movimento ─────────────────────────────────────────────
+     Seção isolada de propósito: as microinterações da rodada no
+     Astra entram aqui, sem precisar caçar durações no resto.      */
+  --ease:      200ms ease-out;
+  --ease-slow: 320ms cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* ── Layout ────────────────────────────────────────────────── */
+  --sidebar-w:   264px;
+  --conteudo-max: 1080px;
+  --header-h:    64px;
+  --bottomnav-h: 60px;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   TEMA CLARO — "pergaminho"
+
+   Aqui a hierarquia se inverte, e é uma inversão feliz: sobre o
+   pergaminho o vinho #881337 dá 9,02:1 e vira excelente cor de
+   texto e de link. Já o âmbar #D97706, que brilhava no escuro,
+   despenca para 3,01:1 e reprova — precisa escurecer para #A75B05.
+
+   Só tokens são redefinidos. Nenhum componente é reescrito.
+   ═══════════════════════════════════════════════════════════════ */
+
+[data-tema="claro"] {
+  --bg:            #FAF8F5;
+  --bg-superficie: #F5F1EA;
+  --bg-elevado:    #EFEAE1;
+  --bg-hover:      #E8E2D7;
+  --borda:         #DDD5C8;
+
+  --texto:            #1C1917;  /* 16,50 fundo · 15,53 superfície */
+  --texto-titulo:     #1C1917;
+  --texto-secundario: #57534E;  /*  7,20 ·  6,78 */
+  --texto-suave:      #746D69;  /*  4,79 ·  4,51 — mínimo que passa */
+
+  --link:       #881337;  /* 9,02 · 8,50 — o vinho brilha no claro */
+  --link-hover: #991B1B;  /* 7,84 · 7,39 */
+  --destaque:   #A75B05;  /* âmbar escurecido: 4,78 · 4,50 */
+  --marca:      var(--vinho);
+
+  --alerta-texto: #D62323;  /* 4,80 · 4,52 */
+  --alerta-fundo: #FDECEC;
+  --sucesso-fundo: #E8F6EC;
+  --ambar-fundo:  #FBF2E0;
+  --vinho-fundo:  #F7E9ED;
+
+  /* Níveis do simulador, reescurecidos para o fundo claro. */
+  --nivel-1: #15803D;
+  --nivel-2: #A75B05;
+  --nivel-3: #A8124A;
+  --nivel-4: #7E22CE;
+
+  --sombra-sm:   0 1px 3px rgba(28, 25, 23, 0.10);
+  --sombra-md:   0 4px 24px rgba(28, 25, 23, 0.12);
+  --sombra-lg:   0 12px 40px rgba(28, 25, 23, 0.16);
+  --sombra-halo: 0 0 0 1px rgba(136, 19, 55, 0.35), 0 0 24px rgba(136, 19, 55, 0.10);
+
+  --vidro-bg:    rgba(250, 248, 245, 0.88);
+  --vidro-borda: rgba(28, 25, 23, 0.08);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   Preferências do sistema
+   ═══════════════════════════════════════════════════════════════ */
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --ease: 1ms linear; --ease-slow: 1ms linear; }
+  *, *::before, *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 1ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media (prefers-contrast: more) {
+  :root {
+    --texto-secundario: var(--texto-claro);
+    --texto-suave:      var(--texto-medio);
+    --borda:            #4A4A52;
+  }
+  [data-tema="claro"] {
+    --texto-secundario: #1C1917;
+    --texto-suave:      #44403C;
+    --borda:            #B9AE9C;
+  }
+}

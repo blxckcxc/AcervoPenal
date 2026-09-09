@@ -1,0 +1,274 @@
+/* ═══════════════════════════════════════════════════════════════
+   simulador.css — Simulador de Casos Práticos
+   ═══════════════════════════════════════════════════════════════ */
+
+.sim-config, .sim-rodada, .sim-relatorio { display: grid; gap: var(--esp-4); }
+
+.sim-ajuda { font-size: var(--texto-sm); color: var(--texto-secundario); margin-bottom: var(--esp-3); }
+.sim-chips { display: flex; flex-wrap: wrap; gap: var(--esp-2); }
+.sim-acoes-inline { display: flex; flex-wrap: wrap; align-items: center; gap: var(--esp-3); margin-top: var(--esp-4); }
+
+/* ── Níveis ─────────────────────────────────────────────────── */
+
+.chip-nivel[aria-pressed="true"].nivel-1 { border-color: var(--nivel-1); }
+.chip-nivel[aria-pressed="true"].nivel-2 { border-color: var(--nivel-2); }
+.chip-nivel[aria-pressed="true"].nivel-3 { border-color: var(--nivel-3); }
+.chip-nivel[aria-pressed="true"].nivel-4 { border-color: var(--nivel-4); }
+
+.selo-nivel {
+  display: inline-block;
+  padding: 0.15em 0.7em;
+  border-radius: var(--raio-full);
+  font-size: var(--texto-xs);
+  font-weight: 600;
+  border: 1px solid currentColor;
+}
+.selo-nivel.nivel-1 { color: var(--nivel-1); }
+.selo-nivel.nivel-2 { color: var(--nivel-2); }
+.selo-nivel.nivel-3 { color: var(--nivel-3); }
+.selo-nivel.nivel-4 { color: var(--nivel-4); }
+
+/* ── Formato ────────────────────────────────────────────────── */
+
+.sim-formatos { display: grid; gap: var(--esp-3); }
+.sim-formato {
+  display: grid;
+  gap: var(--esp-1);
+  text-align: left;
+  padding: var(--esp-4);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio-md);
+  background: var(--bg-elevado);
+  transition: all var(--ease);
+}
+.sim-formato:hover { border-color: var(--ambar-escuro); }
+.sim-formato[aria-checked="true"] {
+  border-color: var(--vinho);
+  background: var(--vinho-fundo);
+}
+.sim-formato-tit { font-weight: 600; color: var(--texto-titulo); }
+.sim-formato-desc { font-size: var(--texto-sm); color: var(--texto-secundario); }
+
+/* ── Quantidade e disponibilidade ───────────────────────────── */
+
+.sim-qtd { display: flex; align-items: center; gap: var(--esp-4); }
+.sim-qtd input[type="range"] { flex: 1; accent-color: var(--vinho); }
+.sim-qtd-valor {
+  font-family: var(--fonte-titulo);
+  font-size: var(--texto-2xl);
+  color: var(--ambar);
+  min-width: 2ch;
+  text-align: center;
+}
+.sim-disponivel {
+  margin: var(--esp-3) 0 0;
+  font-size: var(--texto-sm);
+  color: var(--texto-secundario);
+}
+.sim-alerta { color: var(--alerta-texto); font-weight: 600; }
+
+/* ── Rodada ─────────────────────────────────────────────────── */
+
+.sim-topo { display: grid; gap: var(--esp-2); }
+.sim-passo { font-size: var(--texto-sm); color: var(--texto-secundario); }
+
+.sim-caso-cab {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--esp-3);
+  margin-bottom: var(--esp-3);
+}
+.sim-caso-mod { font-size: var(--texto-sm); color: var(--texto-secundario); }
+.sim-caso-tit { font-size: var(--texto-xl); margin-bottom: var(--esp-3); }
+.sim-caso .enunciado { margin-bottom: 0; }
+
+/* ── Alternativas ───────────────────────────────────────────── */
+
+.sim-alts { display: grid; gap: var(--esp-3); }
+.sim-alt {
+  display: flex;
+  gap: var(--esp-3);
+  align-items: flex-start;
+  text-align: left;
+  padding: var(--esp-4);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio-md);
+  background: var(--bg-elevado);
+  transition: all var(--ease);
+}
+.sim-alt:hover:not(:disabled) { border-color: var(--ambar-escuro); background: var(--bg-hover); }
+.sim-alt:disabled { cursor: default; opacity: 0.75; }
+.sim-alt-letra {
+  flex: 0 0 auto;
+  width: 1.9em; height: 1.9em;
+  display: grid;
+  place-items: center;
+  border-radius: var(--raio-full);
+  background: var(--bg-superficie);
+  border: 1px solid var(--borda);
+  font-weight: 700;
+  font-size: var(--texto-sm);
+}
+.sim-alt-txt { flex: 1; }
+
+.sim-alt.correta { border-color: var(--sucesso); background: var(--sucesso-fundo); opacity: 1; }
+.sim-alt.correta .sim-alt-letra { border-color: var(--sucesso); color: var(--sucesso); }
+.sim-alt.errada { border-color: var(--alerta); background: var(--alerta-fundo); opacity: 1; }
+.sim-alt.errada .sim-alt-letra { border-color: var(--alerta); color: var(--alerta-texto); }
+
+.sim-veredito {
+  margin: var(--esp-5) 0 var(--esp-4);
+  padding: var(--esp-3) var(--esp-4);
+  border-radius: var(--raio-md);
+  font-weight: 600;
+}
+.sim-veredito.ok { background: var(--sucesso-fundo); color: var(--sucesso); border: 1px solid var(--sucesso); }
+.sim-veredito.nok { background: var(--alerta-fundo); color: var(--alerta-texto); border: 1px solid var(--alerta); }
+
+.sim-sub {
+  font-family: var(--fonte-ui);
+  font-size: var(--texto-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--texto-suave);
+  margin: var(--esp-5) 0 var(--esp-3);
+}
+
+.sim-justificativas { list-style: none; padding: 0; display: grid; gap: var(--esp-3); }
+.sim-justificativas li {
+  padding: var(--esp-3) var(--esp-4);
+  border-left: 3px solid var(--borda);
+  border-radius: 0 var(--raio-md) var(--raio-md) 0;
+  background: var(--bg-elevado);
+  font-size: var(--texto-sm);
+  margin: 0;
+}
+.sim-justificativas .just-ok { border-left-color: var(--sucesso); }
+.sim-justificativas .just-nok { border-left-color: var(--alerta); }
+.sim-armadilha {
+  display: block;
+  margin-top: var(--esp-2);
+  font-size: var(--texto-xs);
+  color: var(--ambar);
+  font-style: italic;
+}
+
+/* ── Discursiva ─────────────────────────────────────────────── */
+
+.sim-textarea {
+  width: 100%;
+  padding: var(--esp-4);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio-md);
+  background: var(--bg);
+  color: var(--texto);
+  font-family: var(--fonte-leitura);
+  line-height: var(--entrelinha-relaxada);
+  resize: vertical;
+  min-height: 200px;
+}
+.sim-textarea:focus { border-color: var(--ambar-escuro); }
+.sim-contador { font-size: var(--texto-sm); color: var(--texto-suave); }
+
+/* ── Correção ───────────────────────────────────────────────── */
+
+.sim-nota { display: flex; align-items: center; gap: var(--esp-4); margin-bottom: var(--esp-4); }
+.sim-nota-valor {
+  font-family: var(--fonte-titulo);
+  font-size: var(--texto-4xl);
+  line-height: 1;
+  color: var(--ambar);
+}
+.sim-nota-valor.grande { font-size: 3.5rem; }
+.sim-nota-rotulo { font-size: var(--texto-sm); color: var(--texto-secundario); }
+.sim-ajustes { font-size: var(--texto-xs); color: var(--ambar); }
+.sim-ressalva p:last-child { margin-bottom: 0; font-size: var(--texto-sm); }
+
+.sim-quesitos { list-style: none; padding: 0; display: grid; gap: var(--esp-3); }
+.quesito {
+  padding: var(--esp-4);
+  border: 1px solid var(--borda);
+  border-left: 3px solid var(--borda);
+  border-radius: 0 var(--raio-md) var(--raio-md) 0;
+  background: var(--bg-elevado);
+  margin: 0;
+}
+.quesito-ok { border-left-color: var(--quesito-ok); }
+.quesito-parcial { border-left-color: var(--quesito-parcial); }
+.quesito-falta { border-left-color: var(--quesito-falta); }
+
+.quesito-cab { display: flex; justify-content: space-between; gap: var(--esp-3); align-items: baseline; }
+.quesito-texto { font-weight: 600; color: var(--texto-titulo); }
+.quesito-pontos { font-family: var(--fonte-mono); font-size: var(--texto-sm); white-space: nowrap; }
+.quesito-ok .quesito-pontos { color: var(--quesito-ok); }
+.quesito-parcial .quesito-pontos { color: var(--quesito-parcial); }
+.quesito-falta .quesito-pontos { color: var(--quesito-falta); }
+.quesito-estado { font-size: var(--texto-sm); color: var(--texto-secundario); margin-top: var(--esp-2); }
+.quesito-acoes { display: flex; flex-wrap: wrap; gap: var(--esp-2); margin-top: var(--esp-3); }
+
+.sim-diagnostico { display: grid; gap: var(--esp-4); margin-top: var(--esp-6); }
+.diag {
+  padding: var(--esp-4);
+  border-radius: var(--raio-md);
+  background: var(--bg-elevado);
+  border: 1px solid var(--borda);
+}
+.diag h5 { margin: 0 0 var(--esp-3); font-family: var(--fonte-ui); font-size: var(--texto-sm); }
+.diag ul { margin: 0; padding-left: var(--esp-5); font-size: var(--texto-sm); }
+.diag p { font-size: var(--texto-sm); margin-bottom: var(--esp-3); }
+.diag-ok { border-left: 3px solid var(--sucesso); }
+.diag-nok { border-left: 3px solid var(--alerta); }
+.diag-dica { border-left: 3px solid var(--ambar); }
+.sim-nota-fonte {
+  margin-top: var(--esp-3);
+  font-size: var(--texto-xs);
+  color: var(--texto-suave);
+  line-height: var(--entrelinha-normal);
+}
+
+/* ── Doutrina ───────────────────────────────────────────────── */
+
+.sim-doutrina {
+  margin-top: var(--esp-6);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio-md);
+  background: var(--bg-elevado);
+}
+.sim-doutrina summary {
+  padding: var(--esp-4);
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--texto-titulo);
+}
+.doutrina-tema { padding: 0 var(--esp-4) var(--esp-4); }
+.doutrina-tema h5 { margin: 0 0 var(--esp-3); color: var(--ambar); font-family: var(--fonte-ui); }
+.doutrina-posicao { margin-bottom: var(--esp-4); }
+.doutrina-autor { font-weight: 600; color: var(--texto-titulo); font-size: var(--texto-sm); }
+.doutrina-loc {
+  font-family: var(--fonte-mono);
+  font-size: var(--texto-xs);
+  color: var(--texto-suave);
+  font-weight: 400;
+  margin-left: var(--esp-2);
+}
+.doutrina-posicao p { font-size: var(--texto-sm); margin: var(--esp-2) 0; }
+.doutrina-posicao blockquote { font-size: var(--texto-sm); margin: var(--esp-2) 0 0; }
+.doutrina-nota { font-size: var(--texto-sm); padding-top: var(--esp-3); border-top: 1px solid var(--borda); }
+
+/* ── Relatório ──────────────────────────────────────────────── */
+
+.sim-resumo { text-align: center; }
+.sim-resumo .sim-nota { justify-content: center; flex-direction: column; gap: var(--esp-2); }
+
+.rel-tema { margin-bottom: var(--esp-4); }
+.rel-tema-cab { display: flex; justify-content: space-between; gap: var(--esp-3); margin-bottom: var(--esp-2); font-size: var(--texto-sm); }
+.rel-tema-pct { font-family: var(--fonte-mono); color: var(--ambar); }
+.rel-tema-n { font-size: var(--texto-xs); color: var(--texto-suave); margin-top: var(--esp-1); }
+.rel-fracos { font-size: var(--texto-sm); }
+.rel-fracos li { margin-bottom: var(--esp-3); }
+
+@media (min-width: 768px) {
+  .sim-formatos { grid-template-columns: repeat(2, 1fr); }
+  .sim-diagnostico { grid-template-columns: repeat(3, 1fr); }
+}

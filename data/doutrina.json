@@ -1,0 +1,482 @@
+{
+  "versao": 1,
+  "sobre": "Doutrina comparada dos três autores recomendados pelo professor. Cada posição carrega um localizador que permite ir conferir. Nenhuma afirmação entra aqui sem trecho localizado na obra: onde não achei, o campo diz que não achei.",
+  "avisoDeLocalizadores": {
+    "porQueNaoSaoTodosPagina": "O plano prometia página em cada posição. Ao abrir os arquivos, descobri que dois dos três não são PDF: Masson e Greco são EPUBs renomeados para .pdf. EPUB é texto refluível e, em regra, não tem página. O que cada fonte permite localizar acabou sendo diferente, e o campo `tipoLocalizador` diz qual é qual em vez de chamar tudo de 'página'.",
+    "masson": "paginaImpressa — o EPUB traz 827 âncoras #page_N mapeadas no toc.ncx para a paginação da 13ª edição (2019). É citável como página de livro.",
+    "sanches": "paginaPdf — o número impresso não sobreviveu ao OCR. Testei se havia deslocamento constante entre a página do PDF e a impressa: não há. Citar 'p. 312' seria inventar, então cito a página do PDF e digo que é isso.",
+    "greco": "secao — EPUB sem paginação nenhuma. O título da seção localiza o trecho na obra."
+  },
+  "obras": {
+    "sanches": {
+      "autor": "Rogério Sanches Cunha",
+      "obra": "Manual de Direito Penal — Parte Geral",
+      "ano": 2016,
+      "editora": "JusPodivm",
+      "tipoLocalizador": "paginaPdf"
+    },
+    "masson": {
+      "autor": "Cleber Masson",
+      "obra": "Direito Penal — Parte Geral (arts. 1º a 120), vol. 1",
+      "edicao": "13ª",
+      "ano": 2019,
+      "editora": "Método",
+      "tipoLocalizador": "paginaImpressa"
+    },
+    "greco": {
+      "autor": "Rogério Greco",
+      "obra": "Curso de Direito Penal — Parte Geral, vol. I",
+      "ano": 2017,
+      "editora": "Impetus",
+      "tipoLocalizador": "secao"
+    }
+  },
+  "avisoDeVigencia": "As edições em mãos são de 2016, 2017 e 2019. Confira a vigência antes de usar em prova ou peça.",
+  "temas": [
+    {
+      "id": "erro-acidental-subespecies",
+      "moduloId": "erro-de-tipo",
+      "titulo": "Quantas são as subespécies de erro de tipo acidental",
+      "posicoes": [
+        {
+          "autor": "sanches",
+          "localizador": "PDF p. 211",
+          "posicao": "Cinco subespécies: erro sobre o objeto, erro sobre a pessoa, erro na execução, resultado diverso do pretendido e erro sobre o nexo causal.",
+          "trecho": "o erro de tipo acidental possui cinco subespécies: erro sobre o objeto, erro sobre a pessoa, erro na execução, resultado diverso do pretendido e erro sobre o nexo causal"
+        },
+        {
+          "autor": "masson",
+          "localizador": "p. 267",
+          "posicao": "SEIS hipóteses: acrescenta o erro quanto às qualificadoras à lista dos demais.",
+          "trecho": "Pode ocorrer nas seguintes situações: (1) erro sobre a pessoa; (2) erro sobre o objeto; (3) erro quanto às qualificadoras; (4) erro sobre o nexo causal; (5) erro na execução; e (6) resultado diverso do pretendido."
+        },
+        {
+          "autor": "greco",
+          "localizador": "§ 5. Erro de tipo essencial e erro acidental",
+          "posicao": "Segue a lista de quatro/cinco hipóteses clássicas, com os nomes latinos e os artigos: objeto, pessoa (art. 20, §3º), execução (art. 73) e resultado diverso.",
+          "trecho": "Poderá o erro acidental ocorrer nas seguintes hipóteses: a) erro sobre o objeto (error in objecto); b) erro sobre a pessoa (error in persona) – art. 20, § 3º, do Código Penal; c) erro na execução (aberratio ictus) – art. 73 do Código Penal; d) resultado diverso do pretendido"
+        }
+      ],
+      "divergencia": "É divergência de catálogo, não de solução: Masson autonomiza o erro sobre as qualificadoras como sexta hipótese; Sanches e Greco não o listam à parte. A lousa da aula (28/08) desenhou CINCO ramos, acompanhando Sanches.",
+      "fonteDaAula": "lousa 28/08 193128 e 150125"
+    },
+    {
+      "id": "aberratio-causae-sem-previsao",
+      "moduloId": "erro-de-tipo",
+      "titulo": "Aberratio causae: o ramo que a lei não previu",
+      "posicoes": [
+        {
+          "autor": "sanches",
+          "localizador": "PDF p. 217",
+          "posicao": "Não tem previsão legal; é construção exclusivamente doutrinária.",
+          "trecho": "O erro sobre o nexo causal não possui previsão legal, sendo estudado apenas pela doutrina."
+        },
+        {
+          "autor": "greco",
+          "localizador": "§ 1.47. Crimes aberrantes",
+          "posicao": "Das três aberrações, só ictus e criminis estão no Código; a causae é definida pela doutrina.",
+          "trecho": "aberratio ictus, aberratio criminis e, ainda, aberratio causae. As duas primeiras encontram previsão no Código Penal, sendo a última delas definida pela doutrina."
+        },
+        {
+          "autor": "masson",
+          "localizador": "p. 269",
+          "posicao": "Distingue a aberratio causae do dolo geral (erro sucessivo) pelo número de atos: na primeira há ato único; no dolo geral há sucessão de atos.",
+          "trecho": "Qual é a diferença entre o erro sobre o nexo causal (“aberratio causae”) e o dolo geral (ou por erro sucessivo)? A resposta é simples. Naquele há um único ato […]; neste, por sua vez […]"
+        }
+      ],
+      "convergencia": "Os três tratam a aberratio causae como figura doutrinária, sem base legal expressa.",
+      "notaDeAula": "Este ramo aparece SÓ nas lousas da aula — os slides do Gamma nomeiam 'Nexo Causal' sem batizá-lo de aberratio causae. A doutrina confirma a existência da figura e explica por que ela não tem artigo: não foi positivada.",
+      "fonteDaAula": "lousa 28/08 193128"
+    },
+    {
+      "id": "ictus-x-criminis",
+      "moduloId": "erro-de-tipo",
+      "titulo": "Aberratio ictus (art. 73) x aberratio criminis (art. 74)",
+      "artigos": [
+        73,
+        74
+      ],
+      "posicoes": [
+        {
+          "autor": "sanches",
+          "localizador": "PDF p. 216",
+          "posicao": "Ambas são espécies de erro na execução; o critério de separação é o bem jurídico atingido — pessoa x pessoa no art. 73, coisa x pessoa no art. 74.",
+          "trecho": "tanto a aberratio ictus quanto a aberratio criminis são espécies de erro na execução, todavia, enquanto o primeiro erro faz com que o agente ataque pessoa diversa da pretendida (pessoa x pessoa), no segundo, o agente provoca lesão em bem jurídico diverso do pretendido (coisa x pessoa)"
+        },
+        {
+          "autor": "sanches",
+          "localizador": "PDF p. 215",
+          "posicao": "No aberratio ictus de resultado único, o agente responde considerando as condições e qualidades da vítima pretendida (vítima virtual), não da efetivamente atingida.",
+          "trecho": "Se o agente atingir apenas a pessoa diversa da pretendida (aberratio ictus de resultado único), será punido pelo crime, considerando-se, contudo, as condições e qualidades da vítima desejada […] e não da vítima efetivamente atingida"
+        },
+        {
+          "autor": "masson",
+          "localizador": "p. 269",
+          "posicao": "No erro na execução aplica-se o art. 20, §3º: valem as condições da vítima virtual, desprezadas as da vítima efetivamente atingida.",
+          "trecho": "ao disposto pelo art. 20, § 3.º, do Código Penal, isto é, observam-se as regras inerentes ao erro sobre a pessoa. Assim, levam-se em conta as condições da vítima que o agente desejava atingir (vítima virtual), desprezando-se as condições pessoais da vítima efetiva"
+        },
+        {
+          "autor": "greco",
+          "localizador": "§ 2. Erro na execução (aberratio ictus)",
+          "posicao": "O que falha não é o elemento psicológico da ação, como no error in persona, e sim a fase executória: o agente tem percepção correta da realidade.",
+          "trecho": "Não é o elemento psicológico da ação que é viciado – como ocorre no error in persona –, mas é a fase executória que não corresponde exatamente ao representado pelo agente, que tem clara percepção da realidade."
+        }
+      ],
+      "convergencia": "Os três convergem no essencial e batem com a matriz do slide de 28/08: no erro sobre a pessoa falha a REPRESENTAÇÃO; no aberratio ictus falha a EXECUÇÃO; em ambos responde-se pela vítima pretendida. A separação entre 73 e 74 é o bem jurídico atingido.",
+      "fonteDaAula": "slide 28/08 202919 e lousa 28/08 201442"
+    },
+    {
+      "id": "art74-ressalva",
+      "moduloId": "erro-de-tipo",
+      "titulo": "A ressalva do art. 74 quando o resultado pretendido é mais grave",
+      "artigos": [
+        74
+      ],
+      "posicoes": [
+        {
+          "autor": "sanches",
+          "localizador": "PDF p. 217",
+          "posicao": "Sustenta que a regra do art. 74 deve ser afastada quando o resultado pretendido for mais grave que o produzido, para evitar impunidade — e credita a formulação a Flávio Monteiro de Barros, que defende interpretação restritiva do dispositivo.",
+          "trecho": "Alertamos, porém, que a regra do artigo 74 do Código Penal deverá ser afastada quando o resultado pretendido seja mais grave que o produzido, evitando-se a impunidade. FLÁVIO MONTEIRO DE BARROS, com maestria, exemplifica e explica a questão: “O art. 74, 1ª parte, do CP, deve ser interpretado restritivamente, sob pena de gerar soluções absurdas.”"
+        }
+      ],
+      "alertaDeAtribuicao": {
+        "oQueOSlideDizia": "O slide de 28/08 (201146) rotula essa mesma ressalva como “Alerta Zaffaroni”.",
+        "oQueVerifiquei": "Zaffaroni aparece 106 vezes nos três manuais indexados, e em NENHUMA delas ligado ao art. 74, ao resultado diverso do pretendido ou à aberratio criminis. Quem sustenta a tese, nas obras em mãos, é Sanches, creditando Flávio Monteiro de Barros.",
+        "comoOAcervoTrata": "A tese entra porque é real e está localizada. A atribuição a Zaffaroni NÃO entra: fica registrada como atribuição do slide da aula que não consegui confirmar. Se você tiver a obra do Zaffaroni onde ela apareça, eu corrijo."
+      },
+      "fonteDaAula": "slide 28/08 201146 e caderno 150134"
+    },
+    {
+      "id": "evitabilidade",
+      "moduloId": "erro-de-tipo",
+      "titulo": "Erro evitável e inevitável: como se mede",
+      "artigos": [
+        20
+      ],
+      "posicoes": [
+        {
+          "autor": "masson",
+          "localizador": "p. 263",
+          "posicao": "O erro inescusável (evitável, vencível) é o que provém de culpa do agente: se ele empregasse a cautela e a prudência do HOMEM MÉDIO teria podido evitá-lo.",
+          "trecho": "Inescusável, evitável, vencível ou indesculpável: é a espécie de erro que provém da culpa do agente, é dizer, se ele empregasse a cautela e a prudência do homem médio poderia evitá-lo"
+        },
+        {
+          "autor": "greco",
+          "localizador": "§ 12. Ausência de dolo em virtude de erro de tipo",
+          "posicao": "Mesmo quando o erro é inescusável, não há dolo: no exemplo do caçador que atira no companheiro supondo-o animal, a vontade não se dirigia a matar alguém. O erro evitável remove o dolo e deixa a culpa.",
+          "trecho": "o caçador que atira em seu companheiro supondo-o um animal, não podemos, mesmo sendo inescusável o erro, vislumbrar o dolo em sua conduta. Isso porque […] a vontade do agente não era dirigida a matar alguém, e sim a um animal que ele supunha ser"
+        }
+      ],
+      "convergencia": "Masson dá o critério (padrão do homem médio) e Greco dá a consequência (mesmo evitável, o erro afasta o dolo e sobra a culpa). Juntos, formam exatamente o fluxo do slide de 28/08.",
+      "notaDeAula": "O caderno registra DUAS correntes para medir a evitabilidade: Corrente 1, homem médio (padrão abstrato); Corrente 2, caso concreto (idade, grau de instrução e contexto do agente). Masson, no trecho localizado, adota o padrão do homem médio. Não localizei nos três manuais uma formulação da Corrente 2 nesses termos — ela fica creditada à aula, não à doutrina.",
+      "fonteDaAula": "caderno 150055 e slide de fluxo da evitabilidade",
+      "curiosidade": "O exemplo do caçador que atira no companheiro pensando ser um animal, que Greco usa, é o MESMO exemplo (Paulo e Antônio) anotado no caderno em 150051."
+    },
+    {
+      "id": "erro-determinado-por-terceiro",
+      "moduloId": "erro-de-tipo",
+      "titulo": "Erro determinado por terceiro (art. 20, §2º)",
+      "artigos": [
+        20
+      ],
+      "posicoes": [
+        {
+          "autor": "sanches",
+          "localizador": "PDF p. 220",
+          "posicao": "Distingue o erro de tipo comum, em que o agente erra por conta própria, do erro determinado por terceiro, que é erro INDUZIDO, com dois personagens: o agente provocador e o agente provocado.",
+          "trecho": "No erro de tipo o agente erra por conta própria, por si só. Já no erro determinado por terceiro, previsto no artigo 20, §2º do Código Penal, temos um erro induzido, figurando dois personagens: o agente provocador e o agente provocado."
+        },
+        {
+          "autor": "masson",
+          "localizador": "p. 266",
+          "posicao": "Transcreve o dispositivo e trata a figura como aquela em que quem pratica a conduta atua sob erro provocado por outrem.",
+          "trecho": "ERRO DETERMINADO POR TERCEIRO. Estabelece o art. 20, § 2.º, do Código Penal: “Responde pelo crime o terceiro que determina o erro”."
+        },
+        {
+          "autor": "greco",
+          "localizador": "§ 4.6. Autoria direta e indireta",
+          "posicao": "Enquadra o art. 20, §2º como uma das quatro hipóteses de AUTORIA MEDIATA previstas expressamente no Código, ao lado da coação moral irresistível e da obediência hierárquica.",
+          "trecho": "Nosso Código Penal prevê expressamente quatro casos de autoria mediata, a saber: a) erro determinado por terceiro (art. 20, § 2º, do CP); b) coação moral irresistível (art. 22, primeira parte, do CP); c) obediência hierárquica (art. 22, segunda parte, do CP)"
+        }
+      ],
+      "convergencia": "Os três convergem, e Greco usa o MESMO exemplo do slide da aula — o médico que induz a enfermeira ao erro: “quem matou alguém, por erro determinado por terceiro, foi a enfermeira; como o médico não praticou a conduta narrada pelo verbo do tipo, pela teoria objetiva não poderia ele ser considerado autor”. É o que sustenta o rótulo 'autor mediato' que o slide dá ao provocador.",
+      "fonteDaAula": "slide 04/09 185546, lousa 04/09 185559 e caderno 150139"
+    },
+    {
+      "id": "tempo-do-crime",
+      "moduloId": "lei-penal-no-tempo",
+      "artigos": [
+        4
+      ],
+      "titulo": "Tempo do crime: qual teoria o Código adotou",
+      "posicoes": [
+        {
+          "autor": "masson",
+          "localizador": "p. 129",
+          "posicao": "Abre o tema pela necessidade prática: identificar o momento em que se considera praticado o crime é o que permite saber qual lei se aplica. Três teorias disputam a questão.",
+          "trecho": "TEMPO DO CRIME. É necessária a identificação do momento em que se considera praticado o crime, para que se opere a aplicação da lei penal ao seu responsável."
+        },
+        {
+          "autor": "masson",
+          "localizador": "p. 375",
+          "posicao": "Afirma expressamente que o art. 4º adotou a TEORIA DA ATIVIDADE quanto ao tempo do crime, e trata disso como premissa lógica ao discutir imputabilidade — a idade se afere no momento da conduta.",
+          "trecho": "desdobramento lógico da teoria da atividade, adotada pelo art. 4.º do Código Penal no tocante ao tempo do crime"
+        },
+        {
+          "autor": "greco",
+          "localizador": "§ 2. Tempo do crime",
+          "posicao": "Enumera as teorias em disputa e insiste na necessidade de apontar com precisão o tempo do crime, de que todo o raciocínio seguinte depende.",
+          "trecho": "É preciso, pois, apontar com precisão o chamado tempo do crime, com base no qual nosso raciocínio se desdobrará. Várias teorias disputam o tratamento do tema"
+        },
+        {
+          "autor": "sanches",
+          "localizador": "PDF p. 103",
+          "posicao": "Trata o tempo do crime como abertura do capítulo de eficácia da lei penal no tempo, que segue para sucessão de leis, abolitio criminis e novatio legis.",
+          "trecho": "EFICÁCIA DA LEI PENAL NO TEMPO. Sumário: 1. Introdução; 2. Tempo do crime; 3. Sucessão de leis no tempo; 3.2. Novatio legis in pejus; 3.3. Abolitio criminis; 3.4. Novatio legis in mellius"
+        }
+      ],
+      "convergencia": "Os três convergem: o art. 4º adotou a teoria da atividade. Masson é o que afirma isso com todas as letras.",
+      "notaDeAula": "O slide de 04/09 apresenta as três teorias lado a lado SEM dizer qual vale no Brasil. Quem fecha isso na aula é o caderno (150150): 'Teoria da atividade — o crime é praticado no dia da ação ou omissão do fato (ART 4 C.P)'. A doutrina confirma.",
+      "fonteDaAula": "slide 04/09 203545 e caderno 150150"
+    },
+    {
+      "id": "tempo-x-lugar",
+      "moduloId": "lei-penal-no-tempo",
+      "artigos": [
+        4,
+        6
+      ],
+      "titulo": "A pegadinha: tempo do crime x lugar do crime",
+      "posicoes": [
+        {
+          "autor": "greco",
+          "localizador": "§ 1. Lugar do crime",
+          "posicao": "As MESMAS três teorias (atividade, resultado, ubiquidade) disputam também o LUGAR do crime — e aí a resposta do Código é outra.",
+          "trecho": "Três teorias têm como escopo a determinação do lugar do crime, a saber: a) teoria da atividade; b) teoria do resultado; c) teoria mista ou da ubiquidade. Pela teoria da atividade, lugar do crime seria o da ação ou da omissão, ainda que outro fosse o"
+        }
+      ],
+      "divergencia": "Não é divergência entre autores: é armadilha do próprio Código. As três teorias aparecem duas vezes, para perguntas diferentes. No TEMPO (art. 4º) vale a atividade; no LUGAR (art. 6º) vale a ubiquidade. Trocar uma pela outra é erro clássico de prova.",
+      "notaDeAula": "A aula deu só o tempo. O lugar do crime não foi ministrado em nenhuma das quatro aulas — este ponto vem inteiramente do manual."
+    },
+    {
+      "id": "desistencia-x-tentativa",
+      "moduloId": "iter-criminis",
+      "artigos": [
+        14,
+        15
+      ],
+      "titulo": "Tentativa, desistência voluntária e arrependimento eficaz",
+      "posicoes": [
+        {
+          "autor": "greco",
+          "localizador": "§ 1. Dispositivo legal",
+          "posicao": "Transcreve o art. 15: quem desiste voluntariamente de prosseguir, ou impede que o resultado se produza, só responde pelos atos já praticados.",
+          "trecho": "A desistência voluntária e o arrependimento eficaz encontram-se previstos no art. 15 do Código Penal, assim redigido: Art. 15. O agente que, voluntariamente, desiste de prosseguir na execução ou impede que o resultado se produza, só responde pelos atos já praticados."
+        },
+        {
+          "autor": "greco",
+          "localizador": "§ 5. Diferença entre desistência voluntária e arrependimento eficaz",
+          "posicao": "O critério é o quanto da execução já correu: na desistência o agente interrompe no meio; no arrependimento eficaz ele já esgotou os atos que julgava suficientes e passa a agir para impedir o resultado.",
+          "trecho": "praticando atos de execução, fala-se em desistência se, voluntariamente, a interrompe; já no arrependimento eficaz, o agente esgota tudo aquilo que estava à sua disposição para alcançar o resultado, isto é, pratica todos os atos de execução que entende como suficientes"
+        },
+        {
+          "autor": "sanches",
+          "localizador": "PDF p. 359",
+          "posicao": "Dá a fórmula que separa tentativa de desistência: na TENTATIVA o agente quer prosseguir mas não pode (pena diminuída de 1/3 a 2/3); no arrependimento eficaz ele PODE prosseguir e não quer.",
+          "trecho": "O agente quer prosseguir, mas não pode. Diminuição de pena de 1/3 a 2/3 (regra). 5.2. Arrependimento eficaz — Não consumação por circunstâncias inerentes à vontade do agente. Resultado possível. O agente pode prosseguir, mas não"
+        },
+        {
+          "autor": "masson",
+          "localizador": "p. 292",
+          "posicao": "Os requisitos comuns são dois — voluntariedade e eficácia. Voluntário não é sinônimo de espontâneo: a iniciativa pode até vir de terceiro, desde que não haja coação física ou moral.",
+          "trecho": "São comuns os requisitos da desistência voluntária e do arrependimento eficaz: voluntariedade e eficácia. Devem ser voluntários, isto é, livres de coação física ou moral, pouco importando sejam espontâneos ou não."
+        }
+      ],
+      "convergencia": "A chave dos três é a mesma e cabe numa frase: quer prosseguir e não pode = tentativa; pode prosseguir e não quer = desistência ou arrependimento.",
+      "notaDeAula": "A lousa de 28/08 deu as cinco etapas do iter criminis e parou aí. Tentativa, desistência e arrependimento não foram ministrados — saem inteiramente dos manuais."
+    },
+    {
+      "id": "dolo-eventual-x-culpa-consciente",
+      "moduloId": "dolo-e-culpa",
+      "artigos": [
+        18
+      ],
+      "titulo": "Dolo eventual x culpa consciente: a fronteira",
+      "posicoes": [
+        {
+          "autor": "greco",
+          "localizador": "§ 6. Diferença entre culpa consciente e dolo eventual",
+          "posicao": "Nos dois o agente PREVÊ o resultado. O que separa é a atitude diante da previsão: na culpa consciente ele acredita sinceramente que não ocorrerá; no dolo eventual assume o risco.",
+          "trecho": "Na culpa consciente, o agente, embora prevendo o resultado, acredita sinceramente na sua não ocorrência; o resultado previsto não é querido ou mesmo assumido pelo agente. Já no dolo eventual, embora o agente não queira diretamente o resultado, assume o risco"
+        },
+        {
+          "autor": "masson",
+          "localizador": "p. 236",
+          "posicao": "Define o dolo eventual como a modalidade em que o agente não quer o resultado, que previu, mas assume o risco de produzi-lo.",
+          "trecho": "Dolo eventual é a modalidade em que o agente não quer o resultado, por ele previsto, mas assume o risco de produzi-lo."
+        },
+        {
+          "autor": "sanches",
+          "localizador": "PDF p. 205",
+          "posicao": "Trabalha a fronteira por casos concretos, inclusive a confiança do agente na própria perícia — quem confia na técnica apurada para evitar o resultado responde por culpa consciente, não por dolo eventual — e enfrenta o caso do racha.",
+          "trecho": "a ocorrência desse resultado por conta de sua técnica apurada, gerando o evento indesejado, responde por culpa consciente e não dolo eventual. E o racha (competição de veículos automotores em via pública sem autorização legal)? Dolo eventual ou culpa consciente?"
+        }
+      ],
+      "convergencia": "Os três dão o mesmo critério: a previsão existe nos dois; o divisor é aceitar ou repelir sinceramente o resultado previsto.",
+      "notaDeAula": "Nenhuma das quatro aulas tratou dolo e culpa como tema próprio. Este módulo é inteiramente doutrinário."
+    },
+    {
+      "id": "erro-de-proibicao",
+      "moduloId": "culpabilidade",
+      "artigos": [
+        21
+      ],
+      "titulo": "Erro de proibição (art. 21) — o par que a aula não deu",
+      "posicoes": [
+        {
+          "autor": "sanches",
+          "localizador": "PDF p. 298 e 300",
+          "posicao": "O erro de proibição é a excludente da potencial consciência da ilicitude, positivada no art. 21: o desconhecimento da lei é inescusável, mas o erro sobre a ilicitude do fato, se inevitável, isenta de pena; se evitável, pode diminuí-la.",
+          "trecho": "a causa excludente (dirimente) da potencial consciência da ilicitude é o erro de proibição, positivado no artigo 21 do Código Penal: “O desconhecimento da lei é inescusável. O erro sobre a ilicitude do fato, se inevitável, isenta de pena; se evitável,"
+        },
+        {
+          "autor": "masson",
+          "localizador": "p. 403",
+          "posicao": "No erro de proibição inescusável (evitável) SUBSISTE a culpabilidade — a consequência é a redução da pena, não a exclusão. É o que o separa do erro de tipo evitável, que remove o dolo e deixa a culpa.",
+          "trecho": "Erro de proibição inescusável, evitável ou vencível: poderia ser evitado com o normal esforço de consciência por parte do agente. Se empregasse as diligências normais, seria possível a compreensão acerca do caráter ilícito do fato. Subsiste a culpabilidade"
+        },
+        {
+          "autor": "masson",
+          "localizador": "p. 404",
+          "posicao": "Classifica o erro de proibição em três espécies: direto, indireto e mandamental.",
+          "trecho": "Espécies de erro de proibição: direto, indireto e mandamental. No erro de proibição direto, o agente desconhece o conteúdo de u"
+        }
+      ],
+      "divergencia": "Não há divergência entre os autores; há uma diferença de REGIME que a prova cobra: erro de tipo evitável exclui o dolo e pune a culpa (art. 20); erro de proibição evitável mantém a culpabilidade e só reduz a pena (art. 21).",
+      "notaDeAula": "Vale registrar a ausência: o erro de PROIBIÇÃO é o par natural do erro de tipo e não foi dado em nenhuma das quatro aulas — mesmo com o erro de tipo ocupando 27 das 44 imagens do acervo."
+    },
+    {
+      "id": "insignificancia",
+      "moduloId": "principios",
+      "titulo": "Princípio da insignificância",
+      "posicoes": [
+        {
+          "autor": "sanches",
+          "localizador": "PDF p. 72",
+          "posicao": "Situa a insignificância na tipicidade MATERIAL, dentro da tipicidade conglobante: o fato se ajusta formalmente ao tipo, mas lhe falta relevância material.",
+          "trecho": "O princípio da insignificância tem lugar justamente neste primeiro aspecto da tipicidade conglobante, a tipicidade material."
+        },
+        {
+          "autor": "masson",
+          "localizador": "p. 23",
+          "posicao": "Fundamenta-o em política criminal, como instrumento de interpretação restritiva do tipo penal.",
+          "trecho": "O princípio da insignificância, fundamentado em valores de política criminal (aplicação do Direito Penal em sintonia com os anseios da sociedade), destina-se a realizar uma int"
+        },
+        {
+          "autor": "masson",
+          "localizador": "p. 29",
+          "posicao": "Percorre as situações em que se discute a incidência ou a vedação da criminalidade de bagatela, começando pelo roubo — em que a violência ou grave ameaça no tipo impede o reconhecimento.",
+          "trecho": "circunstância indicativa da relevância penal destes fatos, e automaticamente impeditiva do princípio da insignificância. Vejamos as principais situações em que se discute a incidência ou a proibição do reconhecimento da criminalidade de bagatela. a) Roubo"
+        }
+      ],
+      "convergencia": "Os dois colocam a insignificância como filtro de tipicidade material, não de ilicitude nem de culpabilidade — o fato deixa de ser típico.",
+      "notaDeAula": "O módulo 1 não tem material de aula. A insignificância só aparece de passagem numa dica lateral do slide sobre erro quanto ao objeto (150111)."
+    },
+    {
+      "id": "legalidade",
+      "moduloId": "principios",
+      "artigos": [
+        1
+      ],
+      "titulo": "Legalidade formal e legalidade material",
+      "posicoes": [
+        {
+          "autor": "sanches",
+          "localizador": "PDF p. 88",
+          "posicao": "A lei penal deve ser, entre outros atributos, certa (veda-se o tipo indeterminado) e necessária (intervenção mínima). E a legalidade se desdobra em formal — obediência ao trâmite procedimental — e material.",
+          "trecho": "certa (veda-se o tipo penal indeterminado); 6) necessária (intervenção mínima). A legalidade deve ser compreendida sob dois aspectos: o da legalidade formal e da legalidade material. A legalidade formal representa a obediência aos trâmites procedimen"
+        },
+        {
+          "autor": "greco",
+          "localizador": "§ 4. Legalidade formal e legalidade material",
+          "posicao": "Dedica seção própria à mesma distinção entre legalidade formal e material.",
+          "trecho": "LEGALIDADE FORMAL E LEGALIDADE MATERIAL"
+        }
+      ],
+      "convergencia": "Sanches e Greco tratam a legalidade em dois planos: cumprir o rito de produção da lei não basta se o conteúdo não respeita os limites materiais.",
+      "notaDeAula": "A legalidade aparece na aula apenas como fundamento da irretroatividade, no slide 04/09 200223 ('como decorrência do princípio da legalidade')."
+    },
+    {
+      "id": "legitima-defesa",
+      "moduloId": "ilicitude",
+      "artigos": [
+        23,
+        25
+      ],
+      "titulo": "Legítima defesa: limites, excesso e encontro com o erro na execução",
+      "posicoes": [
+        {
+          "autor": "sanches",
+          "localizador": "PDF p. 269",
+          "posicao": "Se, ao repelir a injusta agressão, o agente atinge por erro um inocente, há aberratio ictus — e, pela regra do art. 73, a reação é considerada como se praticada contra o real agressor, o que NÃO descaracteriza a legítima defesa.",
+          "trecho": "O agente, ao repelir a injusta agressão a direito seu ou de outrem, pode, por erro, atingir bem jurídico de um inocente. Nesse caso, parece evidente a situação de aberratio ictus e, consoante a regra do artigo 73 do Código Penal, a infeliz reação deve ser considerada como se praticada contra o real agressor, não descaracterizando a legítima defesa."
+        },
+        {
+          "autor": "masson",
+          "localizador": "p. 346",
+          "posicao": "Configurado o excesso, quem era agressor passa à condição de agredido e pode, a partir daí, agir em legítima defesa real contra o excesso.",
+          "trecho": "configura o excesso, a outra pessoa – que de agressor passou a ser agredido –, pode agir em legítima defesa real, uma vez que foi praticada contra ele uma agressão injusta"
+        },
+        {
+          "autor": "masson",
+          "localizador": "p. 345",
+          "posicao": "Trata expressamente da possibilidade de coexistirem, no mesmo episódio, legítima defesa e estado de necessidade — inclusive no clássico caso da tábua de salvação.",
+          "trecho": "EXISTÊNCIA SIMULTÂNEA DE LEGÍTIMA DEFESA E DE ESTADO DE NECESSIDADE. É possível que"
+        },
+        {
+          "autor": "greco",
+          "localizador": "§ 8.20. Legítima defesa e aberratio ictus",
+          "posicao": "Dedica seção própria ao encontro entre legítima defesa e erro na execução, ao lado das seções sobre excesso e sobre a comparação com o estado de necessidade.",
+          "trecho": "Excesso na legítima defesa. Excesso intensivo e extensivo. Excesso na causa. Excesso exculpante. Legítima defesa sucessiva. Legítima defesa e aberratio ictus"
+        }
+      ],
+      "convergencia": "Sanches e Greco convergem no ponto mais fino: atingir terceiro inocente por erro de pontaria durante a defesa não faz perder a justificante — aplica-se o art. 73 e a reação é lida como dirigida ao agressor real.",
+      "notaDeAula": "O módulo 7 não tem material de aula: a ilicitude aparece apenas como um dos três ramos da lousa de 14/08, sem desenvolvimento. Este tema é inteiramente doutrinário — mas note que ele reencontra o art. 73, que a aula trabalhou à exaustão."
+    },
+    {
+      "id": "estado-de-necessidade",
+      "moduloId": "ilicitude",
+      "artigos": [
+        23,
+        24
+      ],
+      "titulo": "Estado de necessidade e sua compatibilidade com o erro na execução",
+      "posicoes": [
+        {
+          "autor": "masson",
+          "localizador": "p. 333",
+          "posicao": "O estado de necessidade é compatível com a aberratio ictus do art. 73: quem, para afastar perigo, erra no uso dos meios de execução e atinge pessoa ou objeto diverso segue amparado pela justificante.",
+          "trecho": "O estado de necessidade é compatível com a aberratio ictus (CP, art. 73), na qual o agente, por acidente ou erro no uso dos meios de execução, atinge pessoa ou objeto diverso do desejado, com o propósito de afastar a situação de perigo a bem jurídico próprio ou de terceiro. Exemplificativamente, configura-se o estado de necessidade no caso em que alguém, no momento em que vai ser atacado por um cão bravio, efetua disparos de arma de fogo contra o animal, e, por erro na execução"
+        },
+        {
+          "autor": "masson",
+          "localizador": "p. 345",
+          "posicao": "Registra a hipótese de coexistência entre as duas justificantes num mesmo episódio, com o exemplo da disputa pela água que só sacia um dos náufragos.",
+          "trecho": "carregam somente saciará a sede de um deles. “A”, em estado de necessidade, furta a água de “B”, o qual, para salvar-se, mata em estado de necessidade seu companheiro."
+        },
+        {
+          "autor": "greco",
+          "localizador": "§ 8.14. Legítima defesa versus estado de necessidade",
+          "posicao": "Dedica seção à comparação entre as duas justificantes.",
+          "trecho": "Legítima defesa versus estado de necessidade"
+        }
+      ],
+      "convergencia": "As duas justificantes convivem com o erro na execução: errar a pontaria não retira a justificante, desde que presentes os requisitos dela.",
+      "notaDeAula": "Sem material de aula. O ponto de contato com o módulo 5 — o art. 73 aplicado dentro das excludentes — é o que torna este tema aproveitável para quem estudou erro de tipo."
+    }
+  ],
+  "temasAindaNaoColhidos": [
+    "Imputabilidade e suas causas de exclusão em detalhe (arts. 26 a 28): material indexado nos três autores, ainda não curado em posições com localizador."
+  ]
+}

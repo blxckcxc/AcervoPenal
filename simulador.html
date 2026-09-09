@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Simulador de Casos Práticos — Acervo Penal</title>
+  <meta name="description" content="Treino de subsunção do fato à norma penal, com múltipla escolha e resposta discursiva corrigida por espelho.">
+  <meta name="theme-color" content="#09090B">
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Acervo Penal">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/simulador.css">
+</head>
+<body class="tem-bottomnav">
+
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
+<aside class="sidebar" id="sidebar" aria-label="Navegação do acervo">
+  <p class="nav-grupo">Estudo</p>
+  <nav id="navModulos"></nav>
+
+  <p class="nav-grupo">Prática</p>
+  <nav>
+    <a class="nav-item" href="quiz.html">
+      <span class="nav-item-num" aria-hidden="true">Q</span>
+      <span class="nav-item-txt">Quiz geral</span>
+    </a>
+    <a class="nav-item" href="prova.html">
+      <span class="nav-item-num" aria-hidden="true">P</span>
+      <span class="nav-item-txt">Modo prova</span>
+    </a>
+    <a class="nav-item ativo" href="simulador.html" aria-current="page">
+      <span class="nav-item-num" aria-hidden="true">S</span>
+      <span class="nav-item-txt">Simulador de casos</span>
+    </a>
+  </nav>
+
+  <p class="nav-grupo">Consulta</p>
+  <nav>
+    <a class="nav-item" href="vademecum.html">
+      <span class="nav-item-num" aria-hidden="true">§</span>
+      <span class="nav-item-txt">Vade Mecum</span>
+    </a>
+    <a class="nav-item" href="galeria.html">
+      <span class="nav-item-num" aria-hidden="true">▣</span>
+      <span class="nav-item-txt">Galeria das aulas</span>
+    </a>
+    <a class="nav-item" href="aula.html">
+      <span class="nav-item-num" aria-hidden="true">♪</span>
+      <span class="nav-item-txt">Áudio da aula</span>
+    </a>
+  </nav>
+</aside>
+
+<div class="app">
+  <header class="topbar">
+    <button class="icon-btn menu-toggle" id="btnMenu" aria-label="Abrir menu" aria-expanded="false" aria-controls="sidebar">☰</button>
+    <a class="topbar-marca" href="index.html">Acervo <span>Penal</span></a>
+    <span class="topbar-espaco"></span>
+    <button class="icon-btn" id="btnTema" aria-label="Alternar tema claro e escuro" aria-pressed="false">◐</button>
+  </header>
+
+  <main class="main" id="conteudo">
+    <div class="container-estreito">
+      <div class="pagina-cabecalho">
+        <h1 class="pagina-titulo">Simulador de Casos Práticos</h1>
+        <p class="pagina-sub">
+          Casos com narrativa fática para treinar a subsunção do fato à norma. Escolha
+          múltipla escolha, com justificativa de cada alternativa, ou resposta discursiva,
+          corrigida contra um espelho pontuado por quesitos.
+        </p>
+      </div>
+
+      <div id="simulador"></div>
+    </div>
+  </main>
+</div>
+
+<nav class="bottom-nav" aria-label="Navegação principal">
+  <a class="bn-item" href="index.html"><span class="bn-icone" aria-hidden="true">◧</span>Início</a>
+  <a class="bn-item" href="quiz.html"><span class="bn-icone" aria-hidden="true">✓</span>Quiz</a>
+  <a class="bn-item ativo" href="simulador.html" aria-current="page"><span class="bn-icone" aria-hidden="true">⚖</span>Casos</a>
+  <a class="bn-item" href="vademecum.html"><span class="bn-icone" aria-hidden="true">§</span>Código</a>
+</nav>
+
+<script src="data/bundle.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/progress.js"></script>
+<script src="js/modules.js"></script>
+<script src="js/corretor.js"></script>
+<script src="js/simulador.js"></script>
+<script src="js/app.js"></script>
+
+<script>
+  App.iniciarShell();
+  Simulador.iniciar(document.getElementById("simulador"));
+</script>
+
+<script>
+/* isSecureContext é verdadeiro sob HTTPS e também em localhost, mas
+   falso em file:// — que é onde o navegador recusaria o registro e a
+   tentativa sujaria o console, coisa que este projeto não admite. */
+if ("serviceWorker" in navigator && window.isSecureContext) {
+  addEventListener("load", () => {
+    navigator.serviceWorker.register("sw.js").catch(() => {});
+  });
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,257 @@
+/* ═══════════════════════════════════════════════════════════════
+   components.css — botões, cartões, selos, chips, tabelas
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── Botões ─────────────────────────────────────────────────── */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--esp-2);
+  padding: var(--esp-3) var(--esp-5);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio-md);
+  background: var(--bg-elevado);
+  color: var(--texto);
+  font-size: var(--texto-sm);
+  font-weight: 500;
+  transition: background var(--ease), border-color var(--ease), color var(--ease), transform var(--ease);
+}
+.btn:hover { background: var(--bg-hover); border-color: var(--ambar-escuro); }
+.btn:active { transform: translateY(1px); }
+.btn:disabled { opacity: 0.45; cursor: not-allowed; transform: none; }
+.btn:disabled:hover { background: var(--bg-elevado); border-color: var(--borda); }
+
+/* O vinho é a identidade e vive aqui: como PREENCHIMENTO, onde o
+   contraste que conta é o do rótulo sobre ele (9,02:1). Ver a nota
+   no cabeçalho de variables.css. */
+.btn-primario {
+  background: var(--btn-primario-bg);
+  border-color: var(--btn-primario-bg);
+  color: var(--btn-primario-fg);
+  font-weight: 600;
+}
+.btn-primario:hover {
+  background: var(--btn-primario-bg-hover);
+  border-color: var(--btn-primario-bg-hover);
+  color: var(--btn-primario-fg-hover);
+}
+.btn-primario:disabled:hover { background: var(--btn-primario-bg); }
+
+.btn-fantasma { background: transparent; border-color: transparent; }
+.btn-fantasma:hover { background: var(--bg-hover); border-color: var(--borda); }
+
+.btn-sm { padding: var(--esp-2) var(--esp-3); font-size: var(--texto-xs); }
+.btn-bloco { width: 100%; }
+
+.icon-btn {
+  width: 38px; height: 38px;
+  display: inline-grid;
+  place-items: center;
+  border: 1px solid transparent;
+  border-radius: var(--raio-md);
+  background: transparent;
+  color: var(--texto-secundario);
+  transition: background var(--ease), color var(--ease);
+}
+.icon-btn:hover { background: var(--bg-hover); color: var(--texto); }
+
+/* ── Chips (filtros com estado no próprio ARIA) ─────────────── */
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--esp-2);
+  padding: var(--esp-2) var(--esp-4);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio-full);
+  background: var(--bg-superficie);
+  color: var(--texto-secundario);
+  font-size: var(--texto-sm);
+  transition: all var(--ease);
+}
+.chip:hover { border-color: var(--ambar-escuro); color: var(--texto); }
+
+/* O CSS lê o próprio atributo de acessibilidade: um estado só, sem
+   risco de a classe e o ARIA discordarem. */
+.chip[aria-pressed="true"] {
+  background: var(--vinho-fundo);
+  border-color: var(--vinho);
+  color: var(--texto-titulo);
+  font-weight: 600;
+}
+.chip[aria-pressed="true"] .chip-marca { opacity: 1; }
+.chip-marca { opacity: 0; color: var(--ambar); transition: opacity var(--ease); }
+.chip-contagem { font-size: var(--texto-xs); color: var(--texto-suave); }
+.chip:disabled { opacity: 0.4; cursor: not-allowed; }
+
+/* ── Cartões ────────────────────────────────────────────────── */
+
+.card {
+  background: var(--bg-superficie);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio-lg);
+  padding: var(--esp-5);
+}
+.card + .card { margin-top: var(--esp-4); }
+.card-titulo {
+  font-family: var(--fonte-titulo);
+  font-size: var(--texto-lg);
+  color: var(--texto-titulo);
+  margin: 0 0 var(--esp-3);
+}
+
+/* ── Selo de origem ──────────────────────────────────────────
+   Existe porque quatro dos oito módulos não têm material de aula.
+   Quem estuda precisa saber quando lê a aula e quando lê o manual. */
+
+.selo-fonte {
+  display: inline-block;
+  padding: 0.15em 0.6em;
+  border-radius: var(--raio-full);
+  font-family: var(--fonte-ui);
+  font-size: var(--texto-xs);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+.selo-aula   { background: var(--vinho-fundo);  color: var(--vinho-texto);  border: 1px solid var(--vinho); }
+.selo-manual { background: var(--ambar-fundo);  color: var(--ambar);        border: 1px solid var(--ambar-escuro); }
+.selo-lei    { background: var(--sucesso-fundo); color: var(--sucesso);     border: 1px solid var(--sucesso); }
+.selo-misto  { background: var(--bg-elevado);   color: var(--texto-secundario); border: 1px solid var(--borda); }
+
+/* ── Blocos de destaque e alerta ────────────────────────────── */
+
+.destaque {
+  background: var(--ambar-fundo);
+  border-left: 3px solid var(--ambar);
+  border-radius: 0 var(--raio-md) var(--raio-md) 0;
+  padding: var(--esp-4) var(--esp-5);
+  margin-bottom: var(--esp-4);
+}
+.destaque-titulo { color: var(--ambar); font-weight: 600; margin-bottom: var(--esp-2); }
+
+/* O #DC2626 fica na BORDA (aprova como componente, 4,12:1) e o texto
+   usa --alerta-texto, que passa como texto. Ver variables.css. */
+.alerta-bloco {
+  background: var(--alerta-fundo);
+  border-left: 3px solid var(--alerta);
+  border-radius: 0 var(--raio-md) var(--raio-md) 0;
+  padding: var(--esp-4) var(--esp-5);
+  margin-bottom: var(--esp-4);
+}
+.alerta-titulo { color: var(--alerta-texto); font-weight: 600; margin-bottom: var(--esp-2); }
+
+/* ── Artigo do Código Penal ─────────────────────────────────── */
+
+.artigo-cp {
+  background: var(--bg-elevado);
+  border: 1px solid var(--borda);
+  border-left: 3px solid var(--ambar-escuro);
+  border-radius: 0 var(--raio-md) var(--raio-md) 0;
+  padding: var(--esp-4) var(--esp-5);
+  margin-bottom: var(--esp-4);
+}
+.artigo-cp-ref {
+  display: inline-block;
+  font-family: var(--fonte-ui);
+  font-size: var(--texto-sm);
+  font-weight: 600;
+  margin-bottom: var(--esp-2);
+}
+.artigo-cp p { font-family: var(--fonte-leitura); margin: 0; }
+
+/* ── Accordion ──────────────────────────────────────────────── */
+
+.acc-item { border-bottom: 1px solid var(--borda); }
+.acc-head {
+  display: flex;
+  align-items: center;
+  gap: var(--esp-3);
+  width: 100%;
+  padding: var(--esp-4) 0;
+  background: none;
+  border: 0;
+  text-align: left;
+  color: var(--texto-titulo);
+  font-family: var(--fonte-titulo);
+  font-size: var(--texto-lg);
+}
+.acc-tit { flex: 1; }
+.acc-seta {
+  color: var(--texto-secundario);
+  transition: transform var(--ease);
+  font-size: var(--texto-xl);
+}
+.acc-item.aberto .acc-seta { transform: rotate(90deg); }
+.acc-corpo { display: grid; grid-template-rows: 0fr; transition: grid-template-rows var(--ease-slow); }
+.acc-item.aberto .acc-corpo { grid-template-rows: 1fr; }
+.acc-corpo > div { overflow: hidden; }
+.acc-inner { padding-bottom: var(--esp-5); }
+
+/* ── Tabelas ────────────────────────────────────────────────── */
+
+.tabela-wrap { margin-bottom: var(--esp-6); }
+.tabela-titulo {
+  font-family: var(--fonte-titulo);
+  color: var(--texto-titulo);
+  margin-bottom: var(--esp-2);
+}
+/* Conteúdo largo rola dentro do próprio contêiner: a página nunca
+   ganha rolagem horizontal. */
+.tabela-scroll { overflow-x: auto; }
+.tabela-responsiva { width: 100%; border-collapse: collapse; font-size: var(--texto-sm); }
+.tabela-responsiva th, .tabela-responsiva td {
+  padding: var(--esp-3);
+  border: 1px solid var(--borda);
+  text-align: left;
+  vertical-align: top;
+}
+.tabela-responsiva th { background: var(--bg-elevado); color: var(--texto-titulo); font-weight: 600; }
+
+@media (max-width: 640px) {
+  .tabela-responsiva, .tabela-responsiva tbody, .tabela-responsiva tr, .tabela-responsiva td {
+    display: block; width: 100%;
+  }
+  .tabela-responsiva thead { display: none; }
+  .tabela-responsiva tr {
+    margin-bottom: var(--esp-4);
+    border: 1px solid var(--borda);
+    border-radius: var(--raio-md);
+    overflow: hidden;
+  }
+  .tabela-responsiva td { border: 0; border-bottom: 1px solid var(--borda); }
+  .tabela-responsiva td::before {
+    content: attr(data-col);
+    display: block;
+    font-size: var(--texto-xs);
+    font-weight: 600;
+    color: var(--ambar);
+    margin-bottom: var(--esp-1);
+  }
+}
+
+/* ── Barra de progresso ─────────────────────────────────────── */
+
+.barra {
+  height: 6px;
+  background: var(--bg-elevado);
+  border-radius: var(--raio-full);
+  overflow: hidden;
+}
+.barra-preenchida {
+  height: 100%;
+  background: linear-gradient(90deg, var(--vinho), var(--ambar));
+  border-radius: var(--raio-full);
+  transition: width var(--ease-slow);
+}
+
+/* ── Aviso vazio ────────────────────────────────────────────── */
+
+.vazio {
+  text-align: center;
+  padding: var(--esp-10) var(--esp-5);
+  color: var(--texto-secundario);
+}
+.vazio-icone { font-size: var(--texto-4xl); opacity: 0.5; display: block; margin-bottom: var(--esp-3); }

@@ -1,0 +1,34 @@
+# ── Obras de terceiros — NUNCA entram no repositório ──────────
+# Sanches, Masson e Greco são livros com direito autoral, e este
+# repositório é público. Eles ficam na pasta de origem, fora do
+# projeto; o que entra é a doutrina.json, com trecho curto e
+# localizador — citação, não redistribuição.
+doutrina/
+*.pdf
+*.epub
+*.mobi
+
+# ── Artefatos de trabalho das ferramentas ─────────────────────
+# _indice_doutrina.jsonl carrega o texto integral dos três livros.
+tools/_indice_doutrina.jsonl
+tools/_cp_bruto.html
+tools/_*.html
+tools/_*.jsonl
+
+# ── Áudio ─────────────────────────────────────────────────────
+# audio/aula-penal.m4a (38,8 MB, comprimido) DEVE entrar no
+# repositório — é o áudio da aula, e o acervo depende dele.
+#
+# Não escreva aqui um padrão como "Aula*Penal.m4a" para barrar o
+# original de 149 MB: no Windows o Git casa sem diferenciar
+# maiúsculas, e esse padrão engole audio/aula-penal.m4a. Foi o que
+# aconteceu na primeira versão deste arquivo, e `git check-ignore`
+# pegou. O original vive fora da pasta do projeto, então não há o
+# que ignorar.
+!audio/aula-penal.m4a
+
+# ── Sistema ───────────────────────────────────────────────────
+Thumbs.db
+desktop.ini
+.DS_Store
+node_modules/

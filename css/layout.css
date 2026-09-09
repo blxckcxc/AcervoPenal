@@ -1,0 +1,211 @@
+/* ═══════════════════════════════════════════════════════════════
+   layout.css — shell da aplicação: topbar, sidebar, grid, breakpoints
+
+   Mobile-first. Cinco larguras em todo o projeto, e só:
+     480  · estatísticas passam a 4 colunas
+     768  · grades a 2 colunas, respiro maior
+    1024  · sidebar vira coluna fixa e a bottom-nav some
+    1440  · grades a 3 colunas
+   máx 1023 · reserva espaço para a bottom-nav
+   ═══════════════════════════════════════════════════════════════ */
+
+.app { min-height: 100vh; display: flex; flex-direction: column; }
+
+/* ── Topbar ─────────────────────────────────────────────────── */
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  height: var(--header-h);
+  display: flex;
+  align-items: center;
+  gap: var(--esp-3);
+  padding: 0 var(--esp-4);
+  background: var(--vidro-bg);
+  backdrop-filter: var(--vidro-blur);
+  border-bottom: 1px solid var(--vidro-borda);
+}
+.topbar-marca {
+  font-family: var(--fonte-titulo);
+  font-size: var(--texto-lg);
+  font-weight: 600;
+  color: var(--texto-titulo);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+.topbar-marca span { color: var(--ambar); }
+.topbar-espaco { flex: 1; }
+
+/* ── Sidebar ────────────────────────────────────────────────── */
+
+.sidebar {
+  position: fixed;
+  inset: 0 auto 0 0;
+  width: var(--sidebar-w);
+  z-index: 90;
+  padding: var(--esp-5) var(--esp-4);
+  background: var(--bg-superficie);
+  border-right: 1px solid var(--borda);
+  overflow-y: auto;
+  transform: translateX(-100%);
+  transition: transform var(--ease-slow);
+}
+.sidebar.aberta { transform: translateX(0); }
+
+.sidebar-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--ease);
+}
+.sidebar-backdrop.visivel { opacity: 1; pointer-events: auto; }
+
+.nav-grupo {
+  font-size: var(--texto-xs);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--texto-suave);
+  margin: var(--esp-5) 0 var(--esp-2);
+}
+.nav-grupo:first-child { margin-top: 0; }
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: var(--esp-3);
+  padding: var(--esp-3);
+  border: 1px solid transparent;
+  border-radius: var(--raio-md);
+  color: var(--texto-secundario);
+  text-decoration: none;
+  font-size: var(--texto-sm);
+  transition: background var(--ease), color var(--ease), border-color var(--ease);
+}
+.nav-item:hover { background: var(--bg-hover); color: var(--texto); }
+
+/* O item ativo é marcado por classe E por aria-current. O projeto
+   irmão só tinha a classe: leitor de tela não sabia onde estava. */
+.nav-item.ativo,
+.nav-item[aria-current="page"] {
+  background: var(--vinho-fundo);
+  border-color: var(--vinho);
+  color: var(--texto-titulo);
+  font-weight: 600;
+}
+.nav-item-num {
+  font-family: var(--fonte-mono);
+  font-size: var(--texto-xs);
+  color: var(--texto-suave);
+  min-width: 1.6em;
+}
+.nav-item-txt { flex: 1; }
+.nav-item-pct { font-size: var(--texto-xs); color: var(--ambar); }
+.nav-item-pct.apagado { color: var(--texto-suave); }
+.nav-item[aria-disabled="true"] { opacity: 0.45; pointer-events: none; }
+
+/* ── Conteúdo ───────────────────────────────────────────────── */
+
+.main { flex: 1; padding: var(--esp-6) var(--esp-4) var(--esp-12); }
+.container { max-width: var(--conteudo-max); margin: 0 auto; }
+.container-estreito { max-width: 720px; margin: 0 auto; }
+
+.pagina-cabecalho { margin-bottom: var(--esp-8); }
+.pagina-titulo { font-size: var(--texto-3xl); margin-bottom: var(--esp-2); }
+.pagina-sub { color: var(--texto-secundario); max-width: 62ch; }
+
+.secao { margin-bottom: var(--esp-10); }
+.secao-titulo {
+  display: flex;
+  align-items: center;
+  gap: var(--esp-3);
+  font-size: var(--texto-xl);
+  margin-bottom: var(--esp-4);
+}
+
+/* ── Grades ─────────────────────────────────────────────────── */
+
+.grade { display: grid; gap: var(--esp-4); grid-template-columns: 1fr; }
+.grade-stats { display: grid; gap: var(--esp-3); grid-template-columns: repeat(2, 1fr); }
+
+.stat {
+  background: var(--bg-superficie);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio-md);
+  padding: var(--esp-4);
+  text-align: center;
+}
+.stat-valor {
+  font-family: var(--fonte-titulo);
+  font-size: var(--texto-2xl);
+  color: var(--ambar);
+  line-height: 1;
+}
+.stat-rotulo {
+  font-size: var(--texto-xs);
+  color: var(--texto-secundario);
+  margin-top: var(--esp-2);
+}
+
+/* ── Bottom-nav (celular) ───────────────────────────────────── */
+
+.bottom-nav {
+  position: fixed;
+  inset: auto 0 0 0;
+  z-index: 60;
+  height: var(--bottomnav-h);
+  display: flex;
+  background: var(--vidro-bg);
+  backdrop-filter: var(--vidro-blur);
+  border-top: 1px solid var(--vidro-borda);
+}
+.bn-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  color: var(--texto-suave);
+  text-decoration: none;
+  font-size: var(--texto-xs);
+}
+.bn-item.ativo, .bn-item[aria-current="page"] { color: var(--ambar); }
+.bn-icone { font-size: var(--texto-lg); line-height: 1; }
+
+body.tem-bottomnav .main { padding-bottom: calc(var(--bottomnav-h) + var(--esp-8)); }
+
+/* ── Breakpoints ────────────────────────────────────────────── */
+
+@media (min-width: 480px) {
+  .grade-stats { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media (min-width: 768px) {
+  .main { padding: var(--esp-8) var(--esp-6) var(--esp-16); }
+  .grade { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .sidebar { transform: none; }
+  .sidebar-backdrop { display: none; }
+  .menu-toggle { display: none; }
+  .app { padding-left: var(--sidebar-w); }
+  .bottom-nav { display: none; }
+  body.tem-bottomnav .main { padding-bottom: var(--esp-16); }
+}
+
+@media (min-width: 1440px) {
+  .grade { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media print {
+  .topbar, .sidebar, .bottom-nav, .sidebar-backdrop, .btn, .chip { display: none !important; }
+  .app { padding-left: 0; }
+  body { background: #fff; color: #000; }
+  .acc-corpo { grid-template-rows: 1fr !important; }
+}

@@ -1,0 +1,2290 @@
+{
+  "versao": 1,
+  "sobre": "Arts. 1º a 120 do Decreto-Lei 2.848/1940 (Código Penal), extraídos do texto compilado do Planalto. Texto de lei — conferível na origem, linha a linha. O campo `alteracoes` guarda as remissões de redação que a página traz, em vez de descartá-las: é o que diz de quando é a redação.",
+  "fonte": "https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm",
+  "codificacaoDaOrigem": "cp1252 (a página não declara charset)",
+  "extraidoEm": "2026-09-08",
+  "totalArtigos": 120,
+  "artigosAusentes": [],
+  "artigos": [
+    {
+      "numero": 1,
+      "rubrica": null,
+      "caput": "Não há crime sem lei anterior que o defina. Não há pena sem prévia cominação legal",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 2,
+      "rubrica": "Lei penal no tempo",
+      "caput": "Ninguém pode ser punido por fato que lei posterior deixa de considerar crime, cessando em virtude dela a execução e os efeitos penais da sentença condenatória",
+      "itens": [
+        {
+          "tipo": "paragrafo",
+          "texto": "Parágrafo único - A lei posterior, que de qualquer modo favorecer o agente, aplica-se aos fatos anteriores, ainda que decididos por sentença condenatória transitada em julgado"
+        }
+      ],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 3,
+      "rubrica": "Lei excepcional ou temporária",
+      "caput": "A lei excepcional ou temporária, embora decorrido o período de sua duração ou cessadas as circunstâncias que a determinaram, aplica-se ao fato praticado durante sua vigência",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 1984)"
+      ]
+    },
+    {
+      "numero": 4,
+      "rubrica": "Tempo do crime",
+      "caput": "Considera-se praticado o crime no momento da ação ou omissão, ainda que outro seja o momento do resultado",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 1984)"
+      ]
+    },
+    {
+      "numero": 5,
+      "rubrica": "Territorialidade",
+      "caput": "Aplica-se a lei brasileira, sem prejuízo de convenções, tratados e regras de direito internacional, ao crime cometido no território nacional",
+      "itens": [
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 1º - Para os efeitos penais, consideram-se como extensão do território nacional as embarcações e aeronaves brasileiras, de natureza pública ou a serviço do governo brasileiro onde quer que se encontrem, bem como as aeronaves e as embarcações brasileiras, mercantes ou de propriedade privada, que se achem, respectivamente, no espaço aéreo correspondente ou em alto-mar"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 2º - É também aplicável a lei brasileira aos crimes praticados a bordo de aeronaves ou embarcações estrangeiras de propriedade privada, achando-se aquelas em pouso no território nacional ou em vôo no espaço aéreo correspondente, e estas em porto ou mar territorial do Brasil"
+        }
+      ],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 1984)"
+      ]
+    },
+    {
+      "numero": 6,
+      "rubrica": "Lugar do crime",
+      "caput": "Considera-se praticado o crime no lugar em que ocorreu a ação ou omissão, no todo ou em parte, bem como onde se produziu ou deveria produzir-se o resultado",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 1984)"
+      ]
+    },
+    {
+      "numero": 7,
+      "rubrica": "Extraterritorialidade",
+      "caput": "Ficam sujeitos à lei brasileira, embora cometidos no estrangeiro:",
+      "itens": [
+        {
+          "tipo": "inciso",
+          "texto": "I - os crimes:"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "a) contra a vida ou a liberdade do Presidente da República"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "b) contra o patrimônio ou a fé pública da União, do Distrito Federal, de Estado, de Território, de Município, de empresa pública, sociedade de economia mista, autarquia ou fundação instituída pelo Poder Público"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "c) contra a administração pública, por quem está a seu serviço"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "d) de genocídio, quando o agente for brasileiro ou domiciliado no Brasil"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "II - os crimes:"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "a) que, por tratado ou convenção, o Brasil se obrigou a reprimir"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "b) praticados por brasileiro"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "c) praticados em aeronaves ou embarcações brasileiras, mercantes ou de propriedade privada, quando em território estrangeiro e aí não sejam julgados"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 1º - Nos casos do inciso I, o agente é punido segundo a lei brasileira, ainda que absolvido ou condenado no estrangeiro"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 2º - Nos casos do inciso II, a aplicação da lei brasileira depende do concurso das seguintes condições:"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "a) entrar o agente no território nacional"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "b) ser o fato punível também no país em que foi praticado"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "c) estar o crime incluído entre aqueles pelos quais a lei brasileira autoriza a extradição"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "d) não ter sido o agente absolvido no estrangeiro ou não ter aí cumprido a pena"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "e) não ter sido o agente perdoado no estrangeiro ou, por outro motivo, não estar extinta a punibilidade, segundo a lei mais favorável"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 3º - A lei brasileira aplica-se também ao crime cometido por estrangeiro contra brasileiro fora do Brasil, se, reunidas as condições previstas no parágrafo anterior:"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "a) não foi pedida ou foi negada a extradição"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "b) houve requisição do Ministro da Justiça"
+        }
+      ],
+      "alteracoes": [
+        "(Incluído pela Lei nº 7.209, de 1984)",
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)",
+        "(Redação dada pela Lei nº 7.209, de 1984)"
+      ]
+    },
+    {
+      "numero": 8,
+      "rubrica": "Pena cumprida no estrangeiro",
+      "caput": "A pena cumprida no estrangeiro atenua a pena imposta no Brasil pelo mesmo crime, quando diversas, ou nela é computada, quando idênticas",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 9,
+      "rubrica": "Eficácia de sentença estrangeira",
+      "caput": "A sentença estrangeira, quando a aplicação da lei brasileira produz na espécie as mesmas conseqüências, pode ser homologada no Brasil para:",
+      "itens": [
+        {
+          "tipo": "inciso",
+          "texto": "I - obrigar o condenado à reparação do dano, a restituições e a outros efeitos civis"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "II - sujeitá-lo a medida de segurança"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Parágrafo único - A homologação depende:"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "a) para os efeitos previstos no inciso I, de pedido da parte interessada"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "b) para os outros efeitos, da existência de tratado de extradição com o país de cuja autoridade judiciária emanou a sentença, ou, na falta de tratado, de requisição do Ministro da Justiça"
+        }
+      ],
+      "alteracoes": [
+        "(Incluído pela Lei nº 7.209, de 11.7.1984)",
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 10,
+      "rubrica": "Contagem de prazo",
+      "caput": "O dia do começo inclui-se no cômputo do prazo. Contam-se os dias, os meses e os anos pelo calendário comum",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 11,
+      "rubrica": "Frações não computáveis da pena",
+      "caput": "Desprezam-se, nas penas privativas de liberdade e nas restritivas de direitos, as frações de dia, e, na pena de multa, as frações de cruzeiro",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 12,
+      "rubrica": "Legislação especial",
+      "caput": "As regras gerais deste Código aplicam-se aos fatos incriminados por lei especial, se esta não dispuser de modo diverso TÍTULO II DO CRIME",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 13,
+      "rubrica": "Relação de causalidade",
+      "caput": "O resultado, de que depende a existência do crime, somente é imputável a quem lhe deu causa. Considera-se causa a ação ou omissão sem a qual o resultado não teria ocorrido",
+      "itens": [
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 1º - A superveniência de causa relativamente independente exclui a imputação quando, por si só, produziu o resultado; os fatos anteriores, entretanto, imputam-se a quem os praticou",
+          "rubrica": "Superveniência de causa independente"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 2º - A omissão é penalmente relevante quando o omitente devia e podia agir para evitar o resultado. O dever de agir incumbe a quem:",
+          "rubrica": "Relevância da omissão"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "a) tenha por lei obrigação de cuidado, proteção ou vigilância"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "b) de outra forma, assumiu a responsabilidade de impedir o resultado"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "c) com seu comportamento anterior, criou o risco da ocorrência do resultado"
+        }
+      ],
+      "alteracoes": [
+        "(Incluído pela Lei nº 7.209, de 11.7.1984)",
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 14,
+      "rubrica": null,
+      "caput": "Diz-se o crime:",
+      "itens": [
+        {
+          "tipo": "inciso",
+          "texto": "I - consumado, quando nele se reúnem todos os elementos de sua definição legal",
+          "rubrica": "Crime consumado"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "II - tentado, quando, iniciada a execução, não se consuma por circunstâncias alheias à vontade do agente",
+          "rubrica": "Tentativa"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Parágrafo único - Salvo disposição em contrário, pune-se a tentativa com a pena correspondente ao crime consumado, diminuída de um a dois terços",
+          "rubrica": "Pena de tentativa"
+        }
+      ],
+      "alteracoes": [
+        "(Incluído pela Lei nº 7.209, de 11.7.1984)",
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 15,
+      "rubrica": null,
+      "caput": "O agente que, voluntariamente, desiste de prosseguir na execução ou impede que o resultado se produza, só responde pelos atos já praticados",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 16,
+      "rubrica": "Arrependimento posterior",
+      "caput": "Nos crimes cometidos sem violência ou grave ameaça à pessoa, reparado o dano ou restituída a coisa, até o recebimento da denúncia ou da queixa, por ato voluntário do agente, a pena será reduzida de um a dois terços",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 17,
+      "rubrica": "Crime impossível",
+      "caput": "Não se pune a tentativa quando, por ineficácia absoluta do meio ou por absoluta impropriedade do objeto, é impossível consumar-se o crime",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 18,
+      "rubrica": null,
+      "caput": "Diz-se o crime:",
+      "itens": [
+        {
+          "tipo": "inciso",
+          "texto": "I - doloso, quando o agente quis o resultado ou assumiu o risco de produzi-lo",
+          "rubrica": "Crime doloso"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "II - culposo, quando o agente deu causa ao resultado por imprudência, negligência ou imperícia",
+          "rubrica": "Crime culposo"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Parágrafo único - Salvo os casos expressos em lei, ninguém pode ser punido por fato previsto como crime, senão quando o pratica dolosamente"
+        }
+      ],
+      "alteracoes": [
+        "(Incluído pela Lei nº 7.209, de 11.7.1984)",
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 19,
+      "rubrica": "Agravação pelo resultado",
+      "caput": "Pelo resultado que agrava especialmente a pena, só responde o agente que o houver causado ao menos culposamente",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 20,
+      "rubrica": "Erro sobre elementos do tipo",
+      "caput": "O erro sobre elemento constitutivo do tipo legal de crime exclui o dolo, mas permite a punição por crime culposo, se previsto em lei",
+      "itens": [
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 1º - É isento de pena quem, por erro plenamente justificado pelas circunstâncias, supõe situação de fato que, se existisse, tornaria a ação legítima. Não há isenção de pena quando o erro deriva de culpa e o fato é punível como crime culposo",
+          "rubrica": "Descriminantes putativas"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 2º - Responde pelo crime o terceiro que determina o erro",
+          "rubrica": "Erro determinado por terceiro"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 3º - O erro quanto à pessoa contra a qual o crime é praticado não isenta de pena. Não se consideram, neste caso, as condições ou qualidades da vítima, senão as da pessoa contra quem o agente queria praticar o crime",
+          "rubrica": "Erro sobre a pessoa"
+        }
+      ],
+      "alteracoes": [
+        "(Incluído pela Lei nº 7.209, de 11.7.1984)",
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 21,
+      "rubrica": "Erro sobre a ilicitude do fato",
+      "caput": "O desconhecimento da lei é inescusável. O erro sobre a ilicitude do fato, se inevitável, isenta de pena; se evitável, poderá diminuí-la de um sexto a um terço",
+      "itens": [
+        {
+          "tipo": "paragrafo",
+          "texto": "Parágrafo único - Considera-se evitável o erro se o agente atua ou se omite sem a consciência da ilicitude do fato, quando lhe era possível, nas circunstâncias, ter ou atingir essa consciência"
+        }
+      ],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 22,
+      "rubrica": null,
+      "caput": "Se o fato é cometido sob coação irresistível ou em estrita obediência a ordem, não manifestamente ilegal, de superior hierárquico, só é punível o autor da coação ou da ordem",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 23,
+      "rubrica": "Exclusão de ilicitude",
+      "caput": "Não há crime quando o agente pratica o fato:",
+      "itens": [
+        {
+          "tipo": "inciso",
+          "texto": "I - em estado de necessidade"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "II - em legítima defesa"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "III - em estrito cumprimento de dever legal ou no exercício regular de direito"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Parágrafo único - O agente, em qualquer das hipóteses deste artigo, responderá pelo excesso doloso ou culposo",
+          "rubrica": "Excesso punível"
+        }
+      ],
+      "alteracoes": [
+        "(Incluído pela Lei nº 7.209, de 11.7.1984)",
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)",
+        "(Vide ADPF 779)"
+      ]
+    },
+    {
+      "numero": 24,
+      "rubrica": "Estado de necessidade",
+      "caput": "Considera-se em estado de necessidade quem pratica o fato para salvar de perigo atual, que não provocou por sua vontade, nem podia de outro modo evitar, direito próprio ou alheio, cujo sacrifício, nas circunstâncias, não era razoável exigir-se",
+      "itens": [
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 1º - Não pode alegar estado de necessidade quem tinha o dever legal de enfrentar o perigo"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 2º - Embora seja razoável exigir-se o sacrifício do direito ameaçado, a pena poderá ser reduzida de um a dois terços"
+        }
+      ],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 25,
+      "rubrica": "Legítima defesa",
+      "caput": "Entende-se em legítima defesa quem, usando moderadamente dos meios necessários, repele injusta agressão, atual ou iminente, a direito seu ou de outrem",
+      "itens": [
+        {
+          "tipo": "paragrafo",
+          "texto": "Parágrafo único. Observados os requisitos previstos no caput deste artigo, considera-se também em legítima defesa o agente de segurança pública que repele agressão ou risco de agressão a vítima mantida refém durante a prática de crimes"
+        }
+      ],
+      "alteracoes": [
+        "(Incluído pela Lei nº 13.964, de 2019)",
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)",
+        "(Vide ADPF 779)"
+      ]
+    },
+    {
+      "numero": 26,
+      "rubrica": "Inimputáveis",
+      "caput": "É isento de pena o agente que, por doença mental ou desenvolvimento mental incompleto ou retardado, era, ao tempo da ação ou da omissão, inteiramente incapaz de entender o caráter ilícito do fato ou de determinar-se de acordo com esse entendimento",
+      "itens": [
+        {
+          "tipo": "paragrafo",
+          "texto": "Parágrafo único - A pena pode ser reduzida de um a dois terços, se o agente, em virtude de perturbação de saúde mental ou por desenvolvimento mental incompleto ou retardado não era inteiramente capaz de entender o caráter ilícito do fato ou de determinar-se de acordo com esse entendimento",
+          "rubrica": "Redução de pena"
+        }
+      ],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 27,
+      "rubrica": "Menores de dezoito anos",
+      "caput": "Os menores de 18 (dezoito) anos são penalmente inimputáveis, ficando sujeitos às normas estabelecidas na legislação especial",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 28,
+      "rubrica": "Emoção e paixão",
+      "caput": "Não excluem a imputabilidade penal:",
+      "itens": [
+        {
+          "tipo": "inciso",
+          "texto": "I - a emoção ou a paixão"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "II - a embriaguez, voluntária ou culposa, pelo álcool ou substância de efeitos análogos",
+          "rubrica": "Embriaguez"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 1º - É isento de pena o agente que, por embriaguez completa, proveniente de caso fortuito ou força maior, era, ao tempo da ação ou da omissão, inteiramente incapaz de entender o caráter ilícito do fato ou de determinar-se de acordo com esse entendimento"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 2º - A pena pode ser reduzida de um a dois terços, se o agente, por embriaguez, proveniente de caso fortuito ou força maior, não possuía, ao tempo da ação ou da omissão, a plena capacidade de entender o caráter ilícito do fato ou de determinar-se de acordo com esse entendimento"
+        }
+      ],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 29,
+      "rubrica": "TÍTULO IV DO CONCURSO DE PESSOAS",
+      "caput": "Quem, de qualquer modo, concorre para o crime incide nas penas a este cominadas, na medida de sua culpabilidade",
+      "itens": [
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 1º - Se a participação for de menor importância, a pena pode ser diminuída de um sexto a um terço"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 2º - Se algum dos concorrentes quis participar de crime menos grave, ser-lhe-á aplicada a pena deste; essa pena será aumentada até metade, na hipótese de ter sido previsível o resultado mais grave"
+        }
+      ],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 30,
+      "rubrica": "Circunstâncias incomunicáveis",
+      "caput": "Não se comunicam as circunstâncias e as condições de caráter pessoal, salvo quando elementares do crime",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 31,
+      "rubrica": "Casos de impunibilidade",
+      "caput": "O ajuste, a determinação ou instigação e o auxílio, salvo disposição expressa em contrário, não são puníveis, se o crime não chega, pelo menos, a ser tentado TÍTULO V DAS PENAS",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 32,
+      "rubrica": "CAPÍTULO I DAS ESPÉCIES DE PENA",
+      "caput": "As penas são:",
+      "itens": [
+        {
+          "tipo": "inciso",
+          "texto": "I - privativas de liberdade"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "II - restritivas de direitos"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "III - de multa"
+        }
+      ],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 33,
+      "rubrica": "Reclusão e detenção",
+      "caput": "A pena de reclusão deve ser cumprida em regime fechado, semi-aberto ou aberto. A de detenção, em regime semi-aberto, ou aberto, salvo necessidade de transferência a regime fechado",
+      "itens": [
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 1º - Considera-se:"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "a) regime fechado a execução da pena em estabelecimento de segurança máxima ou média"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "b) regime semi-aberto a execução da pena em colônia agrícola, industrial ou estabelecimento similar"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "c) regime aberto a execução da pena em casa de albergado ou estabelecimento adequado"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 2º - As penas privativas de liberdade deverão ser executadas em forma progressiva, segundo o mérito do condenado, observados os seguintes critérios e ressalvadas as hipóteses de transferência a regime mais rigoroso:"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "a) o condenado a pena superior a 8 (oito) anos deverá começar a cumpri-la em regime fechado"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "b) o condenado não reincidente, cuja pena seja superior a 4 (quatro) anos e não exceda a 8 (oito), poderá, desde o princípio, cumpri-la em regime semi-aberto"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "c) o condenado não reincidente, cuja pena seja igual ou inferior a 4 (quatro) anos, poderá, desde o início, cumpri-la em regime aberto"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 3º - A determinação do regime inicial de cumprimento da pena far-se-á com observância dos critérios previstos no art. 59 deste Código"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 4o O condenado por crime contra a administração pública terá a progressão de regime do cumprimento da pena condicionada à reparação do dano que causou, ou à devolução do produto do ilícito praticado, com os acréscimos legais"
+        }
+      ],
+      "alteracoes": [
+        "(Incluído pela Lei nº 10.763, de 12.11.2003)",
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 34,
+      "rubrica": "Regras do regime fechado",
+      "caput": "O condenado será submetido, no início do cumprimento da pena, a exame criminológico de classificação para individualização da execução",
+      "itens": [
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 1º - O condenado fica sujeito a trabalho no período diurno e a isolamento durante o repouso noturno"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 2º - O trabalho será em comum dentro do estabelecimento, na conformidade das aptidões ou ocupações anteriores do condenado, desde que compatíveis com a execução da pena"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 3º - O trabalho externo é admissível, no regime fechado, em serviços ou obras públicas"
+        }
+      ],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 35,
+      "rubrica": "Regras do regime semi-aberto",
+      "caput": "Aplica-se a norma do art. 34 deste Código, caput, ao condenado que inicie o cumprimento da pena em regime semi-aberto",
+      "itens": [
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 1º - O condenado fica sujeito a trabalho em comum durante o período diurno, em colônia agrícola, industrial ou estabelecimento similar"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 2º - O trabalho externo é admissível, bem como a freqüência a cursos supletivos profissionalizantes, de instrução de segundo grau ou superior"
+        }
+      ],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 36,
+      "rubrica": "Regras do regime aberto",
+      "caput": "O regime aberto baseia-se na autodisciplina e senso de responsabilidade do condenado",
+      "itens": [
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 1º - O condenado deverá, fora do estabelecimento e sem vigilância, trabalhar, freqüentar curso ou exercer outra atividade autorizada, permanecendo recolhido durante o período noturno e nos dias de folga"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 2º - O condenado será transferido do regime aberto, se praticar fato definido como crime doloso, se frustrar os fins da execução ou se, podendo, não pagar a multa cumulativamente aplicada"
+        }
+      ],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 37,
+      "rubrica": "Regime especial",
+      "caput": "As mulheres cumprem pena em estabelecimento próprio, observando-se os deveres e direitos inerentes à sua condição pessoal, bem como, no que couber, o disposto neste Capítulo",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 38,
+      "rubrica": "Direitos do preso",
+      "caput": "O preso conserva todos os direitos não atingidos pela perda da liberdade, impondo-se a todas as autoridades o respeito à sua integridade física e moral",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 39,
+      "rubrica": "Trabalho do preso",
+      "caput": "O trabalho do preso será sempre remunerado, sendo-lhe garantidos os benefícios da Previdência Social",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 40,
+      "rubrica": "Legislação especial",
+      "caput": "A legislação especial regulará a matéria prevista nos arts. 38 e 39 deste Código, bem como especificará os deveres e direitos do preso, os critérios para revogação e transferência dos regimes e estabelecerá as infrações disciplinares e correspondentes sanções",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 41,
+      "rubrica": "Superveniência de doença mental",
+      "caput": "O condenado a quem sobrevém doença mental deve ser recolhido a hospital de custódia e tratamento psiquiátrico ou, à falta, a outro estabelecimento adequado",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 42,
+      "rubrica": "Detração",
+      "caput": "Computam-se, na pena privativa de liberdade e na medida de segurança, o tempo de prisão provisória, no Brasil ou no estrangeiro, o de prisão administrativa e o de internação em qualquer dos estabelecimentos referidos no artigo anterior SEÇÃO II DAS PENAS RESTRITIVAS DE DIREITOS",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 43,
+      "rubrica": "Penas restritivas de direitos",
+      "caput": "As penas restritivas de direitos são:",
+      "itens": [
+        {
+          "tipo": "inciso",
+          "texto": "I - prestação pecuniária"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "II - perda de bens e valores"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "III - limitação de fim de semana"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "IV - prestação de serviço à comunidade ou a entidades públicas"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "V - interdição temporária de direitos"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "VI - limitação de fim de semana"
+        }
+      ],
+      "alteracoes": [
+        "(Incluído pela Lei nº 7.209, de 1984)",
+        "(Incluído pela Lei nº 9.714, de 1998)",
+        "(Incluído pela Lei nº 9.714, de 25.11.1998)",
+        "(Redação dada pela Lei nº 9.714, de 1998)"
+      ]
+    },
+    {
+      "numero": 44,
+      "rubrica": null,
+      "caput": "As penas restritivas de direitos são autônomas e substituem as privativas de liberdade, quando:",
+      "itens": [
+        {
+          "tipo": "inciso",
+          "texto": "I – aplicada pena privativa de liberdade não superior a quatro anos e o crime não for cometido com violência ou grave ameaça à pessoa ou, qualquer que seja a pena aplicada, se o crime for culposo"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "II – o réu não for reincidente em crime doloso"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "III – a culpabilidade, os antecedentes, a conduta social e a personalidade do condenado, bem como os motivos e as circunstâncias indicarem que essa substituição seja suficiente"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 1o (VETADO)"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 2o Na condenação igual ou inferior a um ano, a substituição pode ser feita por multa ou por uma pena restritiva de direitos; se superior a um ano, a pena privativa de liberdade pode ser substituída por uma pena restritiva de direitos e multa ou por duas restritivas de direitos"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 3o Se o condenado for reincidente, o juiz poderá aplicar a substituição, desde que, em face de condenação anterior, a medida seja socialmente recomendável e a reincidência não se tenha operado em virtude da prática do mesmo crime"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 4o A pena restritiva de direitos converte-se em privativa de liberdade quando ocorrer o descumprimento injustificado da restrição imposta. No cálculo da pena privativa de liberdade a executar será deduzido o tempo cumprido da pena restritiva de direitos, respeitado o saldo mínimo de trinta dias de detenção ou reclusão"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 5o Sobrevindo condenação a pena privativa de liberdade, por outro crime, o juiz da execução penal decidirá sobre a conversão, podendo deixar de aplicá-la se for possível ao condenado cumprir a pena substitutiva anterior"
+        }
+      ],
+      "alteracoes": [
+        "(Incluído pela Lei nº 9.714, de 1998)",
+        "(Redação dada pela Lei nº 9.714, de 1998)"
+      ]
+    },
+    {
+      "numero": 45,
+      "rubrica": "Conversão das penas restritivas de direitos",
+      "caput": "Na aplicação da substituição prevista no artigo anterior, proceder-se-á na forma deste e dos arts. 46, 47 e 48",
+      "itens": [
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 1o A prestação pecuniária consiste no pagamento em dinheiro à vítima, a seus dependentes ou a entidade pública ou privada com destinação social, de importância fixada pelo juiz, não inferior a 1 (um) salário mínimo nem superior a 360 (trezentos e sessenta) salários mínimos. O valor pago será deduzido do montante de eventual condenação em ação de reparação civil, se coincidentes os beneficiários"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 2o No caso do parágrafo anterior, se houver aceitação do beneficiário, a prestação pecuniária pode consistir em prestação de outra natureza"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 3o A perda de bens e valores pertencentes aos condenados dar-se-á, ressalvada a legislação especial, em favor do Fundo Penitenciário Nacional, e seu valor terá como teto – o que for maior – o montante do prejuízo causado ou do provento obtido pelo agente ou por terceiro, em conseqüência da prática do crime"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 4o (VETADO)"
+        }
+      ],
+      "alteracoes": [
+        "(Incluído pela Lei nº 9.714, de 1998)",
+        "(Redação dada pela Lei nº 9.714, de 1998)"
+      ]
+    },
+    {
+      "numero": 46,
+      "rubrica": "Prestação de serviços à comunidade ou a entidades públicas",
+      "caput": "A prestação de serviços à comunidade ou a entidades públicas é aplicável às condenações superiores a seis meses de privação da liberdade",
+      "itens": [
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 1o A prestação de serviços à comunidade ou a entidades públicas consiste na atribuição de tarefas gratuitas ao condenado"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 2o A prestação de serviço à comunidade dar-se-á em entidades assistenciais, hospitais, escolas, orfanatos e outros estabelecimentos congêneres, em programas comunitários ou estatais"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 3o As tarefas a que se refere o § 1o serão atribuídas conforme as aptidões do condenado, devendo ser cumpridas à razão de uma hora de tarefa por dia de condenação, fixadas de modo a não prejudicar a jornada normal de trabalho"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 4o Se a pena substituída for superior a um ano, é facultado ao condenado cumprir a pena substitutiva em menor tempo (art. 55), nunca inferior à metade da pena privativa de liberdade fixada"
+        }
+      ],
+      "alteracoes": [
+        "(Incluído pela Lei nº 9.714, de 1998)",
+        "(Redação dada pela Lei nº 9.714, de 1998)"
+      ]
+    },
+    {
+      "numero": 47,
+      "rubrica": "Interdição temporária de direitos",
+      "caput": "As penas de interdição temporária de direitos são:",
+      "itens": [
+        {
+          "tipo": "inciso",
+          "texto": "I - proibição do exercício de cargo, função ou atividade pública, bem como de mandato eletivo"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "II - proibição do exercício de profissão, atividade ou ofício que dependam de habilitação especial, de licença ou autorização do poder público"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "III - suspensão de autorização ou de habilitação para dirigir veículo"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "IV – proibição de freqüentar determinados lugares"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "V - proibição de inscrever-se em concurso, avaliação ou exame públicos"
+        }
+      ],
+      "alteracoes": [
+        "(Incluído pela Lei nº 12.550, de 2011)",
+        "(Incluído pela Lei nº 9.714, de 1998)",
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 48,
+      "rubrica": "Limitação de fim de semana",
+      "caput": "A limitação de fim de semana consiste na obrigação de permanecer, aos sábados e domingos, por 5 (cinco) horas diárias, em casa de albergado ou outro estabelecimento adequado",
+      "itens": [
+        {
+          "tipo": "paragrafo",
+          "texto": "Parágrafo único - Durante a permanência poderão ser ministrados ao condenado cursos e palestras ou atribuídas atividades educativas"
+        }
+      ],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 49,
+      "rubrica": "Multa",
+      "caput": "A pena de multa consiste no pagamento ao fundo penitenciário da quantia fixada na sentença e calculada em dias-multa. Será, no mínimo, de 10 (dez) e, no máximo, de 360 (trezentos e sessenta) dias-multa",
+      "itens": [
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 1º - O valor do dia-multa será fixado pelo juiz não podendo ser inferior a um trigésimo do maior salário mínimo mensal vigente ao tempo do fato, nem superior a 5 (cinco) vezes esse salário"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 2º - O valor da multa será atualizado, quando da execução, pelos índices de correção monetária"
+        }
+      ],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 50,
+      "rubrica": "Pagamento da multa",
+      "caput": "A multa deve ser paga dentro de 10 (dez) dias depois de transitada em julgado a sentença. A requerimento do condenado e conforme as circunstâncias, o juiz pode permitir que o pagamento se realize em parcelas mensais",
+      "itens": [
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 1º - A cobrança da multa pode efetuar-se mediante desconto no vencimento ou salário do condenado quando:"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "a) aplicada isoladamente"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "b) aplicada cumulativamente com pena restritiva de direitos"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "c) concedida a suspensão condicional da pena"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 2º - O desconto não deve incidir sobre os recursos indispensáveis ao sustento do condenado e de sua família"
+        }
+      ],
+      "alteracoes": [
+        "(Incluído pela Lei nº 7.209, de 11.7.1984)",
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 51,
+      "rubrica": "Conversão da Multa e revogação",
+      "caput": "Transitada em julgado a sentença condenatória, a multa será executada perante o juiz da execução penal e será considerada dívida de valor, aplicáveis as normas relativas à dívida ativa da Fazenda Pública, inclusive no que concerne às causas interruptivas e suspensivas da prescrição",
+      "itens": [
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 1º"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 2º"
+        }
+      ],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 13.964, de 2019)",
+        "(Revogado pela Lei nº 9.268, de 1º.4.1996)",
+        "(Vide ADI 7032)"
+      ]
+    },
+    {
+      "numero": 52,
+      "rubrica": "Suspensão da execução da multa",
+      "caput": "É suspensa a execução da pena de multa, se sobrevém ao condenado doença mental CAPÍTULO II DA COMINAÇÃO DAS PENAS",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 53,
+      "rubrica": "Penas privativas de liberdade",
+      "caput": "As penas privativas de liberdade têm seus limites estabelecidos na sanção correspondente a cada tipo legal de crime",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 54,
+      "rubrica": "Penas restritivas de direitos",
+      "caput": "As penas restritivas de direitos são aplicáveis, independentemente de cominação na parte especial, em substituição à pena privativa de liberdade, fixada em quantidade inferior a 1 (um) ano, ou nos crimes culposos",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 55,
+      "rubrica": null,
+      "caput": "As penas restritivas de direitos referidas nos incisos III, IV, V e VI do art. 43 terão a mesma duração da pena privativa de liberdade substituída, ressalvado o disposto no § 4o do art. 46",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 9.714, de 1998)"
+      ]
+    },
+    {
+      "numero": 56,
+      "rubrica": null,
+      "caput": "As penas de interdição, previstas nos incisos I e II do art. 47 deste Código, aplicam-se para todo o crime cometido no exercício de profissão, atividade, ofício, cargo ou função, sempre que houver violação dos deveres que lhes são inerentes",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 57,
+      "rubrica": null,
+      "caput": "A pena de interdição, prevista no inciso III do art. 47 deste Código, aplica-se aos crimes culposos de trânsito",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 58,
+      "rubrica": "Pena de multa",
+      "caput": "A multa, prevista em cada tipo legal de crime, tem os limites fixados no art. 49 e seus parágrafos deste Código",
+      "itens": [
+        {
+          "tipo": "paragrafo",
+          "texto": "Parágrafo único - A multa prevista no parágrafo único do art. 44 e no § 2º do art. 60 deste Código aplica-se independentemente de cominação na parte especial"
+        }
+      ],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 59,
+      "rubrica": "Fixação da pena",
+      "caput": "O juiz, atendendo à culpabilidade, aos antecedentes, à conduta social, à personalidade do agente, aos motivos, às circunstâncias e conseqüências do crime, bem como ao comportamento da vítima, estabelecerá, conforme seja necessário e suficiente para reprovação e prevenção do crime:",
+      "itens": [
+        {
+          "tipo": "inciso",
+          "texto": "I - as penas aplicáveis dentre as cominadas"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "II - a quantidade de pena aplicável, dentro dos limites previstos"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "III - o regime inicial de cumprimento da pena privativa de liberdade"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "IV - a substituição da pena privativa da liberdade aplicada, por outra espécie de pena, se cabível"
+        }
+      ],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)",
+        "(Vide ADPF 1107)"
+      ]
+    },
+    {
+      "numero": 60,
+      "rubrica": "Critérios especiais da pena de multa",
+      "caput": "Na fixação da pena de multa o juiz deve atender, principalmente, à situação econômica do réu",
+      "itens": [
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 1º - A multa pode ser aumentada até o triplo, se o juiz considerar que, em virtude da situação econômica do réu, é ineficaz, embora aplicada no máximo"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 2º - A pena privativa de liberdade aplicada, não superior a 6 (seis) meses, pode ser substituída pela de multa, observados os critérios dos incisos II e III do art. 44 deste Código",
+          "rubrica": "Multa substitutiva"
+        }
+      ],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 61,
+      "rubrica": "Circunstâncias agravantes",
+      "caput": "São circunstâncias que sempre agravam a pena, quando não constituem ou qualificam o crime:",
+      "itens": [
+        {
+          "tipo": "inciso",
+          "texto": "I - a reincidência"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "II - ter o agente cometido o crime:"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "a) por motivo fútil ou torpe"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "b) para facilitar ou assegurar a execução, a ocultação, a impunidade ou vantagem de outro crime"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "c) à traição, de emboscada, ou mediante dissimulação, ou outro recurso que dificultou ou tornou impossível a defesa do ofendido"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "d) com emprego de veneno, fogo, explosivo, tortura ou outro meio insidioso ou cruel, ou de que podia resultar perigo comum"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "e) contra ascendente, descendente, irmão ou cônjuge"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "f) com abuso de autoridade ou prevalecendo-se de relações domésticas, de coabitação ou de hospitalidade, ou com violência contra a mulher na forma da lei específica"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "g) com abuso de poder ou violação de dever inerente a cargo, ofício, ministério ou profissão"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "h) contra criança, maior de 60 (sessenta) anos, enfermo ou mulher grávida"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "i) quando o ofendido estava sob a imediata proteção da autoridade"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "j) em ocasião de incêndio, naufrágio, inundação ou qualquer calamidade pública, ou de desgraça particular do ofendido"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "l) em estado de embriaguez preordenada"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "m) nas dependências de instituição de ensino"
+        }
+      ],
+      "alteracoes": [
+        "(Incluído pela Lei nº 15.159, de 2025)",
+        "(Redação dada pela Lei nº 10.741, de 2003)",
+        "(Redação dada pela Lei nº 11.340, de 2006)",
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 62,
+      "rubrica": "Agravantes no caso de concurso de pessoas",
+      "caput": "A pena será ainda agravada em relação ao agente que:",
+      "itens": [
+        {
+          "tipo": "inciso",
+          "texto": "I - promove, ou organiza a cooperação no crime ou dirige a atividade dos demais agentes"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "II - coage ou induz outrem à execução material do crime"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "III - instiga ou determina a cometer o crime alguém sujeito à sua autoridade ou não-punível em virtude de condição ou qualidade pessoal"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "IV - executa o crime, ou nele participa, mediante paga ou promessa de recompensa"
+        }
+      ],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 63,
+      "rubrica": "Reincidência",
+      "caput": "Verifica-se a reincidência quando o agente comete novo crime, depois de transitar em julgado a sentença que, no País ou no estrangeiro, o tenha condenado por crime anterior",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 64,
+      "rubrica": null,
+      "caput": "Para efeito de reincidência:",
+      "itens": [
+        {
+          "tipo": "inciso",
+          "texto": "I - não prevalece a condenação anterior, se entre a data do cumprimento ou extinção da pena e a infração posterior tiver decorrido período de tempo superior a 5 (cinco) anos, computado o período de prova da suspensão ou do livramento condicional, se não ocorrer revogação"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "II - não se consideram os crimes militares próprios e políticos"
+        }
+      ],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 65,
+      "rubrica": "Circunstâncias atenuantes",
+      "caput": "São circunstâncias que sempre atenuam a pena:",
+      "itens": [
+        {
+          "tipo": "inciso",
+          "texto": "I - ser o agente menor de 21 (vinte e um) anos, na data do fato, ou maior de 70 (setenta) anos, na data da sentença, salvo se o crime envolver violência sexual contra a mulher"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "II - o desconhecimento da lei"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "III - ter o agente:"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "a) cometido o crime por motivo de relevante valor social ou moral"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "b) procurado, por sua espontânea vontade e com eficiência, logo após o crime, evitar-lhe ou minorar-lhe as conseqüências, ou ter, antes do julgamento, reparado o dano"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "c) cometido o crime sob coação a que podia resistir, ou em cumprimento de ordem de autoridade superior, ou sob a influência de violenta emoção, provocada por ato injusto da vítima"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "d) confessado espontaneamente, perante a autoridade, a autoria do crime"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "e) cometido o crime sob a influência de multidão em tumulto, se não o provocou"
+        }
+      ],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 15.160, de 2025)",
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 66,
+      "rubrica": null,
+      "caput": "A pena poderá ser ainda atenuada em razão de circunstância relevante, anterior ou posterior ao crime, embora não prevista expressamente em lei",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 67,
+      "rubrica": "Concurso de circunstâncias agravantes e atenuantes",
+      "caput": "No concurso de agravantes e atenuantes, a pena deve aproximar-se do limite indicado pelas circunstâncias preponderantes, entendendo-se como tais as que resultam dos motivos determinantes do crime, da personalidade do agente e da reincidência",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 68,
+      "rubrica": "Cálculo da pena",
+      "caput": "A pena-base será fixada atendendo-se ao critério do art. 59 deste Código; em seguida serão consideradas as circunstâncias atenuantes e agravantes; por último, as causas de diminuição e de aumento",
+      "itens": [
+        {
+          "tipo": "paragrafo",
+          "texto": "Parágrafo único - No concurso de causas de aumento ou de diminuição previstas na parte especial, pode o juiz limitar-se a um só aumento ou a uma só diminuição, prevalecendo, todavia, a causa que mais aumente ou diminua"
+        }
+      ],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 69,
+      "rubrica": "Concurso material",
+      "caput": "Quando o agente, mediante mais de uma ação ou omissão, pratica dois ou mais crimes, idênticos ou não, aplicam-se cumulativamente as penas privativas de liberdade em que haja incorrido. No caso de aplicação cumulativa de penas de reclusão e de detenção, executa-se primeiro aquela",
+      "itens": [
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 1º - Na hipótese deste artigo, quando ao agente tiver sido aplicada pena privativa de liberdade, não suspensa, por um dos crimes, para os demais será incabível a substituição de que trata o art. 44 deste Código"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 2º - Quando forem aplicadas penas restritivas de direitos, o condenado cumprirá simultaneamente as que forem compatíveis entre si e sucessivamente as demais"
+        }
+      ],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 70,
+      "rubrica": "Concurso formal",
+      "caput": "Quando o agente, mediante uma só ação ou omissão, pratica dois ou mais crimes, idênticos ou não, aplica-se-lhe a mais grave das penas cabíveis ou, se iguais, somente uma delas, mas aumentada, em qualquer caso, de um sexto até metade. As penas aplicam-se, entretanto, cumulativamente, se a ação ou omissão é dolosa e os crimes concorrentes resultam de desígnios autônomos, consoante o disposto no artigo anterior",
+      "itens": [
+        {
+          "tipo": "paragrafo",
+          "texto": "Parágrafo único - Não poderá a pena exceder a que seria cabível pela regra do art. 69 deste Código"
+        }
+      ],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 71,
+      "rubrica": "Crime continuado",
+      "caput": "Quando o agente, mediante mais de uma ação ou omissão, pratica dois ou mais crimes da mesma espécie e, pelas condições de tempo, lugar, maneira de execução e outras semelhantes, devem os subseqüentes ser havidos como continuação do primeiro, aplica-se-lhe a pena de um só dos crimes, se idênticas, ou a mais grave, se diversas, aumentada, em qualquer caso, de um sexto a dois terços",
+      "itens": [
+        {
+          "tipo": "paragrafo",
+          "texto": "Parágrafo único - Nos crimes dolosos, contra vítimas diferentes, cometidos com violência ou grave ameaça à pessoa, poderá o juiz, considerando a culpabilidade, os antecedentes, a conduta social e a personalidade do agente, bem como os motivos e as circunstâncias, aumentar a pena de um só dos crimes, se idênticas, ou a mais grave, se diversas, até o triplo, observadas as regras do parágrafo único do art. 70 e do art. 75 deste Código"
+        }
+      ],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 72,
+      "rubrica": "Multas no concurso de crimes",
+      "caput": "No concurso de crimes, as penas de multa são aplicadas distinta e integralmente",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 73,
+      "rubrica": "Erro na execução",
+      "caput": "Quando, por acidente ou erro no uso dos meios de execução, o agente, ao invés de atingir a pessoa que pretendia ofender, atinge pessoa diversa, responde como se tivesse praticado o crime contra aquela, atendendo-se ao disposto no § 3º do art. 20 deste Código. No caso de ser também atingida a pessoa que o agente pretendia ofender, aplica-se a regra do art. 70 deste Código",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 74,
+      "rubrica": "Resultado diverso do pretendido",
+      "caput": "Fora dos casos do artigo anterior, quando, por acidente ou erro na execução do crime, sobrevém resultado diverso do pretendido, o agente responde por culpa, se o fato é previsto como crime culposo; se ocorre também o resultado pretendido, aplica-se a regra do art. 70 deste Código",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 75,
+      "rubrica": "Limite das penas",
+      "caput": "O tempo de cumprimento das penas privativas de liberdade não pode ser superior a 40 (quarenta) anos",
+      "itens": [
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 1º Quando o agente for condenado a penas privativas de liberdade cuja soma seja superior a 40 (quarenta) anos, devem elas ser unificadas para atender ao limite máximo deste artigo"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 2º - Sobrevindo condenação por fato posterior ao início do cumprimento da pena, far-se-á nova unificação, desprezando-se, para esse fim, o período de pena já cumprido"
+        }
+      ],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 13.964, de 2019)",
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 76,
+      "rubrica": "Concurso de infrações",
+      "caput": "No concurso de infrações, executar-se-á primeiramente a pena mais grave CAPÍTULO IV DA SUSPENSÃO CONDICIONAL DA PENA",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 77,
+      "rubrica": "Requisitos da suspensão da pena",
+      "caput": "A execução da pena privativa de liberdade, não superior a 2 (dois) anos, poderá ser suspensa, por 2 (dois) a 4 (quatro) anos, desde que:",
+      "itens": [
+        {
+          "tipo": "inciso",
+          "texto": "I - o condenado não seja reincidente em crime doloso"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "II - a culpabilidade, os antecedentes, a conduta social e personalidade do agente, bem como os motivos e as circunstâncias autorizem a concessão do benefício"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "III - Não seja indicada ou cabível a substituição prevista no art. 44 deste Código"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 1º - A condenação anterior a pena de multa não impede a concessão do benefício"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 2o A execução da pena privativa de liberdade, não superior a quatro anos, poderá ser suspensa, por quatro a seis anos, desde que o condenado seja maior de setenta anos de idade, ou razões de saúde justifiquem a suspensão"
+        }
+      ],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)",
+        "(Redação dada pela Lei nº 9.714, de 1998)"
+      ]
+    },
+    {
+      "numero": 78,
+      "rubrica": null,
+      "caput": "Durante o prazo da suspensão, o condenado ficará sujeito à observação e ao cumprimento das condições estabelecidas pelo juiz",
+      "itens": [
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 1º - No primeiro ano do prazo, deverá o condenado prestar serviços à comunidade (art. 46) ou submeter-se à limitação de fim de semana (art. 48)"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 2° Se o condenado houver reparado o dano, salvo impossibilidade de fazê-lo, e se as circunstâncias do art. 59 deste Código lhe forem inteiramente favoráveis, o juiz poderá substituir a exigência do parágrafo anterior pelas seguintes condições, aplicadas cumulativamente:"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "a) proibição de freqüentar determinados lugares"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "b) proibição de ausentar-se da comarca onde reside, sem autorização do juiz"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "c) comparecimento pessoal e obrigatório a juízo, mensalmente, para informar e justificar suas atividades"
+        }
+      ],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)",
+        "(Redação dada pela Lei nº 9.268, de 1º.4.1996)"
+      ]
+    },
+    {
+      "numero": 79,
+      "rubrica": null,
+      "caput": "A sentença poderá especificar outras condições a que fica subordinada a suspensão, desde que adequadas ao fato e à situação pessoal do condenado",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 80,
+      "rubrica": null,
+      "caput": "A suspensão não se estende às penas restritivas de direitos nem à multa",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 81,
+      "rubrica": "Revogação obrigatória",
+      "caput": "A suspensão será revogada se, no curso do prazo, o beneficiário:",
+      "itens": [
+        {
+          "tipo": "inciso",
+          "texto": "I - é condenado, em sentença irrecorrível, por crime doloso"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "II - frustra, embora solvente, a execução de pena de multa ou não efetua, sem motivo justificado, a reparação do dano"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "III - descumpre a condição do § 1º do art. 78 deste Código"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 1º - A suspensão poderá ser revogada se o condenado descumpre qualquer outra condição imposta ou é irrecorrivelmente condenado, por crime culposo ou por contravenção, a pena privativa de liberdade ou restritiva de direitos",
+          "rubrica": "Revogação facultativa"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 2º - Se o beneficiário está sendo processado por outro crime ou contravenção, considera-se prorrogado o prazo da suspensão até o julgamento definitivo",
+          "rubrica": "Prorrogação do período de prova"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 3º - Quando facultativa a revogação, o juiz pode, ao invés de decretá-la, prorrogar o período de prova até o máximo, se este não foi o fixado"
+        }
+      ],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 82,
+      "rubrica": "Cumprimento das condições",
+      "caput": "Expirado o prazo sem que tenha havido revogação, considera-se extinta a pena privativa de liberdade CAPÍTULO V DO LIVRAMENTO CONDICIONAL",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 83,
+      "rubrica": "Requisitos do livramento condicional",
+      "caput": "O juiz poderá conceder livramento condicional ao condenado a pena privativa de liberdade igual ou superior a 2 (dois) anos, desde que:",
+      "itens": [
+        {
+          "tipo": "inciso",
+          "texto": "I - cumprida mais de um terço da pena se o condenado não for reincidente em crime doloso e tiver bons antecedentes"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "II - cumprida mais da metade se o condenado for reincidente em crime doloso"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "III - comprovado:"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "a) bom comportamento durante a execução da pena"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "b) não cometimento de falta grave nos últimos 12 (doze) meses"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "c) bom desempenho no trabalho que lhe foi atribuído; e"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "d) aptidão para prover a própria subsistência mediante trabalho honesto"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "IV - tenha reparado, salvo efetiva impossibilidade de fazê-lo, o dano causado pela infração"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "V - cumpridos mais de dois terços da pena, nos casos de condenação por crime hediondo, prática de tortura, tráfico ilícito de entorpecentes e drogas afins, tráfico de pessoas e terrorismo, se o apenado não for reincidente específico em crimes dessa natureza"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Parágrafo único - Para o condenado por crime doloso, cometido com violência ou grave ameaça à pessoa, a concessão do livramento ficará também subordinada à constatação de condições pessoais que façam presumir que o liberado não voltará a delinqüir"
+        }
+      ],
+      "alteracoes": [
+        "(Incluído pela Lei nº 13.344, de 2016)",
+        "(Incluído pela Lei nº 13.964, de 2019)",
+        "(Redação dada pela Lei nº 13.964, de 2019)",
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)",
+        "(Vigência)"
+      ]
+    },
+    {
+      "numero": 84,
+      "rubrica": "Soma de penas",
+      "caput": "As penas que correspondem a infrações diversas devem somar-se para efeito do livramento",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 85,
+      "rubrica": "Especificações das condições",
+      "caput": "A sentença especificará as condições a que fica subordinado o livramento",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 86,
+      "rubrica": "Revogação do livramento",
+      "caput": "Revoga-se o livramento, se o liberado vem a ser condenado a pena privativa de liberdade, em sentença irrecorrível:",
+      "itens": [
+        {
+          "tipo": "inciso",
+          "texto": "I - por crime cometido durante a vigência do benefício"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "II - por crime anterior, observado o disposto no art. 84 deste Código"
+        }
+      ],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 87,
+      "rubrica": "Revogação facultativa",
+      "caput": "O juiz poderá, também, revogar o livramento, se o liberado deixar de cumprir qualquer das obrigações constantes da sentença, ou for irrecorrivelmente condenado, por crime ou contravenção, a pena que não seja privativa de liberdade",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 88,
+      "rubrica": "Efeitos da revogação",
+      "caput": "Revogado o livramento, não poderá ser novamente concedido, e, salvo quando a revogação resulta de condenação por outro crime anterior àquele benefício, não se desconta na pena o tempo em que esteve solto o condenado",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 89,
+      "rubrica": "Extinção",
+      "caput": "O juiz não poderá declarar extinta a pena, enquanto não passar em julgado a sentença em processo a que responde o liberado, por crime cometido na vigência do livramento",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 90,
+      "rubrica": null,
+      "caput": "Se até o seu término o livramento não é revogado, considera-se extinta a pena privativa de liberdade CAPÍTULO VI DOS EFEITOS DA CONDENAÇÃO",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 91,
+      "rubrica": "Efeitos genéricos e específicos",
+      "caput": "São efeitos da condenação:",
+      "itens": [
+        {
+          "tipo": "inciso",
+          "texto": "I - tornar certa a obrigação de indenizar o dano causado pelo crime"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "II - a perda em favor da União, ressalvado o direito do lesado ou de terceiro de boa-fé:"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "a) dos instrumentos do crime, desde que consistam em coisas cujo fabrico, alienação, uso, porte ou detenção constitua fato ilícito"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "b) do produto do crime ou de qualquer bem ou valor que constitua proveito auferido pelo agente com a prática do fato criminoso"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 1o Poderá ser decretada a perda de bens ou valores equivalentes ao produto ou proveito do crime quando estes não forem encontrados ou quando se localizarem no exterior"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 2o Na hipótese do § 1o, as medidas assecuratórias previstas na legislação processual poderão abranger bens ou valores equivalentes do investigado ou acusado para posterior decretação de perda"
+        }
+      ],
+      "alteracoes": [
+        "(Incluído pela Lei nº 12.694, de 2012)",
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)",
+        "(Vide ADPF 569)"
+      ]
+    },
+    {
+      "numero": 92,
+      "rubrica": null,
+      "caput": "São também efeitos da condenação:",
+      "itens": [
+        {
+          "tipo": "inciso",
+          "texto": "I - a perda de cargo, função pública ou mandato eletivo:"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "a) quando aplicada pena privativa de liberdade por tempo igual ou superior a um ano, nos crimes praticados com abuso de poder ou violação de dever para com a Administração Pública"
+        },
+        {
+          "tipo": "alinea",
+          "texto": "b) quando for aplicada pena privativa de liberdade por tempo superior a 4 (quatro) anos nos demais casos"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "II – a incapacidade para o exercício do poder familiar, da tutela ou da curatela nos crimes dolosos sujeitos à pena de reclusão cometidos contra outrem igualmente titular do mesmo poder familiar, contra filho, filha ou outro descendente, tutelado ou curatelado, bem como nos crimes cometidos contra a mulher por razões da condição do sexo feminino, nos termos do § 1º do art. 121-A deste Código"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "III - a inabilitação para dirigir veículo, quando utilizado como meio para a prática de crime doloso"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "IV - a suspensão, pelo prazo de 180 (cento e oitenta) dias, da eficácia da inscrição no Cadastro Nacional da Pessoa Jurídica (CNPJ) do estabelecimento que, no exercício de atividade comercial ou industrial, for constituída ou utilizada com o fim de permitir, facilitar ou ocultar a prática dos crimes definidos no caput e no § 1º do art. 180 deste Código"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 1º Os efeitos de que trata este artigo não são automáticos, devendo ser motivadamente declarados na sentença pelo juiz, mas independem de pedido expresso da acusação, observado o disposto no inciso III do § 2º deste artigo"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 2º Ao condenado por crime praticado contra a mulher por razões da condição do sexo feminino, nos termos do § 1º do art. 121-A deste Código, e ao condenado por crime previsto no caput e nos §§ 1º e 2º do art. 240, no caput e no parágrafo único do art. 241, no caput e nos §§ 1º e 3º do art. 241-A, no caput do art. 241-B, no caput e nos §§ 1º e 2º do art. 241-D e no caput e no § 1º do art. 244-A da Lei nº 8.069, de 13 de julho de 1990 (Estatuto da Criança e do Adolescente), serão:"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "I – aplicados os efeitos previstos nos incisos I e II do caput deste artigo"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "II – vedadas a sua nomeação, designação ou diplomação em qualquer cargo, função pública ou mandato eletivo entre o trânsito em julgado da condenação até o efetivo cumprimento da pena"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "III – automáticos os efeitos dos incisos I e II do caput e do inciso II do § 2º deste artigo"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 3º Em caso de reincidência da conduta prevista no inciso IV do caput deste artigo, a empresa será considerada inidônea e terá sua inscrição no CNPJ considerada inapta, com os efeitos previstos na Lei nº 9.430, de 27 de dezembro de 1996"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 4º Na hipótese da reincidência descrita no § 3º deste artigo, o administrador, direta ou indiretamente responsável pela infração cometida, será interditado para o exercício do comércio pelo período de 5 (cinco) anos"
+        }
+      ],
+      "alteracoes": [
+        "(Incluído pela Lei nº 14.994, de 2024)",
+        "(Incluído pela Lei nº 15.358, de 2026)",
+        "(Incluído pela Lei nº 9.268, de 1º.4.1996)",
+        "(Redação dada pela Lei nº 14.994, de 2024)",
+        "(Redação dada pela Lei nº 15.487, de 2026)",
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)",
+        "(Redação dada pela Lei nº 9.268, de 1º.4.1996)"
+      ]
+    },
+    {
+      "numero": 93,
+      "rubrica": "Reabilitação",
+      "caput": "A reabilitação alcança quaisquer penas aplicadas em sentença definitiva, assegurando ao condenado o sigilo dos registros sobre o seu processo e condenação",
+      "itens": [
+        {
+          "tipo": "paragrafo",
+          "texto": "Parágrafo único - A reabilitação poderá, também, atingir os efeitos da condenação, previstos no art. 92 deste Código, vedada reintegração na situação anterior, nos casos dos incisos I e II do mesmo artigo"
+        }
+      ],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 94,
+      "rubrica": null,
+      "caput": "A reabilitação poderá ser requerida, decorridos 2 (dois) anos do dia em que for extinta, de qualquer modo, a pena ou terminar sua execução, computando-se o período de prova da suspensão e o do livramento condicional, se não sobrevier revogação, desde que o condenado:",
+      "itens": [
+        {
+          "tipo": "inciso",
+          "texto": "I - tenha tido domicílio no País no prazo acima referido"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "II - tenha dado, durante esse tempo, demonstração efetiva e constante de bom comportamento público e privado"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "III - tenha ressarcido o dano causado pelo crime ou demonstre a absoluta impossibilidade de o fazer, até o dia do pedido, ou exiba documento que comprove a renúncia da vítima ou novação da dívida"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Parágrafo único - Negada a reabilitação, poderá ser requerida, a qualquer tempo, desde que o pedido seja instruído com novos elementos comprobatórios dos requisitos necessários"
+        }
+      ],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 95,
+      "rubrica": null,
+      "caput": "A reabilitação será revogada, de ofício ou a requerimento do Ministério Público, se o reabilitado for condenado, como reincidente, por decisão definitiva, a pena que não seja de multa TÍTULO VI DAS MEDIDAS DE SEGURANÇA",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 96,
+      "rubrica": "Espécies de medidas de segurança",
+      "caput": "As medidas de segurança são:",
+      "itens": [
+        {
+          "tipo": "inciso",
+          "texto": "I - Internação em hospital de custódia e tratamento psiquiátrico ou, à falta, em outro estabelecimento adequado"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "II - sujeição a tratamento ambulatorial"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Parágrafo único - Extinta a punibilidade, não se impõe medida de segurança nem subsiste a que tenha sido imposta"
+        }
+      ],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 97,
+      "rubrica": "Imposição da medida de segurança para inimputável",
+      "caput": "Se o agente for inimputável, o juiz determinará sua internação (art. 26). Se, todavia, o fato previsto como crime for punível com detenção, poderá o juiz submetê-lo a tratamento ambulatorial",
+      "itens": [
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 1º - A internação, ou tratamento ambulatorial, será por tempo indeterminado, perdurando enquanto não for averiguada, mediante perícia médica, a cessação de periculosidade. O prazo mínimo deverá ser de 1 (um) a 3 (três) anos",
+          "rubrica": "Prazo"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 2º - A perícia médica realizar-se-á ao termo do prazo mínimo fixado e deverá ser repetida de ano em ano, ou a qualquer tempo, se o determinar o juiz da execução",
+          "rubrica": "Perícia médica"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 3º - A desinternação, ou a liberação, será sempre condicional devendo ser restabelecida a situação anterior se o agente, antes do decurso de 1 (um) ano, pratica fato indicativo de persistência de sua periculosidade",
+          "rubrica": "Desinternação ou liberação condicional"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 4º - Em qualquer fase do tratamento ambulatorial, poderá o juiz determinar a internação do agente, se essa providência for necessária para fins curativos"
+        }
+      ],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 98,
+      "rubrica": "Substituição da pena por medida de segurança para o semi-imputável",
+      "caput": "Na hipótese do parágrafo único do art. 26 deste Código e necessitando o condenado de especial tratamento curativo, a pena privativa de liberdade pode ser substituída pela internação, ou tratamento ambulatorial, pelo prazo mínimo de 1 (um) a 3 (três) anos, nos termos do artigo anterior e respectivos §§ 1º a 4º",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 99,
+      "rubrica": "Direitos do internado",
+      "caput": "O internado será recolhido a estabelecimento dotado de características hospitalares e será submetido a tratamento TÍTULO VII DA AÇÃO PENAL",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 100,
+      "rubrica": "Ação pública e de iniciativa privada",
+      "caput": "A ação penal é pública, salvo quando a lei expressamente a declara privativa do ofendido",
+      "itens": [
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 1º - A ação pública é promovida pelo Ministério Público, dependendo, quando a lei o exige, de representação do ofendido ou de requisição do Ministro da Justiça"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 2º - A ação de iniciativa privada é promovida mediante queixa do ofendido ou de quem tenha qualidade para representá-lo"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 3º - A ação de iniciativa privada pode intentar-se nos crimes de ação pública, se o Ministério Público não oferece denúncia no prazo legal"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 4º - No caso de morte do ofendido ou de ter sido declarado ausente por decisão judicial, o direito de oferecer queixa ou de prosseguir na ação passa ao cônjuge, ascendente, descendente ou irmão"
+        }
+      ],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 101,
+      "rubrica": "A ação penal no crime complexo",
+      "caput": "Quando a lei considera como elemento ou circunstâncias do tipo legal fatos que, por si mesmos, constituem crimes, cabe ação pública em relação àquele, desde que, em relação a qualquer destes, se deva proceder por iniciativa do Ministério Público",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 102,
+      "rubrica": "Irretratabilidade da representação",
+      "caput": "A representação será irretratável depois de oferecida a denúncia",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 103,
+      "rubrica": "Decadência do direito de queixa ou de representação",
+      "caput": "Salvo disposição expressa em contrário, o ofendido decai do direito de queixa ou de representação se não o exerce dentro do prazo de 6 (seis) meses, contado do dia em que veio a saber quem é o autor do crime, ou, no caso do § 3º do art. 100 deste Código, do dia em que se esgota o prazo para oferecimento da denúncia",
+      "itens": [
+        {
+          "tipo": "paragrafo",
+          "texto": "Parágrafo único. Nos crimes praticados no âmbito de violência doméstica e familiar contra a mulher, a ofendida decai do direito de queixa ou de representação se não o exerce no prazo de 12 (doze) meses, contado do dia em que veio a saber quem é o autor do crime, ou, no caso do § 3º do art. 100 deste Código, do dia em que se esgota o prazo para oferecimento da denúncia"
+        }
+      ],
+      "alteracoes": [
+        "(Incluído pela Lei nº 15.438, de 2026)",
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 104,
+      "rubrica": "Renúncia expressa ou tácita do direito de queixa",
+      "caput": "O direito de queixa não pode ser exercido quando renunciado expressa ou tacitamente",
+      "itens": [
+        {
+          "tipo": "paragrafo",
+          "texto": "Parágrafo único - Importa renúncia tácita ao direito de queixa a prática de ato incompatível com a vontade de exercê-lo; não a implica, todavia, o fato de receber o ofendido a indenização do dano causado pelo crime"
+        }
+      ],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 105,
+      "rubrica": "Perdão do ofendido",
+      "caput": "O perdão do ofendido, nos crimes em que somente se procede mediante queixa, obsta ao prosseguimento da ação",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 106,
+      "rubrica": null,
+      "caput": "O perdão, no processo ou fora dele, expresso ou tácito:",
+      "itens": [
+        {
+          "tipo": "inciso",
+          "texto": "I - se concedido a qualquer dos querelados, a todos aproveita"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "II - se concedido por um dos ofendidos, não prejudica o direito dos outros"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "III - se o querelado o recusa, não produz efeito"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 1º - Perdão tácito é o que resulta da prática de ato incompatível com a vontade de prosseguir na ação"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 2º - Não é admissível o perdão depois que passa em julgado a sentença condenatória"
+        }
+      ],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 107,
+      "rubrica": "Extinção da punibilidade",
+      "caput": "Extingue-se a punibilidade:",
+      "itens": [
+        {
+          "tipo": "inciso",
+          "texto": "I - pela morte do agente"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "II - pela anistia, graça ou indulto"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "III - pela retroatividade de lei que não mais considera o fato como criminoso"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "IV - pela prescrição, decadência ou perempção"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "V - pela renúncia do direito de queixa ou pelo perdão aceito, nos crimes de ação privada"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "VI - pela retratação do agente, nos casos em que a lei a admite"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "VII"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "VIII"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "IX - pelo perdão judicial, nos casos previstos em lei"
+        }
+      ],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)",
+        "(Revogado pela Lei nº 11.106, de 2005)"
+      ]
+    },
+    {
+      "numero": 108,
+      "rubrica": null,
+      "caput": "A extinção da punibilidade de crime que é pressuposto, elemento constitutivo ou circunstância agravante de outro não se estende a este. Nos crimes conexos, a extinção da punibilidade de um deles não impede, quanto aos outros, a agravação da pena resultante da conexão",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 109,
+      "rubrica": "Prescrição antes de transitar em julgado a sentença",
+      "caput": "A prescrição, antes de transitar em julgado a sentença final, salvo o disposto no § 1o do art. 110 deste Código, regula-se pelo máximo da pena privativa de liberdade cominada ao crime, verificando-se:",
+      "itens": [
+        {
+          "tipo": "inciso",
+          "texto": "I - em vinte anos, se o máximo da pena é superior a doze"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "II - em dezesseis anos, se o máximo da pena é superior a oito anos e não excede a doze"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "III - em doze anos, se o máximo da pena é superior a quatro anos e não excede a oito"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "IV - em oito anos, se o máximo da pena é superior a dois anos e não excede a quatro"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "V - em quatro anos, se o máximo da pena é igual a um ano ou, sendo superior, não excede a dois"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "VI - em 3 (três) anos, se o máximo da pena é inferior a 1 (um) ano"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Parágrafo único - Aplicam-se às penas restritivas de direito os mesmos prazos previstos para as privativas de liberdade",
+          "rubrica": "Prescrição das penas restritivas de direito"
+        }
+      ],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 12.234, de 2010)",
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 110,
+      "rubrica": "Prescrição depois de transitar em julgado sentença final condenatória",
+      "caput": "A prescrição depois de transitar em julgado a sentença condenatória regula-se pela pena aplicada e verifica-se nos prazos fixados no artigo anterior, os quais se aumentam de um terço, se o condenado é reincidente",
+      "itens": [
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 1o A prescrição, depois da sentença condenatória com trânsito em julgado para a acusação ou depois de improvido seu recurso, regula-se pela pena aplicada, não podendo, em nenhuma hipótese, ter por termo inicial data anterior à da denúncia ou queixa"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 2o"
+        }
+      ],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 12.234, de 2010)",
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)",
+        "(Revogado pela Lei nº 12.234, de 2010)"
+      ]
+    },
+    {
+      "numero": 111,
+      "rubrica": "Termo inicial da prescrição antes de transitar em julgado a sentença final",
+      "caput": "A prescrição, antes de transitar em julgado a sentença final, começa a correr:",
+      "itens": [
+        {
+          "tipo": "inciso",
+          "texto": "I - do dia em que o crime se consumou"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "II - no caso de tentativa, do dia em que cessou a atividade criminosa"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "III - nos crimes permanentes, do dia em que cessou a permanência"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "IV - nos de bigamia e nos de falsificação ou alteração de assentamento do registro civil, da data em que o fato se tornou conhecido"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "V - nos crimes contra a dignidade sexual ou que envolvam violência contra a criança e o adolescente, previstos neste Código ou em legislação especial, da data em que a vítima completar 18 (dezoito) anos, salvo se a esse tempo já houver sido proposta a ação penal. Vigência"
+        }
+      ],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 14.344, de 2022)",
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 112,
+      "rubrica": "Termo inicial da prescrição após a sentença condenatória irrecorrível",
+      "caput": "No caso do art. 110 deste Código, a prescrição começa a correr:",
+      "itens": [
+        {
+          "tipo": "inciso",
+          "texto": "I - do dia em que transita em julgado a sentença condenatória, para a acusação, ou a que revoga a suspensão condicional da pena ou o livramento condicional"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "II - do dia em que se interrompe a execução, salvo quando o tempo da interrupção deva computar-se na pena"
+        }
+      ],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 113,
+      "rubrica": "Prescrição no caso de evasão do condenado ou de revogação do livramento condicional",
+      "caput": "No caso de evadir-se o condenado ou de revogar-se o livramento condicional, a prescrição é regulada pelo tempo que resta da pena",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 114,
+      "rubrica": "Prescrição da multa",
+      "caput": "A prescrição da pena de multa ocorrerá:",
+      "itens": [
+        {
+          "tipo": "inciso",
+          "texto": "I - em 2 (dois) anos, quando a multa for a única cominada ou aplicada"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "II - no mesmo prazo estabelecido para prescrição da pena privativa de liberdade, quando a multa for alternativa ou cumulativamente cominada ou cumulativamente aplicada"
+        }
+      ],
+      "alteracoes": [
+        "(Incluído pela Lei nº 9.268, de 1º.4.1996)",
+        "(Redação dada pela Lei nº 9.268, de 1º.4.1996)"
+      ]
+    },
+    {
+      "numero": 115,
+      "rubrica": "Redução dos prazos de prescrição",
+      "caput": "São reduzidos de metade os prazos de prescrição quando o criminoso era, ao tempo do crime, menor de 21 (vinte e um) anos ou, na data da sentença, maior de 70 (setenta) anos, salvo se o crime envolver violência sexual contra a mulher",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 15.160, de 2025)"
+      ]
+    },
+    {
+      "numero": 116,
+      "rubrica": "Causas impeditivas da prescrição",
+      "caput": "Antes de passar em julgado a sentença final, a prescrição não corre:",
+      "itens": [
+        {
+          "tipo": "inciso",
+          "texto": "I - enquanto não resolvida, em outro processo, questão de que dependa o reconhecimento da existência do crime"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "II - enquanto o agente cumpre pena no exterior"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "III - na pendência de embargos de declaração ou de recursos aos Tribunais Superiores, quando inadmissíveis; e"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "IV - enquanto não cumprido ou não rescindido o acordo de não persecução penal"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Parágrafo único - Depois de passada em julgado a sentença condenatória, a prescrição não corre durante o tempo em que o condenado está preso por outro motivo"
+        }
+      ],
+      "alteracoes": [
+        "(Incluído pela Lei nº 13.964, de 2019)",
+        "(Redação dada pela Lei nº 13.964, de 2019)",
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 117,
+      "rubrica": "Causas interruptivas da prescrição",
+      "caput": "O curso da prescrição interrompe-se:",
+      "itens": [
+        {
+          "tipo": "inciso",
+          "texto": "I - pelo recebimento da denúncia ou da queixa"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "II - pela pronúncia"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "III - pela decisão confirmatória da pronúncia"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "IV - pela publicação da sentença ou acórdão condenatórios recorríveis"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "V - pelo início ou continuação do cumprimento da pena"
+        },
+        {
+          "tipo": "inciso",
+          "texto": "VI - pela reincidência"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 1º - Excetuados os casos dos incisos V e VI deste artigo, a interrupção da prescrição produz efeitos relativamente a todos os autores do crime. Nos crimes conexos, que sejam objeto do mesmo processo, estende-se aos demais a interrupção relativa a qualquer deles"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "§ 2º - Interrompida a prescrição, salvo a hipótese do inciso V deste artigo, todo o prazo começa a correr, novamente, do dia da interrupção"
+        }
+      ],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 11.596, de 2007)",
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)",
+        "(Redação dada pela Lei nº 9.268, de 1º.4.1996)"
+      ]
+    },
+    {
+      "numero": 118,
+      "rubrica": null,
+      "caput": "As penas mais leves prescrevem com as mais graves",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 119,
+      "rubrica": null,
+      "caput": "No caso de concurso de crimes, a extinção da punibilidade incidirá sobre a pena de cada um, isoladamente",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)"
+      ]
+    },
+    {
+      "numero": 120,
+      "rubrica": "Perdão judicial",
+      "caput": "A sentença que conceder perdão judicial não será considerada para efeitos de reincidência PARTE ESPECIAL TÍTULO I DOS CRIMES CONTRA A PESSOA CAPÍTULO I DOS CRIMES CONTRA A VIDA",
+      "itens": [],
+      "alteracoes": [
+        "(Redação dada pela Lei nº 7.209, de 11.7.1984)",
+        "(Vide Lei nº 7.209, de 1984)"
+      ]
+    }
+  ]
+}
