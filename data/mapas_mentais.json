@@ -1,0 +1,419 @@
+{
+  "versao": 1,
+  "sobre": "Base estruturada dos mapas mentais. Cada nó é um conceito com resumo, dispositivo e posição doutrinária localizada; as conexões cruzadas apontam nós de OUTROS módulos com que o conceito se articula dogmaticamente — é o que permite fundir até cinco temas num mapa só.",
+  "sobreAsAncoras": "O campo `artigo.ancora` usa a forma que o Vade Mecum realmente publica (art20, art73), sem hífen. É essa a âncora que resolve em vademecum.html#art20.",
+  "sobreAsConexoes": "Uma conexão cruzada só entra quando os dois conceitos se tocam de fato na dogmática — não por semelhança de assunto. Cada uma carrega o motivo pelo qual existe, e é ele que aparece ao passar o cursor sobre a aresta.",
+  "modulos": [
+    {
+      "id": "principios",
+      "titulo": "Princípios",
+      "cor": "principios",
+      "nos": [
+        { "id": "pr-raiz", "modulo": "principios", "pai": null, "titulo": "Princípios limitadores",
+          "resumo": "As balizas que contêm o poder de punir. Operam antes de qualquer discussão sobre o fato: se a lei não pode existir daquele jeito, não há o que subsumir.",
+          "doutrina_chave": [{ "autor": "Sanches", "localizador": "PDF p. 88", "posicao": "Arrola os atributos exigidos da lei penal, entre eles ser certa e necessária." }] },
+
+        { "id": "pr-legalidade", "modulo": "principios", "pai": "pr-raiz", "titulo": "Legalidade",
+          "resumo": "Não há crime sem lei anterior que o defina, nem pena sem prévia cominação legal. Desdobra-se em formal (o rito de produção da lei) e material (os limites de conteúdo).",
+          "artigo": { "rotulo": "art. 1º", "numero": 1, "ancora": "art1" },
+          "doutrina_chave": [{ "autor": "Sanches", "localizador": "PDF p. 88", "posicao": "A legalidade formal representa a obediência aos trâmites procedimentais; a material impõe limites de conteúdo." },
+                             { "autor": "Greco", "localizador": "§ 4. Legalidade formal e legalidade material", "posicao": "Dedica seção própria à mesma distinção." }],
+          "exemplo": "Conduta socialmente reprovável sem tipo correspondente não vira crime por analogia, por mais grave que seja.",
+          "conexoes_cruzadas": [{ "para": "lt-atividade", "motivo": "A exigência de lei ANTERIOR é o núcleo temporal de que decorre a irretroatividade." }] },
+
+        { "id": "pr-anterioridade", "modulo": "principios", "pai": "pr-legalidade", "titulo": "Anterioridade",
+          "resumo": "A lei precisa preceder o fato. É a face temporal da legalidade, e dela nasce a proibição de retroagir em prejuízo do réu.",
+          "artigo": { "rotulo": "art. 1º", "numero": 1, "ancora": "art1" },
+          "conexoes_cruzadas": [{ "para": "lt-irretroatividade", "motivo": "A irretroatividade da lei gravosa é a anterioridade aplicada à sucessão de leis." }] },
+
+        { "id": "pr-taxatividade", "modulo": "principios", "pai": "pr-legalidade", "titulo": "Taxatividade",
+          "resumo": "A lei deve ser certa: veda-se o tipo penal indeterminado. Um tipo que não permite ao destinatário saber o que é proibido não cumpre a função de garantia.",
+          "doutrina_chave": [{ "autor": "Sanches", "localizador": "PDF p. 88", "posicao": "Entre os atributos: certa — veda-se o tipo penal indeterminado." }] },
+
+        { "id": "pr-intervencao", "modulo": "principios", "pai": "pr-raiz", "titulo": "Intervenção mínima",
+          "resumo": "O direito penal é a última resposta, não a primeira. Desdobra-se em subsidiariedade (só quando os outros ramos falham) e fragmentariedade (só as lesões mais graves aos bens mais relevantes).",
+          "doutrina_chave": [{ "autor": "Sanches", "localizador": "PDF p. 88", "posicao": "Arrola a necessidade — intervenção mínima — entre os atributos exigidos da lei penal." }] },
+
+        { "id": "pr-insignificancia", "modulo": "principios", "pai": "pr-intervencao", "titulo": "Insignificância",
+          "resumo": "O fato se ajusta formalmente ao tipo mas não lesa o bem jurídico de modo relevante. Reconhecida, o fato é ATÍPICO — não se chega a examinar ilicitude nem culpabilidade.",
+          "doutrina_chave": [{ "autor": "Sanches", "localizador": "PDF p. 72", "posicao": "Tem lugar no primeiro aspecto da tipicidade conglobante, a tipicidade material." },
+                             { "autor": "Masson", "localizador": "p. 29", "posicao": "A violência ou grave ameaça no tipo é circunstância indicativa de relevância penal e impeditiva da bagatela." }],
+          "exemplo": "Subtração de um pacote de balas: atípica. O mesmo valor subtraído mediante grave ameaça, no roubo, não é.",
+          "conexoes_cruzadas": [{ "para": "tc-tipicidade-material", "motivo": "É exatamente aqui que a insignificância opera: no filtro material da tipicidade." }] },
+
+        { "id": "pr-culpabilidade-principio", "modulo": "principios", "pai": "pr-raiz", "titulo": "Culpabilidade como princípio",
+          "resumo": "Não há pena sem culpabilidade, e a pena se mede por ela. Veda a responsabilidade objetiva: ninguém responde por resultado que não causou ao menos culposamente.",
+          "artigo": { "rotulo": "art. 19", "numero": 19, "ancora": "art19" },
+          "conexoes_cruzadas": [{ "para": "dc-preterdolo", "motivo": "É o princípio que o art. 19 positiva ao exigir culpa no resultado agravador." },
+                                { "para": "cu-raiz", "motivo": "O princípio ganha corpo no terceiro substrato do crime." }] }
+      ]
+    },
+
+    {
+      "id": "lei-penal-no-tempo",
+      "titulo": "Lei penal no tempo",
+      "cor": "tempo",
+      "nos": [
+        { "id": "lt-raiz", "modulo": "lei-penal-no-tempo", "pai": null, "titulo": "Lei penal no tempo",
+          "resumo": "Antes de escolher a lei aplicável é preciso datar o fato. Daí a sequência: quando o crime aconteceu, qual lei o rege, e em que hipóteses uma lei alcança fato fora de sua vigência." },
+
+        { "id": "lt-atividade", "modulo": "lei-penal-no-tempo", "pai": "lt-raiz", "titulo": "Teoria da atividade (art. 4º)",
+          "resumo": "Considera-se praticado o crime no momento da ação ou omissão, ainda que outro seja o momento do resultado. É a teoria adotada quanto ao TEMPO do crime.",
+          "artigo": { "rotulo": "art. 4º", "numero": 4, "ancora": "art4" },
+          "doutrina_chave": [{ "autor": "Masson", "localizador": "p. 375", "posicao": "Afirma expressamente a adoção da teoria da atividade pelo art. 4º e a trata como premissa de outros institutos." },
+                             { "autor": "Greco", "localizador": "§ 2. Tempo do crime", "posicao": "Insiste na necessidade de apontar com precisão o tempo do crime, de que todo o raciocínio depende." }],
+          "exemplo": "Golpes em março, morte em maio, lei mais gravosa em abril: aplica-se a lei de março.",
+          "conexoes_cruzadas": [{ "para": "cu-menoridade", "motivo": "A idade do agente se afere no momento da conduta — desdobramento direto desta teoria." },
+                                { "para": "tc-conduta", "motivo": "O que se data é a conduta, não o resultado." }] },
+
+        { "id": "lt-irretroatividade", "modulo": "lei-penal-no-tempo", "pai": "lt-raiz", "titulo": "Irretroatividade (regra)",
+          "resumo": "A lei penal nasce olhando para o futuro: rege os fatos praticados de sua vigência em diante. A lei mais gravosa jamais alcança fato anterior.",
+          "artigo": { "rotulo": "art. 2º", "numero": 2, "ancora": "art2" } },
+
+        { "id": "lt-retroatividade", "modulo": "lei-penal-no-tempo", "pai": "lt-irretroatividade", "titulo": "Retroatividade benéfica",
+          "resumo": "A exceção com condição absoluta: a lei posterior alcança fato anterior quando for mais benéfica ao réu — inclusive contra coisa julgada.",
+          "artigo": { "rotulo": "art. 2º", "numero": 2, "ancora": "art2" } },
+
+        { "id": "lt-abolitio", "modulo": "lei-penal-no-tempo", "pai": "lt-retroatividade", "titulo": "Abolitio criminis",
+          "resumo": "Forma mais radical da retroatividade benéfica: a lei nova deixa de considerar o fato criminoso, cessando execução e efeitos penais mesmo após o trânsito em julgado. Subsistem os efeitos civis.",
+          "artigo": { "rotulo": "art. 2º, caput", "numero": 2, "ancora": "art2" } },
+
+        { "id": "lt-novatio-mitius", "modulo": "lei-penal-no-tempo", "pai": "lt-retroatividade", "titulo": "Novatio legis in mellius",
+          "resumo": "A lei nova mantém o crime mas abranda o tratamento — reduz pena, muda regime, cria benefício. Retroage.",
+          "artigo": { "rotulo": "art. 2º, parágrafo único", "numero": 2, "ancora": "art2" } },
+
+        { "id": "lt-novatio-pejus", "modulo": "lei-penal-no-tempo", "pai": "lt-irretroatividade", "titulo": "Novatio legis in pejus",
+          "resumo": "A lei nova agrava o tratamento. Não retroage — e a lei antiga, mais benéfica, segue ultra-ativa para os fatos praticados sob sua vigência.",
+          "artigo": { "rotulo": "art. 2º", "numero": 2, "ancora": "art2" } },
+
+        { "id": "lt-ultratividade", "modulo": "lei-penal-no-tempo", "pai": "lt-novatio-pejus", "titulo": "Ultra-atividade da lei benéfica",
+          "resumo": "A lei revogada continua regendo os fatos praticados em sua vigência, por ser mais benéfica. A lei velha e boa sobrevive para proteger o que aconteceu sob ela." },
+
+        { "id": "lt-temporaria", "modulo": "lei-penal-no-tempo", "pai": "lt-raiz", "titulo": "Lei temporária e excepcional (art. 3º)",
+          "resumo": "Ultra-atividade que NÃO depende de benignidade: aplica-se ao fato praticado durante a vigência ainda que decorrido o prazo ou cessadas as circunstâncias. Sem essa regra, bastaria esperar o prazo acabar para ficar impune.",
+          "artigo": { "rotulo": "art. 3º", "numero": 3, "ancora": "art3" },
+          "exemplo": "Tipo criado só para o período de calamidade continua aplicável ao fato daquele período, mesmo julgado depois." }
+      ]
+    },
+
+    {
+      "id": "teoria-do-crime",
+      "titulo": "Teoria do crime",
+      "cor": "crime",
+      "nos": [
+        { "id": "tc-raiz", "modulo": "teoria-do-crime", "pai": null, "titulo": "Conceito analítico tripartido",
+          "resumo": "Crime é fato típico, ilícito e culpável. Os substratos se examinam em ordem: não se pergunta pela ilicitude de um fato atípico nem pela culpabilidade de um fato justificado.",
+          "doutrina_chave": [{ "autor": "aula", "localizador": "lousa 14/08", "posicao": "O professor abriu 'crime ou delito' em três ramos em vermelho, com a chave MODERNA à esquerda." }],
+          "conexoes_cruzadas": [{ "para": "il-raiz", "motivo": "A ilicitude é o segundo substrato — o ramo que a lousa deixou em branco." },
+                                { "para": "cu-raiz", "motivo": "A culpabilidade é o terceiro substrato." }] },
+
+        { "id": "tc-fato-tipico", "modulo": "teoria-do-crime", "pai": "tc-raiz", "titulo": "Fato típico",
+          "resumo": "Primeiro substrato. Reúne conduta, resultado, nexo causal e o juízo de tipicidade." },
+
+        { "id": "tc-conduta", "modulo": "teoria-do-crime", "pai": "tc-fato-tipico", "titulo": "Conduta (ação ou omissão)",
+          "resumo": "Comportamento humano voluntário dirigido a um fim. Sem voluntariedade não há conduta — e sem conduta não há fato típico.",
+          "artigo": { "rotulo": "art. 13", "numero": 13, "ancora": "art13" },
+          "conexoes_cruzadas": [{ "para": "dc-raiz", "motivo": "É na conduta que reside o elemento subjetivo: dolo ou culpa." },
+                                { "para": "ic-raiz", "motivo": "O iter criminis é o percurso da conduta, da cogitação ao exaurimento." }] },
+
+        { "id": "tc-resultado", "modulo": "teoria-do-crime", "pai": "tc-fato-tipico", "titulo": "Resultado naturalístico",
+          "resumo": "Modificação no mundo exterior. Falta nos crimes de mera conduta — mas o resultado JURÍDICO, a lesão ou perigo ao bem tutelado, existe em todo crime.",
+          "artigo": { "rotulo": "art. 13", "numero": 13, "ancora": "art13" } },
+
+        { "id": "tc-nexo", "modulo": "teoria-do-crime", "pai": "tc-fato-tipico", "titulo": "Nexo causal (art. 13)",
+          "resumo": "O resultado só é imputável a quem lhe deu causa. Considera-se causa a ação ou omissão sem a qual o resultado não teria ocorrido — com o freio do §1º para a causa superveniente relativamente independente.",
+          "artigo": { "rotulo": "art. 13", "numero": 13, "ancora": "art13" },
+          "exemplo": "Golpe leve, infecção hospitalar independente, morte: o §1º corta a cadeia e o agente responde só pela lesão.",
+          "conexoes_cruzadas": [{ "para": "et-aberratio-causae", "motivo": "O erro sobre o nexo causal é justamente a divergência entre o curso causal representado e o real." }] },
+
+        { "id": "tc-tipicidade", "modulo": "teoria-do-crime", "pai": "tc-fato-tipico", "titulo": "Tipicidade",
+          "resumo": "O juízo de correspondência entre o fato e o tipo. Tem três planos: formal, material e conglobante." },
+
+        { "id": "tc-tipicidade-formal", "modulo": "teoria-do-crime", "pai": "tc-tipicidade", "titulo": "Tipicidade formal",
+          "resumo": "A subsunção pura: o fato se encaixa na descrição legal. É o ponto de partida, não a conclusão." },
+
+        { "id": "tc-tipicidade-material", "modulo": "teoria-do-crime", "pai": "tc-tipicidade", "titulo": "Tipicidade material",
+          "resumo": "Exige lesão ou perigo de lesão relevante ao bem jurídico. É aqui que a insignificância opera, retirando a tipicidade de fatos formalmente típicos.",
+          "doutrina_chave": [{ "autor": "Sanches", "localizador": "PDF p. 72", "posicao": "A insignificância tem lugar no primeiro aspecto da tipicidade conglobante, a tipicidade material." }],
+          "conexoes_cruzadas": [{ "para": "pr-insignificancia", "motivo": "O princípio da insignificância é o filtro que atua neste plano." }] },
+
+        { "id": "tc-tipicidade-conglobante", "modulo": "teoria-do-crime", "pai": "tc-tipicidade", "titulo": "Tipicidade conglobante",
+          "resumo": "Pergunta se a conduta, além de descrita no tipo, é antinormativa diante do ordenamento tomado como um todo. Conduta imposta ou fomentada por outra norma não pode ser típica." },
+
+        { "id": "tc-elementar", "modulo": "teoria-do-crime", "pai": "tc-tipicidade", "titulo": "Elementar × circunstância",
+          "resumo": "Elementar é a palavra que, retirada do tipo, transforma a situação em não crime ou em outro crime. Circunstância é a que, retirada, mantém o crime e só altera sua gravidade.",
+          "exemplo": "Tire 'o próprio filho' do infanticídio e sobra homicídio: elementar. Tire o repouso noturno do furto e sobra furto simples: circunstância.",
+          "conexoes_cruzadas": [{ "para": "et-raiz", "motivo": "É este par que decide se o erro é ESSENCIAL (recai sobre elementar) ou ACIDENTAL (sobre circunstância)." }] }
+      ]
+    },
+
+    {
+      "id": "dolo-e-culpa",
+      "titulo": "Dolo e culpa",
+      "cor": "subjetivo",
+      "nos": [
+        { "id": "dc-raiz", "modulo": "dolo-e-culpa", "pai": null, "titulo": "Elemento subjetivo",
+          "resumo": "O que o agente queria e o que previu. Vive dentro do fato típico, e é sobre ele que o erro de tipo age." },
+
+        { "id": "dc-dolo-direto", "modulo": "dolo-e-culpa", "pai": "dc-raiz", "titulo": "Dolo direto (art. 18, I)",
+          "resumo": "O agente QUER o resultado: ele é o fim da conduta.",
+          "artigo": { "rotulo": "art. 18, I", "numero": 18, "ancora": "art18" } },
+
+        { "id": "dc-dolo-eventual", "modulo": "dolo-e-culpa", "pai": "dc-raiz", "titulo": "Dolo eventual",
+          "resumo": "O agente não quer o resultado, que previu, mas assume o risco de produzi-lo.",
+          "artigo": { "rotulo": "art. 18, I", "numero": 18, "ancora": "art18" },
+          "doutrina_chave": [{ "autor": "Masson", "localizador": "p. 236", "posicao": "Modalidade em que o agente não quer o resultado, por ele previsto, mas assume o risco de produzi-lo." }],
+          "conexoes_cruzadas": [{ "para": "dc-culpa-consciente", "motivo": "A fronteira mais fina do módulo: previsão existe nos dois, muda a atitude diante dela." }] },
+
+        { "id": "dc-culpa", "modulo": "dolo-e-culpa", "pai": "dc-raiz", "titulo": "Culpa (art. 18, II)",
+          "resumo": "Violação do dever de cuidado com resultado não querido. A punição por culpa é EXCEPCIONAL: depende de previsão expressa em lei.",
+          "artigo": { "rotulo": "art. 18, II e parágrafo único", "numero": 18, "ancora": "art18" },
+          "exemplo": "Dano culposo não existe no Código: o descuido que danifica coisa alheia é penalmente atípico." },
+
+        { "id": "dc-culpa-consciente", "modulo": "dolo-e-culpa", "pai": "dc-culpa", "titulo": "Culpa consciente",
+          "resumo": "O agente prevê o resultado mas acredita sinceramente que não ocorrerá. O resultado previsto não é querido nem assumido.",
+          "doutrina_chave": [{ "autor": "Greco", "localizador": "§ 6. Diferença entre culpa consciente e dolo eventual", "posicao": "Na culpa consciente o agente acredita sinceramente na não ocorrência; no dolo eventual assume o risco." },
+                             { "autor": "Sanches", "localizador": "PDF p. 205", "posicao": "Quem confia na própria técnica apurada para evitar o resultado responde por culpa consciente, não por dolo eventual." }] },
+
+        { "id": "dc-culpa-inconsciente", "modulo": "dolo-e-culpa", "pai": "dc-culpa", "titulo": "Culpa inconsciente",
+          "resumo": "O agente sequer prevê o resultado, embora ele fosse previsível." },
+
+        { "id": "dc-modalidades", "modulo": "dolo-e-culpa", "pai": "dc-culpa", "titulo": "Imprudência, negligência, imperícia",
+          "resumo": "Imprudência é a ação descuidada; negligência é a omissão do cuidado devido; imperícia é a falta de aptidão técnica no exercício de arte, ofício ou profissão.",
+          "artigo": { "rotulo": "art. 18, II", "numero": 18, "ancora": "art18" } },
+
+        { "id": "dc-preterdolo", "modulo": "dolo-e-culpa", "pai": "dc-raiz", "titulo": "Preterdolo",
+          "resumo": "Dolo no antecedente e culpa no consequente. O art. 19 impede que o resultado agravador seja imputado sem ao menos culpa — é a vedação da responsabilidade objetiva.",
+          "artigo": { "rotulo": "art. 19", "numero": 19, "ancora": "art19" },
+          "exemplo": "Lesão corporal seguida de morte: quis lesionar, não quis matar, mas a morte era previsível.",
+          "conexoes_cruzadas": [{ "para": "pr-culpabilidade-principio", "motivo": "O art. 19 é a positivação do princípio da culpabilidade." }] }
+      ]
+    },
+
+    {
+      "id": "erro-de-tipo",
+      "titulo": "Erro de tipo",
+      "cor": "erro",
+      "nos": [
+        { "id": "et-raiz", "modulo": "erro-de-tipo", "pai": null, "titulo": "Erro de tipo",
+          "resumo": "Falsa percepção da realidade que recai sobre elemento do tipo. O que decide tudo é sobre o que o erro recaiu: elementar (essencial) ou circunstância (acidental).",
+          "artigo": { "rotulo": "art. 20", "numero": 20, "ancora": "art20" },
+          "conexoes_cruzadas": [{ "para": "tc-elementar", "motivo": "É o par elementar/circunstância que classifica o erro." },
+                                { "para": "cu-erro-proibicao", "motivo": "Par conceitual: um recai sobre o FATO, o outro sobre a ILICITUDE — e os regimes são opostos." }] },
+
+        { "id": "et-essencial", "modulo": "erro-de-tipo", "pai": "et-raiz", "titulo": "Erro essencial (art. 20, caput)",
+          "resumo": "Recai sobre elementar. O agente NÃO quer praticar crime algum. Exclui o dolo; a culpa só subsiste se o erro era evitável E houver tipo culposo previsto.",
+          "artigo": { "rotulo": "art. 20, caput", "numero": 20, "ancora": "art20" },
+          "exemplo": "O caçador atira no vulto que supõe ser um animal e mata o companheiro: errou sobre a elementar 'alguém'.",
+          "conexoes_cruzadas": [{ "para": "dc-raiz", "motivo": "É o dolo que o erro essencial remove — por isso ele age dentro do fato típico." }] },
+
+        { "id": "et-invencivel", "modulo": "erro-de-tipo", "pai": "et-essencial", "titulo": "Invencível (escusável)",
+          "resumo": "Qualquer um na situação teria errado. Exclui dolo E culpa: o agente não responde por nada.",
+          "artigo": { "rotulo": "art. 20, caput", "numero": 20, "ancora": "art20" } },
+
+        { "id": "et-vencivel", "modulo": "erro-de-tipo", "pai": "et-essencial", "titulo": "Vencível (inescusável)",
+          "resumo": "Quem é cuidadoso não faz. Exclui o dolo mas permite a punição por culpa, SE houver tipo culposo previsto em lei.",
+          "artigo": { "rotulo": "art. 20, caput", "numero": 20, "ancora": "art20" },
+          "doutrina_chave": [{ "autor": "Masson", "localizador": "p. 263", "posicao": "Erro que provém da culpa do agente: com a cautela do homem médio poderia evitá-lo." }],
+          "conexoes_cruzadas": [{ "para": "dc-culpa", "motivo": "Sem tipo culposo previsto, o erro vencível leva à atipicidade — não a uma punição automática." }] },
+
+        { "id": "et-acidental", "modulo": "erro-de-tipo", "pai": "et-raiz", "titulo": "Erro acidental",
+          "resumo": "Recai sobre circunstância. O agente QUER praticar o crime e tem intenção criminosa. Não exclui dolo, não exclui culpa e não isenta de pena.",
+          "artigo": { "rotulo": "art. 20", "numero": 20, "ancora": "art20" },
+          "doutrina_chave": [{ "autor": "Sanches", "localizador": "PDF p. 211", "posicao": "Enumera cinco subespécies." },
+                             { "autor": "Masson", "localizador": "p. 267", "posicao": "Enumera SEIS hipóteses, acrescentando o erro quanto às qualificadoras." }] },
+
+        { "id": "et-objeto", "modulo": "erro-de-tipo", "pai": "et-acidental", "titulo": "Erro sobre o objeto",
+          "resumo": "Engana-se sobre a coisa. Pela teoria da CONCRETIZAÇÃO, responde pelo objeto efetivamente atingido.",
+          "exemplo": "Furta um aparelho barato convicto de levar o caro: responde pelo que levou." },
+
+        { "id": "et-pessoa", "modulo": "erro-de-tipo", "pai": "et-acidental", "titulo": "Erro sobre a pessoa (art. 20, §3º)",
+          "resumo": "Falha a REPRESENTAÇÃO: o agente confunde quem é quem. Pela teoria da EQUIVALÊNCIA, respondem-se as condições e qualidades da vítima PRETENDIDA, não da atingida.",
+          "artigo": { "rotulo": "art. 20, §3º", "numero": 20, "ancora": "art20" },
+          "conexoes_cruzadas": [{ "para": "et-aberratio-ictus", "motivo": "Figuras vizinhas que a prova adora trocar: aqui falha a representação, lá a execução." }] },
+
+        { "id": "et-aberratio-ictus", "modulo": "erro-de-tipo", "pai": "et-acidental", "titulo": "Aberratio ictus (art. 73)",
+          "resumo": "Erro na EXECUÇÃO, relação pessoa × pessoa. A representação estava correta; falhou a pontaria. Responde considerando as condições da vítima pretendida; se atingir ambos, concurso formal.",
+          "artigo": { "rotulo": "art. 73", "numero": 73, "ancora": "art73" },
+          "doutrina_chave": [{ "autor": "Sanches", "localizador": "PDF p. 216", "posicao": "Ictus e criminis são espécies de erro na execução; o que muda é o bem jurídico: pessoa × pessoa no 73, coisa × pessoa no 74." }],
+          "conexoes_cruzadas": [{ "para": "il-legitima-defesa", "motivo": "Errar a pontaria ao repelir agressão não descaracteriza a justificante: o art. 73 lê a reação como dirigida ao agressor real." },
+                                { "para": "il-estado-necessidade", "motivo": "Masson afirma a compatibilidade do estado de necessidade com a aberratio ictus." }] },
+
+        { "id": "et-aberratio-delicti", "modulo": "erro-de-tipo", "pai": "et-acidental", "titulo": "Aberratio delicti / criminis (art. 74)",
+          "resumo": "Erro na execução com bem jurídico DIVERSO, relação pessoa × coisa. Responde pelo resultado produzido a título de culpa, se previsto.",
+          "artigo": { "rotulo": "art. 74", "numero": 74, "ancora": "art74" },
+          "doutrina_chave": [{ "autor": "Sanches", "localizador": "PDF p. 217", "posicao": "Sustenta afastar a regra quando o resultado pretendido for mais grave que o produzido, apoiando-se em Flávio Monteiro de Barros — e NÃO em Zaffaroni, como diz o slide da aula." }],
+          "exemplo": "Arremessa pedra para danificar o carro e fere um transeunte: lesão culposa. Se quisesse matar e só quebrasse o vidro, a doutrina afasta o art. 74 e remanesce a tentativa de homicídio." },
+
+        { "id": "et-aberratio-causae", "modulo": "erro-de-tipo", "pai": "et-acidental", "titulo": "Aberratio causae",
+          "resumo": "Erro sobre o nexo causal: o resultado ocorre por caminho diverso do representado. NÃO tem previsão legal — é figura exclusivamente doutrinária.",
+          "doutrina_chave": [{ "autor": "Sanches", "localizador": "PDF p. 217", "posicao": "Não possui previsão legal, sendo estudado apenas pela doutrina." },
+                             { "autor": "Masson", "localizador": "p. 269", "posicao": "Distingue-a do dolo geral pelo número de atos: ato único aqui, sucessão de atos lá." }],
+          "conexoes_cruzadas": [{ "para": "tc-nexo", "motivo": "É o nexo causal do art. 13 visto pelo lado do que o agente representou." }] },
+
+        { "id": "et-descriminantes", "modulo": "erro-de-tipo", "pai": "et-raiz", "titulo": "Descriminantes putativas (art. 20, §1º)",
+          "resumo": "O agente supõe situação de fato que, se existisse, tornaria a ação legítima. Erro plenamente justificado isenta de pena; derivado de culpa, responde por culpa se prevista.",
+          "artigo": { "rotulo": "art. 20, §1º", "numero": 20, "ancora": "art20" },
+          "exemplo": "Fere quem supunha ser agressor e era o próprio filho com um guarda-chuva.",
+          "conexoes_cruzadas": [{ "para": "il-legitima-defesa", "motivo": "É a justificante imaginada: existe na cabeça do agente, não no mundo." }] },
+
+        { "id": "et-terceiro", "modulo": "erro-de-tipo", "pai": "et-raiz", "titulo": "Erro determinado por terceiro (art. 20, §2º)",
+          "resumo": "Erro INDUZIDO, com dois personagens. Responde pelo crime o terceiro que determina o erro — o provocador, como autor mediato.",
+          "artigo": { "rotulo": "art. 20, §2º", "numero": 20, "ancora": "art20" },
+          "doutrina_chave": [{ "autor": "Greco", "localizador": "§ 4.6. Autoria direta e indireta", "posicao": "Arrola o art. 20, §2º entre as quatro hipóteses de autoria mediata expressas no Código." }],
+          "exemplo": "O médico entrega à enfermeira uma seringa letal dizendo ser a medicação prescrita.",
+          "conexoes_cruzadas": [{ "para": "cu-coacao", "motivo": "Ao lado da coação moral e da obediência hierárquica, é hipótese de autoria mediata no Código." }] }
+      ]
+    },
+
+    {
+      "id": "iter-criminis",
+      "titulo": "Iter criminis",
+      "cor": "iter",
+      "nos": [
+        { "id": "ic-raiz", "modulo": "iter-criminis", "pai": null, "titulo": "Iter criminis",
+          "resumo": "O caminho do crime, da ideia ao esgotamento dos efeitos. Cinco etapas, e a punição começa, em regra, na terceira." },
+
+        { "id": "ic-cogitacao", "modulo": "iter-criminis", "pai": "ic-raiz", "titulo": "Cogitação",
+          "resumo": "A ideia. Interna e impunível — pensar em crime não é crime." },
+
+        { "id": "ic-preparacao", "modulo": "iter-criminis", "pai": "ic-raiz", "titulo": "Atos preparatórios",
+          "resumo": "Reunir meios e condições. Em regra impuníveis, salvo quando a lei os tipifica de forma autônoma." },
+
+        { "id": "ic-execucao", "modulo": "iter-criminis", "pai": "ic-raiz", "titulo": "Atos executórios",
+          "resumo": "Começa o ataque ao bem jurídico, e com ele a punibilidade. É aqui que a tentativa e a desistência se tornam possíveis.",
+          "artigo": { "rotulo": "art. 14", "numero": 14, "ancora": "art14" } },
+
+        { "id": "ic-consumacao", "modulo": "iter-criminis", "pai": "ic-raiz", "titulo": "Consumação",
+          "resumo": "Reúnem-se todos os elementos da definição legal.",
+          "artigo": { "rotulo": "art. 14, I", "numero": 14, "ancora": "art14" } },
+
+        { "id": "ic-exaurimento", "modulo": "iter-criminis", "pai": "ic-raiz", "titulo": "Exaurimento",
+          "resumo": "O que se segue à consumação. Não afeta a tipificação, mas repercute na dosimetria e, em tipos formais, pode integrar qualificadora ou aumento.",
+          "artigo": { "rotulo": "art. 59", "numero": 59, "ancora": "art59" } },
+
+        { "id": "ic-tentativa", "modulo": "iter-criminis", "pai": "ic-execucao", "titulo": "Tentativa (art. 14, II)",
+          "resumo": "Iniciada a execução, o crime não se consuma por circunstâncias ALHEIAS à vontade do agente. Pena do crime diminuída de um a dois terços.",
+          "artigo": { "rotulo": "art. 14, II", "numero": 14, "ancora": "art14" },
+          "doutrina_chave": [{ "autor": "Sanches", "localizador": "PDF p. 359", "posicao": "Na tentativa o agente quer prosseguir e não pode; na desistência, pode prosseguir e não quer." }],
+          "conexoes_cruzadas": [{ "para": "dc-dolo-direto", "motivo": "Não há tentativa de crime culposo: ela pressupõe dolo quanto ao resultado." }] },
+
+        { "id": "ic-desistencia", "modulo": "iter-criminis", "pai": "ic-execucao", "titulo": "Desistência voluntária (art. 15)",
+          "resumo": "O agente interrompe a execução no meio, podendo prosseguir. Responde só pelos atos já praticados. Exige voluntariedade — não espontaneidade.",
+          "artigo": { "rotulo": "art. 15", "numero": 15, "ancora": "art15" },
+          "doutrina_chave": [{ "autor": "Masson", "localizador": "p. 292", "posicao": "Requisitos comuns: voluntariedade e eficácia. A iniciativa pode emanar de terceira pessoa." }] },
+
+        { "id": "ic-arrependimento-eficaz", "modulo": "iter-criminis", "pai": "ic-execucao", "titulo": "Arrependimento eficaz (art. 15)",
+          "resumo": "O agente já esgotou os atos que julgava suficientes e passa a agir para impedir o resultado. Responde só pelos atos já praticados.",
+          "artigo": { "rotulo": "art. 15", "numero": 15, "ancora": "art15" },
+          "exemplo": "Ministra o veneno, arrepende-se, retorna e aplica o antídoto." },
+
+        { "id": "ic-arrependimento-posterior", "modulo": "iter-criminis", "pai": "ic-consumacao", "titulo": "Arrependimento posterior (art. 16)",
+          "resumo": "Crime JÁ consumado, sem violência ou grave ameaça, com reparação do dano até o recebimento da denúncia. Pena reduzida de um a dois terços.",
+          "artigo": { "rotulo": "art. 16", "numero": 16, "ancora": "art16" } },
+
+        { "id": "ic-crime-impossivel", "modulo": "iter-criminis", "pai": "ic-execucao", "titulo": "Crime impossível (art. 17)",
+          "resumo": "Não se pune a tentativa quando, por ineficácia ABSOLUTA do meio ou absoluta impropriedade do objeto, o crime jamais poderia consumar-se. Relativa não basta.",
+          "artigo": { "rotulo": "art. 17", "numero": 17, "ancora": "art17" },
+          "exemplo": "Atirar em quem já estava morto (objeto) ou usar substância comprovadamente inócua (meio)." }
+      ]
+    },
+
+    {
+      "id": "ilicitude",
+      "titulo": "Ilicitude",
+      "cor": "ilicitude",
+      "nos": [
+        { "id": "il-raiz", "modulo": "ilicitude", "pai": null, "titulo": "Ilicitude",
+          "resumo": "Segundo substrato. A tipicidade funciona como INDÍCIO de ilicitude: praticado o fato típico, presume-se ilícito até que uma justificante afaste a presunção. As excludentes não tornam o fato atípico.",
+          "artigo": { "rotulo": "art. 23", "numero": 23, "ancora": "art23" },
+          "conexoes_cruzadas": [{ "para": "tc-raiz", "motivo": "É o ramo do meio do conceito analítico — o que a lousa de 14/08 deixou em branco." }] },
+
+        { "id": "il-estado-necessidade", "modulo": "ilicitude", "pai": "il-raiz", "titulo": "Estado de necessidade (art. 24)",
+          "resumo": "Perigo atual, não provocado voluntariamente, inevitável por outro meio, com sacrifício de bem cujo valor não era razoável exigir que se salvasse.",
+          "artigo": { "rotulo": "art. 24", "numero": 24, "ancora": "art24" },
+          "doutrina_chave": [{ "autor": "Masson", "localizador": "p. 345", "posicao": "As duas justificantes podem coexistir no mesmo episódio — o caso da água que só sacia um." }],
+          "exemplo": "Dois náufragos e uma tábua que sustenta apenas um." },
+
+        { "id": "il-legitima-defesa", "modulo": "ilicitude", "pai": "il-raiz", "titulo": "Legítima defesa (art. 25)",
+          "resumo": "Repelir, com uso moderado dos meios necessários, injusta agressão atual ou iminente a direito próprio ou de outrem. Contra conduta lícita não cabe.",
+          "artigo": { "rotulo": "art. 25", "numero": 25, "ancora": "art25" },
+          "doutrina_chave": [{ "autor": "Sanches", "localizador": "PDF p. 269", "posicao": "Se por erro atinge inocente, aplica-se o art. 73 e a reação é lida como praticada contra o agressor real, sem descaracterizar a justificante." }],
+          "conexoes_cruzadas": [{ "para": "et-descriminantes", "motivo": "Quando a agressão só existe na representação do agente, a justificante é putativa (art. 20, §1º)." }] },
+
+        { "id": "il-dever-legal", "modulo": "ilicitude", "pai": "il-raiz", "titulo": "Estrito cumprimento de dever legal",
+          "resumo": "Conduta imposta por lei ao agente no exercício da função. O ordenamento não pode ordenar e punir a mesma conduta.",
+          "artigo": { "rotulo": "art. 23, III", "numero": 23, "ancora": "art23" } },
+
+        { "id": "il-exercicio-direito", "modulo": "ilicitude", "pai": "il-raiz", "titulo": "Exercício regular de direito",
+          "resumo": "Conduta autorizada pelo ordenamento, dentro dos limites do direito exercido. Fora deles, há abuso e a justificante cai.",
+          "artigo": { "rotulo": "art. 23, III", "numero": 23, "ancora": "art23" } },
+
+        { "id": "il-excesso", "modulo": "ilicitude", "pai": "il-raiz", "titulo": "Excesso punível",
+          "resumo": "O agente responde pelo EXCESSO, doloso ou culposo — e não pelo todo, porque até ali a reação era legítima. Intensivo é de intensidade; extensivo, de duração.",
+          "artigo": { "rotulo": "art. 23, parágrafo único", "numero": 23, "ancora": "art23" },
+          "doutrina_chave": [{ "autor": "Masson", "localizador": "p. 346", "posicao": "Configurado o excesso, quem era agressor passa a agredido e pode agir em legítima defesa real." }],
+          "conexoes_cruzadas": [{ "para": "dc-raiz", "motivo": "O excesso se qualifica pelo elemento subjetivo com que o agente o pratica." }] }
+      ]
+    },
+
+    {
+      "id": "culpabilidade",
+      "titulo": "Culpabilidade",
+      "cor": "culpabilidade",
+      "nos": [
+        { "id": "cu-raiz", "modulo": "culpabilidade", "pai": null, "titulo": "Culpabilidade",
+          "resumo": "Terceiro substrato: o juízo de reprovação sobre o autor do fato típico e ilícito. Três elementos, cada um com sua causa de exclusão.",
+          "conexoes_cruzadas": [{ "para": "tc-raiz", "motivo": "Fecha o conceito analítico tripartido." }] },
+
+        { "id": "cu-imputabilidade", "modulo": "culpabilidade", "pai": "cu-raiz", "titulo": "Imputabilidade",
+          "resumo": "Capacidade de entender o caráter ilícito do fato e de determinar-se conforme esse entendimento." },
+
+        { "id": "cu-menoridade", "modulo": "culpabilidade", "pai": "cu-imputabilidade", "titulo": "Menoridade (art. 27)",
+          "resumo": "Menores de dezoito anos são inimputáveis. A idade se afere no momento da CONDUTA.",
+          "artigo": { "rotulo": "art. 27", "numero": 27, "ancora": "art27" },
+          "doutrina_chave": [{ "autor": "Masson", "localizador": "p. 375", "posicao": "Desdobramento lógico da teoria da atividade adotada pelo art. 4º." }],
+          "conexoes_cruzadas": [{ "para": "lt-atividade", "motivo": "É onde a teoria do tempo do crime produz consequência prática direta." }] },
+
+        { "id": "cu-doenca-mental", "modulo": "culpabilidade", "pai": "cu-imputabilidade", "titulo": "Doença mental (art. 26)",
+          "resumo": "Isento de pena quem, por doença mental ou desenvolvimento incompleto ou retardado, era ao tempo da ação inteiramente incapaz de entender ou de determinar-se. Capacidade reduzida gera redução de pena.",
+          "artigo": { "rotulo": "art. 26", "numero": 26, "ancora": "art26" } },
+
+        { "id": "cu-embriaguez", "modulo": "culpabilidade", "pai": "cu-imputabilidade", "titulo": "Embriaguez (art. 28)",
+          "resumo": "A voluntária ou culposa NÃO exclui a imputabilidade. Só a acidental completa, de caso fortuito ou força maior, isenta. A preordenada ainda agrava — é a actio libera in causa.",
+          "artigo": { "rotulo": "art. 28", "numero": 28, "ancora": "art28" },
+          "exemplo": "Bebe justamente para criar coragem e executa o crime planejado: responde integralmente." },
+
+        { "id": "cu-potencial-consciencia", "modulo": "culpabilidade", "pai": "cu-raiz", "titulo": "Potencial consciência da ilicitude",
+          "resumo": "Não se exige consciência atual, mas a possibilidade de alcançá-la com o esforço devido." },
+
+        { "id": "cu-erro-proibicao", "modulo": "culpabilidade", "pai": "cu-potencial-consciencia", "titulo": "Erro de proibição (art. 21)",
+          "resumo": "O agente sabe o que faz e se engana sobre a ILICITUDE. Inevitável, isenta de pena; evitável, SUBSISTE a culpabilidade e a pena é reduzida de um sexto a um terço.",
+          "artigo": { "rotulo": "art. 21", "numero": 21, "ancora": "art21" },
+          "doutrina_chave": [{ "autor": "Masson", "localizador": "p. 403", "posicao": "No erro de proibição inescusável subsiste a culpabilidade." },
+                             { "autor": "Masson", "localizador": "p. 404", "posicao": "Três espécies: direto, indireto e mandamental." },
+                             { "autor": "Sanches", "localizador": "PDF p. 298", "posicao": "É a causa excludente da potencial consciência da ilicitude." }],
+          "conexoes_cruzadas": [{ "para": "et-essencial", "motivo": "O contraste decisivo: o erro de tipo evitável exclui o dolo e pune a culpa; o de proibição evitável mantém a culpabilidade e só reduz a pena." }] },
+
+        { "id": "cu-exigibilidade", "modulo": "culpabilidade", "pai": "cu-raiz", "titulo": "Exigibilidade de conduta diversa",
+          "resumo": "Só se reprova quem podia agir de outro modo. Onde a alternativa não era exigível, a culpabilidade cai." },
+
+        { "id": "cu-coacao", "modulo": "culpabilidade", "pai": "cu-exigibilidade", "titulo": "Coação moral irresistível (art. 22)",
+          "resumo": "Só é punível o autor da coação. A conduta do coagido permanece típica e ilícita — o que se exclui é a exigibilidade de conduta diversa.",
+          "artigo": { "rotulo": "art. 22", "numero": 22, "ancora": "art22" },
+          "exemplo": "Gerente abre o cofre com o filho sob a mira de arma.",
+          "conexoes_cruzadas": [{ "para": "et-terceiro", "motivo": "Ambas são hipóteses de autoria mediata expressas no Código." }] },
+
+        { "id": "cu-obediencia", "modulo": "culpabilidade", "pai": "cu-exigibilidade", "titulo": "Obediência hierárquica (art. 22)",
+          "resumo": "Ordem não manifestamente ilegal de superior hierárquico. Só é punível o autor da ordem. Se a ilegalidade for manifesta, ambos respondem.",
+          "artigo": { "rotulo": "art. 22", "numero": 22, "ancora": "art22" } }
+      ]
+    }
+  ],
+  "atalhos": [
+    { "id": "trilogia", "rotulo": "Trilogia do Crime", "modulos": ["teoria-do-crime", "ilicitude", "culpabilidade"],
+      "descricao": "Os três substratos, do fato típico à reprovação do autor." },
+    { "id": "causalidade", "rotulo": "Eixo da Causalidade e Subjetividade", "modulos": ["teoria-do-crime", "dolo-e-culpa", "erro-de-tipo"],
+      "descricao": "Como conduta, elemento subjetivo e erro se articulam dentro do fato típico." }
+  ]
+}

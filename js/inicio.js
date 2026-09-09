@@ -155,9 +155,10 @@ const Inicio = (() => {
               <h3 class="card-modulo-tit">▣ Galeria das aulas</h3>
               <p class="card-modulo-resumo">As 44 fotos que sustentam o acervo, por aula e por tema.</p>
             </a>
-            <a class="card card-modulo" href="aula.html">
-              <h3 class="card-modulo-tit">♪ Áudio da aula</h3>
-              <p class="card-modulo-resumo">2h39min com controle de velocidade e marcos temáticos.</p>
+            <a class="card card-modulo" href="mapas.html">
+              <h3 class="card-modulo-tit">🧠 Mapas mentais</h3>
+              <p class="card-modulo-resumo">Combine de 1 a 5 temas num mapa único e veja as conexões
+              dogmáticas entre eles.</p>
             </a>
           </div>
         </section>`;

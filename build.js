@@ -31,12 +31,12 @@ const DIR_DADOS = path.join(RAIZ, "data");
 const SAIDA_BUNDLE = path.join(DIR_DADOS, "bundle.js");
 const SW = path.join(RAIZ, "sw.js");
 
-/* O áudio da aula fica de fora do precache de propósito: são dezenas de
-   MB que ninguém pediu para baixar no celular. Ele é servido pela rede e
-   cacheado sob demanda pela estratégia normal do service worker. */
+/* Tudo o que o acervo serve cabe no precache. A pasta img/ fica de fora
+   porque são 7,8 MB de fotos das aulas: elas entram no cache sob demanda,
+   pela estratégia normal do service worker, conforme forem vistas. */
 const PASTAS_PRECACHE = ["css", "js", "data", "fonts", "icons"];
 const EXT_PRECACHE = [".css", ".js", ".json", ".woff2", ".png", ".svg", ".ico", ".txt"];
-const IGNORAR = new Set([".git", "node_modules", "audio", "doutrina", "img", "tools"]);
+const IGNORAR = new Set([".git", "node_modules", "doutrina", "img", "tools"]);
 
 /* ── 1. bundle ────────────────────────────────────────────────── */
 

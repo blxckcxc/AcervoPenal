@@ -1,0 +1,487 @@
+/* ═══════════════════════════════════════════════════════════════
+   mapas.css — mapas mentais interativos
+
+   AS CORES DOS MÓDULOS SÃO MEDIDAS, NÃO ESCOLHIDAS DE OLHO
+   Cada uma delas vira TEXTO (o rótulo da faixa do módulo) e traço
+   (a borda do nó), então precisa passar 4,5:1 sobre os três fundos
+   em que pode cair — a página, a superfície e o card elevado. Os
+   piores casos medidos estão anotados em cada linha.
+
+   No tema claro nenhuma das oito cores do escuro sobrevive: o verde
+   #A3E635 dá 1,3:1 sobre o pergaminho. O bloco [data-tema="claro"]
+   abaixo redefine as oito, e é só isso — o SVG não sabe de tema.
+   ═══════════════════════════════════════════════════════════════ */
+
+:root {
+  --mapa-principios:    #F59E0B;  /* 7,56 no pior fundo escuro */
+  --mapa-tempo:         #38BDF8;  /* 7,58 */
+  --mapa-crime:         #F472B6;  /* 6,13 */
+  --mapa-subjetivo:     #C084FC;  /* 6,14 */
+  --mapa-erro:          #A3E635;  /* 10,77 */
+  --mapa-iter:          #2DD4BF;  /* 8,72 */
+  --mapa-ilicitude:     #FCA5A5;  /* 8,55 */
+  --mapa-culpabilidade: #A5B4FC;  /* 8,14 */
+
+  --mapa-palco:  var(--bg-superficie);
+  --mapa-no-bg:  var(--bg-elevado);
+  --mapa-aresta: var(--borda);
+}
+
+[data-tema="claro"] {
+  --mapa-principios:    #935F06;  /* 4,52 no pior fundo claro */
+  --mapa-tempo:         #0369A1;  /* 4,95 */
+  --mapa-crime:         #BE185D;  /* 5,04 */
+  --mapa-subjetivo:     #7E22CE;  /* 5,83 */
+  --mapa-erro:          #476E0D;  /* 5,00 — o lima do escuro reprova aqui */
+  --mapa-iter:          #0F766E;  /* 4,57 */
+  --mapa-ilicitude:     #B91C1C;  /* 5,40 */
+  --mapa-culpabilidade: #4338CA;  /* 6,60 */
+}
+
+/* ── Seletor de temas ───────────────────────────────────────── */
+
+.mp-setup { margin-bottom: var(--esp-6); }
+
+.mp-setup-topo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--esp-3);
+  margin-bottom: var(--esp-3);
+}
+
+.mp-contador {
+  font-family: var(--fonte-ui);
+  font-size: var(--texto-sm);
+  color: var(--texto-secundario);
+}
+.mp-contador strong { color: var(--destaque); font-variant-numeric: tabular-nums; }
+.mp-contador.cheio strong { color: var(--atencao); }
+
+.mp-temas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--esp-2);
+}
+
+.mp-tema {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--esp-2);
+  min-height: 40px;
+  padding: var(--esp-2) var(--esp-4);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio-full);
+  background: var(--bg-superficie);
+  color: var(--texto);
+  font-family: var(--fonte-ui);
+  font-size: var(--texto-sm);
+  cursor: pointer;
+  transition: background-color var(--ease), border-color var(--ease);
+}
+.mp-tema:hover { background: var(--bg-hover); }
+.mp-tema[aria-pressed="true"] {
+  border-color: currentColor;
+  background: var(--bg-elevado);
+}
+.mp-tema-bolha {
+  width: 10px;
+  height: 10px;
+  border-radius: var(--raio-full);
+  background: currentColor;
+  flex: none;
+}
+
+/* A cor do módulo vive no chip inteiro e é herdada pela bolha —
+   assim o seletor e o mapa falam a mesma língua cromática. */
+.mp-tema[data-cor="principios"]    { color: var(--mapa-principios); }
+.mp-tema[data-cor="tempo"]         { color: var(--mapa-tempo); }
+.mp-tema[data-cor="crime"]         { color: var(--mapa-crime); }
+.mp-tema[data-cor="subjetivo"]     { color: var(--mapa-subjetivo); }
+.mp-tema[data-cor="erro"]          { color: var(--mapa-erro); }
+.mp-tema[data-cor="iter"]          { color: var(--mapa-iter); }
+.mp-tema[data-cor="ilicitude"]     { color: var(--mapa-ilicitude); }
+.mp-tema[data-cor="culpabilidade"] { color: var(--mapa-culpabilidade); }
+.mp-tema[aria-pressed="false"] .mp-tema-rot { color: var(--texto); }
+.mp-tema[aria-pressed="true"]  .mp-tema-rot { color: var(--texto-titulo); }
+
+.mp-atalhos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--esp-2);
+  margin-top: var(--esp-3);
+  padding-top: var(--esp-3);
+  border-top: 1px solid var(--borda);
+}
+.mp-atalho {
+  min-height: 36px;
+  padding: var(--esp-1) var(--esp-3);
+  border: 1px dashed var(--borda);
+  border-radius: var(--raio-sm);
+  background: none;
+  color: var(--texto-secundario);
+  font-family: var(--fonte-ui);
+  font-size: var(--texto-xs);
+  cursor: pointer;
+  transition: color var(--ease), border-color var(--ease);
+}
+.mp-atalho:hover { color: var(--destaque); border-color: var(--destaque); }
+
+/* O bloqueio do sexto tema. Aparece, some sozinho e não usa alert(). */
+.mp-limite {
+  margin-top: var(--esp-3);
+  padding: var(--esp-3) var(--esp-4);
+  border-left: 3px solid var(--atencao);
+  border-radius: var(--raio-sm);
+  background: var(--ambar-fundo);
+  color: var(--texto);
+  font-family: var(--fonte-ui);
+  font-size: var(--texto-sm);
+}
+
+/* ── Palco ──────────────────────────────────────────────────── */
+
+.mp-palco {
+  position: relative;
+  border: 1px solid var(--borda);
+  border-radius: var(--raio-lg);
+  background: var(--mapa-palco);
+  overflow: hidden;
+  touch-action: none;   /* o arrastar e o pinçar sao nossos, nao do navegador */
+}
+.mp-palco svg { display: block; width: 100%; height: 60vh; min-height: 380px; cursor: grab; }
+.mp-palco.arrastando svg { cursor: grabbing; }
+
+.mp-palco:fullscreen { border-radius: 0; }
+.mp-palco:fullscreen svg { height: 100vh; }
+
+.mp-controles {
+  position: absolute;
+  right: var(--esp-3);
+  bottom: var(--esp-3);
+  display: flex;
+  gap: var(--esp-2);
+  padding: var(--esp-2);
+  border: 1px solid var(--vidro-borda);
+  border-radius: var(--raio-md);
+  background: var(--vidro-bg);
+  backdrop-filter: var(--vidro-blur);
+}
+.mp-ctrl {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--borda);
+  border-radius: var(--raio-sm);
+  background: var(--bg-elevado);
+  color: var(--texto);
+  font-size: var(--texto-base);
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color var(--ease), color var(--ease);
+}
+.mp-ctrl:hover { background: var(--bg-hover); color: var(--destaque); }
+
+.mp-zoom-rot {
+  position: absolute;
+  left: var(--esp-3);
+  bottom: var(--esp-3);
+  padding: var(--esp-1) var(--esp-2);
+  border-radius: var(--raio-sm);
+  background: var(--vidro-bg);
+  color: var(--texto-secundario);
+  font-family: var(--fonte-mono);
+  font-size: var(--texto-xs);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── SVG ────────────────────────────────────────────────────── */
+
+.mp-aresta {
+  fill: none;
+  stroke: var(--mapa-aresta);
+  stroke-width: 1.5;
+}
+
+/* Tracejada e mais grossa: a conexão entre módulos é o que o mapa
+   existe para mostrar, então ela não pode parecer ruído de fundo. */
+.mp-aresta-cruzada {
+  fill: none;
+  stroke: var(--destaque);
+  stroke-width: 2;
+  stroke-dasharray: 7 5;
+  opacity: 0.75;
+}
+.mp-aresta-cruzada:hover { opacity: 1; stroke-width: 3; }
+
+.mp-no-caixa {
+  fill: var(--mapa-no-bg);
+  stroke: currentColor;
+  stroke-width: 1.5;
+  transition: fill var(--ease);
+}
+.mp-no[data-raiz="1"] .mp-no-caixa { stroke-width: 2.5; }
+.mp-no { cursor: pointer; }
+.mp-no:hover .mp-no-caixa { fill: var(--bg-hover); }
+.mp-no:focus { outline: none; }
+.mp-no:focus-visible .mp-no-caixa { stroke: var(--destaque); stroke-width: 3; }
+.mp-no.selecionado .mp-no-caixa { stroke-width: 3; fill: var(--bg-hover); }
+
+.mp-no-tit {
+  fill: var(--texto-titulo);
+  font-family: var(--fonte-ui);
+  font-size: 13px;
+  font-weight: 600;
+  pointer-events: none;
+}
+.mp-no[data-raiz="1"] .mp-no-tit { font-family: var(--fonte-titulo); font-size: 14px; }
+
+.mp-no-art {
+  fill: currentColor;
+  font-family: var(--fonte-mono);
+  font-size: 10px;
+  pointer-events: none;
+}
+
+/* A bolinha que avisa: este nó conversa com outro módulo. Em mapa de
+   um tema só ela é a pista de que existe mais coisa para ver. */
+.mp-no-elo { fill: var(--destaque); }
+.mp-no-elo-n {
+  fill: var(--bg);
+  font-family: var(--fonte-ui);
+  font-size: 9px;
+  font-weight: 700;
+  pointer-events: none;
+}
+
+.mp-faixa-rot {
+  fill: currentColor;
+  font-family: var(--fonte-titulo);
+  font-size: 15px;
+  letter-spacing: 0.04em;
+}
+.mp-faixa-linha { stroke: currentColor; stroke-width: 1; opacity: 0.3; }
+
+.mp-cor-principios    { color: var(--mapa-principios); }
+.mp-cor-tempo         { color: var(--mapa-tempo); }
+.mp-cor-crime         { color: var(--mapa-crime); }
+.mp-cor-subjetivo     { color: var(--mapa-subjetivo); }
+.mp-cor-erro          { color: var(--mapa-erro); }
+.mp-cor-iter          { color: var(--mapa-iter); }
+.mp-cor-ilicitude     { color: var(--mapa-ilicitude); }
+.mp-cor-culpabilidade { color: var(--mapa-culpabilidade); }
+
+/* ── Gaveta de detalhe ──────────────────────────────────────── */
+
+.mp-gaveta {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 60;
+  width: min(420px, 100vw);
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid var(--borda);
+  background: var(--bg-superficie);
+  box-shadow: var(--sombra-lg);
+  transform: translateX(101%);
+  transition: transform var(--ease-slow);
+}
+.mp-gaveta.aberta { transform: translateX(0); }
+
+.mp-gaveta-topo {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--esp-3);
+  padding: var(--esp-5);
+  border-bottom: 1px solid var(--borda);
+}
+.mp-gaveta-tit {
+  flex: 1;
+  margin: 0;
+  font-family: var(--fonte-titulo);
+  font-size: var(--texto-xl);
+  line-height: var(--entrelinha-justa);
+  color: var(--texto-titulo);
+}
+.mp-gaveta-modulo {
+  display: block;
+  margin-bottom: var(--esp-1);
+  font-family: var(--fonte-ui);
+  font-size: var(--texto-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.mp-gaveta-corpo {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding: var(--esp-5);
+}
+.mp-gaveta-secao { margin-bottom: var(--esp-6); }
+.mp-gaveta-secao:last-child { margin-bottom: 0; }
+.mp-gaveta-rot {
+  margin: 0 0 var(--esp-2);
+  font-family: var(--fonte-ui);
+  font-size: var(--texto-xs);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--texto-suave);
+}
+.mp-gaveta-corpo p {
+  margin: 0 0 var(--esp-3);
+  font-family: var(--fonte-leitura);
+  font-size: var(--texto-sm);
+  line-height: var(--entrelinha-relaxada);
+  color: var(--texto);
+}
+.mp-gaveta-corpo p:last-child { margin-bottom: 0; }
+
+.mp-artigo-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--esp-2);
+  min-height: 44px;
+  padding: var(--esp-2) var(--esp-4);
+  border: 1px solid var(--destaque);
+  border-radius: var(--raio-sm);
+  color: var(--destaque);
+  font-family: var(--fonte-ui);
+  font-size: var(--texto-sm);
+  text-decoration: none;
+  transition: background-color var(--ease);
+}
+.mp-artigo-link:hover { background: var(--ambar-fundo); }
+
+.mp-pos {
+  margin-bottom: var(--esp-3);
+  padding-left: var(--esp-3);
+  border-left: 2px solid var(--borda);
+}
+.mp-pos-autor {
+  font-family: var(--fonte-ui);
+  font-size: var(--texto-xs);
+  font-weight: 700;
+  color: var(--vinho-texto);
+}
+.mp-pos-loc { font-family: var(--fonte-mono); font-size: var(--texto-xs); color: var(--texto-suave); }
+
+.mp-exemplo {
+  padding: var(--esp-3) var(--esp-4);
+  border-left: 3px solid var(--destaque);
+  border-radius: var(--raio-sm);
+  background: var(--ambar-fundo);
+}
+
+.mp-elo {
+  display: block;
+  width: 100%;
+  margin-bottom: var(--esp-2);
+  padding: var(--esp-3);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio-sm);
+  background: var(--bg-elevado);
+  color: var(--texto);
+  font-family: var(--fonte-ui);
+  font-size: var(--texto-sm);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color var(--ease);
+}
+.mp-elo:hover { border-color: var(--destaque); }
+.mp-elo-alvo { display: block; font-weight: 700; color: var(--texto-titulo); }
+.mp-elo-motivo {
+  display: block;
+  margin-top: var(--esp-1);
+  font-size: var(--texto-xs);
+  line-height: var(--entrelinha-normal);
+  color: var(--texto-secundario);
+}
+.mp-elo-fora {
+  display: inline-block;
+  margin-top: var(--esp-2);
+  font-size: var(--texto-xs);
+  color: var(--destaque);
+}
+
+.mp-gaveta-fundo {
+  position: fixed;
+  inset: 0;
+  z-index: 55;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--ease);
+}
+.mp-gaveta-fundo.visivel { opacity: 1; pointer-events: auto; }
+
+/* ── Lista textual: o mapa para quem não vê o mapa ───────────
+   O SVG tem role e rótulo, mas uma árvore de 40 nós lida nó a nó por
+   leitor de tela é pior que uma lista. Esta é a mesma informação em
+   forma linear, e ela também é o que sobra na impressão em papel. */
+
+.mp-alt { margin-top: var(--esp-4); }
+.mp-alt > summary {
+  padding: var(--esp-3) 0;
+  font-family: var(--fonte-ui);
+  font-size: var(--texto-sm);
+  color: var(--texto-secundario);
+  cursor: pointer;
+}
+.mp-alt ul { margin: 0 0 var(--esp-4); padding-left: var(--esp-5); }
+.mp-alt li {
+  margin-bottom: var(--esp-1);
+  font-family: var(--fonte-ui);
+  font-size: var(--texto-sm);
+  line-height: var(--entrelinha-normal);
+  color: var(--texto);
+}
+.mp-alt-mod {
+  margin: var(--esp-3) 0 var(--esp-2);
+  font-family: var(--fonte-titulo);
+  font-size: var(--texto-base);
+}
+
+/* ── Barra de ações ─────────────────────────────────────────── */
+
+.mp-acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--esp-2);
+  margin-top: var(--esp-3);
+}
+.mp-nota {
+  margin-top: var(--esp-3);
+  font-family: var(--fonte-ui);
+  font-size: var(--texto-xs);
+  line-height: var(--entrelinha-normal);
+  color: var(--texto-suave);
+}
+
+/* ── Celular ────────────────────────────────────────────────── */
+
+@media (max-width: 640px) {
+  .mp-palco svg { height: 52vh; min-height: 320px; }
+  .mp-gaveta { width: 100vw; }
+  .mp-controles { right: var(--esp-2); bottom: var(--esp-2); padding: var(--esp-1); gap: var(--esp-1); }
+  .mp-ctrl { width: 44px; height: 44px; }
+  .mp-tema { min-height: 44px; }
+}
+
+/* ── Impressão ──────────────────────────────────────────────
+   Imprimir é a rota para PDF: o navegador já sabe gerar um, e um
+   botão que gerasse PDF por conta própria precisaria de biblioteca
+   externa — que este projeto não carrega. Some tudo menos o mapa. */
+
+@media print {
+  .sidebar, .topbar, .bottom-nav, .mp-setup, .mp-controles, .mp-acoes,
+  .mp-gaveta, .mp-gaveta-fundo, .mp-zoom-rot, .skip-link, .pagina-sub { display: none !important; }
+  .app, .main, .container { margin: 0 !important; padding: 0 !important; max-width: none !important; }
+  .mp-palco { border: none; }
+  .mp-palco svg { height: auto; max-height: 92vh; }
+  .mp-alt { break-before: page; }
+}

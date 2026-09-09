@@ -16,28 +16,21 @@
    por `node build.js`: a lista vem de uma varredura do disco e a versão
    é um hash do conteúdo. Não edite o bloco entre os marcadores.
 
-   O ÁUDIO DA AULA FICA DE FORA, e de propósito: são 38,8 MB. Precachear
-   isso empurraria o download inteiro para o celular de quem só queria
-   ler um módulo. Além disso, o player usa requisições Range para
-   permitir arrastar a barra, e a Cache API não lida bem com respostas
-   parciais — interceptar só atrapalharia. O áudio passa direto para a
-   rede e fica com o cache HTTP normal do navegador.
    ═══════════════════════════════════════════════════════════════ */
 
-const CACHE = "acervo-penal-565a0ecbf3";
+const CACHE = "acervo-penal-a16df8cd16";
 
 /* INICIO-PRECACHE — gerado por build.js, não edite à mão */
 const ARQUIVOS = [
   "./",
-  "aula.html",
   "css/base.css",
   "css/components.css",
   "css/layout.css",
+  "css/mapas.css",
   "css/paginas.css",
   "css/simulador.css",
   "css/variables.css",
   "data/_fontes.json",
-  "data/audio_capitulos.json",
   "data/bundle.js",
   "data/casos_praticos.json",
   "data/culpabilidade.json",
@@ -48,6 +41,7 @@ const ARQUIVOS = [
   "data/ilicitude.json",
   "data/iter-criminis.json",
   "data/lei-penal-no-tempo.json",
+  "data/mapas_mentais.json",
   "data/modules.json",
   "data/principios.json",
   "data/quiz-bank.json",
@@ -62,12 +56,12 @@ const ARQUIVOS = [
   "icons/icon-maskable-512.png",
   "index.html",
   "js/app.js",
-  "js/aula.js",
   "js/corretor.js",
   "js/doutrina.js",
   "js/exam.js",
   "js/galeria.js",
   "js/inicio.js",
+  "js/mapas.js",
   "js/modules.js",
   "js/modulo.js",
   "js/progress.js",
@@ -76,6 +70,7 @@ const ARQUIVOS = [
   "js/storage.js",
   "js/vademecum.js",
   "manifest.json",
+  "mapas.html",
   "modulo.html",
   "prova.html",
   "quiz.html",
@@ -127,8 +122,7 @@ self.addEventListener("fetch", (e) => {
   const url = new URL(req.url);
   if (url.origin !== self.location.origin) return;
 
-  // Áudio: nunca intercepta. Ver a nota do cabeçalho sobre Range.
-  if (/\.(m4a|mp3|ogg|wav)$/i.test(url.pathname)) return;
+  // Requisição parcial (Range) não passa pela Cache API sem estrago.
   if (req.headers.has("range")) return;
 
   e.respondWith(

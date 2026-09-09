@@ -15,18 +15,6 @@ tools/_cp_bruto.html
 tools/_*.html
 tools/_*.jsonl
 
-# ── Áudio ─────────────────────────────────────────────────────
-# audio/aula-penal.m4a (38,8 MB, comprimido) DEVE entrar no
-# repositório — é o áudio da aula, e o acervo depende dele.
-#
-# Não escreva aqui um padrão como "Aula*Penal.m4a" para barrar o
-# original de 149 MB: no Windows o Git casa sem diferenciar
-# maiúsculas, e esse padrão engole audio/aula-penal.m4a. Foi o que
-# aconteceu na primeira versão deste arquivo, e `git check-ignore`
-# pegou. O original vive fora da pasta do projeto, então não há o
-# que ignorar.
-!audio/aula-penal.m4a
-
 # ── Sistema ───────────────────────────────────────────────────
 Thumbs.db
 desktop.ini
