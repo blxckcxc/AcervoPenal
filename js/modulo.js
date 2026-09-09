@@ -99,9 +99,9 @@ const Modulo = (() => {
           </div>
           ${
             e.proxima
-              ? `<p class="sim-nota-fonte">Próxima revisão agendada ${emQuantoTempo(e.proxima)}.
+              ? `<p class="nota-fonte">Próxima revisão agendada ${emQuantoTempo(e.proxima)}.
                  Intervalos: 1 → 3 → 7 → 30 dias, e errar devolve o cartão ao início.</p>`
-              : `<p class="sim-nota-fonte">Intervalos: 1 → 3 → 7 → 30 dias.
+              : `<p class="nota-fonte">Intervalos: 1 → 3 → 7 → 30 dias.
                  Acertar sobe um degrau; errar devolve o cartão ao início.</p>`
           }
         </div>`;
@@ -119,7 +119,7 @@ const Modulo = (() => {
                 ? `Fila concluída — ${fila.length} cartão(ões) revisado(s).`
                 : "Nenhum cartão vencido hoje."
             }</p>
-            <p class="sim-nota-fonte">${
+            <p class="nota-fonte">${
               e.proxima
                 ? `Os próximos vencem ${emQuantoTempo(e.proxima)}.`
                 : "Todos os cartões já foram agendados."
@@ -220,7 +220,7 @@ const Modulo = (() => {
         ? `<div class="card">
              <h3 class="card-titulo">${esc(mapa.titulo)}</h3>
              ${desenharMapa(mapa)}
-             ${mapa.fonte ? `<p class="sim-nota-fonte">Fonte: ${esc(mapa.fonte)}</p>` : ""}
+             ${mapa.fonte ? `<p class="nota-fonte">Fonte: ${esc(mapa.fonte)}</p>` : ""}
            </div>`
         : "") +
       (fotos.length
@@ -263,7 +263,7 @@ const Modulo = (() => {
       (r.folhas || []).forEach((f, k) => {
         const yf = y + k * alturaLinha;
         corpo += `<path d="M520 ${yRamo} C 545 ${yRamo}, 545 ${yf}, 570 ${yf}"
-            fill="none" stroke="var(--ambar-escuro)" stroke-width="1.5"/>`;
+            fill="none" stroke="var(--borda-forte)" stroke-width="1.5"/>`;
         corpo += `<text x="578" y="${yf}" class="mapa-folha" dominant-baseline="middle">${esc(f)}</text>`;
       });
 
@@ -291,7 +291,7 @@ const Modulo = (() => {
     if (!temas.length) {
       alvo.innerHTML = `<div class="vazio"><span class="vazio-icone" aria-hidden="true">📚</span>
         <p>Ainda não colhi doutrina comparada para este módulo.</p>
-        <p class="sim-nota-fonte">Só entra aqui posição com trecho localizado na obra.</p></div>`;
+        <p class="nota-fonte">Só entra aqui posição com trecho localizado na obra.</p></div>`;
       return;
     }
 
@@ -314,7 +314,7 @@ const Modulo = (() => {
               .join("")}
             ${t.convergencia ? `<p class="doutrina-nota"><strong>Convergência:</strong> ${esc(t.convergencia)}</p>` : ""}
             ${t.divergencia ? `<p class="doutrina-nota"><strong>Divergência:</strong> ${esc(t.divergencia)}</p>` : ""}
-            ${t.notaDeAula ? `<p class="sim-nota-fonte">${esc(t.notaDeAula)}</p>` : ""}
+            ${t.notaDeAula ? `<p class="nota-fonte">${esc(t.notaDeAula)}</p>` : ""}
             ${
               t.alertaDeAtribuicao
                 ? `<div class="alerta-bloco" style="margin-top:var(--esp-4)">
@@ -328,7 +328,7 @@ const Modulo = (() => {
           </section>`
         )
         .join("") +
-      `<p class="sim-nota-fonte">${esc(doutrina.avisoDeVigencia)}
+      `<p class="nota-fonte">${esc(doutrina.avisoDeVigencia)}
        ${esc(doutrina.avisoDeLocalizadores.porQueNaoSaoTodosPagina)}</p>`;
   }
 
@@ -372,7 +372,7 @@ const Modulo = (() => {
         if (!banco.length) {
           painel.innerHTML = `<div class="vazio"><span class="vazio-icone" aria-hidden="true">✎</span>
             <p>Sem questões objetivas para este módulo.</p>
-            <p class="sim-nota-fonte">O <a href="simulador.html">simulador</a> tem 8 casos
+            <p class="nota-fonte">O <a href="simulador.html">simulador</a> tem 8 casos
             práticos deste assunto.</p></div>`;
         } else {
           Quiz.criar(painel, Quiz.embaralhar(banco), { moduloId: meta.id });

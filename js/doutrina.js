@@ -147,7 +147,7 @@ const Doutrina = (() => {
       ? temas.map(renderTema).join("")
       : `<div class="vazio"><span class="vazio-icone" aria-hidden="true">📚</span>
          <p>Nenhum tema colhido para este módulo ainda.</p>
-         <p class="sim-nota-fonte">Só entra aqui posição com trecho localizado na obra.</p></div>`;
+         <p class="nota-fonte">Só entra aqui posição com trecho localizado na obra.</p></div>`;
 
     raiz.querySelector("#doutContagem").textContent = filtro
       ? `${temas.length} de ${dados.temas.length} temas`
@@ -184,7 +184,7 @@ const Doutrina = (() => {
               ${esc(dados.avisoDeLocalizadores[c] || "")}</li>`;
           }).join("")}
         </ul>
-        <p class="sim-nota-fonte">${esc(dados.avisoDeVigencia)}</p>
+        <p class="nota-fonte">${esc(dados.avisoDeVigencia)}</p>
       </div>
 
       <div class="gal-filtros" id="doutFiltros">

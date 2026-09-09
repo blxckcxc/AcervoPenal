@@ -37,7 +37,7 @@
   text-decoration: none;
   letter-spacing: 0.02em;
 }
-.topbar-marca span { color: var(--ambar); }
+.topbar-marca span { color: var(--marca); }
 .topbar-emblema {
   width: 28px;
   height: 28px;
@@ -116,7 +116,7 @@
   min-width: 1.6em;
 }
 .nav-item-txt { flex: 1; }
-.nav-item-pct { font-size: var(--texto-xs); color: var(--ambar); }
+.nav-item-pct { font-size: var(--texto-xs); color: var(--destaque); }
 .nav-item-pct.apagado { color: var(--texto-suave); }
 .nav-item[aria-disabled="true"] { opacity: 0.45; pointer-events: none; }
 
@@ -154,7 +154,7 @@
 .stat-valor {
   font-family: var(--fonte-titulo);
   font-size: var(--texto-2xl);
-  color: var(--ambar);
+  color: var(--destaque);
   line-height: 1;
 }
 .stat-rotulo {
@@ -186,7 +186,7 @@
   text-decoration: none;
   font-size: var(--texto-xs);
 }
-.bn-item.ativo, .bn-item[aria-current="page"] { color: var(--ambar); }
+.bn-item.ativo, .bn-item[aria-current="page"] { color: var(--destaque); }
 .bn-icone { font-size: var(--texto-lg); line-height: 1; }
 
 body.tem-bottomnav .main { padding-bottom: calc(var(--bottomnav-h) + var(--esp-8)); }

@@ -40,13 +40,43 @@ p { margin: 0 0 var(--esp-4); }
   line-height: var(--entrelinha-relaxada);
 }
 
+/* ── Links ───────────────────────────────────────────────────
+   No tema escuro o link é platina — e platina fica a 1,14:1 do
+   texto do corpo. Medido: a cor sozinha NÃO distingue link de
+   texto, o que reprova o critério 1.4.1 (uso da cor) da WCAG.
+
+   Daí a divisão abaixo. Dentro de PROSA o sublinhado é obrigatório,
+   porque ali o link nasce cercado de texto e não há outra pista.
+   Fora dela — navegação, chips, botões, cartões — a forma, a caixa
+   e a posição já distinguem, e o sublinhado só sujaria. É a mesma
+   divisão que Apple e Linear fazem, e aqui ela não é estética: é o
+   que sustenta o critério.                                        */
 a {
   color: var(--link);
+  text-decoration: none;
   text-decoration-thickness: 1px;
-  text-underline-offset: 2px;
-  transition: color var(--ease);
+  text-underline-offset: 3px;
+  transition: color var(--ease), text-decoration-color var(--ease);
 }
 a:hover { color: var(--link-hover); }
+
+/* Prosa: parágrafo, item de lista, citação, célula e definição —
+   os lugares onde o link aparece dentro de texto corrido. */
+p > a,
+li > a,
+blockquote a,
+td > a,
+dd > a,
+.acc-inner a {
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, currentColor 45%, transparent);
+}
+p > a:hover,
+li > a:hover,
+blockquote a:hover,
+td > a:hover,
+dd > a:hover,
+.acc-inner a:hover { text-decoration-color: currentColor; }
 
 ul, ol { margin: 0 0 var(--esp-4); padding-left: var(--esp-6); }
 li { margin-bottom: var(--esp-2); }
@@ -96,7 +126,7 @@ hr {
    :focus-visible em vez de :focus para o anel não aparecer em
    clique de mouse, só em navegação por teclado.                */
 :focus-visible {
-  outline: 2px solid var(--ambar);
+  outline: 2px solid var(--foco);
   outline-offset: 2px;
   border-radius: var(--raio-sm);
 }

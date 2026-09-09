@@ -437,7 +437,7 @@ const Simulador = (() => {
             <a class="btn btn-sm" href="modulo.html?m=${encodeURIComponent(caso.moduloId)}">Abrir o módulo</a>
             ${
               caso.discursiva.avisoDeAtribuicao
-                ? `<p class="sim-nota-fonte">${esc(caso.discursiva.avisoDeAtribuicao)}</p>`
+                ? `<p class="nota-fonte">${esc(caso.discursiva.avisoDeAtribuicao)}</p>`
                 : ""
             }
           </div>
@@ -512,7 +512,7 @@ const Simulador = (() => {
         </div>`
         )
         .join("")}
-      <p class="sim-nota-fonte">${esc(doutrina.avisoDeVigencia)}</p>
+      <p class="nota-fonte">${esc(doutrina.avisoDeVigencia)}</p>
     </details>`;
   }
 

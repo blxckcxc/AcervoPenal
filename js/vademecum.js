@@ -103,7 +103,7 @@ const VadeMecum = (() => {
         <p class="vm-contagem" id="vmContagem" role="status" aria-live="polite"></p>
       </div>
       <div id="vmLista"></div>
-      <p class="sim-nota-fonte">
+      <p class="nota-fonte">
         Texto extraído de <a href="${esc(dados.fonte)}" target="_blank" rel="noopener">
         ${esc(dados.fonte)}</a> em ${esc(dados.extraidoEm)}.
         A página de origem vem em ${esc(dados.codificacaoDaOrigem)}.
@@ -127,7 +127,7 @@ const VadeMecum = (() => {
         : `<div class="vazio">
              <span class="vazio-icone" aria-hidden="true">§</span>
              <p>Nenhum artigo com “${esc(termo)}”.</p>
-             <p class="sim-nota-fonte">Este acervo cobre só a Parte Geral, arts. 1º a 120.</p>
+             <p class="nota-fonte">Este acervo cobre só a Parte Geral, arts. 1º a 120.</p>
            </div>`;
     };
 

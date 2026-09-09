@@ -224,7 +224,7 @@ const App = (() => {
     container.innerHTML = `<div class="vazio">
       <span class="vazio-icone" aria-hidden="true">⚠</span>
       <p>${esc(mensagem)}</p>
-      <p class="sim-nota-fonte">Se você abriu por duplo clique, rode <code>node build.js</code>
+      <p class="nota-fonte">Se você abriu por duplo clique, rode <code>node build.js</code>
       para regenerar o bundle.</p>
     </div>`;
   }

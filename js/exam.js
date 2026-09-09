@@ -46,7 +46,7 @@ const Prova = (() => {
       raiz.innerHTML = `<div class="vazio">
         <span class="vazio-icone" aria-hidden="true">⏱</span>
         <p>São necessárias ao menos 5 questões para uma prova, e o banco tem ${total}.</p>
-        <p class="sim-nota-fonte">O <a href="simulador.html">simulador de casos</a>
+        <p class="nota-fonte">O <a href="simulador.html">simulador de casos</a>
         está completo, com 64 casos.</p></div>`;
       return;
     }
@@ -68,7 +68,7 @@ const Prova = (() => {
         </div>
         <p class="sim-disponivel" id="tempoPrevisto"></p>
         <button type="button" class="btn btn-primario btn-bloco" id="btnComecar">Começar a prova</button>
-        <p class="sim-nota-fonte">Durante a prova não há correção nem justificativa.
+        <p class="nota-fonte">Durante a prova não há correção nem justificativa.
         O relatório por tema aparece ao final.</p>
       </section>`;
 

@@ -41,7 +41,7 @@
   background-color: var(--bg-elevado);
   transition: all var(--ease);
 }
-.sim-formato:hover { border-color: var(--ambar-escuro); }
+.sim-formato:hover { border-color: var(--borda-forte); }
 .sim-formato[aria-checked="true"] {
   border-color: var(--vinho);
   background-color: var(--vinho-fundo);
@@ -56,7 +56,7 @@
 .sim-qtd-valor {
   font-family: var(--fonte-titulo);
   font-size: var(--texto-2xl);
-  color: var(--ambar);
+  color: var(--destaque);
   min-width: 2ch;
   text-align: center;
 }
@@ -99,7 +99,7 @@
   transition: all var(--ease);
 }
 .sim-alt:hover:not(:disabled) {
-  border-color: var(--ambar);
+  border-color: var(--traco-ativo);
   background-color: var(--bg-hover);
   transform: translateX(4px);
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
@@ -176,9 +176,9 @@
   gap: var(--esp-2);
   margin-top: var(--esp-3);
   padding: var(--esp-2) var(--esp-3);
-  border: 1px solid var(--ambar);
+  border: 1px solid var(--traco-ativo);
   border-radius: var(--raio-sm);
-  background: var(--ambar-fundo);
+  background: var(--realce-fundo);
   font-size: var(--texto-xs);
   color: var(--destaque);
   font-style: normal;
@@ -209,8 +209,8 @@
   transition: border-color var(--ease), box-shadow var(--ease);
 }
 .sim-textarea:focus {
-  border-color: var(--ambar);
-  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.35), 0 0 0 3px rgba(217, 119, 6, 0.2);
+  border-color: var(--traco-ativo);
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.35), 0 0 0 3px rgba(209, 30, 92, 0.22);
   outline: none;
 }
 .sim-contador { font-size: var(--texto-sm); color: var(--texto-suave); }
@@ -222,11 +222,11 @@
   font-family: var(--fonte-titulo);
   font-size: var(--texto-4xl);
   line-height: 1;
-  color: var(--ambar);
+  color: var(--destaque);
 }
 .sim-nota-valor.grande { font-size: 3.5rem; }
 .sim-nota-rotulo { font-size: var(--texto-sm); color: var(--texto-secundario); }
-.sim-ajustes { font-size: var(--texto-xs); color: var(--ambar); }
+.sim-ajustes { font-size: var(--texto-xs); color: var(--destaque); }
 .sim-ressalva p:last-child { margin-bottom: 0; font-size: var(--texto-sm); }
 
 .sim-quesitos { list-style: none; padding: 0; display: grid; gap: var(--esp-3); }
@@ -263,14 +263,7 @@
 .diag p { font-size: var(--texto-sm); margin-bottom: var(--esp-3); }
 .diag-ok { border-left: 3px solid var(--sucesso); }
 .diag-nok { border-left: 3px solid var(--alerta); }
-.diag-dica { border-left: 3px solid var(--ambar); }
-.sim-nota-fonte {
-  margin-top: var(--esp-3);
-  font-size: var(--texto-xs);
-  color: var(--texto-suave);
-  line-height: var(--entrelinha-normal);
-}
-
+.diag-dica { border-left: 3px solid var(--traco-ativo); }
 /* ── Doutrina ───────────────────────────────────────────────── */
 
 .sim-doutrina {
@@ -286,7 +279,7 @@
   color: var(--texto-titulo);
 }
 .doutrina-tema { padding: 0 var(--esp-4) var(--esp-4); }
-.doutrina-tema h5 { margin: 0 0 var(--esp-3); color: var(--ambar); font-family: var(--fonte-ui); }
+.doutrina-tema h5 { margin: 0 0 var(--esp-3); color: var(--destaque); font-family: var(--fonte-ui); }
 .doutrina-posicao { margin-bottom: var(--esp-4); }
 .doutrina-autor { font-weight: 600; color: var(--texto-titulo); font-size: var(--texto-sm); }
 .doutrina-loc {
@@ -307,7 +300,7 @@
 
 .rel-tema { margin-bottom: var(--esp-4); }
 .rel-tema-cab { display: flex; justify-content: space-between; gap: var(--esp-3); margin-bottom: var(--esp-2); font-size: var(--texto-sm); }
-.rel-tema-pct { font-family: var(--fonte-mono); color: var(--ambar); }
+.rel-tema-pct { font-family: var(--fonte-mono); color: var(--destaque); }
 .rel-tema-n { font-size: var(--texto-xs); color: var(--texto-suave); margin-top: var(--esp-1); }
 .rel-fracos { font-size: var(--texto-sm); }
 .rel-fracos li { margin-bottom: var(--esp-3); }

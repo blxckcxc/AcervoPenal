@@ -70,7 +70,7 @@ const Galeria = (() => {
         ? `<br><span class="lb-aviso">Leitura insegura: a transcrição desta imagem foi marcada como
            não confiável no catálogo. Não use como fonte sem conferir.</span>`
         : "") +
-      (it.nota ? `<br><span class="sim-nota-fonte">${esc(it.nota)}</span>` : "");
+      (it.nota ? `<br><span class="nota-fonte">${esc(it.nota)}</span>` : "");
   }
 
   /* ── Grade ────────────────────────────────────────────────── */
@@ -144,7 +144,7 @@ const Galeria = (() => {
       <p class="vm-contagem" id="galContagem" role="status" aria-live="polite"></p>
       <div class="gal-grade" id="galGrade"></div>
 
-      <p class="sim-nota-fonte">${esc(dados.sobreARotacao)}</p>
+      <p class="nota-fonte">${esc(dados.sobreARotacao)}</p>
 
       <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Imagem ampliada">
         <div class="lb-topo">

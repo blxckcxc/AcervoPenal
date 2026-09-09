@@ -18,7 +18,7 @@
   font-weight: 500;
   transition: background-color var(--ease), border-color var(--ease), color var(--ease), transform var(--ease);
 }
-.btn:hover { background-color: var(--bg-hover); border-color: var(--ambar-escuro); }
+.btn:hover { background-color: var(--bg-hover); border-color: var(--borda-forte); }
 .btn:active { transform: translateY(1px); }
 .btn:disabled { opacity: 0.45; cursor: not-allowed; transform: none; }
 .btn:disabled:hover { background-color: var(--bg-elevado); border-color: var(--borda); }
@@ -71,7 +71,7 @@
   font-size: var(--texto-sm);
   transition: all var(--ease);
 }
-.chip:hover { border-color: var(--ambar-escuro); color: var(--texto); }
+.chip:hover { border-color: var(--borda-forte); color: var(--texto); }
 
 /* O CSS lê o próprio atributo de acessibilidade: um estado só, sem
    risco de a classe e o ARIA discordarem. */
@@ -82,7 +82,7 @@
   font-weight: 600;
 }
 .chip[aria-pressed="true"] .chip-marca { opacity: 1; }
-.chip-marca { opacity: 0; color: var(--ambar); transition: opacity var(--ease); }
+.chip-marca { opacity: 0; color: var(--destaque); transition: opacity var(--ease); }
 .chip-contagem { font-size: var(--texto-xs); color: var(--texto-suave); }
 .chip:disabled { opacity: 0.4; cursor: not-allowed; }
 
@@ -117,20 +117,20 @@
   white-space: nowrap;
 }
 .selo-aula   { background-color: var(--vinho-fundo);  color: var(--vinho-texto);  border: 1px solid var(--vinho); }
-.selo-manual { background-color: var(--ambar-fundo);  color: var(--ambar);        border: 1px solid var(--ambar-escuro); }
+.selo-manual { background-color: var(--realce-fundo);  color: var(--destaque);        border: 1px solid var(--borda-forte); }
 .selo-lei    { background-color: var(--sucesso-fundo); color: var(--sucesso);     border: 1px solid var(--sucesso); }
 .selo-misto  { background-color: var(--bg-elevado);   color: var(--texto-secundario); border: 1px solid var(--borda); }
 
 /* ── Blocos de destaque e alerta ────────────────────────────── */
 
 .destaque {
-  background-color: var(--ambar-fundo);
-  border-left: 3px solid var(--ambar);
+  background-color: var(--realce-fundo);
+  border-left: 3px solid var(--traco-ativo);
   border-radius: 0 var(--raio-md) var(--raio-md) 0;
   padding: var(--esp-4) var(--esp-5);
   margin-bottom: var(--esp-4);
 }
-.destaque-titulo { color: var(--ambar); font-weight: 600; margin-bottom: var(--esp-2); }
+.destaque-titulo { color: var(--destaque); font-weight: 600; margin-bottom: var(--esp-2); }
 
 /* O #DC2626 fica na BORDA (aprova como componente, 4,12:1) e o texto
    usa --alerta-texto, que passa como texto. Ver variables.css. */
@@ -148,7 +148,7 @@
 .artigo-cp {
   background-color: var(--bg-elevado);
   border: 1px solid var(--borda);
-  border-left: 3px solid var(--ambar-escuro);
+  border-left: 3px solid var(--borda-forte);
   border-radius: 0 var(--raio-md) var(--raio-md) 0;
   padding: var(--esp-4) var(--esp-5);
   margin-bottom: var(--esp-4);
@@ -227,7 +227,7 @@
     display: block;
     font-size: var(--texto-xs);
     font-weight: 600;
-    color: var(--ambar);
+    color: var(--destaque);
     margin-bottom: var(--esp-1);
   }
 }
@@ -242,7 +242,7 @@
 }
 .barra-preenchida {
   height: 100%;
-  background: linear-gradient(90deg, var(--vinho), var(--ambar));
+  background: linear-gradient(90deg, var(--vinho-profundo), var(--vinho) 60%, var(--vinho-traco));
   border-radius: var(--raio-full);
   transition: width var(--ease-slow);
 }
@@ -255,6 +255,32 @@
   color: var(--texto-secundario);
 }
 .vazio-icone { font-size: var(--texto-4xl); opacity: 0.5; display: block; margin-bottom: var(--esp-3); }
+
+/* ── Nota de fonte ───────────────────────────────────────────
+   A linha miúda que diz de onde a informação veio — a procedência
+   de um artigo, a página de um manual, o aviso de vigência. É o
+   componente que sustenta a promessa deste acervo de nunca afirmar
+   sem dizer de onde tirou, então ela aparece em oito das nove
+   páginas.
+
+   Ela morava em simulador.css sob o nome `.sim-nota-fonte`, e esse
+   arquivo só é carregado por simulador.html. Nas outras oito páginas
+   a classe não existia: o texto saía a 16px em cor de corpo, quando
+   devia sair a 12px em cor suave. Não quebrava nada, e por isso
+   passou — foi a varredura de rolagem horizontal que a encontrou.
+
+   O overflow-wrap não é zelo excessivo: a nota do Vade Mecum cita a
+   URL do Planalto por extenso, 351 px de texto sem um único espaço,
+   dentro de uma coluna de 328 px. Era essa URL que empurrava a página
+   inteira 7 px para o lado no celular.                             */
+.nota-fonte {
+  margin-top: var(--esp-3);
+  font-size: var(--texto-xs);
+  color: var(--texto-suave);
+  line-height: var(--entrelinha-normal);
+  overflow-wrap: anywhere;
+}
+.nota-fonte a { overflow-wrap: anywhere; }
 
 /* ── Correções de tela estreita ──────────────────────────────
    Medido a 375x812: o selo de origem tem `white-space: nowrap` e
@@ -285,36 +311,54 @@
   select,
   textarea { min-height: 44px; }
   .marco-campo { min-height: 44px; }
+
+  /* O range ficava de fora da regra acima porque esticar sua ALTURA
+     engordaria a trilha. Só que a trilha media 16 px, e é ela a área
+     que o dedo tem para arrastar — abaixo dos 24 px do critério 2.5.8
+     da WCAG 2.2. A saída é dar altura ao CAMPO e deixar a trilha com
+     a espessura que tinha: o navegador centraliza a trilha na caixa,
+     então o alvo cresce sem que nada engorde na tela.               */
+  input[type="range"] {
+    height: 44px;
+    background: transparent;
+  }
 }
 
-/* ── Emblema Oficial da Espada-Balança ──────────────────────── */
+/* ── Emblema Oficial da Espada-Balança ────────────────────────
+   O metal — anel, corda, pratos, fio — é platina no escuro e bronze
+   sobre a argila. A espada é a peça vinho.
+
+   Uma armadilha que a medição pegou: a lâmina em --vinho #881337 dá
+   1,95:1 sobre o ônix, e o emblema sumia na topbar e no hero. No
+   escuro a lâmina sobe para --vinho-traco (3,41), que ainda é da
+   família vinho e é visível; no claro o #881337 dá 9,57 sobre o card
+   e fica como está. Os dois casos moram em --emblema-lamina, então
+   isso é um token, não duas regras espalhadas.                     */
 .emblema-svg {
   display: inline-block;
   vertical-align: middle;
 }
-.emblema-svg .emb-anel {
-  stroke: var(--ambar);
-}
+.emblema-svg .emb-anel,
 .emblema-svg .emb-corda {
-  stroke: var(--ambar);
+  stroke: var(--emblema-metal);
 }
-.emblema-svg .emb-detalhe-ouro {
-  fill: var(--ambar);
-}
+.emblema-svg .emb-detalhe-ouro,
 .emblema-svg .emb-prato-esq,
-.emblema-svg .emb-guarda-esq,
-.emblema-svg .emb-lamina-esq,
-.emblema-svg .emb-cabo {
-  fill: var(--vinho);
+.emblema-svg .emb-prato-dir {
+  fill: var(--emblema-metal);
 }
-.emblema-svg .emb-prato-dir,
+.emblema-svg .emb-guarda-esq,
 .emblema-svg .emb-guarda-dir,
+.emblema-svg .emb-lamina-esq,
 .emblema-svg .emb-lamina-dir {
-  fill: var(--vinho-claro);
+  fill: var(--emblema-lamina);
+}
+.emblema-svg .emb-cabo {
+  fill: var(--emblema-cabo);
 }
 .emblema-svg .emb-fio {
-  stroke: var(--ambar);
-  opacity: 0.85;
+  stroke: var(--emblema-metal);
+  opacity: 0.7;
 }
 
 /* ── Hero Solene da Página Inicial ──────────────────────────── */
@@ -346,7 +390,7 @@
   transform: translateX(-50%);
   width: 320px;
   height: 200px;
-  background: radial-gradient(circle, rgba(136, 19, 55, 0.35) 0%, rgba(217, 119, 6, 0.15) 50%, transparent 80%);
+  background: radial-gradient(circle, rgba(136, 19, 55, 0.42) 0%, rgba(244, 244, 245, 0.10) 52%, transparent 78%);
   pointer-events: none;
   filter: blur(28px);
 }
@@ -361,7 +405,7 @@
 .hero-emblema-wrapper .emblema-svg {
   width: 80px;
   height: 80px;
-  filter: drop-shadow(0 0 18px rgba(217, 119, 6, 0.35));
+  filter: drop-shadow(0 0 20px rgba(136, 19, 55, 0.45));
   transition: transform var(--ease-slow);
 }
 
@@ -376,7 +420,7 @@
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--ambar);
+  color: var(--destaque);
   margin-bottom: var(--esp-2);
 }
 
@@ -421,7 +465,7 @@
 }
 
 .hero-badge:hover {
-  border-color: var(--ambar);
+  border-color: var(--traco-ativo);
   color: var(--texto);
 }
 

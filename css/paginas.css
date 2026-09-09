@@ -67,13 +67,13 @@
 .radar-teia { fill: none; stroke: var(--borda); stroke-width: 1; }
 .radar-eixo { stroke: var(--borda); stroke-width: 1; }
 .radar-area-teoria { fill: rgba(136, 19, 55, 0.35); stroke: var(--vinho-texto); stroke-width: 2; }
-.radar-area-pratica { fill: rgba(245, 158, 11, 0.2); stroke: var(--ambar); stroke-width: 2; stroke-dasharray: 4 3; }
+.radar-area-pratica { fill: rgba(244, 244, 245, 0.14); stroke: var(--destaque); stroke-width: 2; stroke-dasharray: 4 3; }
 .radar-rotulo { fill: var(--texto-secundario); font-size: 10px; font-family: var(--fonte-ui); }
 .radar-legenda { display: flex; justify-content: center; gap: var(--esp-5); margin-top: var(--esp-4); font-size: var(--texto-xs); }
 .radar-chave { display: inline-flex; align-items: center; gap: var(--esp-2); color: var(--texto-secundario); }
 .radar-amostra { width: 14px; height: 3px; border-radius: 2px; display: inline-block; }
 .radar-amostra.teoria { background-color: var(--vinho-texto); }
-.radar-amostra.pratica { background-color: var(--ambar); }
+.radar-amostra.pratica { background-color: var(--destaque); }
 
 /* ── Vade Mecum ─────────────────────────────────────────────── */
 
@@ -94,7 +94,7 @@
   color: var(--texto);
   font-size: var(--texto-base);
 }
-.vm-campo:focus { border-color: var(--ambar-escuro); }
+.vm-campo:focus { border-color: var(--borda-forte); }
 .vm-contagem { margin-top: var(--esp-2); font-size: var(--texto-sm); color: var(--texto-suave); }
 
 .vm-artigo {
@@ -105,7 +105,7 @@
 .vm-numero {
   font-family: var(--fonte-titulo);
   font-size: var(--texto-lg);
-  color: var(--ambar);
+  color: var(--destaque);
   white-space: nowrap;
 }
 .vm-rubrica {
@@ -127,7 +127,7 @@
   font-family: var(--fonte-ui);
   font-size: var(--texto-xs);
   font-weight: 600;
-  color: var(--ambar);
+  color: var(--destaque);
   margin-bottom: var(--esp-1);
 }
 .vm-alteracoes {
@@ -135,7 +135,7 @@
   font-size: var(--texto-xs);
   color: var(--texto-suave);
 }
-.vm-marca { background-color: var(--ambar-fundo); color: var(--ambar); border-radius: 2px; padding: 0 2px; }
+.vm-marca { background-color: var(--realce-fundo); color: var(--destaque); border-radius: 2px; padding: 0 2px; }
 
 /* ── Galeria ────────────────────────────────────────────────── */
 
@@ -156,7 +156,7 @@
   cursor: zoom-in;
   transition: border-color var(--ease), transform var(--ease);
 }
-.gal-item:hover { border-color: var(--ambar); transform: translateY(-2px); }
+.gal-item:hover { border-color: var(--traco-ativo); transform: translateY(-2px); }
 .gal-item img { display: block; width: 100%; height: 150px; object-fit: cover; }
 .gal-item-legenda {
   padding: var(--esp-2) var(--esp-3);
@@ -177,7 +177,7 @@
   color: var(--texto);
 }
 .gal-selo-tipo.tipo-lousa { color: var(--vinho-texto); }
-.gal-selo-tipo.tipo-slide { color: var(--ambar); }
+.gal-selo-tipo.tipo-slide { color: var(--destaque); }
 .gal-selo-tipo.tipo-anotacao { color: var(--sucesso); }
 
 /* Lightbox */
@@ -226,7 +226,7 @@
 .marco-tempo {
   font-family: var(--fonte-mono);
   font-size: var(--texto-sm);
-  color: var(--ambar);
+  color: var(--destaque);
   min-width: 5.5ch;
 }
 .marco-tempo.pendente { color: var(--texto-suave); }
@@ -251,7 +251,7 @@
 .mod-aviso-origem {
   font-size: var(--texto-sm);
   color: var(--texto-secundario);
-  border-left: 3px solid var(--ambar-escuro);
+  border-left: 3px solid var(--borda-forte);
   padding-left: var(--esp-4);
   margin-bottom: var(--esp-6);
 }
@@ -264,7 +264,7 @@
   color: var(--texto-secundario);
   font-size: var(--texto-sm);
 }
-.aba[aria-selected="true"] { color: var(--ambar); border-bottom-color: var(--ambar); font-weight: 600; }
+.aba[aria-selected="true"] { color: var(--destaque); border-bottom-color: var(--traco-ativo); font-weight: 600; }
 
 .flashcard {
   perspective: 1200px;
@@ -383,7 +383,7 @@
 .dout-tema-meta { display: flex; flex-wrap: wrap; gap: var(--esp-2); align-items: center; }
 
 .chip-link { text-decoration: none; }
-.chip-link:hover { border-color: var(--ambar); color: var(--texto); }
+.chip-link:hover { border-color: var(--traco-ativo); color: var(--texto); }
 
 .dout-cobertura {
   font-size: var(--texto-xs);
@@ -421,7 +421,7 @@
   display: inline-block;
   font-family: var(--fonte-mono);
   font-size: var(--texto-xs);
-  color: var(--ambar);
+  color: var(--destaque);
   margin-bottom: var(--esp-2);
 }
 .dout-bloco p { font-size: var(--texto-sm); margin-bottom: var(--esp-2); }
@@ -434,7 +434,7 @@
   font-size: var(--texto-sm);
 }
 .dout-sintese.convergencia { background-color: var(--sucesso-fundo); border-left: 3px solid var(--sucesso); }
-.dout-sintese.divergencia { background-color: var(--ambar-fundo); border-left: 3px solid var(--ambar); }
+.dout-sintese.divergencia { background-color: var(--realce-fundo); border-left: 3px solid var(--traco-ativo); }
 .dout-nota-aula {
   font-size: var(--texto-sm);
   color: var(--texto-secundario);

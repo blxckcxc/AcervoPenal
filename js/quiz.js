@@ -154,7 +154,7 @@ const Quiz = (() => {
       container.querySelector("#areaFeedback").innerHTML = `
         <div class="sim-veredito ${acertou ? "ok" : "nok"}">${acertou ? "Correto." : "Incorreto."}</div>
         ${html}
-        ${q.referencia ? `<p class="sim-nota-fonte">Fonte: ${esc(q.referencia)}</p>` : ""}
+        ${q.referencia ? `<p class="nota-fonte">Fonte: ${esc(q.referencia)}</p>` : ""}
         <button type="button" class="btn btn-primario btn-bloco" id="btnProxima">
           ${ultimo ? "Ver resultado" : "Próxima questão"}
         </button>`;
@@ -250,7 +250,7 @@ const Quiz = (() => {
       raiz.innerHTML = `<div class="vazio">
         <span class="vazio-icone" aria-hidden="true">✎</span>
         <p>O banco de questões objetivas ainda está vazio.</p>
-        <p class="sim-nota-fonte">Enquanto isso, o
+        <p class="nota-fonte">Enquanto isso, o
         <a href="simulador.html">simulador de casos práticos</a> tem 64 casos prontos.</p>
       </div>`;
       return;

@@ -18,7 +18,7 @@
 
    ═══════════════════════════════════════════════════════════════ */
 
-const CACHE = "acervo-penal-3ccc95f99c";
+const CACHE = "acervo-penal-3a3fc31afd";
 
 /* INICIO-PRECACHE — gerado por build.js, não edite à mão */
 const ARQUIVOS = [
@@ -49,6 +49,10 @@ const ARQUIVOS = [
   "data/vademecum.json",
   "doutrina.html",
   "favicon.ico",
+  "fonts/cinzel-var-latin-ext.woff2",
+  "fonts/cinzel-var-latin.woff2",
+  "fonts/inter-var-latin-ext.woff2",
+  "fonts/inter-var-latin.woff2",
   "galeria.html",
   "icons/apple-touch-icon.png",
   "icons/emblema-penal.svg",

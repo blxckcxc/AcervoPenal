@@ -7,35 +7,50 @@
    em que pode cair — a página, a superfície e o card elevado. Os
    piores casos medidos estão anotados em cada linha.
 
-   No tema claro nenhuma das oito cores do escuro sobrevive: o verde
-   #A3E635 dá 1,3:1 sobre o pergaminho. O bloco [data-tema="claro"]
-   abaixo redefine as oito, e é só isso — o SVG não sabe de tema.
+   POR QUE OITO MATIZES MINERAIS E NÃO OITO CORES VIVAS
+   A versão anterior usava âmbar, ciano, rosa, violeta, lima,
+   turquesa, salmão e índigo em saturação plena. Era a superfície
+   mais colorida do acervo e a que mais brigava com a identidade
+   sóbria — parecia gráfico de dashboard, não peça jurídica.
+
+   A codificação por matiz não podia simplesmente sumir: com cinco
+   faixas fundidas na tela, é a cor que permite rastrear de qual
+   módulo é cada nó. O que mudou foi a saturação. As oito viraram
+   pigmentos minerais — areia, aço, vinho-rosa, lilás, sálvia,
+   petróleo, terracota, índigo —, ainda distinguíveis entre si, mas
+   em registro de mapa antigo em vez de paleta de software.
+
+   No tema claro nenhuma das oito do escuro sobrevive. O bloco
+   [data-tema="claro"] abaixo redefine as oito, e é só isso — o SVG
+   não sabe de tema.
    ═══════════════════════════════════════════════════════════════ */
 
 :root {
-  --mapa-principios:    #F59E0B;  /* 7,56 no pior fundo escuro */
-  --mapa-tempo:         #38BDF8;  /* 7,58 */
-  --mapa-crime:         #F472B6;  /* 6,13 */
-  --mapa-subjetivo:     #C084FC;  /* 6,14 */
-  --mapa-erro:          #A3E635;  /* 10,77 */
-  --mapa-iter:          #2DD4BF;  /* 8,72 */
-  --mapa-ilicitude:     #FCA5A5;  /* 8,55 */
-  --mapa-culpabilidade: #A5B4FC;  /* 8,14 */
+  --mapa-principios:    #C9AF87;  /* areia      — 8,39 no pior fundo escuro */
+  --mapa-tempo:         #7BA7CC;  /* aço        — 6,94 */
+  --mapa-crime:         #CE8CA6;  /* vinho-rosa — 6,68 */
+  --mapa-subjetivo:     #B394D6;  /* lilás      — 6,84 */
+  --mapa-erro:          #A3BE8C;  /* sálvia     — 8,68 */
+  --mapa-iter:          #6FC0B8;  /* petróleo   — 8,35 */
+  --mapa-ilicitude:     #D89A82;  /* terracota  — 7,47 */
+  --mapa-culpabilidade: #8FA3D9;  /* índigo     — 7,08 */
 
   --mapa-palco:  var(--bg-superficie);
   --mapa-no-bg:  var(--bg-elevado);
-  --mapa-aresta: var(--borda);
+  --mapa-aresta: var(--borda-media);
 }
 
 [data-tema="claro"] {
-  --mapa-principios:    #935F06;  /* 4,52 no pior fundo claro */
-  --mapa-tempo:         #0369A1;  /* 4,95 */
-  --mapa-crime:         #BE185D;  /* 5,04 */
-  --mapa-subjetivo:     #7E22CE;  /* 5,83 */
-  --mapa-erro:          #476E0D;  /* 5,00 — o lima do escuro reprova aqui */
-  --mapa-iter:          #0F766E;  /* 4,57 */
-  --mapa-ilicitude:     #B91C1C;  /* 5,40 */
-  --mapa-culpabilidade: #4338CA;  /* 6,60 */
+  --mapa-principios:    #7D5F2C;  /* bronze     — 5,02 no pior fundo claro */
+  --mapa-tempo:         #2F5D80;  /* aço        — 5,93 */
+  --mapa-crime:         #9B3F5E;  /* vinho-rosa — 5,45 */
+  --mapa-subjetivo:     #6B4E9B;  /* roxo       — 5,58 */
+  --mapa-erro:          #4F6B3A;  /* oliva      — 5,09 */
+  --mapa-iter:          #2A6E68;  /* petróleo   — 5,04 */
+  --mapa-ilicitude:     #A05038;  /* terracota  — 4,81 */
+  --mapa-culpabilidade: #465488;  /* índigo     — 6,17 */
+
+  --mapa-aresta: var(--borda);
 }
 
 /* ── Seletor de temas ───────────────────────────────────────── */
@@ -134,7 +149,7 @@
   padding: var(--esp-3) var(--esp-4);
   border-left: 3px solid var(--atencao);
   border-radius: var(--raio-sm);
-  background: var(--ambar-fundo);
+  background: var(--realce-fundo);
   color: var(--texto);
   font-family: var(--fonte-ui);
   font-size: var(--texto-sm);
@@ -192,7 +207,7 @@
 .mp-ctrl:hover {
   background: var(--bg-hover);
   color: var(--destaque);
-  border-color: var(--ambar);
+  border-color: var(--traco-ativo);
   transform: translateY(-1px);
 }
 
@@ -224,13 +239,13 @@
   stroke-width: 2.2;
   stroke-dasharray: 6 4;
   opacity: 0.85;
-  filter: drop-shadow(0 0 4px rgba(245, 158, 11, 0.4));
+  filter: drop-shadow(0 0 4px var(--mapa-brilho));
   transition: stroke-width var(--ease), opacity var(--ease), filter var(--ease);
 }
 .mp-aresta-cruzada:hover {
   opacity: 1;
   stroke-width: 3.5;
-  filter: drop-shadow(0 0 10px rgba(245, 158, 11, 0.75));
+  filter: drop-shadow(0 0 10px var(--mapa-brilho-forte));
 }
 
 .mp-no-caixa {
@@ -336,7 +351,7 @@
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, var(--vinho) 0%, var(--ambar) 50%, var(--vinho-claro) 100%);
+  background: linear-gradient(90deg, var(--vinho) 0%, var(--destaque) 50%, var(--vinho-claro) 100%);
 }
 .mp-gaveta-tit {
   flex: 1;
@@ -388,7 +403,7 @@
   padding: var(--esp-2) var(--esp-4);
   border: 1px solid var(--destaque);
   border-radius: var(--raio-full);
-  background: var(--ambar-fundo);
+  background: var(--realce-fundo);
   color: var(--destaque);
   font-family: var(--fonte-ui);
   font-size: var(--texto-sm);
@@ -401,7 +416,7 @@
   background: var(--destaque);
   color: #09090B;
   transform: translateY(-1px);
-  box-shadow: 0 4px 14px rgba(217, 119, 6, 0.35);
+  box-shadow: 0 4px 14px rgba(136, 19, 55, 0.40);
 }
 
 .mp-pos {
@@ -421,7 +436,7 @@
   padding: var(--esp-3) var(--esp-4);
   border-left: 3px solid var(--destaque);
   border-radius: var(--raio-sm);
-  background: var(--ambar-fundo);
+  background: var(--realce-fundo);
 }
 
 .mp-elo {
@@ -516,7 +531,16 @@
   .mp-gaveta { width: 100vw; }
   .mp-controles { right: var(--esp-2); bottom: var(--esp-2); padding: var(--esp-1); gap: var(--esp-1); }
   .mp-ctrl { width: 44px; height: 44px; }
-  .mp-tema { min-height: 44px; }
+}
+
+/* Os atalhos declaram min-height: 36px, e uma classe vence o
+   `button { min-height: 44px }` que base.css aplica em ponteiro
+   grosso — a regra geral existia e este arquivo a derrubava sem
+   querer. Aqui os alvos voltam aos 44 px onde há dedo, e não
+   por largura de tela: um tablet largo também é tocado.          */
+@media (pointer: coarse) {
+  .mp-tema,
+  .mp-atalho { min-height: 44px; }
 }
 
 /* ── Impressão ──────────────────────────────────────────────

@@ -1,112 +1,222 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+/* ═══════════════════════════════════════════════════════════════
+   FONTES — servidas da própria pasta, nunca de CDN
+
+   Aqui havia um @import do Google Fonts. Era a ÚNICA dependência
+   externa do projeto inteiro, e não funcionava justamente nos dois
+   modos que este acervo promete: no duplo clique (file://) e sem
+   internet, Cinzel e Inter simplesmente não chegavam, e a página
+   caía silenciosamente para Georgia e a fonte do sistema. A
+   tipografia de autoridade existia só para quem estivesse online.
+
+   Cinzel e Inter são licenciadas em SIL Open Font License, que
+   autoriza expressamente redistribuir os arquivos junto do projeto.
+   São variáveis: um arquivo por subconjunto cobre toda a faixa de
+   pesos, por isso font-weight declara um INTERVALO. Só latin e
+   latin-ext entram — o português cabe neles, e cirílico, grego e
+   vietnamita seriam 300 KB de peso morto no precache.
+
+   font-display: swap para o texto aparecer na fonte de sistema e
+   trocar quando a fonte chegar, em vez de piscar em branco.
+   ═══════════════════════════════════════════════════════════════ */
+
+@font-face {
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 500 800;
+  font-display: swap;
+  src: url('../fonts/cinzel-var-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 500 800;
+  font-display: swap;
+  src: url('../fonts/cinzel-var-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF,
+    U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
+    U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('../fonts/inter-var-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('../fonts/inter-var-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF,
+    U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
+    U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
 
 /* ═══════════════════════════════════════════════════════════════
    Acervo Penal — tokens de design
-   Paleta penalista: vinho bordô + âmbar sobre ônix.
+   Identidade: VINHO + ÔNIX no escuro · VINHO + ARGILA BRANCA no claro.
 
    FONTE ÚNICA DE VERDADE. Nenhum valor cru de cor, espaço, raio,
-   sombra ou duração deve aparecer nos outros arquivos CSS. Trocar a
-   identidade visual inteira tem de ser editar só este arquivo — é o
-   que permite a rodada de refinamento no Astra sem caçar valores.
+   sombra ou duração deve aparecer nos outros arquivos CSS.
 
    ─────────────────────────────────────────────────────────────
-   SOBRE OS NÚMEROS DE CONTRASTE NOS COMENTÁRIOS
-   Todos foram medidos (WCAG 2.1, fórmula de luminância relativa)
-   contra os dois fundos reais do tema escuro: --onix-fundo #09090B
-   e --onix-superficie #18181B. O par mais apertado é sempre o da
-   superfície, então é ele que decide.
+   O QUE MUDOU NESTA RODADA, E POR QUÊ
+
+   A identidade anterior era vinho + ÂMBAR. O âmbar carregava links,
+   ícones, números, bordas de foco e realces — 60 declarações. Ele
+   saiu inteiro: a paleta agora é vinho e metal frio, sem nenhum
+   laranja ou amarelo.
+
+   Junto com ele saiu um problema de arquitetura. Os componentes
+   consumiam `var(--ambar)` DIRETAMENTE, furando a camada semântica
+   que existe logo abaixo. Por isso trocar a identidade custava caçar
+   60 lugares. Agora todo componente consome papel (`--destaque`,
+   `--traco-ativo`, `--realce-fundo`), nunca pigmento. A próxima
+   virada de identidade é editar os dois blocos deste arquivo.
+
+   ─────────────────────────────────────────────────────────────
+   A ESCADA DO VINHO — o achado que governa o tema escuro
+
+   O vinho bordô é a cor da marca, mas sobre o ônix ele quase não
+   existe. Medido (WCAG 2.1, luminância relativa) contra os três
+   fundos reais — página #09090B, card #121215, elevado #18181D:
+
+       #881337   2,08 · 1,95 · 1,85   →  só PREENCHIMENTO
+       #9F1239   2,48 · 2,33 · 2,21   →  só PREENCHIMENTO
+       #700C2B          1,58          →  só PREENCHIMENTO
+       #D11E5C   3,84 · 3,61 · 3,41   →  TRAÇO e borda   (≥3)
+       #E54274   5,08 · 4,78 · 4,52   →  TEXTO           (≥4,5)
+
+   Isso não rebaixa o vinho: como área preenchida ele é soberano —
+   o rótulo #FAF8F5 sobre #881337 dá 9,02:1. O que a escada impede
+   é o erro de usar o mesmo vinho como uma LINHA de 1px sobre preto,
+   onde ele simplesmente some. Botão, lâmina da espada, selo e barra
+   de progresso ficam com --vinho. Borda ativa e filete sobem para
+   --vinho-traco. Texto sobe para --vinho-texto.
+
+   No tema claro nada disso é preciso: sobre a argila o mesmo
+   #881337 dá 8,70:1 e comanda títulos, marca e links à vontade.
 
    Exigências: texto ≥ 4,5:1 · texto grande e componentes ≥ 3:1.
-
-   O ACHADO QUE MOLDOU ESTA PALETA
-   O vinho bordô #881337 dá 2,08:1 sobre o fundo e 1,85:1 sobre o
-   card. Ele reprova não só como texto, mas até como borda ou ícone.
-   Isso NÃO o desqualifica: ele continua sendo a cor da identidade —
-   só que como PREENCHIMENTO, onde o contraste que importa é o do
-   rótulo sobre ele (#FAF8F5 sobre #881337 = 9,02:1, folgado).
-
-   A consequência de desenho é que o vinho manda nos fundos e o
-   âmbar manda no que é interativo e no que é texto de destaque.
-   Para quando a família vinho precisar mesmo virar texto, existe
-   --vinho-texto, a menor variação da mesma matiz que passa.
    ═══════════════════════════════════════════════════════════════ */
 
 :root {
   /* ── Identidade: vinho bordô ────────────────────────────────
-     PREENCHIMENTO APENAS. Ver a nota do cabeçalho.               */
-  --vinho:        #881337;  /* 2,08 fundo · 1,85 card — só fundo  */
-  --vinho-claro:  #991B1B;  /* 2,39 · 2,13 — hover do preenchim.  */
-  --vinho-fundo:  #2A0A14;  /* lavagem para faixas e selos        */
+     Os três primeiros são PREENCHIMENTO. Ver a escada acima.     */
+  --vinho:          #881337;  /* 9,02 para o rótulo sobre ele     */
+  --vinho-claro:    #9F1239;  /* hover do preenchimento — 7,56    */
+  --vinho-profundo: #700C2B;  /* pressionado / profundidade       */
+  --vinho-fundo:  #24070F;  /* lavagem de fundo; corpo dá 15,04 */
 
-  /* Menor clareamento da matiz vinho que passa AA como texto.
-     Usar em destaque tipográfico da família vinho no tema escuro. */
-  --vinho-texto:  #E54274;  /* 5,08 fundo · 4,52 card — AA texto  */
+  --vinho-traco:    #D11E5C;  /* 3,41 no pior fundo — borda ativa */
+  --vinho-texto:    #E54274;  /* 4,52 no pior fundo — texto       */
 
-  /* ── Acento: âmbar ──────────────────────────────────────────
-     Passa como texto com folga nos dois fundos, então é ele que
-     carrega links, ícones e números.                             */
-  --ambar:        #F59E0B;  /* 9,26 fundo · 8,25 card — AA texto  */
-  --ambar-escuro: #D97706;  /* 6,24 · 5,56 — AA texto e bordas    */
-  --ambar-fundo:  #2B1D05;  /* lavagem para realces               */
+  /* ── Metal frio: o que era âmbar ────────────────────────────
+     Links, ícones, números e filetes. Passa com folga em tudo.
+     Duas variações bastam: a viva para o que é interativo e a
+     fosca para o metal do emblema. Uma terceira, intermediária,
+     chegou a existir aqui e saiu por não ter papel — token sem
+     consumidor é peso morto que a próxima pessoa tenta adivinhar. */
+  --platina:       #F4F4F5;  /* 16,09 no elevado                  */
+  --platina-fosca: #D4D4D8;  /* 11,97                             */
 
-  /* ── Ônix: fundos do tema escuro ───────────────────────────── */
-  --onix-fundo:      #09090B;
-  --onix-superficie: #18181B;
-  --onix-elevado:    #202024;
-  --onix-hover:      #27272A;
-  --borda-sutil:     #2E2E33;
+  /* ── Ônix: fundos do tema escuro ─────────────────────────────
+     Mais fundos e mais próximos entre si que a versão anterior —
+     é o que dá a profundidade discreta em vez do degrau visível. */
+  --onix-fundo:   #09090B;
+  --onix-card:    #121215;
+  --onix-elevado: #18181D;
+  --onix-hover:   #202024;
+
+  /* Bordas por alfa: acompanham o fundo em vez de brigar com ele.
+     Nenhuma delas chega a 3:1, e está correto — são SEPARADORES
+     decorativos, não a fronteira única do card, que o fundo já
+     define. O que precisa de 3:1 é borda ativa e foco, e essas
+     usam --traco-ativo e --foco, medidos. */
+  --borda-sutil:  rgba(255, 255, 255, 0.07);
+  --borda-media:  rgba(255, 255, 255, 0.14);
 
   /* ── Texto do tema escuro ──────────────────────────────────── */
-  --pergaminho:      #FAF8F5;  /* 18,77 · 16,71 — títulos          */
-  --texto-claro:     #E7E5E4;  /* 15,85 · 14,11 — corpo            */
-  --texto-medio:     #A8A29E;  /*  7,89 ·  7,02 — secundário       */
-  --texto-apagado:   #8A8580;  /*  5,45 ·  4,85 — legendas         */
+  --pergaminho:    #FAF8F5;
+  --texto-claro:   #E7E5E4;
+  --texto-medio:   #A8A29E;
+  --texto-apagado: #8A8580;
 
-  /* ── Estados ────────────────────────────────────────────────
-     #DC2626 dá 4,12 / 3,67: aprova como COMPONENTE (≥3) e reprova
-     como TEXTO (<4,5). Fica na borda e no fundo do alerta; o texto
-     do alerta usa --alerta-texto.                                */
-  --alerta:        #DC2626;  /* 4,12 · 3,67 — borda/fundo         */
-  --alerta-texto:  #E24B4B;  /* 5,06 · 4,51 — AA texto            */
+  /* ── Estados — sóbrios, sem amarelo ─────────────────────────
+     O --atencao era #FBBF24, amarelo pleno. Virou areia mineral,
+     que passa 8,39 e não grita.                                 */
+  --alerta:        #DC2626;  /* 3,66 — borda e preenchimento     */
+  --alerta-texto:  #E08585;  /* 6,62 — AA texto                  */
   --alerta-fundo:  #2B0D0D;
-  --sucesso:       #4ADE80;  /* 12,3 · 10,9                       */
+  --sucesso:       #86C79B;  /* 8,98                             */
   --sucesso-fundo: #0A2416;
-  --atencao:       #FBBF24;  /* 11,6 · 10,3                       */
+  --atencao:       #C9AF87;  /* 8,39                             */
 
-  /* ── Botão primário ────────────────────────────────────────
+  /* ── Botão primário ─────────────────────────────────────────
      O preenchimento é o vinho da identidade; quem precisa passar
-     é o rótulo sobre ele, e passa com folga.                     */
+     é o rótulo sobre ele, e passa com folga.                    */
   --btn-primario-bg:       var(--vinho);
   --btn-primario-fg:       var(--pergaminho);  /* 9,02 sobre vinho */
   --btn-primario-bg-hover: var(--vinho-claro);
-  --btn-primario-fg-hover: var(--pergaminho);  /* 7,84 — ainda AA  */
+  --btn-primario-fg-hover: var(--pergaminho);  /* 7,56 — ainda AA  */
 
   /* ── Semânticos: é o que o resto do CSS consome ─────────────
-     Nunca use os tokens de paleta acima diretamente nos outros
-     arquivos. Consuma daqui — é o que faz o tema claro funcionar
-     sem reescrever componente nenhum.                            */
+     NUNCA use os tokens de paleta acima nos outros arquivos.
+     Consuma daqui — é o que faz o tema claro funcionar sem
+     reescrever componente nenhum.                               */
   --bg:            var(--onix-fundo);
-  --bg-superficie: var(--onix-superficie);
+  --bg-superficie: var(--onix-card);
   --bg-elevado:    var(--onix-elevado);
   --bg-hover:      var(--onix-hover);
   --borda:         var(--borda-sutil);
 
-  --texto:           var(--texto-claro);
-  --texto-titulo:    var(--pergaminho);
+  --texto:            var(--texto-claro);
+  --texto-titulo:     var(--pergaminho);
   --texto-secundario: var(--texto-medio);
-  --texto-suave:     var(--texto-apagado);
+  --texto-suave:      var(--texto-apagado);
 
-  --link:       var(--ambar);
-  --link-hover: #FBBF24;
-  --destaque:   var(--ambar);
-  --marca:      var(--vinho);
+  /* O link é platina — e platina fica a 1,14:1 do texto do corpo,
+     ou seja, a cor sozinha NÃO distingue link de texto (WCAG 1.4.1).
+     Por isso o sublinhado em prosa não é enfeite: é o que carrega a
+     distinção. Fora da prosa (nav, chips, botões) a forma e a
+     posição já distinguem, e ali a platina anda limpa. */
+  --link:       var(--platina);
+  --link-hover: #FFFFFF;
+  --destaque:   var(--platina);
+  --marca:      var(--vinho-texto);
 
-  /* ── Níveis do simulador de casos práticos ─────────────────
-     Todos medidos como texto sobre a superfície do card.         */
-  --nivel-1: #4ADE80;  /* básico          — 10,9 */
-  --nivel-2: #F59E0B;  /* intermediário   —  8,25 */
-  --nivel-3: #E54274;  /* avançado        —  4,52 */
-  --nivel-4: #C084FC;  /* alta complexid. —  6,90 */
+  /* Papéis que antes eram âmbar cru espalhado pelos componentes. */
+  --traco-ativo:   var(--vinho-traco);   /* borda ativa, filete   */
+  --borda-forte:   var(--vinho-traco);   /* hover de borda        */
+  --realce-fundo:  var(--vinho-fundo); /* lavagem de destaque   */
+  --foco:          var(--platina);       /* anel de foco — 16,09  */
+
+  /* ── Emblema da espada-balança ──────────────────────────────
+     Metal em platina no escuro, bronze na argila. A lâmina precisa
+     da escada do vinho para não sumir no ônix — ver o comentário
+     do bloco .emblema-svg em components.css.                     */
+  --emblema-metal:  var(--platina-fosca);
+  --emblema-lamina: var(--vinho-traco);
+  --emblema-cabo:   var(--vinho);
+
+  /* Brilho das conexões cruzadas do mapa: metal frio no escuro. */
+  --mapa-brilho:       rgba(244, 244, 245, 0.35);
+  --mapa-brilho-forte: rgba(244, 244, 245, 0.60);
+
+  /* ── Níveis do simulador ────────────────────────────────────
+     Medidos como texto sobre os três fundos escuros.             */
+  --nivel-1: #86C79B;  /* básico          — 8,98 */
+  --nivel-2: #C9AF87;  /* intermediário   — 8,39 */
+  --nivel-3: #CE8CA6;  /* avançado        — 6,68 */
+  --nivel-4: #B394D6;  /* alta complexid. — 6,84 */
 
   /* ── Correção discursiva ───────────────────────────────────── */
   --quesito-ok:      var(--sucesso);
@@ -114,13 +224,16 @@
   --quesito-falta:   var(--alerta-texto);
 
   /* ── Tipografia ────────────────────────────────────────────
-     Serifada para o texto de leitura longa e para os títulos —
-     é o registro do documento jurídico. Sem serifa para interface,
-     rótulos e dados.                                             */
-  --fonte-titulo: 'Cinzel', 'Merriweather', Georgia, serif;
-  --fonte-leitura: 'Merriweather', Georgia, 'Times New Roman', serif;
-  --fonte-ui: 'Source Sans 3', 'Inter', system-ui, -apple-system, sans-serif;
-  --fonte-mono: 'JetBrains Mono', ui-monospace, 'Courier New', monospace;
+     Cinzel nos títulos — capitular romana, o registro do documento
+     jurídico. Inter na interface. As duas estão VENDADAS em fonts/
+     como woff2: o @import do Google Fonts que existia aqui era a
+     única dependência externa do projeto e não carregava nem no
+     duplo clique (file://) nem offline, justamente os dois modos
+     que este acervo promete.                                     */
+  --fonte-titulo:  'Cinzel', Georgia, 'Times New Roman', serif;
+  --fonte-leitura: 'Inter', system-ui, -apple-system, sans-serif;
+  --fonte-ui:      'Inter', system-ui, -apple-system, sans-serif;
+  --fonte-mono:    ui-monospace, 'SF Mono', 'Cascadia Mono', 'Courier New', monospace;
 
   --texto-xs:   0.75rem;
   --texto-sm:   0.875rem;
@@ -133,7 +246,7 @@
 
   --entrelinha-justa:    1.25;
   --entrelinha-normal:   1.55;
-  --entrelinha-relaxada: 1.75;  /* leitura longa em serifada */
+  --entrelinha-relaxada: 1.75;  /* leitura longa */
 
   /* ── Espaçamento ───────────────────────────────────────────── */
   --esp-1:  0.25rem;
@@ -158,90 +271,102 @@
   --sombra-sm:   0 1px 3px rgba(0, 0, 0, 0.5);
   --sombra-md:   0 4px 24px rgba(0, 0, 0, 0.55);
   --sombra-lg:   0 12px 40px rgba(0, 0, 0, 0.7);
-  --sombra-halo: 0 0 0 1px rgba(136, 19, 55, 0.5), 0 0 24px rgba(245, 158, 11, 0.15);
+  --sombra-halo: 0 0 0 1px rgba(136, 19, 55, 0.55), 0 0 28px rgba(136, 19, 55, 0.18);
 
   /* ── Vidro ─────────────────────────────────────────────────── */
-  --vidro-bg:     rgba(24, 24, 27, 0.85);
-  --vidro-blur:   blur(16px);
-  --vidro-borda:  rgba(250, 248, 245, 0.07);
+  --vidro-bg:    rgba(18, 18, 21, 0.82);
+  --vidro-blur:  blur(18px);
+  --vidro-borda: rgba(255, 255, 255, 0.09);
 
-  /* ── Movimento ─────────────────────────────────────────────
-     Seção isolada de propósito: as microinterações da rodada no
-     Astra entram aqui, sem precisar caçar durações no resto.      */
+  /* ── Movimento ─────────────────────────────────────────────── */
   --ease:      200ms ease-out;
   --ease-slow: 320ms cubic-bezier(0.22, 1, 0.36, 1);
 
   /* ── Layout ────────────────────────────────────────────────── */
-  --sidebar-w:   264px;
+  --sidebar-w:    264px;
   --conteudo-max: 1080px;
-  --header-h:    64px;
-  --bottomnav-h: 60px;
+  --header-h:     64px;
+  --bottomnav-h:  60px;
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   TEMA CLARO — "pergaminho"
+   TEMA CLARO — "argila branca"
 
-   Aqui a hierarquia se inverte, e é uma inversão feliz: sobre o
-   pergaminho o vinho #881337 dá 9,02:1 e vira excelente cor de
-   texto e de link. Já o âmbar #D97706, que brilhava no escuro,
-   despenca para 3,01:1 e reprova — precisa escurecer para #A75B05.
+   Não é branco de tela, que cansa em leitura longa: é o tom pétreo
+   e fosco da argila, com a mesma função do papel nobre. Sobre ela o
+   vinho #881337 dá 8,70:1 e assume o que no escuro coube à platina —
+   títulos, marca, links e bordas ativas. A escada do vinho não é
+   necessária aqui: o pigmento da identidade passa direto.
+
+   A ELEVAÇÃO INVERTE, E ISSO É DELIBERADO
+   No escuro, subir de plano é CLAREAR (#09090B → #121215 → #18181D).
+   No claro é o contrário: a página é a argila e o card é mais claro
+   que ela (#F6F4EE → #FFFFFF), como uma folha pousada sobre a mesa.
+   Os componentes não sabem disso — consomem --bg-superficie e
+   --bg-elevado e recebem a ordem certa de cada tema.
 
    Só tokens são redefinidos. Nenhum componente é reescrito.
    ═══════════════════════════════════════════════════════════════ */
 
 [data-tema="claro"] {
-  --bg:            #FAF8F5;
-  --bg-superficie: #F5F1EA;
-  --bg-elevado:    #EFEAE1;
-  --bg-hover:      #E8E2D7;
-  --borda:         #DDD5C8;
+  --bg:            #F6F4EE;  /* argila                            */
+  --bg-superficie: #FFFFFF;  /* a folha sobre a mesa              */
+  --bg-elevado:    #FBF9F5;
+  --bg-hover:      #EFECE4;
+  --borda:         #DDD8CE;  /* argila mineral                    */
 
-  --texto:            #1C1917;  /* 16,50 fundo · 15,53 superfície */
-  --texto-titulo:     #1C1917;
-  --texto-secundario: #57534E;  /*  7,20 ·  6,78 */
-  --texto-suave:      #69625F;  /* 4,6+ em todos os fundos claros, inclusive as lavagens */
+  --texto:            #1C1917;  /* 15,90 na argila · 17,49 no card */
+  --texto-titulo:     #881337;  /* 8,70 · 9,57 — o vinho comanda   */
+  --texto-secundario: #57534E;  /* 6,46 no pior fundo claro        */
+  --texto-suave:      #69625F;  /* 5,06                            */
 
-  --link:       #881337;  /* 9,02 · 8,50 — o vinho brilha no claro */
-  --link-hover: #991B1B;  /* 7,84 · 7,39 */
-  --destaque:   #A75B05;  /* âmbar escurecido: 4,78 · 4,50 */
-  --marca:      var(--vinho);
+  --link:       #881337;  /* 8,70 · 9,57 */
+  --link-hover: #700C2B;  /* mais profundo no hover, não mais claro */
+  --destaque:   #881337;
+  --marca:      #881337;
 
-  /* ── Tokens de paleta que viram TEXTO ───────────────────────
-     Estes existem porque 44 declaracoes pelo CSS usam
-     `color: var(--ambar)`, `var(--sucesso)` e afins. No tema escuro
-     eles brilham; sobre o pergaminho reprovam todos — o ambar #F59E0B
-     cai para 2,0:1 e o verde #4ADE80 some no fundo.
+  --traco-ativo:  #881337;
+  --borda-forte:  #881337;
+  --realce-fundo: #F7E9ED;  /* lavagem de vinho sobre argila */
+  --foco:         #881337;  /* 8,70 — bem acima dos 3:1 do anel */
 
-     Redefinir aqui o proprio token conserta os 44 pontos de uma vez,
-     em vez de caçar cada regra. Os valores sao a menor variacao de
-     cada matiz que passa 4,5:1 em TODOS os fundos claros do tema
-     (pagina, superficie, elevado e as lavagens de destaque).        */
-  --ambar:        #935F06;  /* 4,52 no pior fundo claro */
-  --ambar-escuro: #A05804;  /* 4,50 */
-  --sucesso:      #167A3B;  /* 4,52 */
-  --atencao:      #896403;  /* 4,51 */
-  /* O vinho da identidade passa com folga sobre o pergaminho (8,50),
-     entao aqui ele proprio faz o papel que --vinho-texto faz no escuro. */
-  --vinho-texto:  #881337;  /* 9,02 · 8,50 */
+  /* No claro o metal do emblema vira bronze e a lâmina volta ao
+     vinho pleno, que sobre o card dá 9,57.                       */
+  --emblema-metal:  #7D5F2C;  /* 5,02 */
+  --emblema-lamina: #881337;
+  --emblema-cabo:   #700C2B;
 
-  --alerta-texto: #C22020;  /* 4,6+ inclusive sobre --alerta-fundo */
-  --alerta-fundo: #FDECEC;
-  --sucesso-fundo: #E8F6EC;
-  --ambar-fundo:  #FBF2E0;
-  --vinho-fundo:  #F7E9ED;
+  --mapa-brilho:       rgba(136, 19, 55, 0.30);
+  --mapa-brilho-forte: rgba(136, 19, 55, 0.55);
 
-  /* Níveis do simulador, reescurecidos para o fundo claro. */
-  --nivel-1: #15803D;
-  --nivel-2: #A75B05;
-  --nivel-3: #A8124A;
-  --nivel-4: #7E22CE;
+  /* ── Paleta reescurecida para o fundo claro ─────────────────
+     Os tokens de estado são consumidos como COR DE TEXTO em
+     dezenas de regras. No escuro eles clareiam; sobre a argila
+     todos reprovariam. Redefinir o token conserta todos os pontos
+     de uma vez. Valores medidos nos quatro fundos claros.        */
+  --sucesso:      #2A6B42;  /* 5,42 */
+  --atencao:      #7A5D2A;  /* 5,19 */
+  --alerta:       #B02525;
+  --alerta-texto: #B02525;  /* 5,67 */
 
-  --sombra-sm:   0 1px 3px rgba(28, 25, 23, 0.10);
-  --sombra-md:   0 4px 24px rgba(28, 25, 23, 0.12);
-  --sombra-lg:   0 12px 40px rgba(28, 25, 23, 0.16);
-  --sombra-halo: 0 0 0 1px rgba(136, 19, 55, 0.35), 0 0 24px rgba(136, 19, 55, 0.10);
+  --alerta-fundo:  #FBEAEA;
+  --sucesso-fundo: #E9F4ED;
+  --vinho-fundo: #F7E9ED;
+  --vinho-texto:   #881337;  /* no claro o próprio vinho é texto */
+  --vinho-traco:   #881337;
 
-  --vidro-bg:    rgba(250, 248, 245, 0.88);
+  /* Níveis do simulador, reescurecidos. */
+  --nivel-1: #2A6B42;  /* 5,42 */
+  --nivel-2: #7D5F2C;  /* 5,02 */
+  --nivel-3: #9B3F5E;  /* 5,45 */
+  --nivel-4: #6B4E9B;  /* 5,58 */
+
+  --sombra-sm:   0 1px 2px rgba(28, 25, 23, 0.06);
+  --sombra-md:   0 4px 20px rgba(28, 25, 23, 0.09);
+  --sombra-lg:   0 12px 40px rgba(28, 25, 23, 0.13);
+  --sombra-halo: 0 0 0 1px rgba(136, 19, 55, 0.30), 0 0 24px rgba(136, 19, 55, 0.10);
+
+  --vidro-bg:    rgba(255, 255, 255, 0.86);
   --vidro-borda: rgba(28, 25, 23, 0.08);
 }
 
@@ -263,11 +388,11 @@
   :root {
     --texto-secundario: var(--texto-claro);
     --texto-suave:      var(--texto-medio);
-    --borda:            #4A4A52;
+    --borda:            rgba(255, 255, 255, 0.32);
   }
   [data-tema="claro"] {
     --texto-secundario: #1C1917;
     --texto-suave:      #44403C;
-    --borda:            #B9AE9C;
+    --borda:            #B4ACA0;
   }
 }
