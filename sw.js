@@ -24,7 +24,7 @@
    rede e fica com o cache HTTP normal do navegador.
    ═══════════════════════════════════════════════════════════════ */
 
-const CACHE = "acervo-penal-7977759fe5";
+const CACHE = "acervo-penal-1c4480f9a2";
 
 /* INICIO-PRECACHE — gerado por build.js, não edite à mão */
 const ARQUIVOS = [
@@ -53,6 +53,7 @@ const ARQUIVOS = [
   "data/quiz-bank.json",
   "data/teoria-do-crime.json",
   "data/vademecum.json",
+  "doutrina.html",
   "favicon.ico",
   "galeria.html",
   "icons/apple-touch-icon.png",
@@ -63,6 +64,7 @@ const ARQUIVOS = [
   "js/app.js",
   "js/aula.js",
   "js/corretor.js",
+  "js/doutrina.js",
   "js/exam.js",
   "js/galeria.js",
   "js/inicio.js",

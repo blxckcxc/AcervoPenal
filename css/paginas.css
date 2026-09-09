@@ -349,3 +349,97 @@
 /* Os dois últimos minutos mudam de cor: é aviso, não enfeite. */
 .prova-relogio.alerta { color: var(--atencao); border-color: var(--atencao); }
 .prova-relogio.critico { color: var(--alerta-texto); border-color: var(--alerta); }
+
+/* ── Estado do baralho de flashcards ────────────────────────── */
+
+.baralho-estado { margin-bottom: var(--esp-5); }
+.baralho-estado .grade-stats { margin-bottom: var(--esp-3); }
+.card-feedback {
+  padding: var(--esp-2) var(--esp-4);
+  border-radius: var(--raio-md);
+  font-size: var(--texto-sm);
+  margin-bottom: var(--esp-3);
+}
+.card-feedback.ok { background: var(--sucesso-fundo); color: var(--sucesso); }
+.card-feedback.nok { background: var(--alerta-fundo); color: var(--alerta-texto); }
+
+/* ── Doutrina comparada ─────────────────────────────────────── */
+
+.dout-aviso { margin-bottom: var(--esp-6); }
+.dout-legenda { font-size: var(--texto-sm); color: var(--texto-secundario); }
+.dout-legenda li { margin-bottom: var(--esp-2); }
+
+.dout-tema {
+  padding: var(--esp-6) 0;
+  border-top: 1px solid var(--borda);
+}
+.dout-tema-cab { margin-bottom: var(--esp-5); }
+.dout-tema-tit { font-size: var(--texto-xl); margin-bottom: var(--esp-3); }
+.dout-tema-meta { display: flex; flex-wrap: wrap; gap: var(--esp-2); align-items: center; }
+
+.chip-link { text-decoration: none; }
+.chip-link:hover { border-color: var(--ambar); color: var(--texto); }
+
+.dout-cobertura {
+  font-size: var(--texto-xs);
+  padding: 0.15em 0.6em;
+  border-radius: var(--raio-full);
+  border: 1px solid currentColor;
+}
+.dout-cobertura.completa { color: var(--sucesso); }
+.dout-cobertura.parcial { color: var(--atencao); }
+
+/* Três colunas no desktop; empilhadas no celular. A coluna sem
+   posição localizada continua aparecendo — ver o cabeçalho de
+   js/doutrina.js sobre por que ela não é escondida. */
+.dout-colunas { display: grid; gap: var(--esp-4); }
+
+.dout-coluna {
+  background: var(--bg-superficie);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio-lg);
+  padding: var(--esp-4);
+}
+.dout-vazia { background: transparent; border-style: dashed; }
+.dout-cab { margin-bottom: var(--esp-3); padding-bottom: var(--esp-3); border-bottom: 1px solid var(--borda); }
+.dout-nome {
+  display: block;
+  font-family: var(--fonte-titulo);
+  color: var(--texto-titulo);
+  font-size: var(--texto-base);
+}
+.dout-obra { display: block; font-size: var(--texto-xs); color: var(--texto-suave); margin-top: 2px; }
+.dout-sem { font-size: var(--texto-sm); color: var(--texto-suave); font-style: italic; margin: 0; }
+
+.dout-bloco + .dout-bloco { margin-top: var(--esp-4); padding-top: var(--esp-4); border-top: 1px dashed var(--borda); }
+.dout-loc {
+  display: inline-block;
+  font-family: var(--fonte-mono);
+  font-size: var(--texto-xs);
+  color: var(--ambar);
+  margin-bottom: var(--esp-2);
+}
+.dout-bloco p { font-size: var(--texto-sm); margin-bottom: var(--esp-2); }
+.dout-bloco blockquote { font-size: var(--texto-sm); margin: 0; padding: var(--esp-3) var(--esp-4); }
+
+.dout-sintese {
+  margin-top: var(--esp-5);
+  padding: var(--esp-3) var(--esp-4);
+  border-radius: var(--raio-md);
+  font-size: var(--texto-sm);
+}
+.dout-sintese.convergencia { background: var(--sucesso-fundo); border-left: 3px solid var(--sucesso); }
+.dout-sintese.divergencia { background: var(--ambar-fundo); border-left: 3px solid var(--ambar); }
+.dout-nota-aula {
+  font-size: var(--texto-sm);
+  color: var(--texto-secundario);
+  border-left: 3px solid var(--vinho);
+  padding-left: var(--esp-4);
+  margin-top: var(--esp-4);
+}
+
+.vm-link { text-decoration-style: dotted; text-underline-offset: 3px; }
+
+@media (min-width: 900px) {
+  .dout-colunas { grid-template-columns: repeat(3, 1fr); }
+}

@@ -25,7 +25,51 @@ const Modulo = (() => {
   let doutrina = null;
   let galeria = [];
 
-  /* ── Flashcards ───────────────────────────────────────────── */
+  /* ── Flashcards ───────────────────────────────────────────
+     A repetição espaçada já existia em progress.js (1 → 3 → 7 → 30
+     dias, persistida em localStorage), mas era invisível: o estudante
+     respondia e nada lhe dizia quando aquele cartão voltaria, nem
+     quantos estavam vencidos hoje. Um sistema de revisão que não mostra
+     o próprio estado vira um baralho embaralhado ao acaso — some
+     justamente a razão de existir do método.
+
+     Agora a aba abre com o estado do baralho e cada resposta informa o
+     próximo intervalo. ─────────────────────────────────────────────── */
+
+  const INTERVALOS = [1, 3, 7, 30];
+
+  function estadoDoBaralho(cards) {
+    const p = Progresso.doModulo(meta.id);
+    const agora = Date.now();
+    let novos = 0;
+    let vencidos = 0;
+    let agendados = 0;
+    let dominados = 0;
+    let proxima = null;
+
+    for (let i = 0; i < cards.length; i++) {
+      const c = p.cards[i];
+      if (!c || !c.proximaEm) {
+        novos++;
+        continue;
+      }
+      const quando = new Date(c.proximaEm).getTime();
+      if (c.nivel >= 2) dominados++;
+      if (quando <= agora) vencidos++;
+      else {
+        agendados++;
+        if (proxima === null || quando < proxima) proxima = quando;
+      }
+    }
+    return { novos, vencidos, agendados, dominados, proxima, total: cards.length };
+  }
+
+  function emQuantoTempo(ms) {
+    const dias = Math.ceil((ms - Date.now()) / 86400000);
+    if (dias <= 0) return "hoje";
+    if (dias === 1) return "amanhã";
+    return `em ${dias} dias`;
+  }
 
   function abaFlashcards(alvo) {
     const cards = (conteudo && conteudo.flashcards) || [];
@@ -36,17 +80,59 @@ const Modulo = (() => {
     }
 
     let fila = Progresso.cardsParaHoje(meta.id, cards.length);
-    if (!fila.length) fila = cards.map((_, i) => i);
+    let revisandoTudo = false;
     let pos = 0;
+    let ultimo = null; // feedback da resposta anterior
+
+    const painelEstado = () => {
+      const e = estadoDoBaralho(cards);
+      return `<div class="baralho-estado">
+          <div class="grade-stats">
+            <div class="stat"><div class="stat-valor">${e.vencidos + e.novos}</div>
+              <div class="stat-rotulo">para hoje</div></div>
+            <div class="stat"><div class="stat-valor">${e.novos}</div>
+              <div class="stat-rotulo">nunca vistos</div></div>
+            <div class="stat"><div class="stat-valor">${e.dominados}</div>
+              <div class="stat-rotulo">dominados</div></div>
+            <div class="stat"><div class="stat-valor">${e.total}</div>
+              <div class="stat-rotulo">no baralho</div></div>
+          </div>
+          ${
+            e.proxima
+              ? `<p class="sim-nota-fonte">Próxima revisão agendada ${emQuantoTempo(e.proxima)}.
+                 Intervalos: 1 → 3 → 7 → 30 dias, e errar devolve o cartão ao início.</p>`
+              : `<p class="sim-nota-fonte">Intervalos: 1 → 3 → 7 → 30 dias.
+                 Acertar sobe um degrau; errar devolve o cartão ao início.</p>`
+          }
+        </div>`;
+    };
 
     const desenhar = () => {
       if (pos >= fila.length) {
-        alvo.innerHTML = `<div class="vazio"><span class="vazio-icone" aria-hidden="true">✓</span>
-          <p>Fila do dia concluída — ${fila.length} cartões revisados.</p>
-          <button type="button" class="btn btn-primario" id="btnRefazerCards">Revisar tudo de novo</button></div>`;
-        alvo.querySelector("#btnRefazerCards").addEventListener("click", () => {
+        const e = estadoDoBaralho(cards);
+        alvo.innerHTML = `
+          ${painelEstado()}
+          <div class="vazio">
+            <span class="vazio-icone" aria-hidden="true">✓</span>
+            <p>${
+              fila.length
+                ? `Fila concluída — ${fila.length} cartão(ões) revisado(s).`
+                : "Nenhum cartão vencido hoje."
+            }</p>
+            <p class="sim-nota-fonte">${
+              e.proxima
+                ? `Os próximos vencem ${emQuantoTempo(e.proxima)}.`
+                : "Todos os cartões já foram agendados."
+            }</p>
+            <button type="button" class="btn btn-primario" id="btnRevisarTudo">
+              Revisar o baralho inteiro assim mesmo
+            </button>
+          </div>`;
+        alvo.querySelector("#btnRevisarTudo").addEventListener("click", () => {
           fila = cards.map((_, i) => i);
+          revisandoTudo = true;
           pos = 0;
+          ultimo = null;
           desenhar();
         });
         return;
@@ -54,10 +140,21 @@ const Modulo = (() => {
 
       const i = fila[pos];
       const c = cards[i];
+      const nivel = Progresso.estadoCard(meta.id, i).nivel;
 
       alvo.innerHTML = `
-        <p class="flashcard-dica">Cartão ${pos + 1} de ${fila.length} ·
-          clique para virar · <kbd>Espaço</kbd> vira · <kbd>1</kbd> não sei · <kbd>2</kbd> sei</p>
+        ${painelEstado()}
+        ${
+          ultimo
+            ? `<p class="card-feedback ${ultimo.acertou ? "ok" : "nok"}">
+                 ${ultimo.acertou ? "Acertou" : "Errou"} — esse cartão volta ${ultimo.quando}.</p>`
+            : ""
+        }
+        <p class="flashcard-dica">
+          Cartão ${pos + 1} de ${fila.length}${revisandoTudo ? " (baralho inteiro)" : ""} ·
+          nível ${nivel} de ${INTERVALOS.length} ·
+          clique para virar · <kbd>Espaço</kbd> vira · <kbd>1</kbd> não sei · <kbd>2</kbd> sei
+        </p>
         <div class="flashcard" id="cartao" tabindex="0" role="button" aria-label="Virar o cartão">
           <div class="flashcard-inner">
             <div class="flashcard-face">${esc(c.frente)}</div>
@@ -76,6 +173,11 @@ const Modulo = (() => {
       const responder = (acertou) => {
         Progresso.registrarCard(meta.id, i, acertou, cards.length);
         document.dispatchEvent(new CustomEvent("progresso:mudou"));
+        const depois = Progresso.estadoCard(meta.id, i);
+        ultimo = {
+          acertou,
+          quando: depois.proximaEm ? emQuantoTempo(new Date(depois.proximaEm).getTime()) : "hoje",
+        };
         pos++;
         desenhar();
       };

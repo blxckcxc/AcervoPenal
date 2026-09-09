@@ -4,62 +4,1422 @@
   "autoria": "Nenhuma questão foi extraída de prova de banca real. Onde a fonte é um slide, uma lousa ou o caderno, o campo `referencia` diz qual.",
   "bancos": {
     "principios": [
-      { "id": "p01", "tipo": "vf", "enunciado": "O princípio da insignificância, quando reconhecido, exclui a ilicitude da conduta.", "resposta": false, "justificativa": "Exclui a TIPICIDADE material. Sanches o situa no primeiro aspecto da tipicidade conglobante; reconhecido, o fato é atípico e nem se chega a examinar a ilicitude.", "referencia": "Sanches, PDF p. 72" },
-      { "id": "p02", "tipo": "multipla", "enunciado": "A exigência de que o tipo penal seja certo, vedando-se a formulação indeterminada, é desdobramento de qual princípio?", "alternativas": [ { "texto": "Legalidade, em seu aspecto material", "correta": true, "justificativa": "Sanches arrola entre os atributos exigidos da lei penal que ela seja certa — veda-se o tipo indeterminado — e distingue legalidade formal de material." }, { "texto": "Intervenção mínima", "correta": false, "justificativa": "Trata da necessidade da criminalização, não da forma de redação do tipo." }, { "texto": "Insignificância", "correta": false, "justificativa": "Opera na tipicidade material do caso concreto, não na técnica legislativa." }, { "texto": "Irretroatividade", "correta": false, "justificativa": "É o desdobramento temporal da legalidade, não o da determinação." } ], "referencia": "Sanches, PDF p. 88" },
-      { "id": "p03", "tipo": "cloze", "enunciado": "Segundo o art. 1º do CP, não há crime sem lei ___________ que o defina.", "resposta": "anterior", "aceitas": ["anterior a ele"], "justificativa": "A anterioridade é o núcleo temporal da legalidade, e é dela que decorre a irretroatividade da lei mais gravosa.", "referencia": "CP, art. 1º" },
-      { "id": "p04", "tipo": "vf", "enunciado": "É admitida a analogia em matéria penal quando favorável ao réu.", "resposta": true, "justificativa": "Veda-se a analogia in malam partem, que criaria ou ampliaria incriminação. A analogia in bonam partem é admitida.", "referencia": "CP, art. 1º" },
-      { "id": "p05", "tipo": "multipla", "enunciado": "Por que a insignificância não é reconhecida no roubo, mesmo sendo ínfimo o valor subtraído?", "alternativas": [ { "texto": "Porque a violência ou grave ameaça no tipo indica relevância penal e impede a bagatela", "correta": true, "justificativa": "É o critério que Masson registra ao percorrer as situações em que se discute a criminalidade de bagatela." }, { "texto": "Porque a insignificância nunca se aplica a crimes patrimoniais", "correta": false, "justificativa": "Aplica-se aos patrimoniais sem violência — o furto de bagatela é o exemplo clássico." }, { "texto": "Porque o roubo é crime hediondo", "correta": false, "justificativa": "O roubo simples não é hediondo, e não é disso que depende o afastamento." }, { "texto": "Porque a insignificância exige primariedade do agente", "correta": false, "justificativa": "Condições pessoais podem repercutir na dosimetria, não na tipicidade material." } ], "referencia": "Masson, p. 29" }
+      {
+        "id": "p01",
+        "tipo": "vf",
+        "enunciado": "O princípio da insignificância, quando reconhecido, exclui a ilicitude da conduta.",
+        "resposta": false,
+        "justificativa": "Exclui a TIPICIDADE material. Sanches o situa no primeiro aspecto da tipicidade conglobante; reconhecido, o fato é atípico e nem se chega a examinar a ilicitude.",
+        "referencia": "Sanches, PDF p. 72"
+      },
+      {
+        "id": "p02",
+        "tipo": "multipla",
+        "enunciado": "A exigência de que o tipo penal seja certo, vedando-se a formulação indeterminada, é desdobramento de qual princípio?",
+        "alternativas": [
+          {
+            "texto": "Legalidade, em seu aspecto material",
+            "correta": true,
+            "justificativa": "Sanches arrola entre os atributos exigidos da lei penal que ela seja certa — veda-se o tipo indeterminado — e distingue legalidade formal de material."
+          },
+          {
+            "texto": "Intervenção mínima",
+            "correta": false,
+            "justificativa": "Trata da necessidade da criminalização, não da forma de redação do tipo."
+          },
+          {
+            "texto": "Insignificância",
+            "correta": false,
+            "justificativa": "Opera na tipicidade material do caso concreto, não na técnica legislativa."
+          },
+          {
+            "texto": "Irretroatividade",
+            "correta": false,
+            "justificativa": "É o desdobramento temporal da legalidade, não o da determinação."
+          }
+        ],
+        "referencia": "Sanches, PDF p. 88"
+      },
+      {
+        "id": "p03",
+        "tipo": "cloze",
+        "enunciado": "Segundo o art. 1º do CP, não há crime sem lei ___________ que o defina.",
+        "resposta": "anterior",
+        "aceitas": [
+          "anterior a ele"
+        ],
+        "justificativa": "A anterioridade é o núcleo temporal da legalidade, e é dela que decorre a irretroatividade da lei mais gravosa.",
+        "referencia": "CP, art. 1º"
+      },
+      {
+        "id": "p04",
+        "tipo": "vf",
+        "enunciado": "É admitida a analogia em matéria penal quando favorável ao réu.",
+        "resposta": true,
+        "justificativa": "Veda-se a analogia in malam partem, que criaria ou ampliaria incriminação. A analogia in bonam partem é admitida.",
+        "referencia": "CP, art. 1º"
+      },
+      {
+        "id": "p05",
+        "tipo": "multipla",
+        "enunciado": "Por que a insignificância não é reconhecida no roubo, mesmo sendo ínfimo o valor subtraído?",
+        "alternativas": [
+          {
+            "texto": "Porque a violência ou grave ameaça no tipo indica relevância penal e impede a bagatela",
+            "correta": true,
+            "justificativa": "É o critério que Masson registra ao percorrer as situações em que se discute a criminalidade de bagatela."
+          },
+          {
+            "texto": "Porque a insignificância nunca se aplica a crimes patrimoniais",
+            "correta": false,
+            "justificativa": "Aplica-se aos patrimoniais sem violência — o furto de bagatela é o exemplo clássico."
+          },
+          {
+            "texto": "Porque o roubo é crime hediondo",
+            "correta": false,
+            "justificativa": "O roubo simples não é hediondo, e não é disso que depende o afastamento."
+          },
+          {
+            "texto": "Porque a insignificância exige primariedade do agente",
+            "correta": false,
+            "justificativa": "Condições pessoais podem repercutir na dosimetria, não na tipicidade material."
+          }
+        ],
+        "referencia": "Masson, p. 29"
+      },
+      {
+        "id": "p06",
+        "tipo": "vf",
+        "enunciado": "O costume pode criar tipo penal quando a conduta for socialmente reprovada de forma unânime.",
+        "resposta": false,
+        "justificativa": "O costume não cria crime. Pode auxiliar na interpretação de elementos do tipo — o que se entende por 'ato obsceno', por exemplo —, jamais fundá-lo. A lei penal deve ser escrita.",
+        "referencia": "CP, art. 1º · Sanches, PDF p. 88"
+      },
+      {
+        "id": "p07",
+        "tipo": "multipla",
+        "enunciado": "Qual a diferença entre bagatela própria e imprópria?",
+        "alternativas": [
+          {
+            "texto": "Na própria a lesão nasce ínfima e o fato é atípico; na imprópria o crime existe e a pena é que se torna desnecessária",
+            "correta": true,
+            "justificativa": "São planos distintos: uma resolve na tipicidade, a outra na necessidade da resposta penal."
+          },
+          {
+            "texto": "São sinônimos, variando apenas a nomenclatura do autor",
+            "correta": false,
+            "justificativa": "As consequências são opostas: atipicidade num caso, crime configurado no outro."
+          },
+          {
+            "texto": "A própria depende de primariedade; a imprópria, do valor da coisa",
+            "correta": false,
+            "justificativa": "Inverte os critérios de cada uma."
+          },
+          {
+            "texto": "A imprópria exclui a ilicitude",
+            "correta": false,
+            "justificativa": "Não exclui nada: o crime permanece, discute-se a dispensa da pena."
+          }
+        ],
+        "referencia": "Masson, p. 23 e 29"
+      },
+      {
+        "id": "p08",
+        "tipo": "cloze",
+        "enunciado": "A vedação ao tipo penal indeterminado é conhecida como princípio da ___________.",
+        "resposta": "taxatividade",
+        "aceitas": [
+          "determinacao",
+          "determinação"
+        ],
+        "justificativa": "Sanches arrola entre os atributos da lei penal que ela seja certa. Um tipo que não permite ao destinatário saber o que é proibido não cumpre a função de garantia.",
+        "referencia": "Sanches, PDF p. 88"
+      },
+      {
+        "id": "p09",
+        "tipo": "vf",
+        "enunciado": "Reconhecida a insignificância, o juiz deve absolver por atipicidade, sem examinar ilicitude e culpabilidade.",
+        "resposta": true,
+        "justificativa": "A insignificância opera na tipicidade material. Excluída a tipicidade, o exame se encerra — não se avança aos substratos seguintes.",
+        "referencia": "Sanches, PDF p. 72"
+      },
+      {
+        "id": "p10",
+        "tipo": "multipla",
+        "enunciado": "Norma penal em branco é aquela que:",
+        "alternativas": [
+          {
+            "texto": "Depende de complemento normativo para delimitar o conteúdo da proibição",
+            "correta": true,
+            "justificativa": "A lei define o núcleo da conduta e a sanção; o complemento — muitas vezes ato administrativo — precisa o alcance. É compatível com a legalidade."
+          },
+          {
+            "texto": "Não comina pena, deixando-a ao arbítrio do juiz",
+            "correta": false,
+            "justificativa": "Isso violaria a legalidade: não há pena sem prévia cominação legal."
+          },
+          {
+            "texto": "Foi revogada mas continua produzindo efeitos",
+            "correta": false,
+            "justificativa": "Descreve ultra-atividade, não norma em branco."
+          },
+          {
+            "texto": "Só existe em legislação extravagante",
+            "correta": false,
+            "justificativa": "Não há tal restrição: o Código Penal comum traz normas em branco, e a técnica é usada sempre que o conteúdo da proibição precisa acompanhar realidade que muda mais rápido que a lei."
+          }
+        ],
+        "referencia": "doutrina — módulo 1"
+      }
     ],
     "lei-penal-no-tempo": [
-      { "id": "t01", "tipo": "cloze", "enunciado": "Quanto ao TEMPO do crime, o art. 4º do Código Penal adotou a teoria da ___________.", "resposta": "atividade", "aceitas": ["acao", "ação"], "justificativa": "Considera-se praticado o crime no momento da ação ou omissão, ainda que outro seja o momento do resultado. Masson trata isso como premissa de outros institutos, como a aferição da idade.", "referencia": "caderno 150150 · Masson, p. 375" },
-      { "id": "t02", "tipo": "vf", "enunciado": "Quanto ao LUGAR do crime, o Código Penal adotou a mesma teoria que adotou para o tempo.", "resposta": false, "justificativa": "As mesmas três teorias disputam as duas perguntas, e o Código responde diferente: atividade para o tempo (art. 4º), ubiquidade para o lugar (art. 6º). É a armadilha clássica do tema.", "referencia": "Greco, § 1. Lugar do crime" },
-      { "id": "t03", "tipo": "multipla", "enunciado": "A lei penal mais benéfica que sobrevive à própria revogação para reger fatos praticados em sua vigência caracteriza:", "alternativas": [ { "texto": "Ultra-atividade", "correta": true, "justificativa": "A lei velha e boa sobrevive para proteger os fatos cometidos em sua vigência, como diz o slide de 04/09." }, { "texto": "Retroatividade", "correta": false, "justificativa": "Retroatividade é a lei nova alcançando fato anterior; aqui é a lei antiga que se projeta para a frente." }, { "texto": "Abolitio criminis", "correta": false, "justificativa": "Pressupõe que a lei nova deixe de considerar o fato criminoso, o que não ocorre." }, { "texto": "Novatio legis in pejus", "correta": false, "justificativa": "É a lei nova mais gravosa, que justamente não retroage." } ], "referencia": "slide 04/09 202239" },
-      { "id": "t04", "tipo": "vf", "enunciado": "A abolitio criminis alcança condenação já transitada em julgado, cessando a execução e os efeitos penais.", "resposta": true, "justificativa": "É o art. 2º, caput. O trânsito em julgado não é obstáculo; subsistem apenas os efeitos civis.", "referencia": "CP, art. 2º" },
-      { "id": "t05", "tipo": "multipla", "enunciado": "Lei temporária que se autoexaure pelo decurso do prazo continua aplicável ao fato praticado durante sua vigência?", "alternativas": [ { "texto": "Sim, por força do art. 3º, e independentemente de ser mais benéfica", "correta": true, "justificativa": "A ultra-atividade da lei temporária é imposta pela própria lei e não depende de benignidade. Sem ela, bastaria aguardar o fim do prazo para ficar impune." }, { "texto": "Não, pois a expiração equivale à abolitio criminis", "correta": false, "justificativa": "Expiração de lei temporária não é abolitio criminis: não houve nova valoração do fato, apenas o fim do período previsto." }, { "texto": "Sim, mas apenas se a lei posterior for mais gravosa", "correta": false, "justificativa": "A regra do art. 3º não condiciona a nada disso." }, { "texto": "Depende de decisão do juiz da execução", "correta": false, "justificativa": "A regra é legal e expressa, não discricionária." } ], "referencia": "CP, art. 3º" }
+      {
+        "id": "t01",
+        "tipo": "cloze",
+        "enunciado": "Quanto ao TEMPO do crime, o art. 4º do Código Penal adotou a teoria da ___________.",
+        "resposta": "atividade",
+        "aceitas": [
+          "acao",
+          "ação"
+        ],
+        "justificativa": "Considera-se praticado o crime no momento da ação ou omissão, ainda que outro seja o momento do resultado. Masson trata isso como premissa de outros institutos, como a aferição da idade.",
+        "referencia": "caderno 150150 · Masson, p. 375"
+      },
+      {
+        "id": "t02",
+        "tipo": "vf",
+        "enunciado": "Quanto ao LUGAR do crime, o Código Penal adotou a mesma teoria que adotou para o tempo.",
+        "resposta": false,
+        "justificativa": "As mesmas três teorias disputam as duas perguntas, e o Código responde diferente: atividade para o tempo (art. 4º), ubiquidade para o lugar (art. 6º). É a armadilha clássica do tema.",
+        "referencia": "Greco, § 1. Lugar do crime"
+      },
+      {
+        "id": "t03",
+        "tipo": "multipla",
+        "enunciado": "A lei penal mais benéfica que sobrevive à própria revogação para reger fatos praticados em sua vigência caracteriza:",
+        "alternativas": [
+          {
+            "texto": "Ultra-atividade",
+            "correta": true,
+            "justificativa": "A lei velha e boa sobrevive para proteger os fatos cometidos em sua vigência, como diz o slide de 04/09."
+          },
+          {
+            "texto": "Retroatividade",
+            "correta": false,
+            "justificativa": "Retroatividade é a lei nova alcançando fato anterior; aqui é a lei antiga que se projeta para a frente."
+          },
+          {
+            "texto": "Abolitio criminis",
+            "correta": false,
+            "justificativa": "Pressupõe que a lei nova deixe de considerar o fato criminoso, o que não ocorre."
+          },
+          {
+            "texto": "Novatio legis in pejus",
+            "correta": false,
+            "justificativa": "É a lei nova mais gravosa, que justamente não retroage."
+          }
+        ],
+        "referencia": "slide 04/09 202239"
+      },
+      {
+        "id": "t04",
+        "tipo": "vf",
+        "enunciado": "A abolitio criminis alcança condenação já transitada em julgado, cessando a execução e os efeitos penais.",
+        "resposta": true,
+        "justificativa": "É o art. 2º, caput. O trânsito em julgado não é obstáculo; subsistem apenas os efeitos civis.",
+        "referencia": "CP, art. 2º"
+      },
+      {
+        "id": "t05",
+        "tipo": "multipla",
+        "enunciado": "Lei temporária que se autoexaure pelo decurso do prazo continua aplicável ao fato praticado durante sua vigência?",
+        "alternativas": [
+          {
+            "texto": "Sim, por força do art. 3º, e independentemente de ser mais benéfica",
+            "correta": true,
+            "justificativa": "A ultra-atividade da lei temporária é imposta pela própria lei e não depende de benignidade. Sem ela, bastaria aguardar o fim do prazo para ficar impune."
+          },
+          {
+            "texto": "Não, pois a expiração equivale à abolitio criminis",
+            "correta": false,
+            "justificativa": "Expiração de lei temporária não é abolitio criminis: não houve nova valoração do fato, apenas o fim do período previsto."
+          },
+          {
+            "texto": "Sim, mas apenas se a lei posterior for mais gravosa",
+            "correta": false,
+            "justificativa": "A regra do art. 3º não condiciona a nada disso."
+          },
+          {
+            "texto": "Depende de decisão do juiz da execução",
+            "correta": false,
+            "justificativa": "A regra é legal e expressa, não discricionária."
+          }
+        ],
+        "referencia": "CP, art. 3º"
+      },
+      {
+        "id": "t06",
+        "tipo": "multipla",
+        "enunciado": "O juiz pode aplicar a pena da lei antiga com o regime da lei nova, tomando de cada uma o que for mais favorável?",
+        "alternativas": [
+          {
+            "texto": "Não: criaria uma terceira lei que nenhum legislador editou (lex tertia)",
+            "correta": true,
+            "justificativa": "A objeção clássica é que o juiz passaria a legislar. Cabe comparar os dois regimes por inteiro e aplicar o mais favorável no conjunto."
+          },
+          {
+            "texto": "Sim: em matéria penal aplica-se sempre o mais favorável, dispositivo a dispositivo",
+            "correta": false,
+            "justificativa": "Levada ao extremo, essa lógica autoriza montar um regime inexistente."
+          },
+          {
+            "texto": "Sim, desde que o réu concorde",
+            "correta": false,
+            "justificativa": "A anuência do réu não cria competência legislativa para o juiz."
+          },
+          {
+            "texto": "Não, porque a lei nova nunca retroage",
+            "correta": false,
+            "justificativa": "Retroage sim, quando mais benéfica — o obstáculo aqui é outro."
+          }
+        ],
+        "referencia": "doutrina — sucessão de leis"
+      },
+      {
+        "id": "t07",
+        "tipo": "vf",
+        "enunciado": "No crime permanente, a lei nova mais gravosa que entra em vigor durante a permanência não se aplica.",
+        "resposta": false,
+        "justificativa": "Aplica-se. No crime permanente a consumação se protrai: enquanto durar a permanência o agente segue praticando o crime, inclusive já sob a lei nova. Não há retroatividade — o fato continuava ocorrendo.",
+        "referencia": "doutrina — módulo 2"
+      },
+      {
+        "id": "t08",
+        "tipo": "cloze",
+        "enunciado": "A lei que deixa de considerar o fato criminoso, extinguindo a punibilidade mesmo após o trânsito em julgado, opera a ___________ ___________.",
+        "resposta": "abolitio criminis",
+        "aceitas": [
+          "abolitio"
+        ],
+        "justificativa": "É o art. 2º, caput. Cessam a execução e os efeitos penais; subsistem os civis.",
+        "referencia": "CP, art. 2º"
+      },
+      {
+        "id": "t09",
+        "tipo": "multipla",
+        "enunciado": "Golpes desferidos em março; morte da vítima em maio; lei mais gravosa em vigor a partir de abril. Qual lei rege o fato?",
+        "alternativas": [
+          {
+            "texto": "A de março, pela teoria da atividade (art. 4º)",
+            "correta": true,
+            "justificativa": "Considera-se praticado o crime no momento da ação, ainda que outro seja o momento do resultado. A lei nova mais gravosa não retroage."
+          },
+          {
+            "texto": "A de abril, pois o crime só se consumou em maio",
+            "correta": false,
+            "justificativa": "Confunde consumação com tempo do crime — são coisas distintas."
+          },
+          {
+            "texto": "A de abril, pela teoria da ubiquidade",
+            "correta": false,
+            "justificativa": "A ubiquidade rege o LUGAR do crime, não o tempo."
+          },
+          {
+            "texto": "A que for mais benéfica entre as duas, a critério do juiz",
+            "correta": false,
+            "justificativa": "Não há discricionariedade: a regra do art. 4º é objetiva. A benignidade só entra se a lei posterior for mais favorável."
+          }
+        ],
+        "referencia": "CP, art. 4º · caderno 150150"
+      },
+      {
+        "id": "t10",
+        "tipo": "vf",
+        "enunciado": "A ultra-atividade da lei temporária depende de ela ser mais benéfica que a lei posterior.",
+        "resposta": false,
+        "justificativa": "Não depende. O art. 3º impõe a aplicação da lei temporária ao fato praticado em sua vigência mesmo sendo ela mais gravosa — do contrário bastaria aguardar o fim do prazo para ficar impune.",
+        "referencia": "CP, art. 3º"
+      }
     ],
     "teoria-do-crime": [
-      { "id": "c01", "tipo": "multipla", "enunciado": "Na lousa de 14/08, o conceito analítico de crime foi aberto em três ramos. Quais?", "alternativas": [ { "texto": "Tipicidade, ilicitude e culpabilidade", "correta": true, "justificativa": "É a estrutura tripartida desenhada em vermelho na lousa, com os elementos do fato típico sob o primeiro e os da culpabilidade sob o terceiro." }, { "texto": "Conduta, nexo causal e resultado", "correta": false, "justificativa": "São elementos DENTRO do fato típico, primeiro ramo." }, { "texto": "Dolo, culpa e preterdolo", "correta": false, "justificativa": "São modalidades do elemento subjetivo do tipo." }, { "texto": "Tipicidade, culpabilidade e punibilidade", "correta": false, "justificativa": "A punibilidade é consequência do crime, não substrato dele." } ], "referencia": "lousa 14/08 194145" },
-      { "id": "c02", "tipo": "cloze", "enunciado": "A palavra que, retirada do tipo, transforma a situação em não crime ou em outro crime chama-se ___________.", "resposta": "elementar", "aceitas": ["elementar do tipo"], "justificativa": "Distingue-se da circunstância, cuja retirada não exclui o crime — apenas o torna mais brando ou mais grave.", "referencia": "caderno 150046" },
-      { "id": "c03", "tipo": "vf", "enunciado": "Retirado o repouso noturno do furto qualificado, o fato deixa de ser crime.", "resposta": false, "justificativa": "Permanece furto simples. O repouso noturno é circunstância, não elementar — é o exemplo anotado no caderno da aula.", "referencia": "caderno 150046" },
-      { "id": "c04", "tipo": "multipla", "enunciado": "A lousa listou, sob a tipicidade, 'imputação objetiva da conduta' e 'imputação objetiva do resultado'. O que esses itens acrescentam?", "alternativas": [ { "texto": "Um filtro normativo: criação de risco proibido e realização desse risco no resultado", "correta": true, "justificativa": "A causalidade natural responde o que causou o quê; a imputação objetiva pergunta se o risco criado era juridicamente proibido e se o resultado o concretiza." }, { "texto": "Nada: são outro nome para o nexo de causalidade física", "correta": false, "justificativa": "Se fossem sinônimos, a lousa não os listaria ao lado do nexo causal." }, { "texto": "A exigência de dolo ou culpa", "correta": false, "justificativa": "Esse é o filtro subjetivo; a imputação objetiva opera no plano objetivo do tipo." }, { "texto": "Requisitos da ilicitude", "correta": false, "justificativa": "A própria lousa os posiciona sob a tipicidade." } ], "referencia": "lousa 14/08 194145" },
-      { "id": "c05", "tipo": "vf", "enunciado": "Nos crimes de mera conduta não há resultado jurídico.", "resposta": false, "justificativa": "O que falta é o resultado NATURALÍSTICO. O resultado jurídico — lesão ou perigo ao bem tutelado — existe em todo crime, e é dele que trata a expressão 'resultado jurídico penalmente relevante' da lousa.", "referencia": "lousa 14/08 194145" }
+      {
+        "id": "c01",
+        "tipo": "multipla",
+        "enunciado": "Na lousa de 14/08, o conceito analítico de crime foi aberto em três ramos. Quais?",
+        "alternativas": [
+          {
+            "texto": "Tipicidade, ilicitude e culpabilidade",
+            "correta": true,
+            "justificativa": "É a estrutura tripartida desenhada em vermelho na lousa, com os elementos do fato típico sob o primeiro e os da culpabilidade sob o terceiro."
+          },
+          {
+            "texto": "Conduta, nexo causal e resultado",
+            "correta": false,
+            "justificativa": "São elementos DENTRO do fato típico, primeiro ramo."
+          },
+          {
+            "texto": "Dolo, culpa e preterdolo",
+            "correta": false,
+            "justificativa": "São modalidades do elemento subjetivo do tipo."
+          },
+          {
+            "texto": "Tipicidade, culpabilidade e punibilidade",
+            "correta": false,
+            "justificativa": "A punibilidade é consequência do crime, não substrato dele."
+          }
+        ],
+        "referencia": "lousa 14/08 194145"
+      },
+      {
+        "id": "c02",
+        "tipo": "cloze",
+        "enunciado": "A palavra que, retirada do tipo, transforma a situação em não crime ou em outro crime chama-se ___________.",
+        "resposta": "elementar",
+        "aceitas": [
+          "elementar do tipo"
+        ],
+        "justificativa": "Distingue-se da circunstância, cuja retirada não exclui o crime — apenas o torna mais brando ou mais grave.",
+        "referencia": "caderno 150046"
+      },
+      {
+        "id": "c03",
+        "tipo": "vf",
+        "enunciado": "Retirado o repouso noturno do furto qualificado, o fato deixa de ser crime.",
+        "resposta": false,
+        "justificativa": "Permanece furto simples. O repouso noturno é circunstância, não elementar — é o exemplo anotado no caderno da aula.",
+        "referencia": "caderno 150046"
+      },
+      {
+        "id": "c04",
+        "tipo": "multipla",
+        "enunciado": "A lousa listou, sob a tipicidade, 'imputação objetiva da conduta' e 'imputação objetiva do resultado'. O que esses itens acrescentam?",
+        "alternativas": [
+          {
+            "texto": "Um filtro normativo: criação de risco proibido e realização desse risco no resultado",
+            "correta": true,
+            "justificativa": "A causalidade natural responde o que causou o quê; a imputação objetiva pergunta se o risco criado era juridicamente proibido e se o resultado o concretiza."
+          },
+          {
+            "texto": "Nada: são outro nome para o nexo de causalidade física",
+            "correta": false,
+            "justificativa": "Se fossem sinônimos, a lousa não os listaria ao lado do nexo causal."
+          },
+          {
+            "texto": "A exigência de dolo ou culpa",
+            "correta": false,
+            "justificativa": "Esse é o filtro subjetivo; a imputação objetiva opera no plano objetivo do tipo."
+          },
+          {
+            "texto": "Requisitos da ilicitude",
+            "correta": false,
+            "justificativa": "A própria lousa os posiciona sob a tipicidade."
+          }
+        ],
+        "referencia": "lousa 14/08 194145"
+      },
+      {
+        "id": "c05",
+        "tipo": "vf",
+        "enunciado": "Nos crimes de mera conduta não há resultado jurídico.",
+        "resposta": false,
+        "justificativa": "O que falta é o resultado NATURALÍSTICO. O resultado jurídico — lesão ou perigo ao bem tutelado — existe em todo crime, e é dele que trata a expressão 'resultado jurídico penalmente relevante' da lousa.",
+        "referencia": "lousa 14/08 194145"
+      },
+      {
+        "id": "c06",
+        "tipo": "vf",
+        "enunciado": "A punibilidade é o quarto substrato do conceito analítico de crime.",
+        "resposta": false,
+        "justificativa": "Não é substrato: é consequência do crime. Sua ausência — pela prescrição, por exemplo — não desfaz o crime, apenas impede a aplicação da pena.",
+        "referencia": "lousa 14/08 194145"
+      },
+      {
+        "id": "c07",
+        "tipo": "multipla",
+        "enunciado": "Golpe leve; vítima internada contrai infecção hospitalar de origem independente e morre. Pelo que responde o agente?",
+        "alternativas": [
+          {
+            "texto": "Apenas pela lesão corporal: a causa superveniente relativamente independente por si só produziu o resultado",
+            "correta": true,
+            "justificativa": "É o art. 13, §1º, que corta a cadeia da equivalência dos antecedentes e imputa ao agente somente os fatos anteriores."
+          },
+          {
+            "texto": "Homicídio consumado, pois sem o golpe ela não estaria no hospital",
+            "correta": false,
+            "justificativa": "É a conditio sine qua non levada ao infinito, e é exatamente o que o §1º limita."
+          },
+          {
+            "texto": "Homicídio culposo",
+            "correta": false,
+            "justificativa": "O dispositivo exclui a imputação do resultado, não a converte em culposa."
+          },
+          {
+            "texto": "Lesão corporal seguida de morte",
+            "correta": false,
+            "justificativa": "O preterdolo exige que a morte decorra da lesão, o que a perícia afastou."
+          }
+        ],
+        "referencia": "CP, art. 13, §1º"
+      },
+      {
+        "id": "c08",
+        "tipo": "cloze",
+        "enunciado": "A tipicidade funciona como ___________ de ilicitude: praticado o fato típico, presume-se ilícito até que uma justificante afaste a presunção.",
+        "resposta": "indicio",
+        "aceitas": [
+          "indício",
+          "ratio cognoscendi"
+        ],
+        "justificativa": "É a ratio cognoscendi. Por isso as excludentes não tornam o fato atípico — ele segue típico e deixa de ser ilícito.",
+        "referencia": "doutrina — módulos 3 e 7"
+      },
+      {
+        "id": "c09",
+        "tipo": "multipla",
+        "enunciado": "A chave escrita à esquerda do diagrama na lousa de 14/08 trazia qual palavra?",
+        "alternativas": [
+          {
+            "texto": "MODERNA",
+            "correta": true,
+            "justificativa": "A foto 194145, que enquadra a lousa na horizontal, mostra a chave com essa palavra — indicando que a estrutura desenhada é apresentada como a concepção moderna do conceito analítico."
+          },
+          {
+            "texto": "CLÁSSICA",
+            "correta": false,
+            "justificativa": "Não é o que a foto legível mostra."
+          },
+          {
+            "texto": "FINALISTA",
+            "correta": false,
+            "justificativa": "A palavra na lousa é outra, ainda que a estrutura seja compatível com o finalismo."
+          },
+          {
+            "texto": "CAUSALISTA",
+            "correta": false,
+            "justificativa": "Não consta da lousa. A palavra escrita na chave é outra, e o causalismo tampouco descreve a estrutura desenhada, que separa imputação objetiva do nexo causal."
+          }
+        ],
+        "referencia": "lousa 14/08 194145"
+      },
+      {
+        "id": "c10",
+        "tipo": "vf",
+        "enunciado": "Crime de mera conduta não admite tentativa por não ter resultado naturalístico.",
+        "resposta": false,
+        "justificativa": "A ausência de resultado naturalístico não impede, por si, o fracionamento da execução. O que exclui a tentativa é a impossibilidade de fracionar o iter — e isso se afere caso a caso, não pela classificação em abstrato.",
+        "referencia": "doutrina — módulos 3 e 6"
+      }
     ],
     "dolo-e-culpa": [
-      { "id": "d01", "tipo": "multipla", "enunciado": "O que distingue dolo eventual de culpa consciente?", "alternativas": [ { "texto": "A atitude diante do resultado previsto: assumir o risco x acreditar sinceramente que não ocorrerá", "correta": true, "justificativa": "Greco é expresso: em ambos há previsão; na culpa consciente o agente acredita sinceramente na não ocorrência, no dolo eventual assume o risco." }, { "texto": "A previsão do resultado, presente só no dolo eventual", "correta": false, "justificativa": "A previsão existe nos dois. É justamente o que eles têm em comum." }, { "texto": "A gravidade objetiva da conduta", "correta": false, "justificativa": "A temeridade é indício, não elemento subjetivo." }, { "texto": "A existência de resultado naturalístico", "correta": false, "justificativa": "O resultado pode ocorrer em qualquer das duas modalidades." } ], "referencia": "Greco, § 6 · Masson, p. 236" },
-      { "id": "d02", "tipo": "vf", "enunciado": "O atirador que confia na própria técnica apurada para evitar o resultado, e ainda assim o produz, responde por dolo eventual.", "resposta": false, "justificativa": "Responde por culpa consciente. Sanches trata exatamente dessa hipótese: a confiança na perícia própria afasta a anuência ao resultado.", "referencia": "Sanches, PDF p. 205" },
-      { "id": "d03", "tipo": "cloze", "enunciado": "A omissão do cuidado devido — deixar de fazer o que se deveria — caracteriza a modalidade de culpa chamada ___________.", "resposta": "negligencia", "aceitas": ["negligência"], "justificativa": "Distingue-se da imprudência (agir descuidado) e da imperícia (falta de aptidão técnica no exercício de profissão, arte ou ofício).", "referencia": "CP, art. 18, II" },
-      { "id": "d04", "tipo": "vf", "enunciado": "A punição a título de culpa depende de previsão expressa em lei.", "resposta": true, "justificativa": "É o art. 18, parágrafo único. Por isso o dano culposo, sem tipo correspondente, é penalmente atípico.", "referencia": "CP, art. 18, parágrafo único" },
-      { "id": "d05", "tipo": "multipla", "enunciado": "Dolo na conduta antecedente e culpa no resultado agravador caracteriza:", "alternativas": [ { "texto": "Crime preterdoloso", "correta": true, "justificativa": "A lesão corporal seguida de morte é o exemplo típico, e o art. 19 impede a responsabilização pelo resultado agravador sem ao menos culpa." }, { "texto": "Dolo eventual", "correta": false, "justificativa": "No dolo eventual o agente anui ao próprio resultado; no preterdolo ele não o quis nem o aceitou." }, { "texto": "Culpa consciente", "correta": false, "justificativa": "Falta a conduta dolosa antecedente." }, { "texto": "Responsabilidade objetiva", "correta": false, "justificativa": "É exatamente o que o art. 19 veda." } ], "referencia": "CP, arts. 19 e 129, §3º" }
+      {
+        "id": "d01",
+        "tipo": "multipla",
+        "enunciado": "O que distingue dolo eventual de culpa consciente?",
+        "alternativas": [
+          {
+            "texto": "A atitude diante do resultado previsto: assumir o risco x acreditar sinceramente que não ocorrerá",
+            "correta": true,
+            "justificativa": "Greco é expresso: em ambos há previsão; na culpa consciente o agente acredita sinceramente na não ocorrência, no dolo eventual assume o risco."
+          },
+          {
+            "texto": "A previsão do resultado, presente só no dolo eventual",
+            "correta": false,
+            "justificativa": "A previsão existe nos dois. É justamente o que eles têm em comum."
+          },
+          {
+            "texto": "A gravidade objetiva da conduta",
+            "correta": false,
+            "justificativa": "A temeridade é indício, não elemento subjetivo."
+          },
+          {
+            "texto": "A existência de resultado naturalístico",
+            "correta": false,
+            "justificativa": "O resultado pode ocorrer em qualquer das duas modalidades."
+          }
+        ],
+        "referencia": "Greco, § 6 · Masson, p. 236"
+      },
+      {
+        "id": "d02",
+        "tipo": "vf",
+        "enunciado": "O atirador que confia na própria técnica apurada para evitar o resultado, e ainda assim o produz, responde por dolo eventual.",
+        "resposta": false,
+        "justificativa": "Responde por culpa consciente. Sanches trata exatamente dessa hipótese: a confiança na perícia própria afasta a anuência ao resultado.",
+        "referencia": "Sanches, PDF p. 205"
+      },
+      {
+        "id": "d03",
+        "tipo": "cloze",
+        "enunciado": "A omissão do cuidado devido — deixar de fazer o que se deveria — caracteriza a modalidade de culpa chamada ___________.",
+        "resposta": "negligencia",
+        "aceitas": [
+          "negligência"
+        ],
+        "justificativa": "Distingue-se da imprudência (agir descuidado) e da imperícia (falta de aptidão técnica no exercício de profissão, arte ou ofício).",
+        "referencia": "CP, art. 18, II"
+      },
+      {
+        "id": "d04",
+        "tipo": "vf",
+        "enunciado": "A punição a título de culpa depende de previsão expressa em lei.",
+        "resposta": true,
+        "justificativa": "É o art. 18, parágrafo único. Por isso o dano culposo, sem tipo correspondente, é penalmente atípico.",
+        "referencia": "CP, art. 18, parágrafo único"
+      },
+      {
+        "id": "d05",
+        "tipo": "multipla",
+        "enunciado": "Dolo na conduta antecedente e culpa no resultado agravador caracteriza:",
+        "alternativas": [
+          {
+            "texto": "Crime preterdoloso",
+            "correta": true,
+            "justificativa": "A lesão corporal seguida de morte é o exemplo típico, e o art. 19 impede a responsabilização pelo resultado agravador sem ao menos culpa."
+          },
+          {
+            "texto": "Dolo eventual",
+            "correta": false,
+            "justificativa": "No dolo eventual o agente anui ao próprio resultado; no preterdolo ele não o quis nem o aceitou."
+          },
+          {
+            "texto": "Culpa consciente",
+            "correta": false,
+            "justificativa": "Falta a conduta dolosa antecedente."
+          },
+          {
+            "texto": "Responsabilidade objetiva",
+            "correta": false,
+            "justificativa": "É exatamente o que o art. 19 veda."
+          }
+        ],
+        "referencia": "CP, arts. 19 e 129, §3º"
+      },
+      {
+        "id": "d06",
+        "tipo": "vf",
+        "enunciado": "Na culpa inconsciente o agente prevê o resultado mas confia que não ocorrerá.",
+        "resposta": false,
+        "justificativa": "Isso é culpa CONSCIENTE. Na inconsciente o agente sequer prevê o resultado, embora ele fosse previsível.",
+        "referencia": "Greco, § 5"
+      },
+      {
+        "id": "d07",
+        "tipo": "multipla",
+        "enunciado": "Objeto pesado cai da janela por descuido e danifica veículo. Qual a consequência penal?",
+        "alternativas": [
+          {
+            "texto": "Fato penalmente atípico: não existe dano culposo no Código",
+            "correta": true,
+            "justificativa": "O art. 18, parágrafo único, exige previsão expressa para a punição culposa. Sem tipo, resta a reparação civil."
+          },
+          {
+            "texto": "Dano culposo, art. 163",
+            "correta": false,
+            "justificativa": "O art. 163 não tem modalidade culposa."
+          },
+          {
+            "texto": "Dano doloso, por assumir o risco",
+            "correta": false,
+            "justificativa": "Descuido não é anuência ao resultado."
+          },
+          {
+            "texto": "Contravenção de dano culposo",
+            "correta": false,
+            "justificativa": "Não existe contravenção de dano culposo. Inventar tipo para escapar da atipicidade é o oposto do que a legalidade exige."
+          }
+        ],
+        "referencia": "CP, arts. 18 e 163"
+      },
+      {
+        "id": "d08",
+        "tipo": "cloze",
+        "enunciado": "O art. 19 do CP veda a responsabilidade ___________: pelo resultado que agrava a pena só responde quem o causou ao menos culposamente.",
+        "resposta": "objetiva",
+        "aceitas": [
+          "penal objetiva"
+        ],
+        "justificativa": "É o que impede imputar automaticamente ao agente qualquer consequência da sua conduta.",
+        "referencia": "CP, art. 19"
+      },
+      {
+        "id": "d09",
+        "tipo": "multipla",
+        "enunciado": "Qual elemento é comum ao dolo eventual e à culpa consciente?",
+        "alternativas": [
+          {
+            "texto": "A previsão do resultado",
+            "correta": true,
+            "justificativa": "Nos dois o agente prevê. O que os separa é a atitude diante dessa previsão: assumir o risco ou crer sinceramente que não ocorrerá."
+          },
+          {
+            "texto": "A vontade de produzir o resultado",
+            "correta": false,
+            "justificativa": "Em nenhum dos dois o agente quer o resultado — no dolo direto é que ele o quer."
+          },
+          {
+            "texto": "A ausência de previsibilidade",
+            "correta": false,
+            "justificativa": "É o oposto: nos dois há previsão efetiva."
+          },
+          {
+            "texto": "A imperícia do agente",
+            "correta": false,
+            "justificativa": "Imperícia é modalidade de culpa, e não se confunde com a fronteira em exame."
+          }
+        ],
+        "referencia": "Greco, § 6"
+      },
+      {
+        "id": "d10",
+        "tipo": "vf",
+        "enunciado": "A competição automobilística não autorizada em via pública configura necessariamente dolo eventual quando resulta morte.",
+        "resposta": false,
+        "justificativa": "Sanches enfrenta a questão como controvertida. A qualificação depende de prova sobre a atitude do agente diante do resultado previsto — não se presume da gravidade objetiva da conduta.",
+        "referencia": "Sanches, PDF p. 205"
+      }
     ],
     "erro-de-tipo": [
-      { "id": "e01", "tipo": "multipla", "enunciado": "Segundo a matriz apresentada em 28/08, o que FALHA no erro sobre a pessoa (art. 20, §3º)?", "alternativas": [ { "texto": "A representação", "correta": true, "justificativa": "No erro sobre a pessoa o agente confunde quem é quem; no aberratio ictus a representação está correta e falha a execução." }, { "texto": "A execução", "correta": false, "justificativa": "É o que falha no aberratio ictus e no aberratio criminis." }, { "texto": "O nexo causal", "correta": false, "justificativa": "Esse é o objeto do aberratio causae." }, { "texto": "O bem jurídico atingido", "correta": false, "justificativa": "No erro sobre a pessoa o bem jurídico é idêntico; quem o altera é o art. 74." } ], "referencia": "slide 28/08 202919" },
-      { "id": "e02", "tipo": "cloze", "enunciado": "A relação pessoa × coisa, no erro na execução, atrai a aplicação do art. ___ do Código Penal.", "resposta": "74", "aceitas": ["74 do cp", "art 74"], "justificativa": "Pessoa × pessoa é o art. 73 (aberratio ictus); pessoa × coisa é o art. 74 (aberratio criminis). É o mnemônico da lousa de 28/08.", "referencia": "lousa 28/08 201442" },
-      { "id": "e03", "tipo": "vf", "enunciado": "O erro de tipo acidental exclui o dolo do agente.", "resposta": false, "justificativa": "Não exclui dolo nem culpa e não isenta de pena: a intenção criminosa é manifesta e o erro recai apenas sobre dados secundários. Quem exclui o dolo é o erro essencial.", "referencia": "caderno 150058" },
-      { "id": "e04", "tipo": "multipla", "enunciado": "O erro de tipo essencial INEVITÁVEL produz qual consequência?", "alternativas": [ { "texto": "Exclui dolo e culpa: o agente não responde por nada", "correta": true, "justificativa": "Não há consciência nem previsibilidade. Já o erro evitável exclui o dolo mas permite a punição culposa, se prevista em lei." }, { "texto": "Exclui o dolo e pune a culpa", "correta": false, "justificativa": "Essa é a consequência do erro EVITÁVEL." }, { "texto": "Mantém a culpabilidade e reduz a pena", "correta": false, "justificativa": "Esse é o regime do erro de PROIBIÇÃO evitável, do art. 21." }, { "texto": "Converte o dolo em culpa", "correta": false, "justificativa": "Não há conversão: o erro exclui o dolo, e a culpa só entra se houver tipo culposo previsto." } ], "referencia": "slide de evitabilidade · caderno 150055" },
-      { "id": "e05", "tipo": "cloze", "enunciado": "O erro sobre o objeto resolve-se pela teoria da ___________: o agente responde pelo objeto efetivamente atingido.", "resposta": "concretizacao", "aceitas": ["concretização"], "justificativa": "Distingue-se da teoria da equivalência, aplicável ao erro sobre a pessoa, em que se consideram as condições da vítima pretendida.", "referencia": "caderno 150102 · lousa 28/08 193128" },
-      { "id": "e06", "tipo": "vf", "enunciado": "A aberratio causae tem previsão expressa no Código Penal.", "resposta": false, "justificativa": "Sanches é literal: o erro sobre o nexo causal não possui previsão legal, sendo estudado apenas pela doutrina. Das três aberrações, só ictus (73) e criminis (74) estão no Código.", "referencia": "Sanches, PDF p. 217 · Greco, § 1.47" },
-      { "id": "e07", "tipo": "multipla", "enunciado": "No erro determinado por terceiro (art. 20, §2º), o agente PROVOCADOR responde como:", "alternativas": [ { "texto": "Autor mediato, com dolo", "correta": true, "justificativa": "Greco enquadra o art. 20, §2º entre as quatro hipóteses de autoria mediata previstas expressamente no Código, ao lado da coação moral irresistível e da obediência hierárquica." }, { "texto": "Partícipe do crime praticado pelo provocado", "correta": false, "justificativa": "Não é partícipe: serviu-se do provocado como instrumento." }, { "texto": "Coautor, em concurso de pessoas", "correta": false, "justificativa": "O concurso exigiria dolo de ambos; o provocado age em erro." }, { "texto": "Não responde, pois não executou o núcleo do tipo", "correta": false, "justificativa": "É exatamente o oposto do que a lei determina: responde pelo crime o terceiro que determina o erro." } ], "referencia": "slide 04/09 185546 · Greco, § 4.6" }
+      {
+        "id": "e01",
+        "tipo": "multipla",
+        "enunciado": "Segundo a matriz apresentada em 28/08, o que FALHA no erro sobre a pessoa (art. 20, §3º)?",
+        "alternativas": [
+          {
+            "texto": "A representação",
+            "correta": true,
+            "justificativa": "No erro sobre a pessoa o agente confunde quem é quem; no aberratio ictus a representação está correta e falha a execução."
+          },
+          {
+            "texto": "A execução",
+            "correta": false,
+            "justificativa": "É o que falha no aberratio ictus e no aberratio criminis."
+          },
+          {
+            "texto": "O nexo causal",
+            "correta": false,
+            "justificativa": "Esse é o objeto do aberratio causae."
+          },
+          {
+            "texto": "O bem jurídico atingido",
+            "correta": false,
+            "justificativa": "No erro sobre a pessoa o bem jurídico é idêntico; quem o altera é o art. 74."
+          }
+        ],
+        "referencia": "slide 28/08 202919"
+      },
+      {
+        "id": "e02",
+        "tipo": "cloze",
+        "enunciado": "A relação pessoa × coisa, no erro na execução, atrai a aplicação do art. ___ do Código Penal.",
+        "resposta": "74",
+        "aceitas": [
+          "74 do cp",
+          "art 74"
+        ],
+        "justificativa": "Pessoa × pessoa é o art. 73 (aberratio ictus); pessoa × coisa é o art. 74 (aberratio criminis). É o mnemônico da lousa de 28/08.",
+        "referencia": "lousa 28/08 201442"
+      },
+      {
+        "id": "e03",
+        "tipo": "vf",
+        "enunciado": "O erro de tipo acidental exclui o dolo do agente.",
+        "resposta": false,
+        "justificativa": "Não exclui dolo nem culpa e não isenta de pena: a intenção criminosa é manifesta e o erro recai apenas sobre dados secundários. Quem exclui o dolo é o erro essencial.",
+        "referencia": "caderno 150058"
+      },
+      {
+        "id": "e04",
+        "tipo": "multipla",
+        "enunciado": "O erro de tipo essencial INEVITÁVEL produz qual consequência?",
+        "alternativas": [
+          {
+            "texto": "Exclui dolo e culpa: o agente não responde por nada",
+            "correta": true,
+            "justificativa": "Não há consciência nem previsibilidade. Já o erro evitável exclui o dolo mas permite a punição culposa, se prevista em lei."
+          },
+          {
+            "texto": "Exclui o dolo e pune a culpa",
+            "correta": false,
+            "justificativa": "Essa é a consequência do erro EVITÁVEL."
+          },
+          {
+            "texto": "Mantém a culpabilidade e reduz a pena",
+            "correta": false,
+            "justificativa": "Esse é o regime do erro de PROIBIÇÃO evitável, do art. 21."
+          },
+          {
+            "texto": "Converte o dolo em culpa",
+            "correta": false,
+            "justificativa": "Não há conversão: o erro exclui o dolo, e a culpa só entra se houver tipo culposo previsto."
+          }
+        ],
+        "referencia": "slide de evitabilidade · caderno 150055"
+      },
+      {
+        "id": "e05",
+        "tipo": "cloze",
+        "enunciado": "O erro sobre o objeto resolve-se pela teoria da ___________: o agente responde pelo objeto efetivamente atingido.",
+        "resposta": "concretizacao",
+        "aceitas": [
+          "concretização"
+        ],
+        "justificativa": "Distingue-se da teoria da equivalência, aplicável ao erro sobre a pessoa, em que se consideram as condições da vítima pretendida.",
+        "referencia": "caderno 150102 · lousa 28/08 193128"
+      },
+      {
+        "id": "e06",
+        "tipo": "vf",
+        "enunciado": "A aberratio causae tem previsão expressa no Código Penal.",
+        "resposta": false,
+        "justificativa": "Sanches é literal: o erro sobre o nexo causal não possui previsão legal, sendo estudado apenas pela doutrina. Das três aberrações, só ictus (73) e criminis (74) estão no Código.",
+        "referencia": "Sanches, PDF p. 217 · Greco, § 1.47"
+      },
+      {
+        "id": "e07",
+        "tipo": "multipla",
+        "enunciado": "No erro determinado por terceiro (art. 20, §2º), o agente PROVOCADOR responde como:",
+        "alternativas": [
+          {
+            "texto": "Autor mediato, com dolo",
+            "correta": true,
+            "justificativa": "Greco enquadra o art. 20, §2º entre as quatro hipóteses de autoria mediata previstas expressamente no Código, ao lado da coação moral irresistível e da obediência hierárquica."
+          },
+          {
+            "texto": "Partícipe do crime praticado pelo provocado",
+            "correta": false,
+            "justificativa": "Não é partícipe: serviu-se do provocado como instrumento."
+          },
+          {
+            "texto": "Coautor, em concurso de pessoas",
+            "correta": false,
+            "justificativa": "O concurso exigiria dolo de ambos; o provocado age em erro."
+          },
+          {
+            "texto": "Não responde, pois não executou o núcleo do tipo",
+            "correta": false,
+            "justificativa": "É exatamente o oposto do que a lei determina: responde pelo crime o terceiro que determina o erro."
+          }
+        ],
+        "referencia": "slide 04/09 185546 · Greco, § 4.6"
+      },
+      {
+        "id": "e08",
+        "tipo": "multipla",
+        "enunciado": "Quantas subespécies de erro acidental Masson enumera, e como isso difere de Sanches?",
+        "alternativas": [
+          {
+            "texto": "Masson enumera seis, acrescentando o erro sobre as qualificadoras; Sanches enumera cinco",
+            "correta": true,
+            "justificativa": "É divergência de catálogo, não de solução. A lousa da aula desenhou cinco ramos, acompanhando Sanches."
+          },
+          {
+            "texto": "Ambos enumeram cinco",
+            "correta": false,
+            "justificativa": "Masson lista seis situações, incluindo '(3) erro quanto às qualificadoras'."
+          },
+          {
+            "texto": "Masson enumera quatro e Sanches, seis",
+            "correta": false,
+            "justificativa": "Inverte os números dos dois autores."
+          },
+          {
+            "texto": "A doutrina é unânime em reconhecer seis",
+            "correta": false,
+            "justificativa": "Não há unanimidade — é justamente o ponto."
+          }
+        ],
+        "referencia": "Sanches, PDF p. 211 · Masson, p. 267"
+      },
+      {
+        "id": "e09",
+        "tipo": "vf",
+        "enunciado": "No aberratio ictus de resultado único, aplicam-se as condições pessoais da vítima efetivamente atingida.",
+        "resposta": false,
+        "justificativa": "Aplicam-se as da vítima PRETENDIDA. Sanches: 'será punido pelo crime, considerando-se as condições e qualidades da vítima desejada e não da vítima efetivamente atingida'.",
+        "referencia": "Sanches, PDF p. 215"
+      },
+      {
+        "id": "e10",
+        "tipo": "cloze",
+        "enunciado": "Segundo o slide da aula, no erro na execução o agente representa bem, mas ___________ mal.",
+        "resposta": "executa",
+        "aceitas": [
+          "executa mal"
+        ],
+        "justificativa": "É a formulação do slide de 28/08: 'o agente representa bem, mas executa mal (erro de pontaria)'.",
+        "referencia": "slide 28/08 191356"
+      },
+      {
+        "id": "e11",
+        "tipo": "multipla",
+        "enunciado": "Quem sustenta, nos manuais indexados, a ressalva de afastar o art. 74 quando o resultado pretendido é mais grave?",
+        "alternativas": [
+          {
+            "texto": "Sanches, creditando Flávio Monteiro de Barros",
+            "correta": true,
+            "justificativa": "Sanches alerta que a regra deve ser afastada para evitar impunidade e transcreve Flávio Monteiro de Barros, para quem o art. 74, 1ª parte, deve ser interpretado restritivamente."
+          },
+          {
+            "texto": "Zaffaroni, conforme o slide da aula",
+            "correta": false,
+            "justificativa": "O slide faz essa atribuição, mas ela não se confirma: Zaffaroni aparece 106 vezes nos três manuais e em nenhuma delas ligado ao art. 74.",
+            "armadilha": "repetir uma atribuição não verificada"
+          },
+          {
+            "texto": "Greco, no capítulo dos crimes aberrantes",
+            "correta": false,
+            "justificativa": "Greco trata dos crimes aberrantes, mas a formulação da ressalva está em Sanches."
+          },
+          {
+            "texto": "Masson, ao distinguir aberratio causae de dolo geral",
+            "correta": false,
+            "justificativa": "Essa passagem de Masson trata de outro ponto."
+          }
+        ],
+        "referencia": "Sanches, PDF p. 217"
+      },
+      {
+        "id": "e12",
+        "tipo": "vf",
+        "enunciado": "Se o agente provocado age com dolo e o provocador, com culpa, há concurso de pessoas.",
+        "resposta": false,
+        "justificativa": "Não há: não existe participação dolosa em crime culposo. Cada um responde pelo crime que praticou, na sua própria modalidade.",
+        "referencia": "caderno 150139"
+      },
+      {
+        "id": "e13",
+        "tipo": "multipla",
+        "enunciado": "Qual a diferença entre aberratio causae e dolo geral, segundo Masson?",
+        "alternativas": [
+          {
+            "texto": "O número de atos: na aberratio causae há ato único; no dolo geral, sucessão de atos",
+            "correta": true,
+            "justificativa": "É a distinção que Masson formula expressamente ao tratar do erro sobre o nexo causal."
+          },
+          {
+            "texto": "A previsão legal: a primeira está no Código, o segundo não",
+            "correta": false,
+            "justificativa": "Nenhum dos dois tem previsão expressa — a aberratio causae é figura doutrinária."
+          },
+          {
+            "texto": "O bem jurídico atingido",
+            "correta": false,
+            "justificativa": "Esse é o critério que separa os arts. 73 e 74."
+          },
+          {
+            "texto": "A espécie de dolo do agente",
+            "correta": false,
+            "justificativa": "Em ambos há dolo quanto ao resultado; o que varia é a estrutura da execução."
+          }
+        ],
+        "referencia": "Masson, p. 269"
+      }
     ],
     "iter-criminis": [
-      { "id": "i01", "tipo": "multipla", "enunciado": "Qual a sequência correta das etapas do iter criminis, como desenhada na lousa de 28/08?", "alternativas": [ { "texto": "Cogitação, atos preparatórios, atos executórios, consumação, exaurimento", "correta": true, "justificativa": "É exatamente a lista da lousa, com o exaurimento destacado dentro de um retângulo." }, { "texto": "Cogitação, atos executórios, atos preparatórios, consumação, exaurimento", "correta": false, "justificativa": "Não se executa antes de preparar." }, { "texto": "Cogitação, atos preparatórios, tentativa, consumação, exaurimento", "correta": false, "justificativa": "Tentativa não é etapa do caminho: é o resultado de execução iniciada que não se consuma." }, { "texto": "Atos preparatórios, cogitação, execução, exaurimento, consumação", "correta": false, "justificativa": "Dois erros: a cogitação vem primeiro e o exaurimento é posterior à consumação." } ], "referencia": "lousa 28/08 200421" },
-      { "id": "i02", "tipo": "vf", "enunciado": "Na desistência voluntária, o agente responde apenas pelos atos já praticados.", "resposta": true, "justificativa": "É a parte final do art. 15, que vale tanto para a desistência quanto para o arrependimento eficaz.", "referencia": "CP, art. 15 · Greco, § 1" },
-      { "id": "i03", "tipo": "cloze", "enunciado": "A fórmula que separa tentativa de desistência: na tentativa o agente quer prosseguir e não ___________.", "resposta": "pode", "aceitas": ["consegue"], "justificativa": "Na desistência o agente pode prosseguir e não quer. Sanches formula exatamente assim.", "referencia": "Sanches, PDF p. 359" },
-      { "id": "i04", "tipo": "vf", "enunciado": "A desistência voluntária exige que a iniciativa parta espontaneamente do próprio agente.", "resposta": false, "justificativa": "Exige voluntariedade, não espontaneidade. Masson registra que a iniciativa pode emanar de terceira pessoa, desde que livre de coação física ou moral.", "referencia": "Masson, p. 292" },
-      { "id": "i05", "tipo": "multipla", "enunciado": "Atirar em pessoa que já estava morta configura:", "alternativas": [ { "texto": "Crime impossível por absoluta impropriedade do objeto", "correta": true, "justificativa": "É a primeira causa do art. 17. Não há bem jurídico vida a ser atingido, e o crime jamais poderia consumar-se." }, { "texto": "Tentativa de homicídio", "correta": false, "justificativa": "O art. 17 afasta a punição da tentativa justamente nessa hipótese." }, { "texto": "Crime impossível por ineficácia absoluta do meio", "correta": false, "justificativa": "O meio era eficaz: a arma funcionava. O vício está no objeto." }, { "texto": "Vilipêndio a cadáver, apenas", "correta": false, "justificativa": "Exigiria conduta e dolo próprios desse tipo, não narrados." } ], "referencia": "CP, art. 17" }
+      {
+        "id": "i01",
+        "tipo": "multipla",
+        "enunciado": "Qual a sequência correta das etapas do iter criminis, como desenhada na lousa de 28/08?",
+        "alternativas": [
+          {
+            "texto": "Cogitação, atos preparatórios, atos executórios, consumação, exaurimento",
+            "correta": true,
+            "justificativa": "É exatamente a lista da lousa, com o exaurimento destacado dentro de um retângulo."
+          },
+          {
+            "texto": "Cogitação, atos executórios, atos preparatórios, consumação, exaurimento",
+            "correta": false,
+            "justificativa": "Não se executa antes de preparar."
+          },
+          {
+            "texto": "Cogitação, atos preparatórios, tentativa, consumação, exaurimento",
+            "correta": false,
+            "justificativa": "Tentativa não é etapa do caminho: é o resultado de execução iniciada que não se consuma."
+          },
+          {
+            "texto": "Atos preparatórios, cogitação, execução, exaurimento, consumação",
+            "correta": false,
+            "justificativa": "Dois erros: a cogitação vem primeiro e o exaurimento é posterior à consumação."
+          }
+        ],
+        "referencia": "lousa 28/08 200421"
+      },
+      {
+        "id": "i02",
+        "tipo": "vf",
+        "enunciado": "Na desistência voluntária, o agente responde apenas pelos atos já praticados.",
+        "resposta": true,
+        "justificativa": "É a parte final do art. 15, que vale tanto para a desistência quanto para o arrependimento eficaz.",
+        "referencia": "CP, art. 15 · Greco, § 1"
+      },
+      {
+        "id": "i03",
+        "tipo": "cloze",
+        "enunciado": "A fórmula que separa tentativa de desistência: na tentativa o agente quer prosseguir e não ___________.",
+        "resposta": "pode",
+        "aceitas": [
+          "consegue"
+        ],
+        "justificativa": "Na desistência o agente pode prosseguir e não quer. Sanches formula exatamente assim.",
+        "referencia": "Sanches, PDF p. 359"
+      },
+      {
+        "id": "i04",
+        "tipo": "vf",
+        "enunciado": "A desistência voluntária exige que a iniciativa parta espontaneamente do próprio agente.",
+        "resposta": false,
+        "justificativa": "Exige voluntariedade, não espontaneidade. Masson registra que a iniciativa pode emanar de terceira pessoa, desde que livre de coação física ou moral.",
+        "referencia": "Masson, p. 292"
+      },
+      {
+        "id": "i05",
+        "tipo": "multipla",
+        "enunciado": "Atirar em pessoa que já estava morta configura:",
+        "alternativas": [
+          {
+            "texto": "Crime impossível por absoluta impropriedade do objeto",
+            "correta": true,
+            "justificativa": "É a primeira causa do art. 17. Não há bem jurídico vida a ser atingido, e o crime jamais poderia consumar-se."
+          },
+          {
+            "texto": "Tentativa de homicídio",
+            "correta": false,
+            "justificativa": "O art. 17 afasta a punição da tentativa justamente nessa hipótese."
+          },
+          {
+            "texto": "Crime impossível por ineficácia absoluta do meio",
+            "correta": false,
+            "justificativa": "O meio era eficaz: a arma funcionava. O vício está no objeto."
+          },
+          {
+            "texto": "Vilipêndio a cadáver, apenas",
+            "correta": false,
+            "justificativa": "Exigiria conduta e dolo próprios desse tipo, não narrados."
+          }
+        ],
+        "referencia": "CP, art. 17"
+      },
+      {
+        "id": "i06",
+        "tipo": "vf",
+        "enunciado": "Os atos preparatórios nunca são puníveis no direito brasileiro.",
+        "resposta": false,
+        "justificativa": "Em regra não são, mas há exceções: quando a lei os tipifica de forma autônoma, como na associação criminosa e no porte de instrumento próprio para o crime.",
+        "referencia": "doutrina — módulo 6"
+      },
+      {
+        "id": "i07",
+        "tipo": "multipla",
+        "enunciado": "Agente ministra veneno, sai, arrepende-se, retorna e aplica o antídoto; a vítima sobrevive com lesões. Como responde?",
+        "alternativas": [
+          {
+            "texto": "Arrependimento eficaz: responde apenas pelas lesões",
+            "correta": true,
+            "justificativa": "Ele esgotou os atos que julgava suficientes e depois atuou eficazmente para impedir o resultado — segunda parte do art. 15."
+          },
+          {
+            "texto": "Desistência voluntária",
+            "correta": false,
+            "justificativa": "A consequência coincide, mas na desistência o agente interrompe a execução no meio; aqui ele a completou e reverteu o curso causal."
+          },
+          {
+            "texto": "Tentativa de homicídio",
+            "correta": false,
+            "justificativa": "Na tentativa o resultado falha por circunstância ALHEIA à vontade do agente; aqui foi a vontade dele que o impediu."
+          },
+          {
+            "texto": "Arrependimento posterior",
+            "correta": false,
+            "justificativa": "O art. 16 pressupõe crime já consumado, sem violência, com reparação até o recebimento da denúncia."
+          }
+        ],
+        "referencia": "CP, art. 15 · Greco, § 5"
+      },
+      {
+        "id": "i08",
+        "tipo": "cloze",
+        "enunciado": "A pena da tentativa é a do crime consumado, diminuída de um a ___________ terços.",
+        "resposta": "dois",
+        "aceitas": [
+          "2"
+        ],
+        "justificativa": "Art. 14, parágrafo único. Sanches registra essa fração ao contrastar tentativa e desistência.",
+        "referencia": "CP, art. 14 · Sanches, PDF p. 359"
+      },
+      {
+        "id": "i09",
+        "tipo": "multipla",
+        "enunciado": "Substância comprovadamente inócua em qualquer dosagem, usada para envenenar. Qual a solução?",
+        "alternativas": [
+          {
+            "texto": "Crime impossível por ineficácia absoluta do meio",
+            "correta": true,
+            "justificativa": "O art. 17 exige absoluta ineficácia. Se apenas um cartucho falhasse numa arma apta, a ineficácia seria relativa e haveria tentativa."
+          },
+          {
+            "texto": "Tentativa de homicídio",
+            "correta": false,
+            "justificativa": "O art. 17 afasta a punição da tentativa justamente aí."
+          },
+          {
+            "texto": "Crime impossível por impropriedade do objeto",
+            "correta": false,
+            "justificativa": "O objeto — a pessoa viva — era próprio; o vício está no meio."
+          },
+          {
+            "texto": "Lesão corporal tentada",
+            "correta": false,
+            "justificativa": "Meio absolutamente inócuo não produz nem lesão."
+          }
+        ],
+        "referencia": "CP, art. 17"
+      },
+      {
+        "id": "i10",
+        "tipo": "vf",
+        "enunciado": "O exaurimento é penalmente irrelevante por ocorrer após a consumação.",
+        "resposta": false,
+        "justificativa": "É irrelevante para a consumação, não para tudo. Repercute na dosimetria como consequência do crime (art. 59) e, em tipos formais, pode integrar qualificadora ou causa de aumento. Foi por isso que a lousa o destacou.",
+        "referencia": "lousa 28/08 200421"
+      }
     ],
     "ilicitude": [
-      { "id": "l01", "tipo": "vf", "enunciado": "A legítima defesa admite reação a agressão futura, desde que certa e anunciada.", "resposta": false, "justificativa": "O art. 25 exige agressão atual ou iminente. Agressão prometida para depois não é iminente — o que há é vingança antecipada.", "referencia": "CP, art. 25" },
-      { "id": "l02", "tipo": "multipla", "enunciado": "Repelindo agressão injusta, o agente erra a pontaria e fere terceiro inocente. Qual a solução?", "alternativas": [ { "texto": "Subsiste a legítima defesa: pelo art. 73, a reação é lida como praticada contra o agressor real", "correta": true, "justificativa": "Sanches é literal ao dizer que a infeliz reação deve ser considerada como se praticada contra o real agressor, não descaracterizando a legítima defesa." }, { "texto": "Responde por lesão dolosa contra o terceiro", "correta": false, "justificativa": "É exatamente a conclusão que a doutrina afasta." }, { "texto": "Perde a justificante por excesso", "correta": false, "justificativa": "Excesso é intensificar ou prolongar a reação. Errar o alvo não é excesso." }, { "texto": "Responde por lesão culposa", "correta": false, "justificativa": "O erro de pontaria é o pressuposto do art. 73, não fundamento autônomo de imputação culposa." } ], "referencia": "Sanches, PDF p. 269 · Greco, § 8.20" },
-      { "id": "l03", "tipo": "cloze", "enunciado": "Prolongar a reação após cessada a agressão configura excesso ___________.", "resposta": "extensivo", "aceitas": ["extensivo na legitima defesa"], "justificativa": "O excesso intensivo é de intensidade — reação desproporcional durante a agressão; o extensivo é de duração.", "referencia": "Greco, § 8.16" },
-      { "id": "l04", "tipo": "vf", "enunciado": "As excludentes de ilicitude tornam o fato atípico.", "resposta": false, "justificativa": "O fato permanece típico e deixa de ser ilícito. Quem afasta a tipicidade material é a insignificância, que opera em plano anterior.", "referencia": "CP, art. 23" },
-      { "id": "l05", "tipo": "multipla", "enunciado": "Cabe legítima defesa contra quem age em estado de necessidade?", "alternativas": [ { "texto": "Não, porque falta agressão injusta", "correta": true, "justificativa": "A conduta amparada por justificante é lícita, e a legítima defesa exige agressão INJUSTA. O que pode haver é estado de necessidade recíproco." }, { "texto": "Sim, pois há agressão a bem jurídico próprio", "correta": false, "justificativa": "Há lesão a bem jurídico, mas ela é lícita — e é a injustiça da agressão que a lei exige." }, { "texto": "Sim, desde que proporcional", "correta": false, "justificativa": "A proporcionalidade é requisito adicional; o obstáculo aqui é anterior." }, { "texto": "Depende de o agressor ser imputável", "correta": false, "justificativa": "A imputabilidade do agressor não é requisito da legítima defesa." } ], "referencia": "Masson, p. 345" }
+      {
+        "id": "l01",
+        "tipo": "vf",
+        "enunciado": "A legítima defesa admite reação a agressão futura, desde que certa e anunciada.",
+        "resposta": false,
+        "justificativa": "O art. 25 exige agressão atual ou iminente. Agressão prometida para depois não é iminente — o que há é vingança antecipada.",
+        "referencia": "CP, art. 25"
+      },
+      {
+        "id": "l02",
+        "tipo": "multipla",
+        "enunciado": "Repelindo agressão injusta, o agente erra a pontaria e fere terceiro inocente. Qual a solução?",
+        "alternativas": [
+          {
+            "texto": "Subsiste a legítima defesa: pelo art. 73, a reação é lida como praticada contra o agressor real",
+            "correta": true,
+            "justificativa": "Sanches é literal ao dizer que a infeliz reação deve ser considerada como se praticada contra o real agressor, não descaracterizando a legítima defesa."
+          },
+          {
+            "texto": "Responde por lesão dolosa contra o terceiro",
+            "correta": false,
+            "justificativa": "É exatamente a conclusão que a doutrina afasta."
+          },
+          {
+            "texto": "Perde a justificante por excesso",
+            "correta": false,
+            "justificativa": "Excesso é intensificar ou prolongar a reação. Errar o alvo não é excesso."
+          },
+          {
+            "texto": "Responde por lesão culposa",
+            "correta": false,
+            "justificativa": "O erro de pontaria é o pressuposto do art. 73, não fundamento autônomo de imputação culposa."
+          }
+        ],
+        "referencia": "Sanches, PDF p. 269 · Greco, § 8.20"
+      },
+      {
+        "id": "l03",
+        "tipo": "cloze",
+        "enunciado": "Prolongar a reação após cessada a agressão configura excesso ___________.",
+        "resposta": "extensivo",
+        "aceitas": [
+          "extensivo na legitima defesa"
+        ],
+        "justificativa": "O excesso intensivo é de intensidade — reação desproporcional durante a agressão; o extensivo é de duração.",
+        "referencia": "Greco, § 8.16"
+      },
+      {
+        "id": "l04",
+        "tipo": "vf",
+        "enunciado": "As excludentes de ilicitude tornam o fato atípico.",
+        "resposta": false,
+        "justificativa": "O fato permanece típico e deixa de ser ilícito. Quem afasta a tipicidade material é a insignificância, que opera em plano anterior.",
+        "referencia": "CP, art. 23"
+      },
+      {
+        "id": "l05",
+        "tipo": "multipla",
+        "enunciado": "Cabe legítima defesa contra quem age em estado de necessidade?",
+        "alternativas": [
+          {
+            "texto": "Não, porque falta agressão injusta",
+            "correta": true,
+            "justificativa": "A conduta amparada por justificante é lícita, e a legítima defesa exige agressão INJUSTA. O que pode haver é estado de necessidade recíproco."
+          },
+          {
+            "texto": "Sim, pois há agressão a bem jurídico próprio",
+            "correta": false,
+            "justificativa": "Há lesão a bem jurídico, mas ela é lícita — e é a injustiça da agressão que a lei exige."
+          },
+          {
+            "texto": "Sim, desde que proporcional",
+            "correta": false,
+            "justificativa": "A proporcionalidade é requisito adicional; o obstáculo aqui é anterior."
+          },
+          {
+            "texto": "Depende de o agressor ser imputável",
+            "correta": false,
+            "justificativa": "A imputabilidade do agressor não é requisito da legítima defesa."
+          }
+        ],
+        "referencia": "Masson, p. 345"
+      },
+      {
+        "id": "l06",
+        "tipo": "cloze",
+        "enunciado": "Reagir com meio desproporcional durante a agressão ainda em curso configura excesso ___________.",
+        "resposta": "intensivo",
+        "aceitas": [
+          "intensivo na legitima defesa"
+        ],
+        "justificativa": "O extensivo é o que prolonga a reação depois de cessada a agressão.",
+        "referencia": "Greco, § 8.16"
+      },
+      {
+        "id": "l07",
+        "tipo": "multipla",
+        "enunciado": "Morador fere quem supunha ser agressor e era o próprio filho com um guarda-chuva. Como se classifica?",
+        "alternativas": [
+          {
+            "texto": "Legítima defesa putativa — descriminante putativa do art. 20, §1º",
+            "correta": true,
+            "justificativa": "O agente supôs situação de fato que, se existisse, tornaria a ação legítima. Se o erro era plenamente justificado, é isento de pena; se culposo, responde por culpa se prevista."
+          },
+          {
+            "texto": "Legítima defesa real",
+            "correta": false,
+            "justificativa": "Não havia agressão alguma: a situação só existia na representação do agente."
+          },
+          {
+            "texto": "Erro de proibição",
+            "correta": false,
+            "justificativa": "O erro recaiu sobre os FATOS, não sobre a licitude de se defender."
+          },
+          {
+            "texto": "Estado de necessidade putativo",
+            "correta": false,
+            "justificativa": "A situação imaginada era de agressão humana injusta, o que remete à legítima defesa."
+          }
+        ],
+        "referencia": "CP, art. 20, §1º"
+      },
+      {
+        "id": "l08",
+        "tipo": "vf",
+        "enunciado": "Configurado o excesso, quem era agressor pode passar a agir em legítima defesa real contra o excesso.",
+        "resposta": true,
+        "justificativa": "É o que Masson registra: o excesso é agressão injusta praticada contra quem antes agredia, e autoriza a defesa.",
+        "referencia": "Masson, p. 346"
+      },
+      {
+        "id": "l09",
+        "tipo": "multipla",
+        "enunciado": "O estado de necessidade é compatível com a aberratio ictus?",
+        "alternativas": [
+          {
+            "texto": "Sim: quem erra no uso dos meios ao afastar um perigo segue amparado pela justificante",
+            "correta": true,
+            "justificativa": "Masson trata do tema expressamente, com o exemplo de quem atira contra cão bravio e, por erro na execução, atinge outro alvo."
+          },
+          {
+            "texto": "Não: qualquer erro na execução afasta a justificante",
+            "correta": false,
+            "justificativa": "Errar o alvo não é excesso nem desnatura os requisitos da justificante."
+          },
+          {
+            "texto": "Só se o terceiro atingido também estivesse em perigo",
+            "correta": false,
+            "justificativa": "Não há essa condicionante em lugar nenhum. O que a justificante exige é perigo atual não provocado e inevitável por outro meio — a situação do terceiro atingido por erro não integra os requisitos."
+          },
+          {
+            "texto": "Só na legítima defesa, nunca no estado de necessidade",
+            "correta": false,
+            "justificativa": "Masson afirma a compatibilidade com o estado de necessidade em item próprio."
+          }
+        ],
+        "referencia": "Masson, p. 333"
+      },
+      {
+        "id": "l10",
+        "tipo": "vf",
+        "enunciado": "O consentimento do ofendido pode funcionar como excludente supralegal de ilicitude.",
+        "resposta": true,
+        "justificativa": "Não consta do rol do art. 23, mas a doutrina o admite quando o bem é disponível e o titular capaz — daí ser chamada supralegal.",
+        "referencia": "doutrina — módulo 7"
+      }
     ],
     "culpabilidade": [
-      { "id": "u01", "tipo": "multipla", "enunciado": "Quais são os três elementos da culpabilidade, como listados na lousa de 14/08?", "alternativas": [ { "texto": "Imputabilidade, potencial consciência da ilicitude e exigibilidade de conduta diversa", "correta": true, "justificativa": "São exatamente os três da lousa. Excluem-nos, respectivamente, a doença mental ou menoridade, o erro de proibição inevitável e a coação moral irresistível." }, { "texto": "Conduta, nexo causal e resultado", "correta": false, "justificativa": "São elementos do fato típico." }, { "texto": "Dolo, culpa e preterdolo", "correta": false, "justificativa": "Na teoria finalista, dolo e culpa migraram para o fato típico." }, { "texto": "Tipicidade, ilicitude e punibilidade", "correta": false, "justificativa": "Os dois primeiros são outros substratos; a punibilidade é consequência do crime." } ], "referencia": "lousa 14/08 194145" },
-      { "id": "u02", "tipo": "vf", "enunciado": "O erro de proibição evitável exclui a culpabilidade do agente.", "resposta": false, "justificativa": "Masson é expresso: no erro de proibição inescusável SUBSISTE a culpabilidade — a consequência é a redução da pena. Quem exclui é o erro inevitável.", "referencia": "Masson, p. 403" },
-      { "id": "u03", "tipo": "cloze", "enunciado": "A idade do agente, para fins de imputabilidade, afere-se no momento da ___________.", "resposta": "conduta", "aceitas": ["acao", "ação", "acao ou omissao"], "justificativa": "Desdobramento lógico da teoria da atividade adotada pelo art. 4º — é onde os módulos 2 e 8 se encontram.", "referencia": "Masson, p. 375 · CP, arts. 4º e 27" },
-      { "id": "u04", "tipo": "multipla", "enunciado": "Quem ingere bebida para criar coragem e então pratica o crime planejado responde como?", "alternativas": [ { "texto": "Integralmente, pela actio libera in causa, com a preordenação ainda agravando a pena", "correta": true, "justificativa": "A ação era livre na causa: a imputabilidade se afere no momento em que o agente se colocou no estado. O art. 28, II, já afasta a exclusão pela embriaguez voluntária." }, { "texto": "É inimputável, pois a embriaguez era completa", "correta": false, "justificativa": "Permitiria a qualquer um construir a própria irresponsabilidade." }, { "texto": "Tem a pena reduzida por semi-imputabilidade", "correta": false, "justificativa": "A redução do art. 28, §2º é para a embriaguez acidental, de caso fortuito ou força maior." }, { "texto": "Responde por crime culposo", "correta": false, "justificativa": "O dolo estava presente desde o planejamento." } ], "referencia": "CP, art. 28" },
-      { "id": "u05", "tipo": "vf", "enunciado": "No erro de proibição o agente se engana sobre os fatos que pratica.", "resposta": false, "justificativa": "Engana-se sobre a ILICITUDE do que pratica: sabe exatamente o que faz. Quem erra sobre os fatos está no art. 20, não no 21.", "referencia": "Sanches, PDF p. 298" }
+      {
+        "id": "u01",
+        "tipo": "multipla",
+        "enunciado": "Quais são os três elementos da culpabilidade, como listados na lousa de 14/08?",
+        "alternativas": [
+          {
+            "texto": "Imputabilidade, potencial consciência da ilicitude e exigibilidade de conduta diversa",
+            "correta": true,
+            "justificativa": "São exatamente os três da lousa. Excluem-nos, respectivamente, a doença mental ou menoridade, o erro de proibição inevitável e a coação moral irresistível."
+          },
+          {
+            "texto": "Conduta, nexo causal e resultado",
+            "correta": false,
+            "justificativa": "São elementos do fato típico, primeiro substrato do conceito analítico. A própria lousa de 14/08 os desenhou sob a tipicidade, não sob a culpabilidade."
+          },
+          {
+            "texto": "Dolo, culpa e preterdolo",
+            "correta": false,
+            "justificativa": "Na teoria finalista, dolo e culpa migraram para o fato típico."
+          },
+          {
+            "texto": "Tipicidade, ilicitude e punibilidade",
+            "correta": false,
+            "justificativa": "Os dois primeiros são outros substratos; a punibilidade é consequência do crime."
+          }
+        ],
+        "referencia": "lousa 14/08 194145"
+      },
+      {
+        "id": "u02",
+        "tipo": "vf",
+        "enunciado": "O erro de proibição evitável exclui a culpabilidade do agente.",
+        "resposta": false,
+        "justificativa": "Masson é expresso: no erro de proibição inescusável SUBSISTE a culpabilidade — a consequência é a redução da pena. Quem exclui é o erro inevitável.",
+        "referencia": "Masson, p. 403"
+      },
+      {
+        "id": "u03",
+        "tipo": "cloze",
+        "enunciado": "A idade do agente, para fins de imputabilidade, afere-se no momento da ___________.",
+        "resposta": "conduta",
+        "aceitas": [
+          "acao",
+          "ação",
+          "acao ou omissao"
+        ],
+        "justificativa": "Desdobramento lógico da teoria da atividade adotada pelo art. 4º — é onde os módulos 2 e 8 se encontram.",
+        "referencia": "Masson, p. 375 · CP, arts. 4º e 27"
+      },
+      {
+        "id": "u04",
+        "tipo": "multipla",
+        "enunciado": "Quem ingere bebida para criar coragem e então pratica o crime planejado responde como?",
+        "alternativas": [
+          {
+            "texto": "Integralmente, pela actio libera in causa, com a preordenação ainda agravando a pena",
+            "correta": true,
+            "justificativa": "A ação era livre na causa: a imputabilidade se afere no momento em que o agente se colocou no estado. O art. 28, II, já afasta a exclusão pela embriaguez voluntária."
+          },
+          {
+            "texto": "É inimputável, pois a embriaguez era completa",
+            "correta": false,
+            "justificativa": "Permitiria a qualquer um construir a própria irresponsabilidade."
+          },
+          {
+            "texto": "Tem a pena reduzida por semi-imputabilidade",
+            "correta": false,
+            "justificativa": "A redução do art. 28, §2º é para a embriaguez acidental, de caso fortuito ou força maior."
+          },
+          {
+            "texto": "Responde por crime culposo",
+            "correta": false,
+            "justificativa": "O dolo estava presente desde o planejamento."
+          }
+        ],
+        "referencia": "CP, art. 28"
+      },
+      {
+        "id": "u05",
+        "tipo": "vf",
+        "enunciado": "No erro de proibição o agente se engana sobre os fatos que pratica.",
+        "resposta": false,
+        "justificativa": "Engana-se sobre a ILICITUDE do que pratica: sabe exatamente o que faz. Quem erra sobre os fatos está no art. 20, não no 21.",
+        "referencia": "Sanches, PDF p. 298"
+      },
+      {
+        "id": "u06",
+        "tipo": "multipla",
+        "enunciado": "Erro de tipo evitável e erro de proibição evitável: qual a diferença de consequência?",
+        "alternativas": [
+          {
+            "texto": "O de tipo exclui o dolo e pune a culpa se prevista; o de proibição mantém a culpabilidade e reduz a pena",
+            "correta": true,
+            "justificativa": "É o contraste que a prova cobra. Masson: no erro de proibição inescusável 'subsiste a culpabilidade'."
+          },
+          {
+            "texto": "Ambos excluem o dolo",
+            "correta": false,
+            "justificativa": "O erro de proibição não toca no dolo, que está no fato típico."
+          },
+          {
+            "texto": "Ambos isentam de pena",
+            "correta": false,
+            "justificativa": "Isenção só na modalidade INEVITÁVEL do erro de proibição."
+          },
+          {
+            "texto": "O de tipo reduz a pena; o de proibição exclui o dolo",
+            "correta": false,
+            "justificativa": "Inverte exatamente os dois regimes."
+          }
+        ],
+        "referencia": "CP, arts. 20 e 21 · Masson, p. 403"
+      },
+      {
+        "id": "u07",
+        "tipo": "cloze",
+        "enunciado": "Quem conhece a proibição mas supõe existir causa de justificação inexistente incorre em erro de proibição ___________.",
+        "resposta": "indireto",
+        "aceitas": [
+          "indireto ou descriminante putativa por erro de proibicao"
+        ],
+        "justificativa": "Masson classifica o erro de proibição em direto, indireto e mandamental.",
+        "referencia": "Masson, p. 404"
+      },
+      {
+        "id": "u08",
+        "tipo": "vf",
+        "enunciado": "A embriaguez acidental completa, proveniente de caso fortuito, exclui a imputabilidade.",
+        "resposta": true,
+        "justificativa": "É o art. 28, §1º. Não se confunde com a voluntária ou culposa, que não excluem (art. 28, II), nem com a preordenada, que agrava.",
+        "referencia": "CP, art. 28"
+      },
+      {
+        "id": "u09",
+        "tipo": "multipla",
+        "enunciado": "Gerente abre o cofre sob ameaça de morte ao filho, mantido refém. Como responde?",
+        "alternativas": [
+          {
+            "texto": "Não é culpável por coação moral irresistível; só respondem os coatores",
+            "correta": true,
+            "justificativa": "Art. 22. A conduta permanece típica e ilícita — o que se exclui é a exigibilidade de conduta diversa."
+          },
+          {
+            "texto": "Responde em concurso com os criminosos",
+            "correta": false,
+            "justificativa": "Falta-lhe a liberdade de determinação que o concurso pressupõe."
+          },
+          {
+            "texto": "O fato lhe é atípico",
+            "correta": false,
+            "justificativa": "Erra o plano: a conduta é típica, e a exclusão se dá na culpabilidade."
+          },
+          {
+            "texto": "Agiu em estado de necessidade, excluindo a ilicitude",
+            "correta": false,
+            "justificativa": "O Código endereça a hipótese pelo art. 22, no plano da culpabilidade."
+          }
+        ],
+        "referencia": "CP, art. 22"
+      },
+      {
+        "id": "u10",
+        "tipo": "vf",
+        "enunciado": "O erro de proibição foi tratado em pelo menos uma das quatro aulas fotografadas do semestre.",
+        "resposta": false,
+        "justificativa": "Não foi. A catalogação das 44 imagens não encontrou nenhuma que trate do tema — o que chama a atenção, já que o erro de TIPO ocupa 27 delas. Este módulo vem inteiramente dos manuais.",
+        "referencia": "_fontes.json, cobertura do módulo 8"
+      }
     ]
   }
 }

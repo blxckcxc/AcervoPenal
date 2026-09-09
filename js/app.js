@@ -30,6 +30,7 @@ const App = (() => {
       grupo: "Consulta",
       itens: [
         { chave: "vademecum", href: "vademecum.html", marca: "§", rotulo: "Vade Mecum", icone: "§" },
+        { chave: "doutrina", href: "doutrina.html", marca: "❡", rotulo: "Doutrina comparada", icone: "❡" },
         { chave: "galeria", href: "galeria.html", marca: "▣", rotulo: "Galeria das aulas", icone: "▣" },
         { chave: "aula", href: "aula.html", marca: "♪", rotulo: "Áudio da aula", icone: "♪" },
       ],

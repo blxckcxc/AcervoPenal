@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Doutrina comparada — Acervo Penal</title>
+  <meta name="description" content="Sanches, Masson e Greco lado a lado nos temas do curso, com localizador em cada posição e links para os artigos do Código Penal.">
+  <meta name="theme-color" content="#09090B">
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Acervo Penal">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/paginas.css">
+</head>
+<body class="tem-bottomnav">
+
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+<aside class="sidebar" id="sidebar" aria-label="Navegação do acervo"></aside>
+
+<div class="app">
+  <header class="topbar">
+    <button class="icon-btn menu-toggle" id="btnMenu" aria-label="Abrir menu" aria-expanded="false" aria-controls="sidebar">☰</button>
+    <a class="topbar-marca" href="index.html">Acervo <span>Penal</span></a>
+    <span class="topbar-espaco"></span>
+    <button class="icon-btn" id="btnTema" aria-label="Alternar tema claro e escuro" aria-pressed="false">◐</button>
+  </header>
+
+  <main class="main" id="conteudo">
+    <div class="container">
+      <div class="pagina-cabecalho">
+        <h1 class="pagina-titulo">Doutrina comparada</h1>
+        <p class="pagina-sub">
+          Os três autores recomendados pelo professor, lado a lado nos temas do curso.
+          Cada posição carrega um localizador que permite ir conferir na obra — sem
+          localizador, a afirmação não entra.
+        </p>
+      </div>
+      <div id="doutrina"></div>
+    </div>
+  </main>
+</div>
+
+<nav class="bottom-nav" id="bottomNav" aria-label="Navegação principal"></nav>
+
+<script src="data/bundle.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/progress.js"></script>
+<script src="js/modules.js"></script>
+<script src="js/app.js"></script>
+<script src="js/doutrina.js"></script>
+<script>
+  App.iniciarShell("doutrina");
+  Doutrina.iniciar(document.getElementById("doutrina"));
+</script>
+
+<script>
+/* isSecureContext é verdadeiro sob HTTPS e também em localhost, mas falso
+   em file:// — que é onde o navegador recusaria o registro e a tentativa
+   sujaria o console, coisa que este projeto não admite. */
+if ("serviceWorker" in navigator && window.isSecureContext) {
+  addEventListener("load", () => {
+    navigator.serviceWorker.register("sw.js").catch(() => {});
+  });
+}
+</script>
+
+</body>
+</html>
