@@ -1,0 +1,71 @@
+{
+  "id": "ilicitude",
+  "titulo": "Ilicitude",
+  "sobre": "Na lousa de 14/08 este era o ramo do meio — e o professor o deixou em branco. Todo o conteúdo vem dos manuais e do texto dos arts. 23 a 25.",
+  "mapaMental": {
+    "titulo": "Excludentes de ilicitude",
+    "raiz": "ILICITUDE",
+    "fonte": "CP arts. 23 a 25, Sanches PDF p. 269, Masson p. 333-346",
+    "ramos": [
+      { "titulo": "ESTADO DE NECESSIDADE — art. 24", "folhas": ["perigo atual", "não provocado voluntariamente", "inevitável por outro meio", "sacrifício não razoavelmente exigível"] },
+      { "titulo": "LEGÍTIMA DEFESA — art. 25", "folhas": ["agressão injusta", "atual ou iminente", "meios necessários", "moderação no uso"] },
+      { "titulo": "ESTRITO CUMPRIMENTO DE DEVER LEGAL", "folhas": ["art. 23, III, 1ª parte"] },
+      { "titulo": "EXERCÍCIO REGULAR DE DIREITO", "folhas": ["art. 23, III, 2ª parte", "supralegais: consentimento do ofendido"] }
+    ]
+  },
+  "secoes": [
+    {
+      "id": "ramo-em-branco",
+      "titulo": "O ramo que a lousa deixou em branco",
+      "fonte": { "tipo": "manual", "referencia": "lousa 14/08 194145 e catalogação" },
+      "blocos": [
+        { "tipo": "alerta", "titulo": "Sem material de aula", "texto": "A lousa de 14/08 abriu 'crime ou delito' em três ramos e detalhou o primeiro e o terceiro. A ilicitude ficou escrita em vermelho, sem nenhum desdobramento. Nenhuma das quatro aulas voltou ao tema. O que segue vem dos manuais e do texto legal." },
+        { "tipo": "destaque", "titulo": "A relação entre tipicidade e ilicitude", "texto": "A tipicidade funciona como INDÍCIO de ilicitude (ratio cognoscendi): praticado o fato típico, presume-se que seja ilícito até que uma justificante afaste a presunção. Por isso as excludentes não tornam o fato atípico — ele segue típico e deixa de ser ilícito." }
+      ]
+    },
+    {
+      "id": "legitima-defesa",
+      "titulo": "Legítima defesa",
+      "fonte": { "tipo": "manual", "referencia": "CP art. 25, Masson p. 346, Greco §§ 8.15-8.20" },
+      "blocos": [
+        { "tipo": "artigo", "referencia": "Art. 25 do Código Penal", "anchor": "art25", "texto": "Entende-se em legítima defesa quem, usando moderadamente dos meios necessários, repele injusta agressão, atual ou iminente, a direito seu ou de outrem." },
+        { "tipo": "lista", "titulo": "Os requisitos, um a um", "itens": [
+          "Agressão INJUSTA — contra conduta lícita não cabe legítima defesa. Quem age em estado de necessidade não pratica agressão injusta.",
+          "ATUAL OU IMINENTE — agressão prometida para depois não autoriza reação. O que existiria seria vingança antecipada.",
+          "Meios NECESSÁRIOS — os disponíveis e aptos a fazer cessar a agressão.",
+          "MODERAÇÃO no uso — daí a figura do excesso."
+        ] },
+        { "tipo": "destaque", "titulo": "Excesso intensivo e extensivo", "texto": "INTENSIVO é de intensidade: reagir a socos com disparo, durante a agressão. EXTENSIVO é de duração: prosseguir depois que a agressão cessou. Em ambos, o art. 23, parágrafo único, faz o agente responder pelo EXCESSO, doloso ou culposo — e não pelo todo, porque até ali a reação era legítima." },
+        { "tipo": "paragrafo", "texto": "Masson acrescenta um efeito prático: configurado o excesso, quem era agressor passa à condição de agredido e pode, a partir dali, agir em legítima defesa real contra o excesso." }
+      ]
+    },
+    {
+      "id": "necessidade",
+      "titulo": "Estado de necessidade",
+      "fonte": { "tipo": "manual", "referencia": "CP art. 24, Masson p. 333 e 345" },
+      "blocos": [
+        { "tipo": "paragrafo", "texto": "Aqui não há agressão humana injusta: há um perigo, e dois bens jurídicos em conflito dos quais só um pode ser salvo. O exemplo clássico é o dos náufragos e a tábua que sustenta apenas um." },
+        { "tipo": "paragrafo", "texto": "Masson registra que as duas justificantes podem coexistir no mesmo episódio, e usa o caso da água que só sacia um: um furta a água em estado de necessidade e o outro, para salvar-se, mata também em estado de necessidade. Cada conduta é avaliada por seus próprios requisitos." }
+      ]
+    },
+    {
+      "id": "erro-na-execucao",
+      "titulo": "Onde este módulo reencontra o erro de tipo",
+      "fonte": { "tipo": "manual", "referencia": "Sanches PDF p. 269, Masson p. 333, Greco § 8.20" },
+      "blocos": [
+        { "tipo": "paragrafo", "texto": "Este é o ponto em que o módulo 7 toca o módulo 5, e vale a pena para quem estudou erro de tipo à exaustão: o art. 73 opera DENTRO das excludentes." },
+        { "tipo": "citacao", "texto": "O agente, ao repelir a injusta agressão a direito seu ou de outrem, pode, por erro, atingir bem jurídico de um inocente. Nesse caso, parece evidente a situação de aberratio ictus e, consoante a regra do artigo 73 do Código Penal, a infeliz reação deve ser considerada como se praticada contra o real agressor, não descaracterizando a legítima defesa.", "autor": "Rogério Sanches Cunha", "pagina": "269 do PDF" },
+        { "tipo": "paragrafo", "texto": "Masson diz o mesmo do estado de necessidade: ele é compatível com a aberratio ictus, e quem erra no uso dos meios ao afastar um perigo segue amparado pela justificante. Greco dedica seção própria ao encontro entre legítima defesa e aberratio ictus." },
+        { "tipo": "alerta", "titulo": "Errar o alvo não é excesso", "texto": "Excesso é intensificar ou prolongar a reação além do necessário. Erro de pontaria é outra coisa, e se resolve pelo art. 73 — em favor de quem se defendia." }
+      ]
+    }
+  ],
+  "flashcards": [
+    { "frente": "As excludentes de ilicitude tornam o fato atípico?", "verso": "Não. O fato permanece típico e deixa de ser ilícito. A tipicidade é indício de ilicitude (ratio cognoscendi)." },
+    { "frente": "Requisitos da legítima defesa", "verso": "Agressão injusta, atual ou iminente, a direito próprio ou de outrem, repelida com uso moderado dos meios necessários (art. 25)." },
+    { "frente": "Cabe legítima defesa contra agressão futura anunciada?", "verso": "Não. A lei exige agressão ATUAL OU IMINENTE. Reagir antes é vingança antecipada, não defesa." },
+    { "frente": "Excesso intensivo × extensivo", "verso": "Intensivo é de intensidade (meio desproporcional durante a agressão). Extensivo é de duração (a reação segue após cessada a agressão)." },
+    { "frente": "Cabe legítima defesa contra quem age em estado de necessidade?", "verso": "Não — falta agressão INJUSTA, pois a conduta amparada por justificante é lícita. Pode haver estado de necessidade recíproco." },
+    { "frente": "Defendendo-se, o agente erra a pontaria e fere inocente. Perde a justificante?", "verso": "Não. Pelo art. 73 a reação é lida como praticada contra o agressor real, e a legítima defesa não se descaracteriza (Sanches, PDF p. 269)." }
+  ]
+}

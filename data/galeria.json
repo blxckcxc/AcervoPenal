@@ -1,0 +1,976 @@
+{
+  "versao": 1,
+  "sobre": "As 44 fotos das aulas, redimensionadas para 1600 px no lado maior. Cada uma carrega o tema e os módulos a que serve, vindos do catálogo em _fontes.json — a galeria não é um álbum solto, é a fonte visual do acervo.",
+  "sobreARotacao": "Nenhum item tem campo de rotação, e isso é intencional. O catálogo havia registrado 'rotacao: 90' em algumas fotos; ao inspecionar, era o campo EXIF de orientação, não giro do arquivo. A orientação foi aplicada ao pixel neste processamento e o EXIF, descartado. Não há o que o CSS precise corrigir.",
+  "aulas": [
+    {
+      "data": "2026-08-14",
+      "rotulo": "Aula 1 — 14/08",
+      "eixo": "Conceito analítico de crime"
+    },
+    {
+      "data": "2026-08-21",
+      "rotulo": "Aula 2 — 21/08",
+      "eixo": "Erro de tipo — panorama"
+    },
+    {
+      "data": "2026-08-28",
+      "rotulo": "Aula 3 — 28/08",
+      "eixo": "Erro de tipo acidental, aberrações e iter criminis"
+    },
+    {
+      "data": "2026-09-04",
+      "rotulo": "Aula 4 — 04/09",
+      "eixo": "Erro provocado por terceiro e lei penal no tempo"
+    }
+  ],
+  "total": 44,
+  "itens": [
+    {
+      "arquivo": "20260814-184043.jpg",
+      "original": "20260814_184043.jpg",
+      "aula": "2026-08-14",
+      "rotuloAula": "Aula 1 — 14/08",
+      "tipo": "slide",
+      "tema": "Plano de ensino — ementa",
+      "modulos": [],
+      "artigos": [],
+      "densidade": "baixa",
+      "confiancaLeitura": "media",
+      "duplicataDe": null,
+      "nota": "Foto ampla da sala; serve como abertura da galeria, não como conteúdo. É a peça que revela o eixo do semestre: Teoria do Crime.",
+      "largura": 1200,
+      "altura": 1600,
+      "larguraMini": 360,
+      "alturaMini": 480
+    },
+    {
+      "arquivo": "20260814-184338.jpg",
+      "original": "20260814_184338.jpg",
+      "aula": "2026-08-14",
+      "rotuloAula": "Aula 1 — 14/08",
+      "tipo": "lousa",
+      "tema": "Conceito analítico de crime — lousa em construção",
+      "modulos": [
+        3
+      ],
+      "artigos": [],
+      "densidade": "baixa",
+      "confiancaLeitura": "media",
+      "duplicataDe": "20260814_194142.jpg",
+      "nota": "Não acrescenta informação. Valor só de galeria (mostra a aula acontecendo).",
+      "largura": 1200,
+      "altura": 1600,
+      "larguraMini": 360,
+      "alturaMini": 480
+    },
+    {
+      "arquivo": "20260814-194142.jpg",
+      "original": "20260814_194142.jpg",
+      "aula": "2026-08-14",
+      "rotuloAula": "Aula 1 — 14/08",
+      "tipo": "lousa",
+      "tema": "Conceito analítico de crime — estrutura tripartida",
+      "modulos": [
+        3,
+        7,
+        8
+      ],
+      "artigos": [],
+      "densidade": "alta",
+      "confiancaLeitura": "alta",
+      "duplicataDe": null,
+      "nota": "Enquadramento girado 90°. A leitura foi confirmada contra 20260814_194145, que fotografa a mesma lousa na horizontal e legível.",
+      "largura": 1200,
+      "altura": 1600,
+      "larguraMini": 360,
+      "alturaMini": 480
+    },
+    {
+      "arquivo": "20260814-194145.jpg",
+      "original": "20260814_194145.jpg",
+      "aula": "2026-08-14",
+      "rotuloAula": "Aula 1 — 14/08",
+      "tipo": "lousa",
+      "tema": "Conceito analítico de crime — enquadramento legível",
+      "modulos": [
+        3,
+        7,
+        8
+      ],
+      "artigos": [],
+      "densidade": "alta",
+      "confiancaLeitura": "alta",
+      "duplicataDe": null,
+      "nota": "Esta é a foto de referência do módulo 3; a 194142 fica só na galeria. O rótulo MODERNA aparece cortado na borda: o que se lê com segurança é a palavra, não a oposição completa (clássica/moderna) que provavelmente estava escrita ao lado.",
+      "largura": 1200,
+      "altura": 1600,
+      "larguraMini": 360,
+      "alturaMini": 480
+    },
+    {
+      "arquivo": "20260821-194909.jpg",
+      "original": "20260821_194909.jpg",
+      "aula": "2026-08-21",
+      "rotuloAula": "Aula 2 — 21/08",
+      "tipo": "slide",
+      "tema": "Erro de tipo — mapa mental completo",
+      "modulos": [
+        5
+      ],
+      "artigos": [],
+      "densidade": "alta",
+      "confiancaLeitura": "alta",
+      "duplicataDe": null,
+      "nota": "Espinha dorsal do módulo 5. Vira o mapa mental SVG da página do módulo. Reaparece dentro do caderno do aluno (150046, 150051).",
+      "largura": 1600,
+      "altura": 1025,
+      "larguraMini": 480,
+      "alturaMini": 308
+    },
+    {
+      "arquivo": "20260828-191356.jpg",
+      "original": "20260828_191356.jpg",
+      "aula": "2026-08-28",
+      "rotuloAula": "Aula 3 — 28/08",
+      "tipo": "slide",
+      "tema": "Erro na execução — aberratio ictus (art. 73)",
+      "modulos": [
+        5
+      ],
+      "artigos": [
+        73
+      ],
+      "densidade": "alta",
+      "confiancaLeitura": "alta",
+      "duplicataDe": null,
+      "nota": null,
+      "largura": 1600,
+      "altura": 905,
+      "larguraMini": 480,
+      "alturaMini": 271
+    },
+    {
+      "arquivo": "20260828-192101.jpg",
+      "original": "20260828_192101.jpg",
+      "aula": "2026-08-28",
+      "rotuloAula": "Aula 3 — 28/08",
+      "tipo": "slide",
+      "tema": "Conceito de aberratio ictus — os três elementos",
+      "modulos": [
+        5
+      ],
+      "artigos": [
+        73
+      ],
+      "densidade": "alta",
+      "confiancaLeitura": "alta",
+      "duplicataDe": null,
+      "nota": "É o slide que separa aberratio ictus de erro sobre a pessoa. Base direta para questão de prova.",
+      "largura": 1600,
+      "altura": 894,
+      "larguraMini": 480,
+      "alturaMini": 268
+    },
+    {
+      "arquivo": "20260828-192717.jpg",
+      "original": "20260828_192717.jpg",
+      "aula": "2026-08-28",
+      "rotuloAula": "Aula 3 — 28/08",
+      "tipo": "slide",
+      "tema": "Aberratio — resultado simples x resultado duplo",
+      "modulos": [
+        5
+      ],
+      "artigos": [
+        73,
+        70
+      ],
+      "densidade": "alta",
+      "confiancaLeitura": "alta",
+      "duplicataDe": null,
+      "nota": "Quadro comparativo pronto — vira tabela na página do módulo 5.",
+      "largura": 1600,
+      "altura": 886,
+      "larguraMini": 480,
+      "alturaMini": 266
+    },
+    {
+      "arquivo": "20260828-193128.jpg",
+      "original": "20260828_193128.jpg",
+      "aula": "2026-08-28",
+      "rotuloAula": "Aula 3 — 28/08",
+      "tipo": "lousa",
+      "tema": "Erro de tipo — taxonomia manuscrita completa",
+      "modulos": [
+        5
+      ],
+      "artigos": [
+        20
+      ],
+      "densidade": "muito alta",
+      "confiancaLeitura": "alta",
+      "duplicataDe": null,
+      "nota": "Vai além dos slides: o quinto ramo do acidental ('aberratio causae', erro no nexo) e o nome das teorias por ramo só aparecem aqui e no caderno (150120, 150125). Os slides do Gamma nomeiam o ramo 'Nexo Causal' sem batizá-lo.",
+      "largura": 1600,
+      "altura": 1535,
+      "larguraMini": 480,
+      "alturaMini": 460
+    },
+    {
+      "arquivo": "20260828-193405.jpg",
+      "original": "20260828_193405.jpg",
+      "aula": "2026-08-28",
+      "rotuloAula": "Aula 3 — 28/08",
+      "tipo": "lousa",
+      "tema": "Concurso de crimes — as três espécies",
+      "modulos": [],
+      "artigos": [
+        69,
+        70,
+        71
+      ],
+      "densidade": "media",
+      "confiancaLeitura": "alta",
+      "duplicataDe": null,
+      "nota": "Conteúdo fora dos 8 módulos do briefing. Entrou na aula como suporte ao aberratio de resultado duplo, que remete ao concurso formal. Sugestão: virar um anexo do módulo 5, não um módulo próprio — a lousa dá só os nomes e os artigos, sem desenvolver.",
+      "largura": 1325,
+      "altura": 1600,
+      "larguraMini": 397,
+      "alturaMini": 480
+    },
+    {
+      "arquivo": "20260828-193740.jpg",
+      "original": "20260828_193740.jpg",
+      "aula": "2026-08-28",
+      "rotuloAula": "Aula 3 — 28/08",
+      "tipo": "lousa",
+      "tema": "Roubo e latrocínio — desenho de árvore (crimes absorvidos)",
+      "modulos": [],
+      "artigos": [
+        157
+      ],
+      "densidade": "baixa",
+      "confiancaLeitura": "baixa",
+      "duplicataDe": null,
+      "nota": "LEITURA INSEGURA. A imagem é de baixo contraste e os rótulos dos galhos estão em letra pequena e cortados. O número 213 corresponde a estupro e o 129 a lesão corporal no CP, mas não afirmo o que o desenho quis dizer com cada galho. Se for usado, vai como imagem da galeria com legenda declarando a incerteza — não como conteúdo doutrinário. O texto do caderno em 150134 comenta o art. 74 logo abaixo desta foto, mas não explica a árvore.",
+      "largura": 1600,
+      "altura": 1594,
+      "larguraMini": 480,
+      "alturaMini": 478
+    },
+    {
+      "arquivo": "20260828-200421.jpg",
+      "original": "20260828_200421.jpg",
+      "aula": "2026-08-28",
+      "rotuloAula": "Aula 3 — 28/08",
+      "tipo": "lousa",
+      "tema": "Iter criminis — as cinco etapas",
+      "modulos": [
+        6
+      ],
+      "artigos": [],
+      "densidade": "media",
+      "confiancaLeitura": "alta",
+      "duplicataDe": null,
+      "nota": "ÚNICA fonte de aula do módulo 6. Dá as cinco etapas e nada além: não há material de aula sobre tentativa, desistência voluntária, arrependimento eficaz, arrependimento posterior ou crime impossível. O destaque no exaurimento sugere que foi o ponto enfatizado, mas o porquê ficou no áudio.",
+      "largura": 1574,
+      "altura": 1600,
+      "larguraMini": 472,
+      "alturaMini": 480
+    },
+    {
+      "arquivo": "20260828-201146.jpg",
+      "original": "20260828_201146.jpg",
+      "aula": "2026-08-28",
+      "rotuloAula": "Aula 3 — 28/08",
+      "tipo": "slide",
+      "tema": "Resultado diverso — aberratio criminis (art. 74)",
+      "modulos": [
+        5
+      ],
+      "artigos": [
+        74
+      ],
+      "densidade": "alta",
+      "confiancaLeitura": "alta",
+      "duplicataDe": null,
+      "nota": "O 'Alerta Zaffaroni' é atribuição feita pelo próprio slide da aula. Antes de repetir essa atribuição no acervo, confiro contra os três manuais; se não localizar, o quadro registra a ressalva como posição apresentada em aula, sem imputá-la a Zaffaroni.",
+      "largura": 1600,
+      "altura": 929,
+      "larguraMini": 480,
+      "alturaMini": 279
+    },
+    {
+      "arquivo": "20260828-201442.jpg",
+      "original": "20260828_201442.jpg",
+      "aula": "2026-08-28",
+      "rotuloAula": "Aula 3 — 28/08",
+      "tipo": "lousa",
+      "tema": "Aberratio ictus x aberratio criminis — o critério de distinção",
+      "modulos": [
+        5
+      ],
+      "artigos": [
+        73,
+        74
+      ],
+      "densidade": "alta",
+      "confiancaLeitura": "alta",
+      "duplicataDe": null,
+      "nota": "A lousa mais limpa do acervo e o melhor mnemônico do módulo 5: pessoa x pessoa é 73; pessoa x coisa é 74; em ambos o defeito está na execução.",
+      "largura": 1600,
+      "altura": 1130,
+      "larguraMini": 480,
+      "alturaMini": 339
+    },
+    {
+      "arquivo": "20260828-202919.jpg",
+      "original": "20260828_202919.jpg",
+      "aula": "2026-08-28",
+      "rotuloAula": "Aula 3 — 28/08",
+      "tipo": "slide",
+      "tema": "Matriz das aberrações — erro sobre a pessoa x ictus x criminis",
+      "modulos": [
+        5
+      ],
+      "artigos": [
+        20,
+        73,
+        74
+      ],
+      "densidade": "muito alta",
+      "confiancaLeitura": "alta",
+      "duplicataDe": null,
+      "nota": "A melhor tabela do acervo inteiro. É o quadro-síntese do módulo 5 e a fonte natural de várias questões: resolve as três figuras por dois critérios (o que falha, qual bem jurídico) em vez de decorar.",
+      "largura": 1600,
+      "altura": 933,
+      "larguraMini": 480,
+      "alturaMini": 280
+    },
+    {
+      "arquivo": "20260904-185546.jpg",
+      "original": "20260904_185546.jpg",
+      "aula": "2026-09-04",
+      "rotuloAula": "Aula 4 — 04/09",
+      "tipo": "slide",
+      "tema": "Erro determinado por terceiro (art. 20, §2º)",
+      "modulos": [
+        5,
+        4
+      ],
+      "artigos": [
+        20
+      ],
+      "densidade": "alta",
+      "confiancaLeitura": "alta",
+      "duplicataDe": null,
+      "nota": "A foto pegou um menu de contexto do PowerPoint aberto por cima do slide (Próximo, Anterior, Ampliar…), tapando a ilustração central. O texto dos dois cartões, que é o que importa, está inteiro e legível.",
+      "largura": 1600,
+      "altura": 1156,
+      "larguraMini": 480,
+      "alturaMini": 347
+    },
+    {
+      "arquivo": "20260904-185559.jpg",
+      "original": "20260904_185559.jpg",
+      "aula": "2026-09-04",
+      "rotuloAula": "Aula 4 — 04/09",
+      "tipo": "lousa",
+      "tema": "Erro provocado por terceiro — as combinações de dolo e culpa",
+      "modulos": [
+        5,
+        4
+      ],
+      "artigos": [
+        20
+      ],
+      "densidade": "muito alta",
+      "confiancaLeitura": "alta",
+      "duplicataDe": null,
+      "nota": "Casa exatamente com o texto corrido do caderno em 150139, que desenvolve as mesmas combinações em prosa. Os dois juntos cobrem o tema sem lacuna.",
+      "largura": 1600,
+      "altura": 1200,
+      "larguraMini": 480,
+      "alturaMini": 360
+    },
+    {
+      "arquivo": "20260904-195049.jpg",
+      "original": "20260904_195049.jpg",
+      "aula": "2026-09-04",
+      "rotuloAula": "Aula 4 — 04/09",
+      "tipo": "slide",
+      "tema": "Lei penal no tempo — abertura",
+      "modulos": [
+        2
+      ],
+      "artigos": [
+        4
+      ],
+      "densidade": "baixa",
+      "confiancaLeitura": "alta",
+      "duplicataDe": null,
+      "nota": "Slide de capa. Fixa o dispositivo central do módulo 2: art. 4º do CP.",
+      "largura": 1600,
+      "altura": 1077,
+      "larguraMini": 480,
+      "alturaMini": 323
+    },
+    {
+      "arquivo": "20260904-200223.jpg",
+      "original": "20260904_200223.jpg",
+      "aula": "2026-09-04",
+      "rotuloAula": "Aula 4 — 04/09",
+      "tipo": "slide",
+      "tema": "A regra: irretroatividade e o olhar para o futuro",
+      "modulos": [
+        2
+      ],
+      "artigos": [
+        4
+      ],
+      "densidade": "alta",
+      "confiancaLeitura": "alta",
+      "duplicataDe": null,
+      "nota": "Corrige a premissa que eu havia tirado da ementa: o módulo 2 TEM material de aula, e bastante.",
+      "largura": 1600,
+      "altura": 1047,
+      "larguraMini": 480,
+      "alturaMini": 314
+    },
+    {
+      "arquivo": "20260904-200711.jpg",
+      "original": "20260904_200711.jpg",
+      "aula": "2026-09-04",
+      "rotuloAula": "Aula 4 — 04/09",
+      "tipo": "slide",
+      "tema": "Extra-atividade da lei penal",
+      "modulos": [
+        2
+      ],
+      "artigos": [],
+      "densidade": "alta",
+      "confiancaLeitura": "alta",
+      "duplicataDe": null,
+      "nota": "Introduz o gênero extra-atividade, do qual retroatividade e ultra-atividade são as espécies.",
+      "largura": 1600,
+      "altura": 1092,
+      "larguraMini": 480,
+      "alturaMini": 327
+    },
+    {
+      "arquivo": "20260904-202239.jpg",
+      "original": "20260904_202239.jpg",
+      "aula": "2026-09-04",
+      "rotuloAula": "Aula 4 — 04/09",
+      "tipo": "slide",
+      "tema": "Ultra-atividade da lei penal benéfica",
+      "modulos": [
+        2
+      ],
+      "artigos": [],
+      "densidade": "alta",
+      "confiancaLeitura": "alta",
+      "duplicataDe": null,
+      "nota": "O slide é numerado '1.', o que indica que existia um '2.' sobre retroatividade benéfica. Esse slide não foi fotografado — é uma lacuna conhecida do módulo 2. O caderno (150150) compensa em parte, ao registrar retroagir e ultragir lado a lado.",
+      "largura": 1600,
+      "altura": 1078,
+      "larguraMini": 480,
+      "alturaMini": 323
+    },
+    {
+      "arquivo": "20260904-203545.jpg",
+      "original": "20260904_203545.jpg",
+      "aula": "2026-09-04",
+      "rotuloAula": "Aula 4 — 04/09",
+      "tipo": "slide",
+      "tema": "As três teorias do tempo do crime",
+      "modulos": [
+        2
+      ],
+      "artigos": [
+        4
+      ],
+      "densidade": "alta",
+      "confiancaLeitura": "alta",
+      "duplicataDe": null,
+      "nota": "O cartão da teoria da atividade tem um erro de digitação do próprio slide ('o momento da produção do não importa' — falta a palavra 'resultado'). Transcrevi como está e corrijo na exibição com nota. O slide apresenta as três teorias sem dizer qual o CP adotou; quem fecha isso é o caderno (150150): 'Teoria da atividade — ART 4 C.P'.",
+      "largura": 1600,
+      "altura": 1015,
+      "larguraMini": 480,
+      "alturaMini": 305
+    },
+    {
+      "arquivo": "screenshot-20260828-164226.jpg",
+      "original": "Screenshot_20260828_164226_Samsung Notes.jpg",
+      "aula": "2026-08-28",
+      "rotuloAula": "Aula 3 — 28/08",
+      "tipo": "anotacao",
+      "tema": "Elementar x circunstância; erro de tipo essencial x acidental",
+      "modulos": [
+        5,
+        3
+      ],
+      "artigos": [],
+      "densidade": "muito alta",
+      "confiancaLeitura": "alta",
+      "duplicataDe": "Screenshot_20260908_150046_Samsung Notes.jpg",
+      "nota": null,
+      "largura": 738,
+      "altura": 1600,
+      "larguraMini": 222,
+      "alturaMini": 480
+    },
+    {
+      "arquivo": "screenshot-20260828-164231.jpg",
+      "original": "Screenshot_20260828_164231_Samsung Notes.jpg",
+      "aula": "2026-08-28",
+      "rotuloAula": "Aula 3 — 28/08",
+      "tipo": "anotacao",
+      "tema": "Exemplos do erro essencial (caçador) e do acidental (ônibus)",
+      "modulos": [
+        5
+      ],
+      "artigos": [],
+      "densidade": "muito alta",
+      "confiancaLeitura": "alta",
+      "duplicataDe": "Screenshot_20260908_150051_Samsung Notes.jpg",
+      "nota": null,
+      "largura": 738,
+      "altura": 1600,
+      "larguraMini": 222,
+      "alturaMini": 480
+    },
+    {
+      "arquivo": "screenshot-20260828-164236.jpg",
+      "original": "Screenshot_20260828_164236_Samsung Notes.jpg",
+      "aula": "2026-08-28",
+      "rotuloAula": "Aula 3 — 28/08",
+      "tipo": "anotacao",
+      "tema": "Evitabilidade — escusável x inescusável",
+      "modulos": [
+        5
+      ],
+      "artigos": [],
+      "densidade": "muito alta",
+      "confiancaLeitura": "alta",
+      "duplicataDe": "Screenshot_20260908_150055_Samsung Notes.jpg",
+      "nota": null,
+      "largura": 738,
+      "altura": 1600,
+      "larguraMini": 222,
+      "alturaMini": 480
+    },
+    {
+      "arquivo": "screenshot-20260828-164240.jpg",
+      "original": "Screenshot_20260828_164240_Samsung Notes.jpg",
+      "aula": "2026-08-28",
+      "rotuloAula": "Aula 3 — 28/08",
+      "tipo": "anotacao",
+      "tema": "Erro sobre o objeto — exemplo do iPhone",
+      "modulos": [
+        5
+      ],
+      "artigos": [],
+      "densidade": "alta",
+      "confiancaLeitura": "alta",
+      "duplicataDe": "Screenshot_20260908_150102_Samsung Notes.jpg",
+      "nota": null,
+      "largura": 738,
+      "altura": 1600,
+      "larguraMini": 222,
+      "alturaMini": 480
+    },
+    {
+      "arquivo": "screenshot-20260828-164244.jpg",
+      "original": "Screenshot_20260828_164244_Samsung Notes.jpg",
+      "aula": "2026-08-28",
+      "rotuloAula": "Aula 3 — 28/08",
+      "tipo": "anotacao",
+      "tema": "Erro sobre a pessoa (art. 20, §3º)",
+      "modulos": [
+        5
+      ],
+      "artigos": [
+        20
+      ],
+      "densidade": "alta",
+      "confiancaLeitura": "alta",
+      "duplicataDe": "Screenshot_20260908_150111_Samsung Notes.jpg",
+      "nota": null,
+      "largura": 738,
+      "altura": 1600,
+      "larguraMini": 222,
+      "alturaMini": 480
+    },
+    {
+      "arquivo": "screenshot-20260828-164249.jpg",
+      "original": "Screenshot_20260828_164249_Samsung Notes.jpg",
+      "aula": "2026-08-28",
+      "rotuloAula": "Aula 3 — 28/08",
+      "tipo": "anotacao",
+      "tema": "Lousa dos cinco ramos do erro acidental",
+      "modulos": [
+        5
+      ],
+      "artigos": [],
+      "densidade": "media",
+      "confiancaLeitura": "alta",
+      "duplicataDe": "Screenshot_20260908_150116_Samsung Notes.jpg",
+      "nota": null,
+      "largura": 738,
+      "altura": 1600,
+      "larguraMini": 222,
+      "alturaMini": 480
+    },
+    {
+      "arquivo": "screenshot-20260908-150046.jpg",
+      "original": "Screenshot_20260908_150046_Samsung Notes.jpg",
+      "aula": "2026-08-28",
+      "rotuloAula": "Aula 3 — 28/08",
+      "tipo": "anotacao",
+      "tema": "Elementar x circunstância; erro essencial x acidental",
+      "modulos": [
+        5,
+        3
+      ],
+      "artigos": [],
+      "densidade": "muito alta",
+      "confiancaLeitura": "alta",
+      "duplicataDe": null,
+      "nota": "Melhor fonte de EXEMPLOS do acervo. O par elementar/circunstância é o que explica por que o erro essencial e o acidental têm consequências diferentes — é a base conceitual do módulo 5 e serve também ao módulo 3.",
+      "largura": 738,
+      "altura": 1600,
+      "larguraMini": 222,
+      "alturaMini": 480
+    },
+    {
+      "arquivo": "screenshot-20260908-150051.jpg",
+      "original": "Screenshot_20260908_150051_Samsung Notes.jpg",
+      "aula": "2026-08-28",
+      "rotuloAula": "Aula 3 — 28/08",
+      "tipo": "anotacao",
+      "tema": "Exemplo do caçador e exemplo do ônibus",
+      "modulos": [
+        5
+      ],
+      "artigos": [],
+      "densidade": "muito alta",
+      "confiancaLeitura": "alta",
+      "duplicataDe": null,
+      "nota": "O exemplo do ônibus está rotulado no caderno como 'Exemplo do Acidental', mas o próprio texto o classifica duas vezes como erro de tipo ESSENCIAL (evitável). O rótulo do título é lapso do aluno; o conteúdo é de erro essencial evitável. Registro a divergência em vez de escolher por conta própria — e é justamente o tipo de confusão que uma questão de revisão deve atacar.",
+      "largura": 738,
+      "altura": 1600,
+      "larguraMini": 222,
+      "alturaMini": 480
+    },
+    {
+      "arquivo": "screenshot-20260908-150055.jpg",
+      "original": "Screenshot_20260908_150055_Samsung Notes.jpg",
+      "aula": "2026-08-28",
+      "rotuloAula": "Aula 3 — 28/08",
+      "tipo": "anotacao",
+      "tema": "Escusável x inescusável — lousa e fluxograma da evitabilidade",
+      "modulos": [
+        5
+      ],
+      "artigos": [],
+      "densidade": "muito alta",
+      "confiancaLeitura": "alta",
+      "duplicataDe": null,
+      "nota": "As duas correntes sobre como medir a evitabilidade são o único ponto do acervo em que a aula apresenta divergência doutrinária explícita. Ponto natural para o quadro comparativo dos três autores na Fase 6.",
+      "largura": 738,
+      "altura": 1600,
+      "larguraMini": 222,
+      "alturaMini": 480
+    },
+    {
+      "arquivo": "screenshot-20260908-150058.jpg",
+      "original": "Screenshot_20260908_150058_Samsung Notes.jpg",
+      "aula": "2026-08-28",
+      "rotuloAula": "Aula 3 — 28/08",
+      "tipo": "anotacao",
+      "tema": "Regra de ouro do erro acidental",
+      "modulos": [
+        5,
+        4
+      ],
+      "artigos": [
+        20
+      ],
+      "densidade": "alta",
+      "confiancaLeitura": "alta",
+      "duplicataDe": null,
+      "nota": "A frase dos '100% / 15%' está contraditória como escrita e não vou reproduzi-la como afirmação do acervo. Provavelmente é anotação apressada da regra do art. 18, parágrafo único (a punição por culpa depende de previsão expressa, e são poucos os tipos culposos). Fica registrada como está, marcada como não utilizável até ser conferida no áudio ou nos manuais.",
+      "largura": 738,
+      "altura": 1600,
+      "larguraMini": 222,
+      "alturaMini": 480
+    },
+    {
+      "arquivo": "screenshot-20260908-150102.jpg",
+      "original": "Screenshot_20260908_150102_Samsung Notes.jpg",
+      "aula": "2026-08-28",
+      "rotuloAula": "Aula 3 — 28/08",
+      "tipo": "anotacao",
+      "tema": "Erro sobre o objeto — teoria da concretização",
+      "modulos": [
+        5
+      ],
+      "artigos": [
+        20
+      ],
+      "densidade": "alta",
+      "confiancaLeitura": "alta",
+      "duplicataDe": null,
+      "nota": "O caderno escreve 'princípio da significância'; o slide correspondente (visto em 150111) fala em princípio da INSIGNIFICÂNCIA, que é o nome consagrado. Trato como lapso de grafia do aluno e uso 'insignificância', registrando aqui a divergência.",
+      "largura": 738,
+      "altura": 1600,
+      "larguraMini": 222,
+      "alturaMini": 480
+    },
+    {
+      "arquivo": "screenshot-20260908-150111.jpg",
+      "original": "Screenshot_20260908_150111_Samsung Notes.jpg",
+      "aula": "2026-08-28",
+      "rotuloAula": "Aula 3 — 28/08",
+      "tipo": "anotacao",
+      "tema": "Erro sobre a pessoa (art. 20, §3º) — teoria da equivalência",
+      "modulos": [
+        5
+      ],
+      "artigos": [
+        20
+      ],
+      "densidade": "muito alta",
+      "confiancaLeitura": "alta",
+      "duplicataDe": null,
+      "nota": "Atenção ao exemplo: como o caderno o escreve, o agente responderia por TENTATIVA em relação à vítima pretendida — o que não é o que o próprio slide ao lado diz (responde pelo crime consumado, considerando as características da vítima pretendida). É contradição interna da anotação. Vou seguir o slide e o art. 20, §3º, e marcar o ponto como armadilha de prova no módulo 5.",
+      "largura": 738,
+      "altura": 1600,
+      "larguraMini": 222,
+      "alturaMini": 480
+    },
+    {
+      "arquivo": "screenshot-20260908-150116.jpg",
+      "original": "Screenshot_20260908_150116_Samsung Notes.jpg",
+      "aula": "2026-08-28",
+      "rotuloAula": "Aula 3 — 28/08",
+      "tipo": "anotacao",
+      "tema": "Lousa dos cinco ramos do acidental + slides do aberratio ictus",
+      "modulos": [
+        5
+      ],
+      "artigos": [
+        20,
+        73
+      ],
+      "densidade": "alta",
+      "confiancaLeitura": "alta",
+      "duplicataDe": null,
+      "nota": null,
+      "largura": 738,
+      "altura": 1600,
+      "larguraMini": 222,
+      "alturaMini": 480
+    },
+    {
+      "arquivo": "screenshot-20260908-150120.jpg",
+      "original": "Screenshot_20260908_150120_Samsung Notes.jpg",
+      "aula": "2026-08-28",
+      "rotuloAula": "Aula 3 — 28/08",
+      "tipo": "anotacao",
+      "tema": "Slides do resultado simples/duplo + lousa taxonômica",
+      "modulos": [
+        5
+      ],
+      "artigos": [
+        20,
+        73
+      ],
+      "densidade": "alta",
+      "confiancaLeitura": "alta",
+      "duplicataDe": "20260828_193128.jpg",
+      "nota": "Enquadramento melhor do que a foto original da lousa em alguns rótulos — usar as duas em conjunto na conferência.",
+      "largura": 738,
+      "altura": 1600,
+      "larguraMini": 222,
+      "alturaMini": 480
+    },
+    {
+      "arquivo": "screenshot-20260908-150125.jpg",
+      "original": "Screenshot_20260908_150125_Samsung Notes.jpg",
+      "aula": "2026-08-28",
+      "rotuloAula": "Aula 3 — 28/08",
+      "tipo": "anotacao",
+      "tema": "Taxonomia completa do erro + concurso de crimes",
+      "modulos": [
+        5
+      ],
+      "artigos": [
+        20,
+        69,
+        70,
+        71
+      ],
+      "densidade": "muito alta",
+      "confiancaLeitura": "alta",
+      "duplicataDe": null,
+      "nota": "É a leitura mais nítida da taxonomia manuscrita — foi com esta tela que confirmei 'aberratio causae' e os nomes das teorias por ramo.",
+      "largura": 738,
+      "altura": 1600,
+      "larguraMini": 222,
+      "alturaMini": 480
+    },
+    {
+      "arquivo": "screenshot-20260908-150128.jpg",
+      "original": "Screenshot_20260908_150128_Samsung Notes.jpg",
+      "aula": "2026-08-28",
+      "rotuloAula": "Aula 3 — 28/08",
+      "tipo": "anotacao",
+      "tema": "Concurso de crimes e a árvore do roubo",
+      "modulos": [],
+      "artigos": [
+        69,
+        70,
+        71,
+        157
+      ],
+      "densidade": "media",
+      "confiancaLeitura": "media",
+      "duplicataDe": "20260828_193405.jpg",
+      "nota": null,
+      "largura": 738,
+      "altura": 1600,
+      "larguraMini": 222,
+      "alturaMini": 480
+    },
+    {
+      "arquivo": "screenshot-20260908-150134.jpg",
+      "original": "Screenshot_20260908_150134_Samsung Notes.jpg",
+      "aula": "2026-08-28",
+      "rotuloAula": "Aula 3 — 28/08",
+      "tipo": "anotacao",
+      "tema": "Aberratio criminis — o texto de lei e a correção da doutrina",
+      "modulos": [
+        5
+      ],
+      "artigos": [
+        74
+      ],
+      "densidade": "muito alta",
+      "confiancaLeitura": "alta",
+      "duplicataDe": null,
+      "nota": "É a formulação em prosa da mesma ressalva que o slide 201146 atribui a Zaffaroni — aqui atribuída genericamente a 'doutrina e jurisprudência'. Este é o ponto mais importante a checar contra os três manuais na Fase 6: o acervo precisa dizer de quem é a posição, com página, ou declarar que a atribuição veio da aula.",
+      "largura": 738,
+      "altura": 1600,
+      "larguraMini": 222,
+      "alturaMini": 480
+    },
+    {
+      "arquivo": "screenshot-20260908-150139.jpg",
+      "original": "Screenshot_20260908_150139_Samsung Notes.jpg",
+      "aula": "2026-09-04",
+      "rotuloAula": "Aula 4 — 04/09",
+      "tipo": "anotacao",
+      "tema": "Erro provocado por terceiro — desenvolvimento em prosa",
+      "modulos": [
+        5,
+        4
+      ],
+      "artigos": [
+        20
+      ],
+      "densidade": "muito alta",
+      "confiancaLeitura": "alta",
+      "duplicataDe": null,
+      "nota": "O trecho de prosa mais completo do acervo inteiro. Cobre o art. 20, §2º com um rigor que os slides não têm, e é a única fonte da regra 'não há participação dolosa em crime culposo'. Base direta de questões.",
+      "largura": 738,
+      "altura": 1600,
+      "larguraMini": 222,
+      "alturaMini": 480
+    },
+    {
+      "arquivo": "screenshot-20260908-150142.jpg",
+      "original": "Screenshot_20260908_150142_Samsung Notes.jpg",
+      "aula": "2026-09-04",
+      "rotuloAula": "Aula 4 — 04/09",
+      "tipo": "anotacao",
+      "tema": "Lei penal no tempo — abertura e a regra de ouro",
+      "modulos": [
+        2
+      ],
+      "artigos": [
+        4
+      ],
+      "densidade": "alta",
+      "confiancaLeitura": "alta",
+      "duplicataDe": null,
+      "nota": "A frase sobre pneu e DNA é digressão de sala, sem relação com lei penal no tempo — não entra em conteúdo. A regra 'lei só se revoga por lei; costume não revoga, só torna letra morta' é conteúdo de módulo 2 que não aparece em nenhum slide fotografado.",
+      "largura": 738,
+      "altura": 1600,
+      "larguraMini": 222,
+      "alturaMini": 480
+    },
+    {
+      "arquivo": "screenshot-20260908-150150.jpg",
+      "original": "Screenshot_20260908_150150_Samsung Notes.jpg",
+      "aula": "2026-09-04",
+      "rotuloAula": "Aula 4 — 04/09",
+      "tipo": "anotacao",
+      "tema": "Retroagir e ultragir; as três teorias do tempo do crime",
+      "modulos": [
+        2
+      ],
+      "artigos": [
+        4
+      ],
+      "densidade": "muito alta",
+      "confiancaLeitura": "alta",
+      "duplicataDe": null,
+      "nota": "Tela decisiva do módulo 2: é a ÚNICA fonte que amarra a teoria da atividade ao art. 4º do CP como a adotada. Os slides apresentam as três teorias lado a lado sem dizer qual vale no Brasil. A frase da teoria do resultado ficou com um parêntese aberto e não fechado no caderno.",
+      "largura": 738,
+      "altura": 1600,
+      "larguraMini": 222,
+      "alturaMini": 480
+    },
+    {
+      "arquivo": "screenshot-20260908-150154.jpg",
+      "original": "Screenshot_20260908_150154_Samsung Notes.jpg",
+      "aula": "2026-09-04",
+      "rotuloAula": "Aula 4 — 04/09",
+      "tipo": "anotacao",
+      "tema": "Teoria da ubiquidade — fim do caderno",
+      "modulos": [
+        2
+      ],
+      "artigos": [],
+      "densidade": "media",
+      "confiancaLeitura": "alta",
+      "duplicataDe": null,
+      "nota": "Última tela: o branco abaixo confirma que o caderno termina aqui. Não há anotação sobre lei penal no espaço, princípios, ilicitude ou culpabilidade.",
+      "largura": 738,
+      "altura": 1600,
+      "larguraMini": 222,
+      "alturaMini": 480
+    },
+    {
+      "arquivo": "screenshot-20260908-144945-whatsapp.jpg",
+      "original": "Screenshot_20260908_144945_WhatsApp.jpg",
+      "aula": null,
+      "rotuloAula": "Sem aula vinculada",
+      "tipo": "referencia",
+      "tema": "Indicação bibliográfica do professor",
+      "modulos": [],
+      "artigos": [],
+      "densidade": "baixa",
+      "confiancaLeitura": "alta",
+      "duplicataDe": null,
+      "nota": "Resolve a origem da tríade da Fase 6: os três autores não são escolha minha nem sua — são a bibliografia recomendada pelo professor. Vale exibir isso na página de doutrina comparada.",
+      "largura": 1080,
+      "altura": 274,
+      "larguraMini": 480,
+      "alturaMini": 122
+    }
+  ]
+}

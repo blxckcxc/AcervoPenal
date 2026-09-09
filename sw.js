@@ -24,30 +24,61 @@
    rede e fica com o cache HTTP normal do navegador.
    ═══════════════════════════════════════════════════════════════ */
 
-const CACHE = "acervo-penal-4ec03b341f";
+const CACHE = "acervo-penal-7977759fe5";
 
 /* INICIO-PRECACHE — gerado por build.js, não edite à mão */
 const ARQUIVOS = [
   "./",
+  "aula.html",
   "css/base.css",
   "css/components.css",
   "css/layout.css",
+  "css/paginas.css",
   "css/simulador.css",
   "css/variables.css",
   "data/_fontes.json",
   "data/audio_capitulos.json",
   "data/bundle.js",
   "data/casos_praticos.json",
+  "data/culpabilidade.json",
+  "data/dolo-e-culpa.json",
   "data/doutrina.json",
+  "data/erro-de-tipo.json",
+  "data/galeria.json",
+  "data/ilicitude.json",
+  "data/iter-criminis.json",
+  "data/lei-penal-no-tempo.json",
   "data/modules.json",
+  "data/principios.json",
+  "data/quiz-bank.json",
+  "data/teoria-do-crime.json",
   "data/vademecum.json",
+  "favicon.ico",
+  "galeria.html",
+  "icons/apple-touch-icon.png",
+  "icons/icon-192.png",
+  "icons/icon-512.png",
+  "icons/icon-maskable-512.png",
+  "index.html",
   "js/app.js",
+  "js/aula.js",
   "js/corretor.js",
+  "js/exam.js",
+  "js/galeria.js",
+  "js/inicio.js",
   "js/modules.js",
+  "js/modulo.js",
   "js/progress.js",
+  "js/quiz.js",
   "js/simulador.js",
   "js/storage.js",
+  "js/vademecum.js",
+  "manifest.json",
+  "modulo.html",
+  "prova.html",
+  "quiz.html",
   "simulador.html",
+  "vademecum.html",
 ];
 /* FIM-PRECACHE */
 

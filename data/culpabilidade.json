@@ -1,0 +1,74 @@
+{
+  "id": "culpabilidade",
+  "titulo": "Culpabilidade",
+  "sobre": "A lousa de 14/08 listou os três elementos e nada mais. Vale registrar a ausência que salta aos olhos: o erro de PROIBIÇÃO, par natural do erro de tipo, não foi dado em nenhuma aula.",
+  "mapaMental": {
+    "titulo": "Os três elementos e o que os exclui",
+    "raiz": "CULPABILIDADE",
+    "fonte": "lousa 14/08 194145, Sanches PDF p. 298-300, Masson p. 403-404",
+    "ramos": [
+      { "titulo": "IMPUTABILIDADE", "folhas": ["doença mental — art. 26", "menoridade — art. 27", "embriaguez acidental completa — art. 28, §1º"] },
+      { "titulo": "POTENCIAL CONSCIÊNCIA DA ILICITUDE", "folhas": ["erro de proibição inevitável — art. 21", "espécies: direto, indireto, mandamental"] },
+      { "titulo": "EXIGIBILIDADE DE CONDUTA DIVERSA", "folhas": ["coação moral irresistível — art. 22", "obediência hierárquica — art. 22"] }
+    ]
+  },
+  "secoes": [
+    {
+      "id": "elementos",
+      "titulo": "Os três elementos",
+      "fonte": { "tipo": "misto", "referencia": "lousa 14/08 194145 e manuais" },
+      "blocos": [
+        { "tipo": "paragrafo", "texto": "A lousa de 14/08 abriu a culpabilidade em três: exigibilidade de conduta diversa, potencial consciência da ilicitude e imputabilidade. Cada um tem sua própria causa de exclusão, e é assim que o módulo se organiza." },
+        { "tipo": "destaque", "titulo": "Um elemento, uma excludente", "texto": "IMPUTABILIDADE cai por doença mental (art. 26), menoridade (art. 27) ou embriaguez acidental completa. POTENCIAL CONSCIÊNCIA DA ILICITUDE cai pelo erro de proibição inevitável (art. 21). EXIGIBILIDADE DE CONDUTA DIVERSA cai pela coação moral irresistível ou obediência hierárquica (art. 22)." },
+        { "tipo": "paragrafo", "texto": "Note que na coação moral irresistível a conduta do coagido permanece típica e ilícita — o que se exclui é a culpabilidade. O art. 22 é expresso ao dizer que só é punível o autor da coação. Não há concurso de pessoas, porque falta ao coagido a liberdade de determinação que o concurso pressupõe." }
+      ]
+    },
+    {
+      "id": "erro-de-proibicao",
+      "titulo": "Erro de proibição — o par que a aula não deu",
+      "fonte": { "tipo": "manual", "referencia": "CP art. 21, Sanches PDF p. 298-300, Masson p. 403-404" },
+      "blocos": [
+        { "tipo": "alerta", "titulo": "A ausência mais notável do semestre", "texto": "O erro de tipo ocupou 27 das 44 imagens do acervo. O erro de PROIBIÇÃO, que é seu par conceitual e cai neste módulo, não apareceu em nenhuma das quatro aulas. Esta seção vem inteiramente dos manuais — e é justamente o contraste entre os dois erros que a prova costuma cobrar." },
+        { "tipo": "artigo", "referencia": "Art. 21 do Código Penal", "anchor": "art21", "texto": "O desconhecimento da lei é inescusável. O erro sobre a ilicitude do fato, se inevitável, isenta de pena; se evitável, poderá diminuí-la de um sexto a um terço." },
+        { "tipo": "paragrafo", "texto": "Sanches trata o erro de proibição como a causa excludente da potencial consciência da ilicitude. E há uma distinção dentro do próprio artigo que se perde na leitura apressada: desconhecer a LEI é inescusável; errar sobre a ILICITUDE do fato tem regime próprio." },
+        { "tipo": "destaque", "titulo": "O contraste que decide a questão", "texto": "ERRO DE TIPO recai sobre elemento do TIPO — o agente não sabe o que faz. Evitável, exclui o dolo e pune a culpa se prevista (art. 20). ERRO DE PROIBIÇÃO recai sobre a ILICITUDE — o agente sabe o que faz e supõe ser lícito. Evitável, MANTÉM a culpabilidade e apenas reduz a pena (art. 21)." },
+        { "tipo": "citacao", "texto": "Erro de proibição inescusável, evitável ou vencível: poderia ser evitado com o normal esforço de consciência por parte do agente. […] Subsiste a culpabilidade.", "autor": "Cleber Masson", "pagina": "403 (13ª ed., 2019)" },
+        { "tipo": "lista", "titulo": "As três espécies, conforme Masson", "itens": [
+          "DIRETO — o agente desconhece o conteúdo da norma proibitiva.",
+          "INDIRETO — conhece a proibição, mas supõe existir causa de justificação que o ordenamento não prevê, ou erra sobre seus limites.",
+          "MANDAMENTAL — na posição de garantidor, ignora que estava juridicamente obrigado a agir."
+        ] }
+      ],
+      "tabelas": [
+        { "titulo": "Erro de tipo × erro de proibição",
+          "colunas": ["", "Erro de tipo (art. 20)", "Erro de proibição (art. 21)"],
+          "linhas": [
+            ["Sobre o que recai", "Elemento do tipo — o fato", "A ilicitude do fato — a norma"],
+            ["Substrato afetado", "Fato típico (exclui o dolo)", "Culpabilidade (potencial consciência)"],
+            ["Se INEVITÁVEL", "Exclui dolo e culpa: não responde", "Isenta de pena"],
+            ["Se EVITÁVEL", "Exclui o dolo; pune a culpa se prevista", "Subsiste a culpabilidade; pena reduzida de 1/6 a 1/3"]
+          ] }
+      ]
+    },
+    {
+      "id": "imputabilidade",
+      "titulo": "Imputabilidade e o encontro com o art. 4º",
+      "fonte": { "tipo": "manual", "referencia": "CP arts. 26 a 28, Masson p. 375" },
+      "blocos": [
+        { "tipo": "paragrafo", "texto": "A menoridade é causa de inimputabilidade, e a idade se afere no MOMENTO DA CONDUTA. Masson trata isso como desdobramento lógico da teoria da atividade adotada pelo art. 4º — é onde este módulo encontra o módulo 2." },
+        { "tipo": "destaque", "titulo": "Actio libera in causa", "texto": "A embriaguez voluntária ou culposa não exclui a imputabilidade (art. 28, II). Quem bebe justamente para criar coragem e então executa o crime planejado responde integralmente: a ação era livre NA CAUSA, e a imputabilidade se afere no momento em que o agente se colocou no estado. Sendo preordenada, a embriaguez ainda agrava a pena." },
+        { "tipo": "paragrafo", "texto": "A redução de pena do art. 28, §2º é reservada à embriaguez ACIDENTAL, proveniente de caso fortuito ou força maior, quando incompleta. Confundir as duas hipóteses é erro frequente." }
+      ]
+    }
+  ],
+  "flashcards": [
+    { "frente": "Os três elementos da culpabilidade", "verso": "Imputabilidade, potencial consciência da ilicitude e exigibilidade de conduta diversa." },
+    { "frente": "Erro de tipo × erro de proibição: sobre o que cada um recai?", "verso": "O de tipo recai sobre elemento do TIPO — o agente não sabe o que faz. O de proibição recai sobre a ILICITUDE — sabe o que faz e supõe ser lícito." },
+    { "frente": "Erro de proibição EVITÁVEL: consequência?", "verso": "SUBSISTE a culpabilidade; a pena é reduzida de um sexto a um terço. Não exclui nada (Masson, p. 403)." },
+    { "frente": "Erro de proibição INEVITÁVEL: consequência?", "verso": "Isenta de pena, por excluir a potencial consciência da ilicitude." },
+    { "frente": "As três espécies de erro de proibição", "verso": "Direto (desconhece a norma), indireto (supõe justificante inexistente ou erra seus limites) e mandamental (ignora o dever de agir como garantidor)." },
+    { "frente": "Em que momento se afere a idade do agente?", "verso": "No momento da CONDUTA — desdobramento da teoria da atividade do art. 4º. A data da prisão ou da denúncia é irrelevante." },
+    { "frente": "Actio libera in causa", "verso": "A embriaguez voluntária não exclui a imputabilidade: ela se afere no momento em que o agente se colocou no estado. Preordenada, ainda agrava a pena." },
+    { "frente": "Coação moral irresistível: quem responde?", "verso": "Só o autor da coação (art. 22). A conduta do coagido permanece típica e ilícita — o que se exclui é a exigibilidade de conduta diversa." }
+  ]
+}

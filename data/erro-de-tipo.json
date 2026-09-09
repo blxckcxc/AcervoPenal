@@ -1,0 +1,128 @@
+{
+  "id": "erro-de-tipo",
+  "titulo": "Erro de Tipo",
+  "sobre": "O eixo do semestre. 27 das 44 imagens do acervo servem a este módulo, e parte do conteúdo existe apenas nas lousas — os slides projetados não chegaram a nomeá-lo.",
+  "mapaMental": {
+    "titulo": "A árvore do erro de tipo",
+    "raiz": "ERRO DE TIPO",
+    "fonte": "slide 21/08 194909 e lousa 28/08 193128 / 150125",
+    "ramos": [
+      { "titulo": "ESSENCIAL — recai sobre elementares", "folhas": ["Inevitável (escusável): exclui dolo e culpa", "Evitável (inescusável): exclui o dolo, pune a culpa se prevista"] },
+      { "titulo": "ACIDENTAL — recai sobre circunstâncias", "folhas": ["Sobre o objeto — teoria da concretização", "Sobre a pessoa — art. 20, §3º, teoria da equivalência", "Na execução — aberratio ictus, art. 73", "Resultado diverso — aberratio criminis, art. 74", "No nexo — aberratio causae, sem previsão legal"] },
+      { "titulo": "DETERMINADO POR TERCEIRO — art. 20, §2º", "folhas": ["Agente provocador: responde com dolo, autor mediato", "Agente provocado: atípico se sem culpa; culposo se negligente"] }
+    ]
+  },
+  "secoes": [
+    {
+      "id": "elementar-circunstancia",
+      "titulo": "A base: elementar e circunstância",
+      "fonte": { "tipo": "aula", "referencia": "caderno 150046" },
+      "blocos": [
+        { "tipo": "paragrafo", "texto": "Antes de classificar qualquer erro é preciso saber sobre o que ele recaiu. E para isso existe um par de conceitos que o caderno da aula registra com precisão: elementar e circunstância." },
+        { "tipo": "destaque", "titulo": "O teste da retirada", "texto": "ELEMENTAR é a palavra agregada ao núcleo verbo do tipo que, retirada, transforma a situação em não crime ou em outro crime. CIRCUNSTÂNCIA é a palavra que, retirada, não exclui o respectivo crime — apenas o torna mais brando ou mais grave." },
+        { "tipo": "paragrafo", "texto": "Os dois exemplos da aula fazem o teste funcionar. Maria tenta matar o próprio filho e mata o filho de outra mulher: retire 'o próprio filho' do art. 123 e sobra 'matar alguém' — o infanticídio vira homicídio. Elementar, portanto. Já no furto praticado às nove da noite, retire o repouso noturno e o crime não desaparece: vira furto simples. Circunstância." },
+        { "tipo": "paragrafo", "texto": "É daí que vem toda a divisão seguinte. Erro sobre elementar é ESSENCIAL; erro sobre circunstância é ACIDENTAL. E as consequências são opostas." }
+      ]
+    },
+    {
+      "id": "essencial",
+      "titulo": "Erro de tipo essencial e a evitabilidade",
+      "fonte": { "tipo": "aula", "referencia": "caderno 150051 e 150055" },
+      "blocos": [
+        { "tipo": "paragrafo", "texto": "No erro essencial o agente NÃO QUER praticar crime algum. Ele age sob falsa percepção da realidade, e é essa falsa percepção que remove o dolo." },
+        { "tipo": "artigo", "referencia": "Art. 20, caput, do Código Penal", "anchor": "art20", "texto": "O erro sobre elemento constitutivo do tipo legal de crime exclui o dolo, mas permite a punição por crime culposo, se previsto em lei." },
+        { "tipo": "paragrafo", "texto": "O exemplo do caderno é o do caçador: Paulo se esconde num arbusto e imita o uivo de um animal; Antônio, convencido de que se trata de uma fera, atira e o mata. Antônio errou sobre a elementar 'alguém' — urso é algo, Paulo é alguém. Greco usa o mesmo exemplo e observa que, mesmo sendo inescusável o erro, não há dolo: a vontade não se dirigia a matar alguém." },
+        { "tipo": "destaque", "titulo": "As duas consequências", "texto": "INEVITÁVEL (escusável) — qualquer um na situação faria da mesma forma: exclui dolo E culpa, e o agente não responde por nada. EVITÁVEL (inescusável) — quem é cuidadoso não faz: exclui o dolo, mas pune a culpa se houver tipo culposo previsto em lei." },
+        { "tipo": "alerta", "titulo": "Duas condições, não uma", "texto": "A punição culposa no erro evitável depende de DUAS coisas ao mesmo tempo: que o erro fosse evitável e que exista tipo culposo previsto. Faltando a segunda — como no dano, que não tem forma culposa —, o erro evitável leva à atipicidade, e não a uma punição 'transformada'. Dizer que o erro 'transforma dolo em culpa' descreve mal o mecanismo." }
+      ],
+      "tabelas": [
+        { "titulo": "Como medir a evitabilidade — as duas correntes da aula",
+          "colunas": ["Corrente", "Critério", "O que se pergunta"],
+          "linhas": [
+            ["1 — Homem médio", "Padrão abstrato de atenção", "Uma pessoa cuidadosa, em abstrato, teria evitado?"],
+            ["2 — Caso concreto", "Idade, grau de instrução e contexto do agente", "Aquele agente, naquelas condições, poderia ter evitado?"]
+          ] }
+      ]
+    },
+    {
+      "id": "acidental",
+      "titulo": "Erro de tipo acidental: os cinco ramos",
+      "fonte": { "tipo": "aula", "referencia": "lousa 28/08 193128 e 150125" },
+      "blocos": [
+        { "tipo": "paragrafo", "texto": "Aqui a lógica se inverte. No erro acidental o agente QUER praticar o crime e tem intenção criminosa; o engano recai sobre dado secundário. Por isso a regra de ouro anotada no caderno: o erro acidental não exclui o dolo, não exclui a culpa e não isenta de pena." },
+        { "tipo": "lista", "titulo": "Os cinco ramos, com a regra de cada um", "itens": [
+          "SOBRE O OBJETO — teoria da concretização: responde pelo objeto efetivamente atingido. Quem furta um aparelho barato pensando ser o caro responde pelo que levou.",
+          "SOBRE A PESSOA (in persona), art. 20, §3º — teoria da equivalência: responde considerando as condições e qualidades da vítima PRETENDIDA, não da atingida.",
+          "NA EXECUÇÃO (aberratio ictus), art. 73 — a representação estava correta; falhou a pontaria.",
+          "RESULTADO DIVERSO DO PRETENDIDO (aberratio criminis), art. 74 — o erro de execução atinge bem jurídico de outra natureza.",
+          "NO NEXO (aberratio causae) — o resultado ocorre por caminho causal diverso do representado. Não tem previsão legal."
+        ] },
+        { "tipo": "alerta", "titulo": "Conteúdo que só existe na lousa", "texto": "O quinto ramo e o nome das teorias por ramo não aparecem em nenhum slide projetado: estão apenas nas lousas manuscritas de 28/08. Sanches confirma que a aberratio causae 'não possui previsão legal, sendo estudado apenas pela doutrina', e Greco registra que das três aberrações só ictus e criminis estão no Código." }
+      ]
+    },
+    {
+      "id": "aberracoes",
+      "titulo": "A matriz das aberrações",
+      "fonte": { "tipo": "aula", "referencia": "slide 28/08 202919 e lousa 201442" },
+      "blocos": [
+        { "tipo": "paragrafo", "texto": "O slide de 28/08 resolve as três figuras próximas com dois critérios, em vez de pedir memorização: o que falha e qual bem jurídico foi atingido." }
+      ],
+      "tabelas": [
+        { "titulo": "A matriz definitiva das aberrações",
+          "colunas": ["", "Erro sobre a pessoa (art. 20, §3º)", "Aberratio ictus (art. 73)", "Aberratio criminis (art. 74)"],
+          "linhas": [
+            ["O que falha?", "Representação", "Execução", "Execução"],
+            ["Bem jurídico atingido", "Idêntico", "Idêntico", "Diverso (pessoa × coisa)"],
+            ["Como pune?", "Vítima pretendida", "Vítima pretendida", "Título de culpa pelo resultado diverso"]
+          ] },
+        { "titulo": "Aberratio ictus: resultado simples × resultado duplo",
+          "colunas": ["Resultado simples", "Resultado duplo"],
+          "linhas": [
+            ["Não exclui dolo nem culpa; não isenta de pena. Responde pelo crime considerando as condições da vítima pretendida — teoria da equivalência.", "Responde pelos DOIS crimes, aplicando-se as regras do concurso formal, próprio ou impróprio (art. 70)."]
+          ] }
+      ]
+    },
+    {
+      "id": "art74-ressalva",
+      "titulo": "A ressalva do art. 74 — e uma atribuição que não confirmei",
+      "fonte": { "tipo": "misto", "referencia": "slide 28/08 201146, caderno 150134 e Sanches PDF p. 217" },
+      "blocos": [
+        { "tipo": "paragrafo", "texto": "Aplicado ao pé da letra, o art. 74 produz uma solução absurda. Quem arremessa um bloco para matar o motorista e só quebra o para-brisa responderia pelo resultado produzido — o dano — a título de culpa; mas dano culposo é atípico. Resultado: impunidade de quem tentou matar." },
+        { "tipo": "citacao", "texto": "O art. 74, 1ª parte, do CP, deve ser interpretado restritivamente, sob pena de gerar soluções absurdas.", "autor": "Flávio Monteiro de Barros, citado por Rogério Sanches Cunha", "pagina": "217 do PDF" },
+        { "tipo": "paragrafo", "texto": "Sanches endossa e formula a ressalva: a regra do art. 74 deve ser afastada quando o resultado pretendido for mais grave que o produzido, evitando-se a impunidade. Remanesce, no exemplo, a tentativa de homicídio." },
+        { "tipo": "alerta", "titulo": "O slide atribui isso a Zaffaroni — e não consegui confirmar", "texto": "O slide de 28/08 rotula essa ressalva como 'Alerta Zaffaroni'. Indexei os três manuais recomendados pelo professor: Zaffaroni aparece 106 vezes e em NENHUMA delas ligado ao art. 74, ao resultado diverso do pretendido ou à aberratio criminis. Nas obras em mãos, quem sustenta a tese é Sanches, creditando Flávio Monteiro de Barros. A tese entra neste acervo porque é real e está localizada; a atribuição a Zaffaroni não entra. Se você tiver a obra do Zaffaroni onde ela apareça, o acervo se corrige." }
+      ]
+    },
+    {
+      "id": "terceiro",
+      "titulo": "Erro determinado por terceiro (art. 20, §2º)",
+      "fonte": { "tipo": "aula", "referencia": "slide 04/09 185546, lousa 185559 e caderno 150139" },
+      "blocos": [
+        { "tipo": "paragrafo", "texto": "Sanches marca a diferença em uma frase: no erro de tipo comum o agente erra por conta própria; no erro determinado por terceiro o erro é INDUZIDO, e há dois personagens — o agente provocador e o agente provocado." },
+        { "tipo": "artigo", "referencia": "Art. 20, §2º, do Código Penal", "anchor": "art20", "texto": "Responde pelo crime o terceiro que determina o erro." },
+        { "tipo": "paragrafo", "texto": "O exemplo do slide é o do médico que entrega à enfermeira uma seringa com substância letal, dizendo ser a medicação prescrita. Greco usa o mesmo caso: quem matou, materialmente, foi a enfermeira; como o médico não praticou a conduta do verbo do tipo, ele só se explica como AUTOR MEDIATO — e Greco arrola o art. 20, §2º entre as quatro hipóteses de autoria mediata expressas no Código." },
+        { "tipo": "lista", "titulo": "As combinações, conforme o caderno de 04/09", "itens": [
+          "Provocado sem culpa alguma: fato atípico para ele; o provocador responde com dolo.",
+          "Provocado negligente: responde por culpa; o provocador segue respondendo com dolo.",
+          "Dolo de ambos: não há erro provocado — há concurso de pessoas, o provocador como autor e o provocado como partícipe.",
+          "Provocado com dolo e provocador com culpa: não há concurso, porque não existe participação dolosa em crime culposo. Cada um responde pelo que praticou."
+        ] }
+      ]
+    }
+  ],
+  "flashcards": [
+    { "frente": "Elementar × circunstância: qual o teste?", "verso": "Retire a palavra do tipo. Se vira não crime ou outro crime, é ELEMENTAR. Se o crime permanece, só mais brando ou mais grave, é CIRCUNSTÂNCIA." },
+    { "frente": "Erro de tipo essencial INEVITÁVEL: consequência?", "verso": "Exclui dolo E culpa. O agente não responde por nada — não há consciência nem previsibilidade." },
+    { "frente": "Erro de tipo essencial EVITÁVEL: consequência?", "verso": "Exclui o dolo e permite a punição por culpa, SE houver tipo culposo previsto em lei. Sem tipo culposo, atipicidade." },
+    { "frente": "Erro acidental: exclui o dolo?", "verso": "Não. Não exclui dolo, não exclui culpa e não isenta de pena — a intenção criminosa é manifesta e o erro recai só sobre dado secundário." },
+    { "frente": "Erro sobre o OBJETO: qual teoria?", "verso": "Teoria da CONCRETIZAÇÃO — responde pelo objeto efetivamente atingido." },
+    { "frente": "Erro sobre a PESSOA: qual teoria e qual artigo?", "verso": "Teoria da EQUIVALÊNCIA, art. 20, §3º — consideram-se as condições e qualidades da vítima PRETENDIDA, não da atingida." },
+    { "frente": "Art. 73 × art. 74: o critério de separação", "verso": "O bem jurídico atingido. Pessoa × pessoa é o art. 73 (aberratio ictus); pessoa × coisa é o art. 74 (aberratio criminis). Em ambos o defeito está na EXECUÇÃO." },
+    { "frente": "Erro sobre a pessoa × aberratio ictus: o que falha em cada um?", "verso": "No erro sobre a pessoa falha a REPRESENTAÇÃO — o agente confunde quem é quem. No aberratio ictus a representação está correta e falha a EXECUÇÃO." },
+    { "frente": "Aberratio ictus de resultado DUPLO: solução?", "verso": "Responde pelos dois crimes em concurso formal (art. 70) — no exemplo clássico, homicídio doloso quanto à vítima pretendida e culposo quanto à atingida." },
+    { "frente": "Aberratio causae tem previsão legal?", "verso": "Não. Sanches: 'não possui previsão legal, sendo estudado apenas pela doutrina'. Das três aberrações, só ictus (73) e criminis (74) estão no Código." },
+    { "frente": "Art. 74 quando o resultado pretendido é mais grave que o produzido", "verso": "A regra é afastada, para evitar impunidade: remanesce a tentativa do crime pretendido. Sanches sustenta a tese creditando Flávio Monteiro de Barros — NÃO Zaffaroni, como diz o slide da aula." },
+    { "frente": "Erro determinado por terceiro: como responde o provocador?", "verso": "Com DOLO, na condição de autor mediato (art. 20, §2º). Greco arrola essa entre as quatro hipóteses de autoria mediata expressas no Código." },
+    { "frente": "Provocado com dolo e provocador com culpa: há concurso?", "verso": "Não. Não existe participação dolosa em crime culposo. Cada um responde pelo crime que praticou, na sua própria modalidade." }
+  ]
+}

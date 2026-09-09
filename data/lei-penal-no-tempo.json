@@ -1,0 +1,79 @@
+{
+  "id": "lei-penal-no-tempo",
+  "titulo": "Lei Penal no Tempo e no Espaço",
+  "sobre": "O TEMPO tem cobertura boa: cinco slides de 04/09 e três telas do caderno. O ESPAÇO não foi dado em nenhuma das quatro aulas e vem inteiramente dos manuais.",
+  "mapaMental": {
+    "titulo": "A lei penal no tempo",
+    "raiz": "LEI NO TEMPO",
+    "fonte": "slides 04/09 e caderno 150150",
+    "ramos": [
+      { "titulo": "REGRA — irretroatividade", "folhas": ["aplica-se a lei vigente ao tempo do fato", "decorrência da legalidade (art. 1º)"] },
+      { "titulo": "EXCEÇÃO — extra-atividade", "folhas": ["Retroatividade: a lei nova alcança fato anterior", "Ultra-atividade: a lei revogada segue regendo", "Condição absoluta: só se benéfica ao réu"] },
+      { "titulo": "TEMPO DO CRIME — art. 4º", "folhas": ["Teoria da ATIVIDADE — adotada", "Teoria do resultado", "Teoria mista ou da ubiquidade"] }
+    ]
+  },
+  "secoes": [
+    {
+      "id": "regra",
+      "titulo": "A regra de ouro: a lei olha para o futuro",
+      "fonte": { "tipo": "aula", "referencia": "slide 04/09 200223" },
+      "blocos": [
+        { "tipo": "citacao", "texto": "A lei penal, quando nasce, nasce olhando para o futuro. Ela rege os fatos praticados de sua vigência em diante.", "autor": "slide da aula de 04/09" },
+        { "tipo": "paragrafo", "texto": "O slide fundamenta a regra na legalidade, e com razão: o art. 1º exige lei ANTERIOR. A anterioridade é o núcleo temporal da legalidade, e a irretroatividade é seu desdobramento direto." },
+        { "tipo": "paragrafo", "texto": "O caderno acrescenta uma regra que nenhum slide traz: lei só se revoga por lei. O costume não revoga — apenas torna o dispositivo letra morta." }
+      ]
+    },
+    {
+      "id": "extra-atividade",
+      "titulo": "Extra-atividade: quando a lei se move no tempo",
+      "fonte": { "tipo": "aula", "referencia": "slide 04/09 200711 e 202239" },
+      "blocos": [
+        { "tipo": "destaque", "titulo": "A condição absoluta", "texto": "A lei pode viajar no tempo para alcançar fatos fora de sua vigência original, mas com uma condição absoluta: desde que seja benéfica ao réu." },
+        { "tipo": "lista", "titulo": "As duas espécies", "itens": [
+          "RETROATIVIDADE — a lei nova alcança fato praticado antes dela. O caso extremo é a abolitio criminis (art. 2º, caput), que cessa execução e efeitos penais mesmo com trânsito em julgado.",
+          "ULTRA-ATIVIDADE — a lei revogada continua regendo os fatos praticados em sua vigência, porque era mais benéfica. 'A lei velha e boa sobrevive para proteger os fatos cometidos em sua vigência.'"
+        ] },
+        { "tipo": "alerta", "titulo": "Lacuna conhecida do material", "texto": "O slide da ultra-atividade é numerado '1.', o que indica que existia um '2.' sobre retroatividade benéfica. Esse slide não foi fotografado. O caderno compensa em parte, registrando retroagir e ultragir lado a lado." },
+        { "tipo": "paragrafo", "texto": "Há ainda uma ultra-atividade que não depende de benignidade: a das leis temporárias e excepcionais. O art. 3º manda aplicá-las ao fato praticado durante sua vigência ainda que decorrido o prazo ou cessadas as circunstâncias. Sem essa regra, bastaria ao agente aguardar o fim do período para ficar impune." }
+      ]
+    },
+    {
+      "id": "tempo-do-crime",
+      "titulo": "Quando o crime aconteceu",
+      "fonte": { "tipo": "aula", "referencia": "slide 04/09 203545 e caderno 150150" },
+      "blocos": [
+        { "tipo": "paragrafo", "texto": "Antes de escolher a lei é preciso datar o fato. Três teorias disputam a questão, e o slide as apresenta lado a lado — sem dizer qual vale no Brasil. Quem fecha isso é o caderno." },
+        { "tipo": "artigo", "referencia": "Art. 4º do Código Penal", "anchor": "art4", "texto": "Considera-se praticado o crime no momento da ação ou omissão, ainda que outro seja o momento do resultado." },
+        { "tipo": "paragrafo", "texto": "Masson afirma expressamente que a teoria da atividade foi adotada pelo art. 4º, e trata isso como premissa lógica de outros institutos — a idade do agente, por exemplo, afere-se no momento da conduta." }
+      ],
+      "tabelas": [
+        { "titulo": "As três teorias — e onde cada uma vale",
+          "colunas": ["Teoria", "O que considera", "Onde o Código a adota"],
+          "linhas": [
+            ["Atividade", "O momento da conduta (ação ou omissão)", "TEMPO do crime — art. 4º"],
+            ["Resultado", "O momento em que o resultado acontece", "Não adotada"],
+            ["Mista ou ubiquidade", "Tanto a conduta quanto o resultado", "LUGAR do crime — art. 6º"]
+          ] }
+      ]
+    },
+    {
+      "id": "espaco",
+      "titulo": "Lei penal no espaço",
+      "fonte": { "tipo": "manual", "referencia": "Greco, § 1. Lugar do crime" },
+      "blocos": [
+        { "tipo": "alerta", "titulo": "Sem material de aula", "texto": "Territorialidade e extraterritorialidade não foram ministradas em nenhuma das quatro aulas fotografadas. Esta seção vem dos manuais e do texto dos arts. 5º a 7º." },
+        { "tipo": "paragrafo", "texto": "As mesmas três teorias do tempo reaparecem aqui, para uma pergunta diferente — e a resposta do Código é outra. Para o LUGAR do crime vale a ubiquidade: considera-se praticado onde ocorreu a conduta e também onde se produziu o resultado." },
+        { "tipo": "destaque", "titulo": "A troca mais cobrada em prova", "texto": "Tempo é atividade (art. 4º). Lugar é ubiquidade (art. 6º). As teorias são as mesmas; as respostas, não." }
+      ]
+    }
+  ],
+  "flashcards": [
+    { "frente": "Teoria adotada quanto ao TEMPO do crime", "verso": "Teoria da ATIVIDADE, art. 4º — considera-se praticado o crime no momento da ação ou omissão, ainda que outro seja o do resultado." },
+    { "frente": "Teoria adotada quanto ao LUGAR do crime", "verso": "Teoria da UBIQUIDADE (mista), art. 6º — tanto onde ocorreu a conduta quanto onde se produziu o resultado." },
+    { "frente": "Condição absoluta da extra-atividade", "verso": "Só opera se a lei for BENÉFICA ao réu. A lei mais gravosa jamais alcança fato anterior." },
+    { "frente": "Ultra-atividade: o que é?", "verso": "A lei revogada continua regendo os fatos praticados em sua vigência, por ser mais benéfica que a nova." },
+    { "frente": "Abolitio criminis atinge coisa julgada?", "verso": "Sim. O art. 2º, caput, faz cessar a execução e os efeitos penais mesmo com sentença transitada em julgado. Subsistem os efeitos civis." },
+    { "frente": "Lei temporária expirada ainda se aplica?", "verso": "Sim, por força do art. 3º, e independentemente de ser mais benéfica — é ultra-atividade imposta pela própria lei." },
+    { "frente": "Costume revoga lei penal?", "verso": "Não. Lei só se revoga por lei; o costume apenas torna o dispositivo letra morta. (Registro do caderno de 04/09.)" }
+  ]
+}

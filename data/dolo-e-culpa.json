@@ -1,0 +1,79 @@
+{
+  "id": "dolo-e-culpa",
+  "titulo": "Dolo, Culpa e Preterdolo",
+  "sobre": "Nenhuma das quatro aulas tratou dolo e culpa como tema próprio — eles aparecem sempre como consequência do erro de tipo. Este módulo é inteiramente doutrinário.",
+  "mapaMental": {
+    "titulo": "O elemento subjetivo",
+    "raiz": "ELEMENTO SUBJETIVO",
+    "fonte": "Greco § 6, Masson p. 236-238, Sanches PDF p. 205",
+    "ramos": [
+      { "titulo": "DOLO", "folhas": ["Direto — quer o resultado", "Eventual — prevê e assume o risco"] },
+      { "titulo": "CULPA", "folhas": ["Consciente — prevê e crê que não ocorrerá", "Inconsciente — não prevê o previsível", "Modalidades: imprudência, negligência, imperícia"] },
+      { "titulo": "PRETERDOLO", "folhas": ["Dolo no antecedente", "Culpa no consequente", "Art. 19 veda a responsabilidade objetiva"] }
+    ]
+  },
+  "secoes": [
+    {
+      "id": "aviso",
+      "titulo": "Por que este módulo vem dos manuais",
+      "fonte": { "tipo": "manual", "referencia": "catalogação em _fontes.json" },
+      "blocos": [
+        { "tipo": "alerta", "titulo": "Sem material de aula", "texto": "Dolo e culpa atravessam todas as quatro aulas, mas sempre como CONSEQUÊNCIA — o erro evitável que pune a culpa, o provocador que responde com dolo. Como tema próprio, não foram dados: não há slide, lousa ou anotação sobre dolo direto e eventual, teorias da vontade e do assentimento, culpa consciente e inconsciente ou preterdolo. O conteúdo abaixo sai de Sanches, Masson e Greco." }
+      ]
+    },
+    {
+      "id": "dolo",
+      "titulo": "Dolo direto e dolo eventual",
+      "fonte": { "tipo": "manual", "referencia": "Masson, p. 236" },
+      "blocos": [
+        { "tipo": "paragrafo", "texto": "No dolo direto o agente QUER o resultado: ele é o fim da conduta. No dolo eventual o resultado não é querido, mas é previsto — e o agente assume o risco de produzi-lo." },
+        { "tipo": "citacao", "texto": "Dolo eventual é a modalidade em que o agente não quer o resultado, por ele previsto, mas assume o risco de produzi-lo.", "autor": "Cleber Masson", "pagina": "236 (13ª ed., 2019)" }
+      ]
+    },
+    {
+      "id": "fronteira",
+      "titulo": "A fronteira: dolo eventual × culpa consciente",
+      "fonte": { "tipo": "manual", "referencia": "Greco § 6, Sanches PDF p. 205" },
+      "blocos": [
+        { "tipo": "paragrafo", "texto": "É o ponto mais cobrado do módulo, e o mais fino. Nos dois há PREVISÃO do resultado — é justamente o que eles têm em comum. O que os separa é a atitude do agente diante dessa previsão." },
+        { "tipo": "citacao", "texto": "Na culpa consciente, o agente, embora prevendo o resultado, acredita sinceramente na sua não ocorrência; o resultado previsto não é querido ou mesmo assumido pelo agente. Já no dolo eventual, embora o agente não queira diretamente o resultado, assume o risco de produzi-lo.", "autor": "Rogério Greco", "pagina": "§ 6. Diferença entre culpa consciente e dolo eventual" },
+        { "tipo": "destaque", "titulo": "O caso do atirador perito", "texto": "Sanches trabalha a hipótese de quem confia na própria técnica apurada para evitar o resultado: se o evento indesejado ocorre, responde por CULPA CONSCIENTE, não por dolo eventual. A confiança na perícia própria é o dado que afasta a anuência." },
+        { "tipo": "alerta", "titulo": "O racha não tem resposta automática", "texto": "Sanches enfrenta expressamente a pergunta sobre a competição de veículos em via pública: dolo eventual ou culpa consciente? Não há resposta em abstrato. A qualificação depende de prova sobre a atitude do agente diante do resultado previsto — não se presume da gravidade objetiva da conduta." }
+      ],
+      "tabelas": [
+        { "titulo": "Os quatro estados subjetivos, em ordem decrescente de reprovação",
+          "colunas": ["Estado", "Previu o resultado?", "Atitude diante dele"],
+          "linhas": [
+            ["Dolo direto", "Sim — é o fim da conduta", "Quer"],
+            ["Dolo eventual", "Sim", "Não quer, mas assume o risco"],
+            ["Culpa consciente", "Sim", "Acredita sinceramente que não ocorrerá"],
+            ["Culpa inconsciente", "Não, embora fosse previsível", "Nem cogita"]
+          ] }
+      ]
+    },
+    {
+      "id": "culpa",
+      "titulo": "As modalidades de culpa e a excepcionalidade da punição",
+      "fonte": { "tipo": "lei", "referencia": "CP, arts. 18 e 19" },
+      "blocos": [
+        { "tipo": "lista", "titulo": "Imprudência, negligência e imperícia", "itens": [
+          "IMPRUDÊNCIA — ação descuidada: fazer o que não se deveria fazer, como trafegar muito acima do limite.",
+          "NEGLIGÊNCIA — omissão do cuidado devido: deixar de fazer o que se deveria, como não sinalizar uma vala aberta.",
+          "IMPERÍCIA — falta de aptidão técnica no exercício de arte, ofício ou profissão."
+        ] },
+        { "tipo": "artigo", "referencia": "Art. 18, parágrafo único, do Código Penal", "anchor": "art18", "texto": "Salvo os casos expressos em lei, ninguém pode ser punido por fato previsto como crime, senão quando o pratica dolosamente." },
+        { "tipo": "destaque", "titulo": "A consequência prática", "texto": "Sem tipo culposo previsto, não há punição por culpa. O dano é o exemplo clássico: não existe dano culposo no Código, então o descuido que danifica coisa alheia é penalmente atípico — resta a esfera civil." },
+        { "tipo": "paragrafo", "texto": "No crime PRETERDOLOSO há dolo no antecedente e culpa no consequente — a lesão corporal seguida de morte é o exemplo típico. O art. 19 impede que o resultado agravador seja imputado sem ao menos culpa: é a vedação da responsabilidade objetiva." }
+      ]
+    }
+  ],
+  "flashcards": [
+    { "frente": "Dolo eventual: definição", "verso": "O agente não quer o resultado, que previu, mas assume o risco de produzi-lo (Masson, p. 236)." },
+    { "frente": "Dolo eventual × culpa consciente: o que os separa?", "verso": "A previsão existe nos dois. O divisor é a atitude: no dolo eventual assume o risco; na culpa consciente acredita sinceramente que não ocorrerá." },
+    { "frente": "Culpa consciente × culpa inconsciente", "verso": "Na consciente o agente PREVÊ o resultado e crê que não ocorrerá. Na inconsciente sequer prevê o que era previsível." },
+    { "frente": "As três modalidades de culpa", "verso": "Imprudência (ação descuidada), negligência (omissão do cuidado devido) e imperícia (falta de aptidão técnica)." },
+    { "frente": "A punição por culpa é a regra?", "verso": "Não. Art. 18, parágrafo único: salvo os casos expressos em lei, só se pune o fato praticado dolosamente. Sem tipo culposo, atipicidade." },
+    { "frente": "Crime preterdoloso", "verso": "Dolo no antecedente e culpa no consequente. O art. 19 exige ao menos culpa no resultado agravador, vedando a responsabilidade objetiva." },
+    { "frente": "O racha configura dolo eventual?", "verso": "Não automaticamente. Depende de prova sobre a atitude do agente diante do resultado previsto — a gravidade objetiva da conduta é indício, não elemento subjetivo." }
+  ]
+}

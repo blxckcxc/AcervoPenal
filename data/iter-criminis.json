@@ -1,0 +1,72 @@
+{
+  "id": "iter-criminis",
+  "titulo": "Iter Criminis",
+  "sobre": "A lousa de 28/08 deu as cinco etapas e parou aí. Tentativa, desistência, arrependimento e crime impossível vêm dos manuais — e a seção diz isso.",
+  "mapaMental": {
+    "titulo": "O caminho do crime",
+    "raiz": "ITER CRIMINIS",
+    "fonte": "lousa 28/08 200421",
+    "ramos": [
+      { "titulo": "1. Cogitação", "folhas": ["interna, não punível"] },
+      { "titulo": "2. Atos preparatórios", "folhas": ["em regra não puníveis", "salvo quando tipificados de forma autônoma"] },
+      { "titulo": "3. Atos executórios", "folhas": ["aqui começa a punição", "tentativa, art. 14, II", "desistência e arrependimento, art. 15"] },
+      { "titulo": "4. Consumação", "folhas": ["reúnem-se todos os elementos do tipo"] },
+      { "titulo": "5. Exaurimento", "folhas": ["posterior à consumação", "repercute na dosimetria (art. 59)"] }
+    ]
+  },
+  "secoes": [
+    {
+      "id": "etapas",
+      "titulo": "As cinco etapas",
+      "fonte": { "tipo": "aula", "referencia": "lousa 28/08 200421" },
+      "blocos": [
+        { "tipo": "paragrafo", "texto": "A lousa listou cinco etapas e destacou a última dentro de um retângulo: cogitação, atos preparatórios, atos executórios, consumação e exaurimento." },
+        { "tipo": "paragrafo", "texto": "A punição, em regra, começa nos atos EXECUTÓRIOS. A cogitação não se pune — pensar em crime não é crime. Os atos preparatórios também não, salvo quando a lei os tipifica autonomamente, como faz com a associação criminosa e com o porte de instrumentos." },
+        { "tipo": "destaque", "titulo": "Por que o exaurimento mereceu destaque", "texto": "Porque não é irrelevante, embora seja posterior à consumação. Ele repercute na dosimetria, como consequência do crime a ser sopesada nas circunstâncias judiciais do art. 59; e em certos tipos, sobretudo nos formais, integra qualificadora ou causa de aumento." }
+      ]
+    },
+    {
+      "id": "tentativa",
+      "titulo": "Tentativa, desistência e arrependimento",
+      "fonte": { "tipo": "manual", "referencia": "Sanches PDF p. 359, Masson p. 290-292, Greco §§ 1 e 5" },
+      "blocos": [
+        { "tipo": "alerta", "titulo": "Conteúdo dos manuais", "texto": "Nenhuma das quatro aulas tratou de tentativa, desistência voluntária, arrependimento eficaz, arrependimento posterior ou crime impossível. Esta seção vem inteiramente dos manuais recomendados e do texto legal." },
+        { "tipo": "artigo", "referencia": "Art. 15 do Código Penal", "anchor": "art15", "texto": "O agente que, voluntariamente, desiste de prosseguir na execução ou impede que o resultado se produza, só responde pelos atos já praticados." },
+        { "tipo": "destaque", "titulo": "A fórmula de Sanches", "texto": "Na TENTATIVA o agente quer prosseguir e NÃO PODE — e a pena é diminuída de um a dois terços. Na desistência e no arrependimento eficaz ele PODE prosseguir e NÃO QUER — e responde só pelos atos já praticados." },
+        { "tipo": "paragrafo", "texto": "Desistência e arrependimento eficaz separam-se pelo quanto da execução já correu. Greco: na desistência o agente interrompe a execução no meio; no arrependimento eficaz ele já esgotou os atos que julgava suficientes e passa a agir para impedir o resultado." },
+        { "tipo": "alerta", "titulo": "Voluntário não é o mesmo que espontâneo", "texto": "Masson registra que os requisitos comuns são voluntariedade e eficácia, e que a iniciativa pode emanar de terceira pessoa — pouco importa que a desistência não seja espontânea, desde que livre de coação física ou moral. Um aviso de comparsa não descaracteriza a desistência." }
+      ],
+      "tabelas": [
+        { "titulo": "Quatro figuras próximas",
+          "colunas": ["Figura", "Artigo", "Situação", "Consequência"],
+          "linhas": [
+            ["Tentativa", "14, II", "Quer prosseguir e não pode", "Pena do crime, diminuída de 1/3 a 2/3"],
+            ["Desistência voluntária", "15", "Interrompe a execução no meio, podendo seguir", "Responde só pelos atos já praticados"],
+            ["Arrependimento eficaz", "15", "Esgotou a execução e impede o resultado", "Responde só pelos atos já praticados"],
+            ["Arrependimento posterior", "16", "Crime já consumado, sem violência, com reparação até a denúncia", "Pena reduzida de 1/3 a 2/3"]
+          ] }
+      ]
+    },
+    {
+      "id": "crime-impossivel",
+      "titulo": "Crime impossível",
+      "fonte": { "tipo": "lei", "referencia": "CP, art. 17" },
+      "blocos": [
+        { "tipo": "artigo", "referencia": "Art. 17 do Código Penal", "anchor": "art17", "texto": "Não se pune a tentativa quando, por ineficácia absoluta do meio ou por absoluta impropriedade do objeto, é impossível consumar-se o crime." },
+        { "tipo": "lista", "titulo": "A palavra que decide é ABSOLUTA", "itens": [
+          "Ineficácia ABSOLUTA do meio: substância comprovadamente inócua em qualquer dosagem. Se apenas um cartucho falhou e a arma era apta, a ineficácia é relativa e há tentativa.",
+          "Impropriedade ABSOLUTA do objeto: atirar em quem já estava morto. Não há bem jurídico vida a ser atingido."
+        ] }
+      ]
+    }
+  ],
+  "flashcards": [
+    { "frente": "As cinco etapas do iter criminis", "verso": "Cogitação, atos preparatórios, atos executórios, consumação e exaurimento." },
+    { "frente": "A partir de que etapa há punição, em regra?", "verso": "Dos atos executórios. A cogitação nunca se pune; os preparatórios só quando a lei os tipifica autonomamente." },
+    { "frente": "Tentativa × desistência: a fórmula", "verso": "Quer prosseguir e NÃO PODE = tentativa. PODE prosseguir e não quer = desistência ou arrependimento." },
+    { "frente": "Desistência × arrependimento eficaz", "verso": "Na desistência o agente interrompe a execução no meio. No arrependimento eficaz ele já esgotou os atos e depois age para impedir o resultado." },
+    { "frente": "A desistência precisa ser espontânea?", "verso": "Não — precisa ser VOLUNTÁRIA. A iniciativa pode vir de terceiro, desde que sem coação física ou moral (Masson, p. 292)." },
+    { "frente": "Crime impossível: as duas causas", "verso": "Ineficácia ABSOLUTA do meio ou absoluta impropriedade do objeto (art. 17). Relativa não basta." },
+    { "frente": "Por que o exaurimento importa, se o crime já está consumado?", "verso": "Repercute na dosimetria como consequência do crime (art. 59) e, em tipos formais, pode integrar qualificadora ou aumento." }
+  ]
+}

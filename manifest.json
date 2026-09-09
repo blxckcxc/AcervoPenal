@@ -1,0 +1,24 @@
+{
+  "name": "Acervo Penal — Direito Penal, Parte Geral",
+  "short_name": "Acervo Penal",
+  "description": "Acervo de estudos de Direito Penal (Parte Geral): módulos, Vade Mecum, simulador de casos práticos, quiz e o áudio das aulas. Funciona offline.",
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#09090B",
+  "theme_color": "#09090B",
+  "categories": ["education", "books"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Simulador de casos", "short_name": "Casos", "url": "./simulador.html" },
+    { "name": "Vade Mecum", "short_name": "Código", "url": "./vademecum.html" },
+    { "name": "Quiz geral", "short_name": "Quiz", "url": "./quiz.html" }
+  ]
+}

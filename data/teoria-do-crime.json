@@ -1,0 +1,58 @@
+{
+  "id": "teoria-do-crime",
+  "titulo": "Teoria Geral do Crime",
+  "sobre": "Construído sobre a lousa de 14/08, que abriu o conceito analítico em três ramos e detalhou dois deles.",
+  "mapaMental": {
+    "titulo": "Conceito analítico de crime",
+    "raiz": "CRIME ou DELITO",
+    "fonte": "lousa 14/08 194145",
+    "ramos": [
+      { "titulo": "TIPICIDADE", "folhas": ["conduta", "nexo causal", "resultado naturalístico", "imputação objetiva da conduta", "imputação objetiva do resultado", "resultado jurídico penalmente relevante"] },
+      { "titulo": "ILICITUDE", "folhas": ["a lousa deixou este ramo em branco", "excludentes do art. 23 — ver módulo 7"] },
+      { "titulo": "CULPABILIDADE", "folhas": ["imputabilidade", "potencial consciência da ilicitude", "exigibilidade de conduta diversa"] }
+    ]
+  },
+  "secoes": [
+    {
+      "id": "conceito-analitico",
+      "titulo": "Os três substratos",
+      "fonte": { "tipo": "aula", "referencia": "lousa 14/08 194142 e 194145" },
+      "blocos": [
+        { "tipo": "paragrafo", "texto": "A lousa de 14/08 partiu de 'crime ou delito' e abriu três ramos, escritos em vermelho: tipicidade, ilicitude e culpabilidade. É a estrutura tripartida, e a chave que lê à esquerda do diagrama traz a palavra MODERNA." },
+        { "tipo": "paragrafo", "texto": "A ordem importa. Cada substrato só se examina se o anterior estiver presente: não se pergunta pela ilicitude de um fato atípico, nem pela culpabilidade de um fato justificado. É por isso que a insignificância, que opera na tipicidade material, encerra o exame antes de chegar aos outros dois." },
+        { "tipo": "destaque", "titulo": "Bipartido ou tripartido", "texto": "Há corrente que retira a culpabilidade do conceito de crime, tratando-a como pressuposto de aplicação da pena — crime seria fato típico e ilícito. A lousa da aula adotou a tripartida. Em prova discursiva, o esperado é expor as duas e posicionar-se." }
+      ]
+    },
+    {
+      "id": "fato-tipico",
+      "titulo": "O que a lousa colocou sob a tipicidade",
+      "fonte": { "tipo": "aula", "referencia": "lousa 14/08 194145" },
+      "blocos": [
+        { "tipo": "paragrafo", "texto": "Além do trio clássico conduta–nexo–resultado, a lousa listou dois itens que não estão no rol tradicional: imputação objetiva da conduta e imputação objetiva do resultado. Eles não repetem o nexo causal — acrescentam um filtro." },
+        { "tipo": "destaque", "titulo": "O que a imputação objetiva acrescenta", "texto": "A causalidade natural responde 'o que causou o quê'. A imputação objetiva pergunta se o agente criou um risco juridicamente proibido e se o resultado é a realização justamente desse risco. Sem esse filtro, quem convence alguém a viajar de avião responderia pela queda: há causalidade, não há imputação." },
+        { "tipo": "paragrafo", "texto": "Ao final do ramo, a lousa registrou 'resultado jurídico penalmente relevante', aberto em transcendental e significativo. É a distinção entre o resultado NATURALÍSTICO — modificação no mundo exterior, que falta nos crimes de mera conduta — e o resultado JURÍDICO, que é a lesão ou o perigo de lesão ao bem tutelado e existe em todo crime." },
+        { "tipo": "alerta", "titulo": "Uma correção de leitura", "texto": "O catálogo de fontes registrou inicialmente 'resultado normativo'. A foto 194145, que enquadra a mesma lousa na horizontal, mostra 'resultado naturalístico'. A entrada foi corrigida — é o tipo de coisa que só aparece conferindo duas fotos da mesma lousa." }
+      ]
+    },
+    {
+      "id": "elementar",
+      "titulo": "Elementar e circunstância",
+      "fonte": { "tipo": "aula", "referencia": "caderno 150046" },
+      "blocos": [
+        { "tipo": "paragrafo", "texto": "O par que o caderno registra serve tanto à teoria do crime quanto ao erro de tipo. ELEMENTAR é a palavra que, retirada do tipo, transforma a situação em não crime ou em outro crime; CIRCUNSTÂNCIA é a que, retirada, mantém o crime e apenas altera sua gravidade." },
+        { "tipo": "lista", "titulo": "Os dois exemplos da aula", "itens": [
+          "Infanticídio: retire 'o próprio filho' do art. 123 e sobra 'matar alguém' — vira homicídio. Elementar.",
+          "Furto em repouso noturno: retire o repouso noturno e o furto permanece, apenas simples. Circunstância."
+        ] }
+      ]
+    }
+  ],
+  "flashcards": [
+    { "frente": "Os três substratos do conceito analítico", "verso": "Tipicidade, ilicitude e culpabilidade — os três ramos em vermelho da lousa de 14/08." },
+    { "frente": "Elementos do fato típico", "verso": "Conduta, nexo causal e resultado, mais o juízo de tipicidade. A lousa acrescentou imputação objetiva da conduta e do resultado." },
+    { "frente": "O que a imputação objetiva acrescenta ao nexo causal?", "verso": "Um filtro normativo: exige criação de risco juridicamente proibido e que o resultado seja a realização desse risco." },
+    { "frente": "Resultado naturalístico × resultado jurídico", "verso": "O naturalístico é a modificação no mundo exterior e falta nos crimes de mera conduta. O jurídico é a lesão ou perigo ao bem tutelado e existe em todo crime." },
+    { "frente": "Elementos da culpabilidade", "verso": "Imputabilidade, potencial consciência da ilicitude e exigibilidade de conduta diversa." },
+    { "frente": "Conceito bipartido de crime", "verso": "Crime é fato típico e ilícito; a culpabilidade seria pressuposto de aplicação da pena, não elemento do crime. A aula adotou a tripartida." }
+  ]
+}

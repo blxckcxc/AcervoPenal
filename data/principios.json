@@ -1,0 +1,61 @@
+{
+  "id": "principios",
+  "titulo": "Princípios do Direito Penal",
+  "sobre": "Nenhum slide, lousa ou anotação trata de princípios como tema. Módulo inteiramente doutrinário.",
+  "mapaMental": {
+    "titulo": "Princípios limitadores do poder de punir",
+    "raiz": "PRINCÍPIOS",
+    "fonte": "Sanches PDF p. 72 e 88, Masson p. 23 e 29, Greco § 4",
+    "ramos": [
+      { "titulo": "LEGALIDADE — art. 1º", "folhas": ["Formal: obediência ao trâmite", "Material: limites de conteúdo", "Anterioridade → irretroatividade", "Taxatividade: veda-se o tipo indeterminado"] },
+      { "titulo": "INTERVENÇÃO MÍNIMA", "folhas": ["Subsidiariedade", "Fragmentariedade"] },
+      { "titulo": "INSIGNIFICÂNCIA", "folhas": ["Opera na tipicidade material", "Consequência: atipicidade", "Afastada quando há violência ou grave ameaça"] }
+    ]
+  },
+  "secoes": [
+    {
+      "id": "aviso",
+      "titulo": "Por que este módulo vem dos manuais",
+      "fonte": { "tipo": "manual", "referencia": "catalogação em _fontes.json" },
+      "blocos": [
+        { "tipo": "alerta", "titulo": "Sem material de aula", "texto": "A catalogação das 44 imagens não encontrou nenhuma que trate de princípios como tema. A legalidade aparece de passagem, como fundamento da irretroatividade, no slide de 04/09; a insignificância, numa dica lateral do slide sobre erro quanto ao objeto. Todo o conteúdo abaixo sai dos três manuais recomendados pelo professor e do texto legal." }
+      ]
+    },
+    {
+      "id": "legalidade",
+      "titulo": "Legalidade: formal e material",
+      "fonte": { "tipo": "manual", "referencia": "Sanches PDF p. 88, Greco § 4" },
+      "blocos": [
+        { "tipo": "artigo", "referencia": "Art. 1º do Código Penal", "anchor": "art1", "texto": "Não há crime sem lei anterior que o defina. Não há pena sem prévia cominação legal." },
+        { "tipo": "paragrafo", "texto": "Sanches e Greco tratam a legalidade em dois planos. A legalidade FORMAL é a obediência aos trâmites procedimentais de produção da lei. A MATERIAL exige mais: cumprir o rito não basta se o conteúdo não respeita os limites que a Constituição impõe." },
+        { "tipo": "lista", "titulo": "O que se exige da lei penal", "itens": [
+          "Anterior — daí a irretroatividade da lei mais gravosa.",
+          "Escrita — o costume não cria crime; pode auxiliar na interpretação, jamais fundar o tipo.",
+          "Estrita — veda-se a analogia in malam partem; admite-se a in bonam partem.",
+          "Certa — veda-se o tipo penal indeterminado. É a taxatividade, e um tipo que não permite ao destinatário saber o que é proibido não cumpre a função de garantia.",
+          "Necessária — é por aqui que a legalidade encontra a intervenção mínima."
+        ] }
+      ]
+    },
+    {
+      "id": "insignificancia",
+      "titulo": "Insignificância: onde ela trabalha",
+      "fonte": { "tipo": "manual", "referencia": "Sanches PDF p. 72, Masson p. 23 e 29" },
+      "blocos": [
+        { "tipo": "paragrafo", "texto": "A pergunta que a banca faz não é se a insignificância existe — é em que plano da estrutura do crime ela opera. E a resposta muda a consequência." },
+        { "tipo": "citacao", "texto": "O princípio da insignificância tem lugar justamente neste primeiro aspecto da tipicidade conglobante, a tipicidade material.", "autor": "Rogério Sanches Cunha", "pagina": "72 do PDF" },
+        { "tipo": "destaque", "titulo": "A consequência", "texto": "O fato se ajusta FORMALMENTE ao tipo — houve subtração de coisa alheia móvel —, mas falta lesão relevante ao bem jurídico. Reconhecida a insignificância, o fato é ATÍPICO. Não se chega a examinar ilicitude nem culpabilidade: o exame se encerra antes." },
+        { "tipo": "paragrafo", "texto": "Masson a fundamenta em política criminal, como instrumento de interpretação restritiva do tipo, e percorre as situações em que se discute sua incidência. No roubo ela é afastada: a violência ou grave ameaça presente no tipo é circunstância indicativa da relevância penal e impeditiva do reconhecimento da bagatela." },
+        { "tipo": "alerta", "titulo": "Bagatela própria e imprópria", "texto": "Não são a mesma coisa. Na PRÓPRIA a lesão já nasce ínfima e o fato é materialmente atípico. Na IMPRÓPRIA o crime se configura por inteiro, e circunstâncias posteriores — reparação do dano, primariedade, colaboração — tornam a pena desnecessária. O juízo é de dispensa da pena, não de atipicidade." }
+      ]
+    }
+  ],
+  "flashcards": [
+    { "frente": "Legalidade formal × material", "verso": "Formal é a obediência ao trâmite de produção da lei. Material exige que o conteúdo respeite os limites constitucionais — cumprir o rito não basta." },
+    { "frente": "Taxatividade: o que exige?", "verso": "Que a lei seja CERTA: veda-se o tipo penal indeterminado. Um tipo que não permite saber o que é proibido não cumpre a função de garantia." },
+    { "frente": "Analogia em matéria penal", "verso": "Vedada in malam partem (criar ou ampliar incriminação); admitida in bonam partem." },
+    { "frente": "Em que plano opera a insignificância?", "verso": "Na TIPICIDADE MATERIAL, dentro da tipicidade conglobante. Reconhecida, o fato é atípico — não se examina ilicitude nem culpabilidade." },
+    { "frente": "Por que a insignificância não se aplica ao roubo?", "verso": "A violência ou grave ameaça no tipo indica relevância penal e impede o reconhecimento da bagatela (Masson, p. 29)." },
+    { "frente": "Bagatela própria × imprópria", "verso": "Própria: lesão ínfima desde a origem, fato atípico. Imprópria: crime configurado, mas circunstâncias posteriores tornam a pena desnecessária." }
+  ]
+}
