@@ -4,6 +4,32 @@
 gerar-icones.py — ícones do PWA e o favicon com a Espada-Balança oficial.
 
     python tools/gerar-icones.py
+
+═══════════════════════════════════════════════════════════════════════
+A GEOMETRIA VIVE EM TRÊS LUGARES, E A FONTE DE VERDADE É UMA SÓ
+
+O emblema é desenhado em `App.emblemaSVG()` (js/app.js) num viewBox de
+100×100. Este script e `icons/emblema-penal.svg` repetem essa mesma
+geometria — o primeiro porque PNG precisa de rasterizador e o projeto
+não carrega cairosvg; o segundo como peça vetorial de referência.
+
+Se mexer nas coordenadas, mexa nos três. As cores, ao menos, saem daqui
+com os mesmos valores que os tokens do tema escuro entregam ao Hero:
+
+    --emblema-metal  = --platina-fosca  #D4D4D8   anel, cordas, pratos,
+                                                  finiais, pomo, fio
+    --emblema-lamina = --vinho-traco    #D11E5C   guarda e lâmina
+    --emblema-cabo   = --vinho          #881337   cabo
+
+POR QUE A LÂMINA NÃO É O VINHO PLENO #881337
+Medido sobre o ônix #09090B do ícone: #881337 dá 2,08:1, #9F1239 dá
+2,48 e #700C2B dá 1,68 — todos abaixo de 3:1, o mínimo para uma forma
+ser percebida. A espada viraria um borrão escuro sobre preto, e num
+favicon de 16 px sumiria de vez. O #D11E5C dá 3,84:1 e é exatamente o
+que o Hero usa. O vinho pleno fica onde ele funciona: no cabo, peça
+pequena que se lê pelo contorno contra o metal ao redor, não pelo
+contraste com o fundo.
+═══════════════════════════════════════════════════════════════════════
 """
 
 from pathlib import Path
@@ -12,144 +38,129 @@ from PIL import Image, ImageDraw
 RAIZ = Path(__file__).resolve().parent.parent
 ICONES = RAIZ / "icons"
 
-ONIX = (9, 9, 11)
-VINHO = (136, 19, 55)
-VINHO_LUZ = (159, 18, 57)
-VINHO_SOMBRA = (112, 12, 43)
-AMBAR = (217, 119, 6)
-AMBAR_BRILHO = (245, 158, 11)
-PERGAMINHO = (250, 248, 245)
+ONIX = (9, 9, 11)          # --onix-fundo #09090B
+METAL = (212, 212, 216)    # --platina-fosca #D4D4D8
+LAMINA = (209, 30, 92)     # --vinho-traco #D11E5C
+CABO = (136, 19, 55)       # --vinho #881337
+
+# O fio da lâmina é o metal a 70% sobre a lâmina, como no CSS do Hero
+# (.emb-fio { stroke: var(--emblema-metal); opacity: 0.7 }). Resolvo a
+# mistura aqui porque PIL não compõe opacidade em linha fina sem custo.
+FIO = tuple(round(m * 0.7 + l * 0.3) for m, l in zip(METAL, LAMINA))
 
 
 def desenhar(lado: int, margem: float) -> Image.Image:
-    """Espada-Balança oficial (Jus Puniendi e Devido Processo) em âmbar e vinho sobre ônix."""
+    """Espada-Balança oficial em platina e vinho sobre ônix.
+
+    `margem` é a fração de cada lado reservada como respiro — 0.18 no
+    ícone maskable, onde o Android recorta um círculo por cima.
+    """
     escala = 4  # supersampling para antisserrilhado
     t = lado * escala
-    im = Image.new("RGBA", (t, t), (9, 9, 11, 255))
+    im = Image.new("RGB", (t, t), ONIX)
     d = ImageDraw.Draw(im)
 
-    pad = int(t * margem)
-    cx = t / 2
-    cy = t / 2
-    r = (t - 2 * pad) / 2
+    pad = t * margem
+    util = t - 2 * pad
 
-    # 1. Anel Circular da Legalidade Estrita (Ouro / Âmbar)
-    espessura_anel = max(2, int(t * 0.045))
-    d.ellipse([cx - r, cy - r, cx + r, cy + r], outline=AMBAR, width=espessura_anel)
+    # Todo o desenho é escrito no sistema de 100 unidades do viewBox,
+    # igual ao de js/app.js, e só aqui vira pixel.
+    def u(v):
+        return pad + v * util / 100.0
 
-    # Coordenadas proporcionais ao círculo interno
-    escala_elem = r / 44.0  # mapa de 100x100 viewBox com r=44
+    def esp(v):
+        """Espessura de traço, na mesma escala."""
+        return max(1, round(v * util / 100.0))
 
-    def tx(x_100):
-        return cx + (x_100 - 50) * escala_elem
+    # ── 1. Anel Circular da Legalidade Estrita ──────────────────────
+    # No SVG o traço é centrado em r=43.5 com largura 4.8; no PIL a
+    # borda é desenhada para DENTRO da caixa, então a caixa vai até
+    # 43.5 + 4.8/2 = 45.9 para que o traço caia sobre o mesmo raio.
+    r_ext = 43.5 + 4.8 / 2
+    d.ellipse(
+        [u(50 - r_ext), u(50 - r_ext), u(50 + r_ext), u(50 + r_ext)],
+        outline=METAL,
+        width=esp(4.8),
+    )
 
-    def ty(y_100):
-        return cy + (y_100 - 50) * escala_elem
+    # ── 2. Correntes e pratos da balança ────────────────────────────
+    esp_corda = esp(1.2)
+    for x1, y1, x2, y2 in [
+        (24.5, 38, 14, 61.5),
+        (24.5, 38, 36, 61.5),
+        (75.5, 38, 64, 61.5),
+        (75.5, 38, 86, 61.5),
+    ]:
+        d.line([(u(x1), u(y1)), (u(x2), u(y2))], fill=METAL, width=esp_corda)
 
-    # 2. Correntes e Pratos da Balança
-    esp_fio = max(1, int(t * 0.012))
-    # Prato Esquerdo
-    d.line([(tx(24.5), ty(38)), (tx(14), ty(61.5))], fill=AMBAR, width=esp_fio)
-    d.line([(tx(24.5), ty(38)), (tx(36), ty(61.5))], fill=AMBAR, width=esp_fio)
-    prato_esq = [
-        (tx(13.5), ty(61.5)),
-        (tx(36.5), ty(61.5)),
-        (tx(32), ty(66)),
-        (tx(25), ty(66.5)),
-        (tx(18), ty(66)),
-    ]
-    d.polygon(prato_esq, fill=VINHO)
+    # Os pratos são metal nos dois lados — no Hero não há prato claro e
+    # prato escuro; a assimetria fica por conta da espada.
+    for esquerdo in (True, False):
+        base = 13.5 if esquerdo else 63.5
+        d.polygon(
+            [
+                (u(base), u(61.5)),
+                (u(base + 23), u(61.5)),
+                (u(base + 18.5), u(66)),
+                (u(base + 11.5), u(66.5)),
+                (u(base + 4.5), u(66)),
+            ],
+            fill=METAL,
+        )
 
-    # Prato Direito
-    d.line([(tx(75.5), ty(38)), (tx(64), ty(61.5))], fill=AMBAR, width=esp_fio)
-    d.line([(tx(75.5), ty(38)), (tx(86), ty(61.5))], fill=AMBAR, width=esp_fio)
-    prato_dir = [
-        (tx(63.5), ty(61.5)),
-        (tx(86.5), ty(61.5)),
-        (tx(82), ty(66)),
-        (tx(75), ty(66.5)),
-        (tx(68), ty(66)),
-    ]
-    d.polygon(prato_dir, fill=VINHO_LUZ)
+    # ── 3. A espada ─────────────────────────────────────────────────
+    # Guarda: as duas asas em vinho-traço, como as classes
+    # .emb-guarda-esq / .emb-guarda-dir do Hero.
+    d.polygon(
+        [(u(50), u(33)), (u(42), u(33)), (u(32), u(35.2)), (u(24.5), u(38)),
+         (u(31), u(37.8)), (u(41), u(36)), (u(47), u(35))],
+        fill=LAMINA,
+    )
+    d.polygon(
+        [(u(50), u(33)), (u(58), u(33)), (u(68), u(35.2)), (u(75.5), u(38)),
+         (u(69), u(37.8)), (u(59), u(36)), (u(53), u(35))],
+        fill=LAMINA,
+    )
 
-    # 3. A Espada Central
-    # Cruzeta (Guarda)
-    cruzeta_esq = [
-        (tx(50), ty(33)),
-        (tx(42), ty(33)),
-        (tx(32), ty(35.2)),
-        (tx(24.5), ty(38)),
-        (tx(31), ty(37.8)),
-        (tx(41), ty(36)),
-        (tx(47), ty(35)),
-    ]
-    d.polygon(cruzeta_esq, fill=VINHO_SOMBRA)
+    # Losangos das pontas da guarda, pomo e centro da guarda: metal.
+    for cx in (24.5, 75.5):
+        d.polygon(
+            [(u(cx), u(36.5)), (u(cx + 1.7), u(38)), (u(cx), u(39.5)), (u(cx - 1.7), u(38))],
+            fill=METAL,
+        )
+    d.polygon(
+        [(u(50), u(14.2)), (u(52.4), u(17.2)), (u(50.8), u(18.8)),
+         (u(49.2), u(18.8)), (u(47.6), u(17.2))],
+        fill=METAL,
+    )
 
-    cruzeta_dir = [
-        (tx(50), ty(33)),
-        (tx(58), ty(33)),
-        (tx(68), ty(35.2)),
-        (tx(75.5), ty(38)),
-        (tx(69), ty(37.8)),
-        (tx(59), ty(36)),
-        (tx(53), ty(35)),
-    ]
-    d.polygon(cruzeta_dir, fill=VINHO_LUZ)
+    # Cabo: o único lugar do vinho pleno. Ele se lê pelo contorno contra
+    # o pomo e a guarda metálicos, não contra o fundo.
+    d.rounded_rectangle(
+        [u(48.5), u(18.8), u(51.5), u(33)],
+        radius=max(1, esp(1)),
+        fill=CABO,
+    )
+    d.polygon(
+        [(u(50), u(31.5)), (u(53), u(34)), (u(50), u(36.5)), (u(47), u(34))],
+        fill=METAL,
+    )
 
-    # Losangos nas pontas da guarda
-    finial_esq = [
-        (tx(24.5), ty(36.5)),
-        (tx(26.2), ty(38)),
-        (tx(24.5), ty(39.5)),
-        (tx(22.8), ty(38)),
-    ]
-    d.polygon(finial_esq, fill=AMBAR)
+    # Lâmina: as duas facetas na mesma cor, como no Hero. O que dá
+    # volume é a nervura central, não um contraste entre metades.
+    d.polygon(
+        [(u(47.5), u(35)), (u(49.7), u(35)), (u(49.7), u(71.5)),
+         (u(50), u(84.5)), (u(47.5), u(69.5))],
+        fill=LAMINA,
+    )
+    d.polygon(
+        [(u(52.5), u(35)), (u(50.3), u(35)), (u(50.3), u(71.5)),
+         (u(50), u(84.5)), (u(52.5), u(69.5))],
+        fill=LAMINA,
+    )
+    d.line([(u(50), u(35)), (u(50), u(84.5))], fill=FIO, width=esp(0.7))
 
-    finial_dir = [
-        (tx(75.5), ty(36.5)),
-        (tx(77.2), ty(38)),
-        (tx(75.5), ty(39.5)),
-        (tx(73.8), ty(38)),
-    ]
-    d.polygon(finial_dir, fill=AMBAR_BRILHO)
-
-    # Cabo e pomo
-    pomo = [
-        (tx(50), ty(14.2)),
-        (tx(52.4), ty(17.2)),
-        (tx(50.8), ty(18.8)),
-        (tx(49.2), ty(18.8)),
-        (tx(47.6), ty(17.2)),
-    ]
-    d.polygon(pomo, fill=AMBAR_BRILHO)
-    d.rectangle([tx(48.5), ty(18.8), tx(51.5), ty(33)], fill=VINHO_SOMBRA)
-    d.polygon([(tx(50), ty(31.5)), (tx(53), ty(34)), (tx(50), ty(36.5)), (tx(47), ty(34))], fill=AMBAR)
-
-    # Lâmina facetada (sombra à esquerda, luz à direita)
-    lamina_esq = [
-        (tx(47.5), ty(35)),
-        (tx(49.8), ty(35)),
-        (tx(49.8), ty(71.5)),
-        (tx(50), ty(84.5)),
-        (tx(47.5), ty(69.5)),
-    ]
-    d.polygon(lamina_esq, fill=VINHO_SOMBRA)
-
-    lamina_dir = [
-        (tx(52.5), ty(35)),
-        (tx(50.2), ty(35)),
-        (tx(50.2), ty(71.5)),
-        (tx(50), ty(84.5)),
-        (tx(52.5), ty(69.5)),
-    ]
-    d.polygon(lamina_dir, fill=VINHO_LUZ)
-
-    # Nervura central
-    d.line([(tx(50), ty(35)), (tx(50), ty(84.5))], fill=AMBAR_BRILHO, width=max(1, int(t * 0.007)))
-
-    im_rgb = Image.new("RGB", im.size, ONIX)
-    im_rgb.paste(im, mask=im.split()[3])
-    return im_rgb.resize((lado, lado), Image.LANCZOS)
+    return im.resize((lado, lado), Image.LANCZOS)
 
 
 def main():
@@ -166,15 +177,30 @@ def main():
         im.save(ICONES / nome, "PNG", optimize=True)
         print(f"  {nome:<26} {im.width}x{im.height}")
 
-    base = desenhar(256, 0.06)
-    base.save(RAIZ / "favicon.ico", sizes=[(16, 16), (32, 32), (48, 48), (64, 64), (256, 256)])
-    print("  favicon.ico                16/32/48/64/256")
+    # O .ico carrega cada tamanho DESENHADO no seu tamanho, não um 256
+    # reduzido: a 16 px o anel tem menos de 1 px, e reduzir por Lanczos
+    # o apagaria. Desenhar em cada escala deixa o supersampling resolver.
+    tamanhos_ico = [16, 32, 48, 64, 256]
+    quadros = [desenhar(n, 0.06) for n in tamanhos_ico]
+    quadros[-1].save(
+        RAIZ / "favicon.ico",
+        format="ICO",
+        sizes=[(n, n) for n in tamanhos_ico],
+        append_images=quadros[:-1],
+    )
+    print(f"  favicon.ico                {'/'.join(str(n) for n in tamanhos_ico)}")
 
     print("\n  Conferindo bitmaps:")
     for nome, lado, _ in saidas:
         real = Image.open(ICONES / nome).size
         marca = "ok " if real == (lado, lado) else "ERRO"
         print(f"    {marca} {nome}: declarado {lado}x{lado}, real {real[0]}x{real[1]}")
+
+    ico = Image.open(RAIZ / "favicon.ico")
+    achados = sorted(s[0] for s in ico.ico.sizes())
+    esperado = sorted(tamanhos_ico)
+    marca = "ok " if achados == esperado else "ERRO"
+    print(f"    {marca} favicon.ico: contém {achados}")
 
 
 if __name__ == "__main__":

@@ -18,7 +18,7 @@
 
    ═══════════════════════════════════════════════════════════════ */
 
-const CACHE = "acervo-penal-3a3fc31afd";
+const CACHE = "acervo-penal-8535ebdecc";
 
 /* INICIO-PRECACHE — gerado por build.js, não edite à mão */
 const ARQUIVOS = [
